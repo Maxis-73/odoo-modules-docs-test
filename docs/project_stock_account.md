@@ -26,9 +26,8 @@ Handle analytics in Stock pickings with Project
 
 
 
-- Campos:
-
-  - **category** (Selection)
+#### Campos
+- **category** (Selection)
 
 
 
@@ -48,6 +47,7 @@ Handle analytics in Stock pickings with Project
 
 
 
+
 ### account.analytic.applicability
 
 
@@ -58,9 +58,8 @@ Handle analytics in Stock pickings with Project
 
 
 
-- Campos:
-
-  - **business_domain** (Selection)
+#### Campos
+- **business_domain** (Selection)
 
 
 
@@ -80,6 +79,7 @@ Handle analytics in Stock pickings with Project
 
 
 
+
 ### stock.picking.type
 
 
@@ -90,9 +90,8 @@ Handle analytics in Stock pickings with Project
 
 
 
-- Campos:
-
-  - **analytic_costs** (Boolean)
+#### Campos
+- **analytic_costs** (Boolean)
 
 
 

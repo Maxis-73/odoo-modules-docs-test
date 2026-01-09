@@ -33,6 +33,7 @@ A payment provider for custom flows like wire transfers.
 
 
 
+
 ### payment.provider
 
 
@@ -43,15 +44,10 @@ A payment provider for custom flows like wire transfers.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **custom_mode** (Selection)
-
-
-  - **qr_code** (Boolean)
+#### Campos
+- **code** (Selection)
+- **custom_mode** (Selection)
+- **qr_code** (Boolean)
 
 
 

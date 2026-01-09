@@ -30,6 +30,7 @@ Store chatter attachments in the Azure cloud
 
 
 
+
 ### res.config.settings
 
 
@@ -40,27 +41,14 @@ Store chatter attachments in the Azure cloud
 
 
 
-- Campos:
-
-  - **cloud_storage_provider** (Selection)
-
-
-  - **cloud_storage_azure_account_name** (Char)
-
-
-  - **cloud_storage_azure_container_name** (Char)
-
-
-  - **cloud_storage_azure_tenant_id** (Char)
-
-
-  - **cloud_storage_azure_client_id** (Char)
-
-
-  - **cloud_storage_azure_client_secret** (Char)
-
-
-  - **cloud_storage_azure_invalidate_user_delegation_key** (Boolean)
+#### Campos
+- **cloud_storage_provider** (Selection)
+- **cloud_storage_azure_account_name** (Char)
+- **cloud_storage_azure_container_name** (Char)
+- **cloud_storage_azure_tenant_id** (Char)
+- **cloud_storage_azure_client_id** (Char)
+- **cloud_storage_azure_client_secret** (Char)
+- **cloud_storage_azure_invalidate_user_delegation_key** (Boolean)
 
 
 

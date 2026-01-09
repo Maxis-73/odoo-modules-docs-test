@@ -30,6 +30,7 @@ Enrich Leads/Opportunities using email address domain
 
 
 
+
 ### crm.lead
 
 
@@ -40,12 +41,9 @@ Enrich Leads/Opportunities using email address domain
 
 
 
-- Campos:
-
-  - **iap_enrich_done** (Boolean)
-
-
-  - **show_enrich_button** (Boolean)
+#### Campos
+- **iap_enrich_done** (Boolean)
+- **show_enrich_button** (Boolean)
 
 
 

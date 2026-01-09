@@ -37,6 +37,7 @@ Allows to prepare batches depending on their carrier
 
 
 
+
 ### stock.picking.type
 
 
@@ -47,15 +48,10 @@ Allows to prepare batches depending on their carrier
 
 
 
-- Campos:
-
-  - **batch_group_by_carrier** (Boolean) → Carrier
-
-
-  - **batch_max_weight** (Integer) → Maximum weight
-
-
-  - **weight_uom_name** (Char)
+#### Campos
+- **batch_group_by_carrier** (Boolean) → Carrier
+- **batch_max_weight** (Integer) → Maximum weight
+- **weight_uom_name** (Char)
 
 
 
@@ -72,6 +68,7 @@ Allows to prepare batches depending on their carrier
 
 
 - No agrega campos
+
 
 
 

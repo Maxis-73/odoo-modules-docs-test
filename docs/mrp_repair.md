@@ -27,6 +27,7 @@
 
 
 
+
 ### mrp.production
 
 
@@ -37,9 +38,8 @@
 
 
 
-- Campos:
-
-  - **repair_count** (Integer)
+#### Campos
+- **repair_count** (Integer)
 
 
 
@@ -55,9 +55,8 @@
 
 
 
-- Campos:
-
-  - **production_count** (Integer) → Count of MOs generated
+#### Campos
+- **production_count** (Integer) → Count of MOs generated
 
 
 
@@ -74,6 +73,7 @@
 
 
 - No agrega campos
+
 
 
 

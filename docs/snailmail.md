@@ -12,6 +12,7 @@
 ## Descripción
 
 Allows users to send documents by post
+=====================================================
         
 
 
@@ -32,6 +33,7 @@ Allows users to send documents by post
 
 
 
+
 ### ir.actions.report
 
 
@@ -46,6 +48,7 @@ Allows users to send documents by post
 
 
 
+
 ### mail.notification
 
 
@@ -56,15 +59,10 @@ Allows users to send documents by post
 
 
 
-- Campos:
-
-  - **notification_type** (Selection)
-
-
-  - **letter_id** (Many2one) → snailmail.letter
-
-
-  - **failure_type** (Selection)
+#### Campos
+- **notification_type** (Selection)
+- **letter_id** (Many2one) → snailmail.letter
+- **failure_type** (Selection)
 
 
 
@@ -80,15 +78,10 @@ Allows users to send documents by post
 
 
 
-- Campos:
-
-  - **snailmail_error** (Boolean)
-
-
-  - **letter_ids** (One2many) → snailmail.letter
-
-
-  - **message_type** (Selection)
+#### Campos
+- **snailmail_error** (Boolean)
+- **letter_ids** (One2many) → snailmail.letter
+- **message_type** (Selection)
 
 
 
@@ -101,80 +94,48 @@ Allows users to send documents by post
 
 
 
-- Campos:
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **model** (Char) → Model
-
-
-  - **res_id** (Integer) → Document ID
-
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **report_template** (Many2one) → ir.actions.report
-
-
-  - **attachment_id** (Many2one) → ir.attachment
-
-
-  - **attachment_datas** (Binary) → Document
-
-
-  - **attachment_fname** (Char) → Attachment Filename
+#### Campos
+- **user_id** (Many2one) → res.users
+- **model** (Char) → Model
+- **res_id** (Integer) → Document ID
+- **partner_id** (Many2one) → res.partner
+- **company_id** (Many2one) → res.company
+- **report_template** (Many2one) → ir.actions.report
+- **attachment_id** (Many2one) → ir.attachment
+- **attachment_datas** (Binary) → Document
+- **attachment_fname** (Char) → Attachment Filename
+- **color** (Boolean)
+- **cover** (Boolean)
+- **duplex** (Boolean)
+- **state** (Selection)
+- **error_code** (Selection)
+- **info_msg** (Html) → Information
+- **reference** (Char)
+- **message_id** (Many2one) → mail.message
+- **notification_ids** (One2many) → mail.notification
+- **street** (Char) → Street
+- **street2** (Char) → Street2
+- **zip** (Char) → Zip
+- **city** (Char) → City
+- **state_id** (Many2one) → res.country.state
+- **country_id** (Many2one) → res.country
 
 
-  - **color** (Boolean)
 
 
-  - **cover** (Boolean)
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | snailmail.letter.list | `snailmail.snailmail_letter_list` | - |
+| form | snailmail.letter.form | `snailmail.snailmail_letter_form` | - |
 
 
-  - **duplex** (Boolean)
 
-
-  - **state** (Selection)
-
-
-  - **error_code** (Selection)
-
-
-  - **info_msg** (Html) → Information
-
-
-  - **reference** (Char)
-
-
-  - **message_id** (Many2one) → mail.message
-
-
-  - **notification_ids** (One2many) → mail.notification
-
-
-  - **street** (Char) → Street
-
-
-  - **street2** (Char) → Street2
-
-
-  - **zip** (Char) → Zip
-
-
-  - **city** (Char) → City
-
-
-  - **state_id** (Many2one) → res.country.state
-
-
-  - **country_id** (Many2one) → res.country
-
-
+**Botones (snailmail.snailmail_letter_form):**
+- **Send Now** (object)
+- **Cancel** (object)
 
 
 
@@ -188,18 +149,11 @@ Allows users to send documents by post
 
 
 
-- Campos:
-
-  - **snailmail_color** (Boolean)
-
-
-  - **snailmail_cover** (Boolean)
-
-
-  - **snailmail_duplex** (Boolean)
-
-
-  - **snailmail_cover_readonly** (Boolean)
+#### Campos
+- **snailmail_color** (Boolean)
+- **snailmail_cover** (Boolean)
+- **snailmail_duplex** (Boolean)
+- **snailmail_cover_readonly** (Boolean)
 
 
 
@@ -215,15 +169,10 @@ Allows users to send documents by post
 
 
 
-- Campos:
-
-  - **snailmail_color** (Boolean)
-
-
-  - **snailmail_cover** (Boolean)
-
-
-  - **snailmail_duplex** (Boolean)
+#### Campos
+- **snailmail_color** (Boolean)
+- **snailmail_cover** (Boolean)
+- **snailmail_duplex** (Boolean)
 
 
 
@@ -246,21 +195,10 @@ Allows users to send documents by post
 
 
 
-## Vistas
-
-
-### snailmail.letter
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | snailmail.letter.list | `snailmail.snailmail_letter_list` | - |
-| form | snailmail.letter.form | `snailmail.snailmail_letter_form` | - |
 
 
 
-#### Botones (snailmail.snailmail_letter_form)
-- **Send Now** (object)
-- **Cancel** (object)
+## Vistas Adicionales
 
 
 ### snailmail.letter.format.error
@@ -271,7 +209,7 @@ Allows users to send documents by post
 
 
 
-#### Botones (snailmail.snailmail_letter_format_error)
+**Botones (snailmail.snailmail_letter_format_error):**
 - **Update Config and Re-send** (object)
 - **Cancel Letter** (object)
 
@@ -284,7 +222,9 @@ Allows users to send documents by post
 
 
 
-#### Botones (snailmail.snailmail_letter_missing_required_fields)
+**Botones (snailmail.snailmail_letter_missing_required_fields):**
 - **Update address and re-send** (object)
 - **Cancel letter** (object)
+
+
 

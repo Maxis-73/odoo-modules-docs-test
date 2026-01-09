@@ -12,6 +12,7 @@
 ## Descripción
 
 New extensible file import for Odoo
+======================================
 
 Re-implement Odoo's file import system:
 
@@ -49,6 +50,7 @@ Re-implement Odoo's file import system:
 
 
 
+
 ### base_import.mapping
 
 
@@ -56,15 +58,10 @@ Re-implement Odoo's file import system:
 
 
 
-- Campos:
-
-  - **res_model** (Char)
-
-
-  - **column_name** (Char)
-
-
-  - **field_name** (Char)
+#### Campos
+- **res_model** (Char)
+- **column_name** (Char)
+- **field_name** (Char)
 
 
 
@@ -84,6 +81,7 @@ Re-implement Odoo's file import system:
 
 
 
+
 ### base_import.import
 
 
@@ -91,18 +89,11 @@ Re-implement Odoo's file import system:
 
 
 
-- Campos:
-
-  - **res_model** (Char) → Model
-
-
-  - **file** (Binary) → File
-
-
-  - **file_name** (Char) → File Name
-
-
-  - **file_type** (Char) → File Type
+#### Campos
+- **res_model** (Char) → Model
+- **file** (Binary) → File
+- **file_name** (Char) → File Name
+- **file_type** (Char) → File Type
 
 
 

@@ -33,12 +33,9 @@ take them into account in your stock valuation.
 
 
 
-- Campos:
-
-  - **target_model** (Selection)
-
-
-  - **mrp_production_ids** (Many2many) → mrp.production
+#### Campos
+- **target_model** (Selection)
+- **mrp_production_ids** (Many2many) → mrp.production
 
 
 

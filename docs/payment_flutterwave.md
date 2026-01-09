@@ -29,9 +29,8 @@ A Nigerian payment provider covering several African countries.
 
 
 
-- Campos:
-
-  - **flutterwave_customer_email** (Char)
+#### Campos
+- **flutterwave_customer_email** (Char)
 
 
 
@@ -51,6 +50,7 @@ A Nigerian payment provider covering several African countries.
 
 
 
+
 ### payment.provider
 
 
@@ -61,18 +61,11 @@ A Nigerian payment provider covering several African countries.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **flutterwave_public_key** (Char)
-
-
-  - **flutterwave_secret_key** (Char)
-
-
-  - **flutterwave_webhook_secret** (Char)
+#### Campos
+- **code** (Selection)
+- **flutterwave_public_key** (Char)
+- **flutterwave_secret_key** (Char)
+- **flutterwave_webhook_secret** (Char)
 
 
 

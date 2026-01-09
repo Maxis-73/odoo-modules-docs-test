@@ -28,9 +28,8 @@ This bridge module adds some smart buttons between Purchase and Subcontracting
 
 
 
-- Campos:
-
-  - **subcontracting_resupply_picking_count** (Integer) → Count of Subcontracting Resupply
+#### Campos
+- **subcontracting_resupply_picking_count** (Integer) → Count of Subcontracting Resupply
 
 
 
@@ -50,6 +49,7 @@ This bridge module adds some smart buttons between Purchase and Subcontracting
 
 
 
+
 ### stock.valuation.layer
 
 
@@ -61,6 +61,7 @@ This bridge module adds some smart buttons between Purchase and Subcontracting
 
 
 - No agrega campos
+
 
 
 
@@ -78,6 +79,7 @@ This bridge module adds some smart buttons between Purchase and Subcontracting
 
 
 
+
 ### stock.picking
 
 
@@ -88,9 +90,8 @@ This bridge module adds some smart buttons between Purchase and Subcontracting
 
 
 
-- Campos:
-
-  - **subcontracting_source_purchase_count** (Integer) → Number of subcontracting PO Source
+#### Campos
+- **subcontracting_source_purchase_count** (Integer) → Number of subcontracting PO Source
 
 
 
@@ -107,6 +108,7 @@ This bridge module adds some smart buttons between Purchase and Subcontracting
 
 
 - No agrega campos
+
 
 
 

@@ -12,6 +12,7 @@
 ## Descripción
 
 Mass mail event attendees
+=========================
 
 Bridge module adding UX requirements to ease mass mailing of event attendees.
         
@@ -34,6 +35,7 @@ Bridge module adding UX requirements to ease mass mailing of event attendees.
 
 
 
+
 ### event.registration
 
 
@@ -45,6 +47,7 @@ Bridge module adding UX requirements to ease mass mailing of event attendees.
 
 
 - No agrega campos
+
 
 
 

@@ -26,18 +26,11 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **parent_id** (Many2one) → export.one2many
-
-
-  - **str** (Char)
-
-
-  - **m2o** (Many2one) → export.integer
-
-
-  - **value** (Integer)
+#### Campos
+- **parent_id** (Many2one) → export.one2many
+- **str** (Char)
+- **m2o** (Many2one) → export.integer
+- **value** (Integer)
 
 
 
@@ -50,18 +43,11 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **parent_id** (Many2one) → export.one2many.recursive
-
-
-  - **const** (Integer)
-
-
-  - **child1** (One2many) → export.one2many.child.1
-
-
-  - **child2** (One2many) → export.one2many.child.2
+#### Campos
+- **parent_id** (Many2one) → export.one2many.recursive
+- **const** (Integer)
+- **child1** (One2many) → export.one2many.child.1
+- **child2** (One2many) → export.one2many.child.2
 
 
 
@@ -74,15 +60,10 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **parent_id** (Many2one) → export.one2many.multiple
-
-
-  - **str** (Char)
-
-
-  - **value** (Integer)
+#### Campos
+- **parent_id** (Many2one) → export.one2many.multiple
+- **str** (Char)
+- **value** (Integer)
 
 
 
@@ -102,6 +83,7 @@ This module contains tests related to base import and export.
 
 
 
+
 ### export.one2many.child.2
 
 
@@ -116,6 +98,7 @@ This module contains tests related to base import and export.
 
 
 
+
 ### export.many2many.other
 
 
@@ -123,12 +106,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **str** (Char)
-
-
-  - **value** (Integer)
+#### Campos
+- **str** (Char)
+- **value** (Integer)
 
 
 
@@ -141,12 +121,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **const** (Integer)
-
-
-  - **value** (Selection)
+#### Campos
+- **const** (Integer)
+- **value** (Selection)
 
 
 
@@ -159,12 +136,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Integer)
-
-
-  - **child** (One2many) → export.one2many.multiple
+#### Campos
+- **value** (Integer)
+- **child** (One2many) → export.one2many.multiple
 
 
 
@@ -177,15 +151,10 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Integer)
-
-
-  - **value2** (Integer)
-
-
-  - **value3** (Integer)
+#### Campos
+- **value** (Integer)
+- **value2** (Integer)
+- **value3** (Integer)
 
 
 
@@ -198,9 +167,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value_parent** (Integer)
+#### Campos
+- **value_parent** (Integer)
 
 
 
@@ -213,12 +181,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **parent_id** (Many2one) → export.inherits.parent
-
-
-  - **value** (Integer)
+#### Campos
+- **parent_id** (Many2one) → export.inherits.parent
+- **value** (Integer)
 
 
 
@@ -231,9 +196,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **child_id** (Many2one) → export.m2o.str.child
+#### Campos
+- **child_id** (Many2one) → export.m2o.str.child
 
 
 
@@ -246,9 +210,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -261,12 +224,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **value** (Integer)
+#### Campos
+- **name** (Char)
+- **value** (Integer)
 
 
 
@@ -279,9 +239,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **name** (Many2one) → export.with.required.field
+#### Campos
+- **name** (Many2one) → export.with.required.field
 
 
 
@@ -294,51 +253,22 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **int_sum** (Integer)
-
-
-  - **int_max** (Integer)
-
-
-  - **float_min** (Float)
-
-
-  - **float_avg** (Float)
-
-
-  - **float_monetary** (Monetary)
-
-
-  - **currency_id** (Many2one) → res.currency
-
-
-  - **date_max** (Date)
-
-
-  - **bool_and** (Boolean)
-
-
-  - **bool_or** (Boolean)
-
-
-  - **many2one** (Many2one) → export.integer
-
-
-  - **one2many** (One2many) → export.aggregator.one2many
-
-
-  - **active** (Boolean)
-
-
-  - **parent_id** (Many2one) → export.aggregator
-
-
-  - **definition_properties** (PropertiesDefinition) → Definitions
-
-
-  - **properties** (Properties) → Properties
+#### Campos
+- **int_sum** (Integer)
+- **int_max** (Integer)
+- **float_min** (Float)
+- **float_avg** (Float)
+- **float_monetary** (Monetary)
+- **currency_id** (Many2one) → res.currency
+- **date_max** (Date)
+- **bool_and** (Boolean)
+- **bool_or** (Boolean)
+- **many2one** (Many2one) → export.integer
+- **one2many** (One2many) → export.aggregator.one2many
+- **active** (Boolean)
+- **parent_id** (Many2one) → export.aggregator
+- **definition_properties** (PropertiesDefinition) → Definitions
+- **properties** (Properties) → Properties
 
 
 
@@ -351,18 +281,11 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **parent_id** (Many2one) → export.aggregator
-
-
-  - **value** (Integer)
-
-
-  - **active** (Boolean)
+#### Campos
+- **name** (Char)
+- **parent_id** (Many2one) → export.aggregator
+- **value** (Integer)
+- **active** (Boolean)
 
 
 
@@ -375,9 +298,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Char)
+#### Campos
+- **value** (Char)
 
 
 
@@ -390,9 +312,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Char)
+#### Campos
+- **value** (Char)
 
 
 
@@ -405,9 +326,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Char)
+#### Campos
+- **value** (Char)
 
 
 
@@ -420,9 +340,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Char)
+#### Campos
+- **value** (Char)
 
 
 
@@ -435,9 +354,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Char)
+#### Campos
+- **value** (Char)
 
 
 
@@ -450,9 +368,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Many2one) → import.m2o.related
+#### Campos
+- **value** (Many2one) → import.m2o.related
 
 
 
@@ -465,9 +382,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Integer)
+#### Campos
+- **value** (Integer)
 
 
 
@@ -480,9 +396,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Many2one) → import.m2o.required.related
+#### Campos
+- **value** (Many2one) → import.m2o.required.related
 
 
 
@@ -495,9 +410,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Integer)
+#### Campos
+- **value** (Integer)
 
 
 
@@ -510,12 +424,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **value** (One2many) → import.o2m.child
+#### Campos
+- **name** (Char)
+- **value** (One2many) → import.o2m.child
 
 
 
@@ -528,12 +439,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **parent_id** (Many2one) → import.o2m
-
-
-  - **value** (Integer)
+#### Campos
+- **parent_id** (Many2one) → import.o2m
+- **value** (Integer)
 
 
 
@@ -546,15 +454,10 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **somevalue** (Integer)
-
-
-  - **othervalue** (Integer)
+#### Campos
+- **name** (Char) → Name
+- **somevalue** (Integer)
+- **othervalue** (Integer)
 
 
 
@@ -567,15 +470,10 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **value** (Float)
-
-
-  - **value2** (Monetary)
-
-
-  - **currency_id** (Many2one) → res.currency
+#### Campos
+- **value** (Float)
+- **value2** (Monetary)
+- **currency_id** (Many2one) → res.currency
 
 
 
@@ -588,27 +486,14 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **f** (Float)
-
-
-  - **m** (Monetary)
-
-
-  - **c** (Char)
-
-
-  - **currency_id** (Many2one) → res.currency
-
-
-  - **d** (Date)
-
-
-  - **dt** (Datetime)
-
-
-  - **parent_id** (Many2one) → import.complex
+#### Campos
+- **f** (Float)
+- **m** (Monetary)
+- **c** (Char)
+- **currency_id** (Many2one) → res.currency
+- **d** (Date)
+- **dt** (Datetime)
+- **parent_id** (Many2one) → import.complex
 
 
 
@@ -621,15 +506,10 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **properties_definition** (PropertiesDefinition)
-
-
-  - **record_properties_ids** (One2many) → import.properties
-
-
-  - **main_properties_record_id** (Many2one) → import.properties
+#### Campos
+- **properties_definition** (PropertiesDefinition)
+- **record_properties_ids** (One2many) → import.properties
+- **main_properties_record_id** (Many2one) → import.properties
 
 
 
@@ -642,12 +522,9 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **properties** (Properties)
-
-
-  - **record_definition_id** (Many2one) → import.properties.definition
+#### Campos
+- **properties** (Properties)
+- **record_definition_id** (Many2one) → import.properties.definition
 
 
 
@@ -660,9 +537,8 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **parent_id** (Many2one) → import.properties
+#### Campos
+- **parent_id** (Many2one) → import.properties
 
 
 
@@ -675,15 +551,10 @@ This module contains tests related to base import and export.
 
 
 
-- Campos:
-
-  - **properties_id** (Many2one) → import.properties
-
-
-  - **another_properties_id** (Many2one) → import.properties
-
-
-  - **all_properties_ids** (Many2many) → import.properties
+#### Campos
+- **properties_id** (Many2one) → import.properties
+- **another_properties_id** (Many2one) → import.properties
+- **all_properties_ids** (Many2many) → import.properties
 
 
 

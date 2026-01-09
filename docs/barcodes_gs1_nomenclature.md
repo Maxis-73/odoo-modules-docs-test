@@ -26,12 +26,9 @@ Parse barcodes according to the GS1-128 specifications
 
 
 
-- Campos:
-
-  - **is_gs1_nomenclature** (Boolean)
-
-
-  - **gs1_separator_fnc1** (Char)
+#### Campos
+- **is_gs1_nomenclature** (Boolean)
+- **gs1_separator_fnc1** (Char)
 
 
 
@@ -47,24 +44,13 @@ Parse barcodes according to the GS1-128 specifications
 
 
 
-- Campos:
-
-  - **encoding** (Selection)
-
-
-  - **type** (Selection)
-
-
-  - **is_gs1_nomenclature** (Boolean)
-
-
-  - **gs1_content_type** (Selection)
-
-
-  - **gs1_decimal_usage** (Boolean) → Decimal
-
-
-  - **associated_uom_id** (Many2one) → uom.uom
+#### Campos
+- **encoding** (Selection)
+- **type** (Selection)
+- **is_gs1_nomenclature** (Boolean)
+- **gs1_content_type** (Selection)
+- **gs1_decimal_usage** (Boolean) → Decimal
+- **associated_uom_id** (Many2one) → uom.uom
 
 
 
@@ -81,6 +67,7 @@ Parse barcodes according to the GS1-128 specifications
 
 
 - No agrega campos
+
 
 
 

@@ -33,6 +33,7 @@ Adds a full traceability of inventory operations on the profitability report.
 
 
 
+
 ### stock.move
 
 
@@ -44,6 +45,7 @@ Adds a full traceability of inventory operations on the profitability report.
 
 
 - No agrega campos
+
 
 
 
@@ -61,6 +63,7 @@ Adds a full traceability of inventory operations on the profitability report.
 
 
 
+
 ### stock.picking
 
 
@@ -72,6 +75,7 @@ Adds a full traceability of inventory operations on the profitability report.
 
 
 - No agrega campos
+
 
 
 

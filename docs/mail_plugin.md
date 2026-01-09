@@ -26,16 +26,21 @@ Integrate Odoo with your mailbox, get information about contacts directly inside
 
 
 
-- Campos:
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **iap_search_domain** (Char) → Search Domain / Email
+#### Campos
+- **partner_id** (Many2one) → res.partner
+- **iap_search_domain** (Char) → Search Domain / Email
+- **iap_enrich_info** (Text) → IAP Enrich Info
 
 
-  - **iap_enrich_info** (Text) → IAP Enrich Info
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | res.partner.iap.view.form | `mail_plugin.res_partner_iap_view_form` | - |
+| list | res.partner.iap.view.list | `mail_plugin.res_partner_iap_view_tree` | - |
 
 
 
@@ -54,6 +59,7 @@ Integrate Odoo with your mailbox, get information about contacts directly inside
 
 
 
+
 ### res.partner
 
 
@@ -64,12 +70,9 @@ Integrate Odoo with your mailbox, get information about contacts directly inside
 
 
 
-- Campos:
-
-  - **iap_enrich_info** (Text) → IAP Enrich Info
-
-
-  - **iap_search_domain** (Char) → Search Domain / Email
+#### Campos
+- **iap_enrich_info** (Text) → IAP Enrich Info
+- **iap_search_domain** (Char) → Search Domain / Email
 
 
 
@@ -78,14 +81,5 @@ Integrate Odoo with your mailbox, get information about contacts directly inside
 
 
 
-## Vistas
-
-
-### res.partner.iap
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | res.partner.iap.view.form | `mail_plugin.res_partner_iap_view_form` | - |
-| list | res.partner.iap.view.list | `mail_plugin.res_partner_iap_view_tree` | - |
 
 

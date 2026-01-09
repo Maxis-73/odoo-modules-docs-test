@@ -32,18 +32,11 @@ by choosing product variants quantity through a Grid Entry.
 
 
 
-- Campos:
-
-  - **report_grids** (Boolean)
-
-
-  - **grid_product_tmpl_id** (Many2one) → product.template
-
-
-  - **grid_update** (Boolean)
-
-
-  - **grid** (Char) → Matrix local storage
+#### Campos
+- **report_grids** (Boolean)
+- **grid_product_tmpl_id** (Many2one) → product.template
+- **grid_update** (Boolean)
+- **grid** (Char) → Matrix local storage
 
 
 
@@ -59,9 +52,8 @@ by choosing product variants quantity through a Grid Entry.
 
 
 
-- Campos:
-
-  - **product_add_mode** (Selection)
+#### Campos
+- **product_add_mode** (Selection)
 
 
 
@@ -77,9 +69,8 @@ by choosing product variants quantity through a Grid Entry.
 
 
 
-- Campos:
-
-  - **product_add_mode** (Selection)
+#### Campos
+- **product_add_mode** (Selection)
 
 
 

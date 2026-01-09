@@ -12,6 +12,7 @@
 ## Descripción
 
 Odoo Web Editor widget.
+==========================
 
 
 
@@ -30,6 +31,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### html.field.history.mixin
 
 
@@ -37,12 +39,9 @@ Odoo Web Editor widget.
 
 
 
-- Campos:
-
-  - **html_field_history** (Json) → History data
-
-
-  - **html_field_history_metadata** (Json) → History metadata
+#### Campos
+- **html_field_history** (Json) → History data
+- **html_field_history_metadata** (Json) → History metadata
 
 
 
@@ -62,6 +61,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### web_editor.converter.test
 
 
@@ -69,39 +69,18 @@ Odoo Web Editor widget.
 
 
 
-- Campos:
-
-  - **char** (Char)
-
-
-  - **integer** (Integer)
-
-
-  - **float** (Float)
-
-
-  - **numeric** (Float)
-
-
-  - **many2one** (Many2one) → web_editor.converter.test.sub
-
-
-  - **binary** (Binary)
-
-
-  - **date** (Date)
-
-
-  - **datetime** (Datetime)
-
-
-  - **selection_str** (Selection)
-
-
-  - **html** (Html)
-
-
-  - **text** (Text)
+#### Campos
+- **char** (Char)
+- **integer** (Integer)
+- **float** (Float)
+- **numeric** (Float)
+- **many2one** (Many2one) → web_editor.converter.test.sub
+- **binary** (Binary)
+- **date** (Date)
+- **datetime** (Datetime)
+- **selection_str** (Selection)
+- **html** (Html)
+- **text** (Text)
 
 
 
@@ -114,9 +93,8 @@ Odoo Web Editor widget.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -136,6 +114,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.websocket
 
 
@@ -150,6 +129,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb
 
 
@@ -161,6 +141,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -178,6 +159,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb.field.integer
 
 
@@ -189,6 +171,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -206,6 +189,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb.field.many2one
 
 
@@ -217,6 +201,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -234,6 +219,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb.field.date
 
 
@@ -245,6 +231,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -262,6 +249,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb.field.text
 
 
@@ -273,6 +261,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -290,6 +279,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb.field.html
 
 
@@ -301,6 +291,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -318,6 +309,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb.field.monetary
 
 
@@ -329,6 +321,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -346,6 +339,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb.field.relative
 
 
@@ -357,6 +351,7 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
 
 
 
@@ -374,6 +369,7 @@ Odoo Web Editor widget.
 
 
 
+
 ### ir.qweb
 
 
@@ -388,19 +384,6 @@ Odoo Web Editor widget.
 
 
 
-### base
-
-
-- Hereda de:
-
-  - base
-
-
-
-
-- No agrega campos
-
-
 
 ### base
 
@@ -413,6 +396,22 @@ Odoo Web Editor widget.
 
 
 - No agrega campos
+
+
+
+
+### base
+
+
+- Hereda de:
+
+  - base
+
+
+
+
+- No agrega campos
+
 
 
 

@@ -26,13 +26,19 @@ Manage skills of your employees
 
 
 
-- Campos:
+#### Campos
+- **candidate_skill_ids** (One2many)
+- **skill_ids** (Many2many)
 
-  - **candidate_skill_ids** (One2many)
 
 
-  - **skill_ids** (Many2many)
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | hr.applicant.view.form.inherit.hr.recruitment.skills | `hr_recruitment_skills.hr_applicant_view_form` | hr_recruitment.hr_applicant_view_form |
 
 
 
@@ -44,22 +50,22 @@ Manage skills of your employees
 
 
 
-- Campos:
-
-  - **candidate_id** (Many2one) → hr.candidate
-
-
-  - **skill_id** (Many2one) → hr.skill
-
-
-  - **skill_level_id** (Many2one) → hr.skill.level
+#### Campos
+- **candidate_id** (Many2one) → hr.candidate
+- **skill_id** (Many2one) → hr.skill
+- **skill_level_id** (Many2one) → hr.skill.level
+- **skill_type_id** (Many2one) → hr.skill.type
+- **level_progress** (Integer)
 
 
-  - **skill_type_id** (Many2one) → hr.skill.type
 
 
-  - **level_progress** (Integer)
 
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | hr.candidate.skill.view.form | `hr_recruitment_skills.hr_applicant_skill_view_form` | - |
 
 
 
@@ -74,22 +80,22 @@ Manage skills of your employees
 
 
 
-- Campos:
-
-  - **candidate_skill_ids** (One2many) → hr.candidate.skill
-
-
-  - **skill_ids** (Many2many) → hr.skill
-
-
-  - **matching_skill_ids** (Many2many) → hr.skill
+#### Campos
+- **candidate_skill_ids** (One2many) → hr.candidate.skill
+- **skill_ids** (Many2many) → hr.skill
+- **matching_skill_ids** (Many2many) → hr.skill
+- **missing_skill_ids** (Many2many) → hr.skill
+- **matching_score** (Float)
 
 
-  - **missing_skill_ids** (Many2many) → hr.skill
 
 
-  - **matching_score** (Float)
 
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | hr.candidate.view.form.inherit.hr.recruitment.skills | `hr_recruitment_skills.hr_candidate_view_form` | hr_recruitment.hr_candidate_view_form |
 
 
 
@@ -104,10 +110,8 @@ Manage skills of your employees
 
 
 
-- Campos:
-
-  - **skill_ids** (Many2many) → hr.skill
-
+#### Campos
+- **skill_ids** (Many2many) → hr.skill
 
 
 
@@ -115,29 +119,6 @@ Manage skills of your employees
 
 
 
-## Vistas
 
-
-### hr.candidate.skill
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | hr.candidate.skill.view.form | `hr_recruitment_skills.hr_applicant_skill_view_form` | - |
-
-
-
-### hr.applicant
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | hr.applicant.view.form.inherit.hr.recruitment.skills | `hr_recruitment_skills.hr_applicant_view_form` | hr_recruitment.hr_applicant_view_form |
-
-
-
-### hr.candidate
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | hr.candidate.view.form.inherit.hr.recruitment.skills | `hr_recruitment_skills.hr_candidate_view_form` | hr_recruitment.hr_candidate_view_form |
 
 

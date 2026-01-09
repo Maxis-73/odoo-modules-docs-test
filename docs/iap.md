@@ -28,21 +28,12 @@ to support In-App purchases inside Odoo.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **technical_name** (Char)
-
-
-  - **description** (Char)
-
-
-  - **unit_name** (Char)
-
-
-  - **integer_balance** (Boolean)
+#### Campos
+- **name** (Char)
+- **technical_name** (Char)
+- **description** (Char)
+- **unit_name** (Char)
+- **integer_balance** (Boolean)
 
 
 
@@ -59,6 +50,7 @@ to support In-App purchases inside Odoo.
 
 
 
+
 ### iap.account
 
 
@@ -66,51 +58,24 @@ to support In-App purchases inside Odoo.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **service_id** (Many2one) → iap.service
-
-
-  - **service_name** (Char)
-
-
-  - **service_locked** (Boolean)
-
-
-  - **description** (Char)
-
-
-  - **account_token** (Char)
-
-
-  - **company_ids** (Many2many) → res.company
-
-
-  - **balance** (Char)
-
-
-  - **warning_threshold** (Float) → Email Alert Threshold
-
-
-  - **warning_user_ids** (Many2many) → res.users
-
-
-  - **state** (Selection)
+#### Campos
+- **name** (Char)
+- **service_id** (Many2one) → iap.service
+- **service_name** (Char)
+- **service_locked** (Boolean)
+- **description** (Char)
+- **account_token** (Char)
+- **company_ids** (Many2many) → res.company
+- **balance** (Char)
+- **warning_threshold** (Float) → Email Alert Threshold
+- **warning_user_ids** (Many2many) → res.users
+- **state** (Selection)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### iap.account
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -119,6 +84,13 @@ to support In-App purchases inside Odoo.
 
 
 
-#### Botones (iap.iap_account_view_form)
+**Botones (iap.iap_account_view_form):**
 - **action_buy_credits** (object)
+
+
+
+
+
+
+
 

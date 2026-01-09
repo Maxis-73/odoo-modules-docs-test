@@ -34,15 +34,10 @@ The wizard used is similar as the one for the credit note.
 
 
 
-- Campos:
-
-  - **debit_origin_id** (Many2one) → account.move
-
-
-  - **debit_note_ids** (One2many) → account.move
-
-
-  - **debit_note_count** (Integer) → Number of Debit Notes
+#### Campos
+- **debit_origin_id** (Many2one) → account.move
+- **debit_note_ids** (One2many) → account.move
+- **debit_note_count** (Integer) → Number of Debit Notes
 
 
 
@@ -58,10 +53,8 @@ The wizard used is similar as the one for the credit note.
 
 
 
-- Campos:
-
-  - **debit_sequence** (Boolean)
-
+#### Campos
+- **debit_sequence** (Boolean)
 
 
 
@@ -69,7 +62,10 @@ The wizard used is similar as the one for the credit note.
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### account.debit.note
@@ -80,6 +76,8 @@ The wizard used is similar as the one for the credit note.
 
 
 
-#### Botones (account_debit_note.view_account_debit_note)
+**Botones (account_debit_note.view_account_debit_note):**
 - **Create Debit Note** (object)
+
+
 

@@ -47,6 +47,7 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
+
 ### res.partner.activation
 
 
@@ -54,17 +55,28 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
-- Campos:
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **name** (Char) → Name
+#### Campos
+- **sequence** (Integer) → Sequence
+- **name** (Char) → Name
+- **active** (Boolean)
 
 
-  - **active** (Boolean)
 
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | res.partner.activation.form | `website_crm_partner_assign.res_partner_activation_form` | - |
+| list | res.partner.activation.list | `website_crm_partner_assign.res_partner_activation_tree` | - |
+| search | res.partner.activation.view.search | `website_crm_partner_assign.res_partner_activation_view_search` | - |
+
+
+
+**Filtros de búsqueda (website_crm_partner_assign.res_partner_activation_view_search):**
+
+- **Archived** (`[('active', '=', False)]`)
 
 
 
@@ -80,20 +92,29 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
-- Campos:
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **active** (Boolean) → Active
-
-
-  - **name** (Char) → Level Name
+#### Campos
+- **sequence** (Integer) → Sequence
+- **active** (Boolean) → Active
+- **name** (Char) → Level Name
+- **partner_weight** (Integer) → Level Weight
 
 
-  - **partner_weight** (Integer) → Level Weight
 
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | res.partner.grade.list | `website_crm_partner_assign.view_partner_grade_tree` | - |
+| form | res.partner.grade.form | `website_crm_partner_assign.view_partner_grade_form` | - |
+| search | res.partner.grade.view.search | `website_crm_partner_assign.res_partner_grade_view_search` | - |
+
+
+
+**Filtros de búsqueda (website_crm_partner_assign.res_partner_grade_view_search):**
+
+- **Archived** (`[('active', '=', False)]`)
 
 
 
@@ -107,21 +128,12 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
-- Campos:
-
-  - **partner_latitude** (Float) → Geo Latitude
-
-
-  - **partner_longitude** (Float) → Geo Longitude
-
-
-  - **partner_assigned_id** (Many2one) → res.partner
-
-
-  - **partner_declined_ids** (Many2many) → res.partner
-
-
-  - **date_partner_assign** (Date) → Partner Assignment Date
+#### Campos
+- **partner_latitude** (Float) → Geo Latitude
+- **partner_longitude** (Float) → Geo Longitude
+- **partner_assigned_id** (Many2one) → res.partner
+- **partner_declined_ids** (Many2many) → res.partner
+- **date_partner_assign** (Date) → Partner Assignment Date
 
 
 
@@ -137,36 +149,17 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
-- Campos:
-
-  - **partner_weight** (Integer) → Level Weight
-
-
-  - **grade_id** (Many2one) → res.partner.grade
-
-
-  - **grade_sequence** (Integer)
-
-
-  - **activation** (Many2one) → res.partner.activation
-
-
-  - **date_partnership** (Date) → Partnership Date
-
-
-  - **date_review** (Date) → Latest Partner Review
-
-
-  - **date_review_next** (Date) → Next Partner Review
-
-
-  - **assigned_partner_id** (Many2one) → res.partner
-
-
-  - **implemented_partner_ids** (One2many) → res.partner
-
-
-  - **implemented_partner_count** (Integer)
+#### Campos
+- **partner_weight** (Integer) → Level Weight
+- **grade_id** (Many2one) → res.partner.grade
+- **grade_sequence** (Integer)
+- **activation** (Many2one) → res.partner.activation
+- **date_partnership** (Date) → Partnership Date
+- **date_review** (Date) → Latest Partner Review
+- **date_review_next** (Date) → Next Partner Review
+- **assigned_partner_id** (Many2one) → res.partner
+- **implemented_partner_ids** (One2many) → res.partner
+- **implemented_partner_count** (Integer)
 
 
 
@@ -175,39 +168,9 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
-## Vistas
 
 
-### res.partner.grade
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | res.partner.grade.list | `website_crm_partner_assign.view_partner_grade_tree` | - |
-| form | res.partner.grade.form | `website_crm_partner_assign.view_partner_grade_form` | - |
-| search | res.partner.grade.view.search | `website_crm_partner_assign.res_partner_grade_view_search` | - |
-
-
-
-#### Filtros de búsqueda (website_crm_partner_assign.res_partner_grade_view_search)
-
-**Filtros:**
-- **Archived** (`[('active', '=', False)]`)
-
-
-### res.partner.activation
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | res.partner.activation.form | `website_crm_partner_assign.res_partner_activation_form` | - |
-| list | res.partner.activation.list | `website_crm_partner_assign.res_partner_activation_tree` | - |
-| search | res.partner.activation.view.search | `website_crm_partner_assign.res_partner_activation_view_search` | - |
-
-
-
-#### Filtros de búsqueda (website_crm_partner_assign.res_partner_activation_view_search)
-
-**Filtros:**
-- **Archived** (`[('active', '=', False)]`)
+## Vistas Adicionales
 
 
 ### crm.lead.forward.to.partner
@@ -218,7 +181,7 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
-#### Botones (website_crm_partner_assign.crm_lead_forward_to_partner_form)
+**Botones (website_crm_partner_assign.crm_lead_forward_to_partner_form):**
 - **Send** (object)
 
 
@@ -231,16 +194,17 @@ The automatic assignment is figured from the weight of partner levels and the ge
 
 
 
-#### Filtros de búsqueda (website_crm_partner_assign.view_report_crm_partner_assign_filter)
+**Filtros de búsqueda (website_crm_partner_assign.view_report_crm_partner_assign_filter):**
 
-**Filtros:**
 - **filter_date_partnership**
 - **filter_date_review**
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Salesperson
 - Partner
 - Date Partnership
 - Date Review
+
+
 

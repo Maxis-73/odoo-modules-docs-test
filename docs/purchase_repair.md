@@ -26,9 +26,8 @@ Keep track of linked purchase and repair orders
 
 
 
-- Campos:
-
-  - **repair_count** (Integer)
+#### Campos
+- **repair_count** (Integer)
 
 
 
@@ -44,9 +43,8 @@ Keep track of linked purchase and repair orders
 
 
 
-- Campos:
-
-  - **purchase_count** (Integer)
+#### Campos
+- **purchase_count** (Integer)
 
 
 

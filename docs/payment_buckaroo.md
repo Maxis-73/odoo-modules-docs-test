@@ -33,6 +33,7 @@ A Dutch payment provider covering several countries in Europe.
 
 
 
+
 ### payment.provider
 
 
@@ -43,15 +44,10 @@ A Dutch payment provider covering several countries in Europe.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **buckaroo_website_key** (Char)
-
-
-  - **buckaroo_secret_key** (Char)
+#### Campos
+- **code** (Selection)
+- **buckaroo_website_key** (Char)
+- **buckaroo_secret_key** (Char)
 
 
 

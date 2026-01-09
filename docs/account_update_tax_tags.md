@@ -23,9 +23,14 @@ Allow updating tax grids on existing entries
 
 
 
+## Modelos
 
 
-## Vistas
+
+
+
+
+## Vistas Adicionales
 
 
 ### account.update.tax.tags.wizard
@@ -36,6 +41,8 @@ Allow updating tax grids on existing entries
 
 
 
-#### Botones (account_update_tax_tags.view_account_update_tax_tags_wizard_form)
+**Botones (account_update_tax_tags.view_account_update_tax_tags_wizard_form):**
 - **Update** (object)
+
+
 

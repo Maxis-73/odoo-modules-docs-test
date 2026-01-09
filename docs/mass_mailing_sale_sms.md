@@ -29,9 +29,8 @@ Mass mailing sms on sale orders
 
 
 
-- Campos:
-
-  - **ab_testing_sms_winner_selection** (Selection)
+#### Campos
+- **ab_testing_sms_winner_selection** (Selection)
 
 
 

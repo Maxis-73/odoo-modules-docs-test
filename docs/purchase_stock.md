@@ -26,39 +26,18 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **incoterm_location** (Char)
-
-
-  - **incoming_picking_count** (Integer) → Incoming Shipment count
-
-
-  - **picking_ids** (Many2many) → stock.picking
-
-
-  - **dest_address_id** (Many2one) → res.partner
-
-
-  - **picking_type_id** (Many2one) → stock.picking.type
-
-
-  - **default_location_dest_id_usage** (Selection)
-
-
-  - **group_id** (Many2one) → procurement.group
-
-
-  - **is_shipped** (Boolean)
-
-
-  - **effective_date** (Datetime) → Arrival
-
-
-  - **on_time_rate** (Float)
-
-
-  - **receipt_status** (Selection)
+#### Campos
+- **incoterm_location** (Char)
+- **incoming_picking_count** (Integer) → Incoming Shipment count
+- **picking_ids** (Many2many) → stock.picking
+- **dest_address_id** (Many2one) → res.partner
+- **picking_type_id** (Many2one) → stock.picking.type
+- **default_location_dest_id_usage** (Selection)
+- **group_id** (Many2one) → procurement.group
+- **is_shipped** (Boolean)
+- **effective_date** (Datetime) → Arrival
+- **on_time_rate** (Float)
+- **receipt_status** (Selection)
 
 
 
@@ -74,12 +53,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **purchase_line_id** (Many2one) → purchase.order.line
-
-
-  - **created_purchase_line_ids** (Many2many) → purchase.order.line
+#### Campos
+- **purchase_line_id** (Many2one) → purchase.order.line
+- **created_purchase_line_ids** (Many2many) → purchase.order.line
 
 
 
@@ -99,6 +75,7 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
+
 ### stock.rule
 
 
@@ -109,9 +86,8 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **action** (Selection)
+#### Campos
+- **action** (Selection)
 
 
 
@@ -131,6 +107,7 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
+
 ### product.category
 
 
@@ -141,9 +118,8 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **property_account_creditor_price_difference_categ** (Many2one) → account.account
+#### Campos
+- **property_account_creditor_price_difference_categ** (Many2one) → account.account
 
 
 
@@ -159,12 +135,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **property_account_creditor_price_difference** (Many2one) → account.account
-
-
-  - **route_ids** (Many2many)
+#### Campos
+- **property_account_creditor_price_difference** (Many2one) → account.account
+- **route_ids** (Many2many)
 
 
 
@@ -180,9 +153,8 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **purchase_order_line_ids** (One2many) → purchase.order.line
+#### Campos
+- **purchase_order_line_ids** (One2many) → purchase.order.line
 
 
 
@@ -198,12 +170,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **last_purchase_date** (Date) → Last Purchase
-
-
-  - **show_set_supplier_button** (Boolean) → Show Set Supplier Button
+#### Campos
+- **last_purchase_date** (Date) → Last Purchase
+- **show_set_supplier_button** (Boolean) → Show Set Supplier Button
 
 
 
@@ -219,15 +188,10 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **purchase_id** (Many2one) → purchase.order
-
-
-  - **days_to_arrive** (Datetime)
-
-
-  - **delay_pass** (Datetime)
+#### Campos
+- **purchase_id** (Many2one) → purchase.order
+- **days_to_arrive** (Datetime)
+- **delay_pass** (Datetime)
 
 
 
@@ -243,12 +207,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **buy_to_resupply** (Boolean) → Buy to Resupply
-
-
-  - **buy_pull_id** (Many2one) → stock.rule
+#### Campos
+- **buy_to_resupply** (Boolean) → Buy to Resupply
+- **buy_pull_id** (Many2one) → stock.rule
 
 
 
@@ -268,6 +229,7 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
+
 ### stock.warehouse.orderpoint
 
 
@@ -278,21 +240,12 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **show_supplier** (Boolean) → Show supplier column
-
-
-  - **supplier_id** (Many2one) → product.supplierinfo
-
-
-  - **vendor_id** (Many2one)
-
-
-  - **purchase_visibility_days** (Float)
-
-
-  - **product_supplier_id** (Many2one) → res.partner
+#### Campos
+- **show_supplier** (Boolean) → Show supplier column
+- **supplier_id** (Many2one) → product.supplierinfo
+- **vendor_id** (Many2one)
+- **purchase_visibility_days** (Float)
+- **product_supplier_id** (Many2one) → res.partner
 
 
 
@@ -308,13 +261,19 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
+#### Campos
+- **purchase_order_ids** (Many2many) → purchase.order
+- **purchase_order_count** (Integer) → Purchase order count
 
-  - **purchase_order_ids** (Many2many) → purchase.order
 
 
-  - **purchase_order_count** (Integer) → Purchase order count
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | stock.production.lot.view.form | `purchase_stock.stock_production_lot_view_form` | stock.view_production_lot_form |
 
 
 
@@ -329,9 +288,8 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **purchase_line_ids** (One2many) → purchase.order.line
+#### Campos
+- **purchase_line_ids** (One2many) → purchase.order.line
 
 
 
@@ -347,15 +305,10 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **module_stock_dropshipping** (Boolean) → Dropshipping
-
-
-  - **days_to_purchase** (Float)
-
-
-  - **is_installed_sale** (Boolean)
+#### Campos
+- **module_stock_dropshipping** (Boolean) → Dropshipping
+- **days_to_purchase** (Float)
+- **is_installed_sale** (Boolean)
 
 
 
@@ -375,6 +328,7 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
+
 ### res.company
 
 
@@ -385,9 +339,8 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **days_to_purchase** (Float)
+#### Campos
+- **days_to_purchase** (Float)
 
 
 
@@ -403,36 +356,17 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **qty_received_method** (Selection)
-
-
-  - **move_ids** (One2many) → stock.move
-
-
-  - **orderpoint_id** (Many2one) → stock.warehouse.orderpoint
-
-
-  - **move_dest_ids** (Many2many) → stock.move
-
-
-  - **product_description_variants** (Char) → Custom Description
-
-
-  - **propagate_cancel** (Boolean) → Propagate cancellation
-
-
-  - **forecasted_issue** (Boolean)
-
-
-  - **is_storable** (Boolean)
-
-
-  - **location_final_id** (Many2one) → stock.location
-
-
-  - **group_id** (Many2one) → procurement.group
+#### Campos
+- **qty_received_method** (Selection)
+- **move_ids** (One2many) → stock.move
+- **orderpoint_id** (Many2one) → stock.warehouse.orderpoint
+- **move_dest_ids** (Many2many) → stock.move
+- **product_description_variants** (Char) → Custom Description
+- **propagate_cancel** (Boolean) → Propagate cancellation
+- **forecasted_issue** (Boolean)
+- **is_storable** (Boolean)
+- **location_final_id** (Many2one) → stock.location
+- **group_id** (Many2one) → procurement.group
 
 
 
@@ -448,12 +382,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **purchase_line_ids** (One2many) → purchase.order.line
-
-
-  - **on_time_rate** (Float) → On-Time Delivery Rate
+#### Campos
+- **purchase_line_ids** (One2many) → purchase.order.line
+- **on_time_rate** (Float) → On-Time Delivery Rate
 
 
 
@@ -469,12 +400,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-- Campos:
-
-  - **supplier_id** (Many2one) → product.supplierinfo
-
-
-  - **show_vendor** (Boolean)
+#### Campos
+- **supplier_id** (Many2one) → product.supplierinfo
+- **show_vendor** (Boolean)
 
 
 
@@ -483,15 +411,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-## Vistas
 
 
-### stock.lot
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | stock.production.lot.view.form | `purchase_stock.stock_production_lot_view_form` | stock.view_production_lot_form |
-
+## Vistas Adicionales
 
 
 ### vendor.delay.report
@@ -503,8 +425,9 @@ Purchase Orders, Receipts, Vendor Bills for Stock
 
 
 
-#### Filtros de búsqueda (purchase_stock.vendor_delay_report_filter)
+**Filtros de búsqueda (purchase_stock.vendor_delay_report_filter):**
 
-**Filtros:**
 - **Effective Date Last Year** (`[('date', '>=', ((context_today()-relativedelta(years=1)).strftime('%Y-%m-%d')))]`)
+
+
 

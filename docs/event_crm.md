@@ -23,12 +23,9 @@ Create leads from event registrations.
 
 
 
-- Campos:
-
-  - **event_id** (Many2one) → event.event
-
-
-  - **processed_registration_id** (Integer) → Processed Registration
+#### Campos
+- **event_id** (Many2one) → event.event
+- **processed_registration_id** (Integer) → Processed Registration
 
 
 
@@ -41,47 +38,43 @@ Create leads from event registrations.
 
 
 
-- Campos:
-
-  - **name** (Char) → Rule Name
-
-
-  - **active** (Boolean) → Active
-
-
-  - **lead_ids** (One2many) → crm.lead
-
-
-  - **lead_creation_basis** (Selection)
-
-
-  - **lead_creation_trigger** (Selection)
-
-
-  - **event_type_ids** (Many2many) → event.type
+#### Campos
+- **name** (Char) → Rule Name
+- **active** (Boolean) → Active
+- **lead_ids** (One2many) → crm.lead
+- **lead_creation_basis** (Selection)
+- **lead_creation_trigger** (Selection)
+- **event_type_ids** (Many2many) → event.type
+- **event_id** (Many2one) → event.event
+- **company_id** (Many2one) → res.company
+- **event_registration_filter** (Text)
+- **lead_type** (Selection)
+- **lead_sales_team_id** (Many2one) → crm.team
+- **lead_user_id** (Many2one) → res.users
+- **lead_tag_ids** (Many2many) → crm.tag
 
 
-  - **event_id** (Many2one) → event.event
 
 
-  - **company_id** (Many2one) → res.company
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | event.lead.rule.view.search | `event_crm.event_lead_rule_view_search` | - |
+| list | event.lead.rule.view.list | `event_crm.event_lead_rule_view_tree` | - |
+| form | event.lead.rule.view.form | `event_crm.event_lead_rule_view_form` | - |
 
 
-  - **event_registration_filter** (Text)
+
+**Filtros de búsqueda (event_crm.event_lead_rule_view_search):**
+
+- **Archived** (`[('active', '=', False)]`)
 
 
-  - **lead_type** (Selection)
-
-
-  - **lead_sales_team_id** (Many2one) → crm.team
-
-
-  - **lead_user_id** (Many2one) → res.users
-
-
-  - **lead_tag_ids** (Many2many) → crm.tag
-
-
+*Agrupar por:*
+- Creation Type
+- Trigger Type
 
 
 
@@ -95,15 +88,10 @@ Create leads from event registrations.
 
 
 
-- Campos:
-
-  - **lead_ids** (One2many) → crm.lead
-
-
-  - **lead_count** (Integer)
-
-
-  - **has_lead_request** (Boolean) → Ongoing Generation Request
+#### Campos
+- **lead_ids** (One2many) → crm.lead
+- **lead_count** (Integer)
+- **has_lead_request** (Boolean) → Ongoing Generation Request
 
 
 
@@ -119,12 +107,9 @@ Create leads from event registrations.
 
 
 
-- Campos:
-
-  - **lead_ids** (Many2many) → crm.lead
-
-
-  - **lead_count** (Integer) → # Leads
+#### Campos
+- **lead_ids** (Many2many) → crm.lead
+- **lead_count** (Integer) → # Leads
 
 
 
@@ -140,18 +125,11 @@ Create leads from event registrations.
 
 
 
-- Campos:
-
-  - **event_lead_rule_id** (Many2one) → event.lead.rule
-
-
-  - **event_id** (Many2one) → event.event
-
-
-  - **registration_ids** (Many2many) → event.registration
-
-
-  - **registration_count** (Integer)
+#### Campos
+- **event_lead_rule_id** (Many2one) → event.lead.rule
+- **event_id** (Many2one) → event.event
+- **registration_ids** (Many2many) → event.registration
+- **registration_count** (Integer)
 
 
 
@@ -160,26 +138,5 @@ Create leads from event registrations.
 
 
 
-## Vistas
 
-
-### event.lead.rule
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | event.lead.rule.view.search | `event_crm.event_lead_rule_view_search` | - |
-| list | event.lead.rule.view.list | `event_crm.event_lead_rule_view_tree` | - |
-| form | event.lead.rule.view.form | `event_crm.event_lead_rule_view_form` | - |
-
-
-
-#### Filtros de búsqueda (event_crm.event_lead_rule_view_search)
-
-**Filtros:**
-- **Archived** (`[('active', '=', False)]`)
-
-
-**Agrupar por:**
-- Creation Type
-- Trigger Type
 

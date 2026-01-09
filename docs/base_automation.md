@@ -12,6 +12,7 @@
 ## Descripción
 
 This module allows to implement automation rules for any object.
+================================================================
 
 Use automation rules to automatically trigger actions for various screens.
 
@@ -34,15 +35,10 @@ trigger an automatic reminder email.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **usage** (Selection)
-
-
-  - **base_automation_id** (Many2one) → base.automation
+#### Campos
+- **name** (Char)
+- **usage** (Selection)
+- **base_automation_id** (Many2one) → base.automation
 
 
 
@@ -55,93 +51,38 @@ trigger an automatic reminder email.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **description** (Html)
-
-
-  - **model_id** (Many2one) → ir.model
-
-
-  - **model_name** (Char)
-
-
-  - **model_is_mail_thread** (Boolean)
-
-
-  - **action_server_ids** (One2many) → ir.actions.server
-
-
-  - **url** (Char)
-
-
-  - **webhook_uuid** (Char)
-
-
-  - **record_getter** (Char)
-
-
-  - **log_webhook_calls** (Boolean)
-
-
-  - **active** (Boolean)
-
-
-  - **trigger** (Selection)
-
-
-  - **trg_selection_field_id** (Many2one) → ir.model.fields.selection
-
-
-  - **trg_field_ref_model_name** (Char)
-
-
-  - **trg_field_ref** (Many2oneReference)
-
-
-  - **trg_date_id** (Many2one) → ir.model.fields
-
-
-  - **trg_date_range** (Integer)
-
-
-  - **trg_date_range_type** (Selection)
-
-
-  - **trg_date_calendar_id** (Many2one) → resource.calendar
-
-
-  - **filter_pre_domain** (Char)
-
-
-  - **filter_domain** (Char)
-
-
-  - **last_run** (Datetime)
-
-
-  - **on_change_field_ids** (Many2many) → ir.model.fields
-
-
-  - **trigger_field_ids** (Many2many) → ir.model.fields
-
-
-  - **least_delay_msg** (Char)
+#### Campos
+- **name** (Char)
+- **description** (Html)
+- **model_id** (Many2one) → ir.model
+- **model_name** (Char)
+- **model_is_mail_thread** (Boolean)
+- **action_server_ids** (One2many) → ir.actions.server
+- **url** (Char)
+- **webhook_uuid** (Char)
+- **record_getter** (Char)
+- **log_webhook_calls** (Boolean)
+- **active** (Boolean)
+- **trigger** (Selection)
+- **trg_selection_field_id** (Many2one) → ir.model.fields.selection
+- **trg_field_ref_model_name** (Char)
+- **trg_field_ref** (Many2oneReference)
+- **trg_date_id** (Many2one) → ir.model.fields
+- **trg_date_range** (Integer)
+- **trg_date_range_type** (Selection)
+- **trg_date_calendar_id** (Many2one) → resource.calendar
+- **filter_pre_domain** (Char)
+- **filter_domain** (Char)
+- **last_run** (Datetime)
+- **on_change_field_ids** (Many2many) → ir.model.fields
+- **trigger_field_ids** (Many2many) → ir.model.fields
+- **least_delay_msg** (Char)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### base.automation
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -152,14 +93,20 @@ trigger an automatic reminder email.
 
 
 
-#### Botones (base_automation.view_base_automation_form)
+**Botones (base_automation.view_base_automation_form):**
 - **Logs** (object)
 - **Rotate Secret** (object)
 - **delete** (delete)
 
 
-#### Filtros de búsqueda (base_automation.view_base_automation_search)
+**Filtros de búsqueda (base_automation.view_base_automation_search):**
 
-**Filtros:**
 - **Include Archived** (`[('active', 'in', [False, True])]`)
+
+
+
+
+
+
+
 

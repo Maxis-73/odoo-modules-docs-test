@@ -27,6 +27,7 @@
 
 
 
+
 ### payment.transaction
 
 
@@ -37,9 +38,8 @@
 
 
 
-- Campos:
-
-  - **pos_order_id** (Many2one) → pos.order
+#### Campos
+- **pos_order_id** (Many2one) → pos.order
 
 
 
@@ -55,9 +55,8 @@
 
 
 
-- Campos:
-
-  - **pos_order_id** (Many2one) → pos.order
+#### Campos
+- **pos_order_id** (Many2one) → pos.order
 
 
 
@@ -73,18 +72,11 @@
 
 
 
-- Campos:
-
-  - **is_online_payment** (Boolean)
-
-
-  - **online_payment_provider_ids** (Many2many) → payment.provider
-
-
-  - **has_an_online_payment_provider** (Boolean)
-
-
-  - **type** (Selection)
+#### Campos
+- **is_online_payment** (Boolean)
+- **online_payment_provider_ids** (Many2many) → payment.provider
+- **has_an_online_payment_provider** (Boolean)
+- **type** (Selection)
 
 
 
@@ -100,12 +92,9 @@
 
 
 
-- Campos:
-
-  - **online_payment_method_id** (Many2one) → pos.payment.method
-
-
-  - **next_online_payment_amount** (Float)
+#### Campos
+- **online_payment_method_id** (Many2one) → pos.payment.method
+- **next_online_payment_amount** (Float)
 
 
 
@@ -121,9 +110,8 @@
 
 
 
-- Campos:
-
-  - **online_account_payment_id** (Many2one) → account.payment
+#### Campos
+- **online_account_payment_id** (Many2one) → account.payment
 
 
 
@@ -140,6 +128,7 @@
 
 
 - No agrega campos
+
 
 
 

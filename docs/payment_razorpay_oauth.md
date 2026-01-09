@@ -26,30 +26,15 @@ Easy Razorpay Onboarding With Oauth.
 
 
 
-- Campos:
-
-  - **razorpay_key_id** (Char)
-
-
-  - **razorpay_key_secret** (Char)
-
-
-  - **razorpay_webhook_secret** (Char)
-
-
-  - **razorpay_account_id** (Char)
-
-
-  - **razorpay_refresh_token** (Char)
-
-
-  - **razorpay_public_token** (Char)
-
-
-  - **razorpay_access_token** (Char)
-
-
-  - **razorpay_access_token_expiry** (Datetime)
+#### Campos
+- **razorpay_key_id** (Char)
+- **razorpay_key_secret** (Char)
+- **razorpay_webhook_secret** (Char)
+- **razorpay_account_id** (Char)
+- **razorpay_refresh_token** (Char)
+- **razorpay_public_token** (Char)
+- **razorpay_access_token** (Char)
+- **razorpay_access_token_expiry** (Datetime)
 
 
 

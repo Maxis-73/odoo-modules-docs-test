@@ -15,6 +15,7 @@ Task Generation from Sales Orders
 ## Descripción
 
 Allows to create task from your sales order
+=============================================
 This module allows to generate a project/task from sales orders.
 
 
@@ -32,48 +33,21 @@ This module allows to generate a project/task from sales orders.
 
 
 
-- Campos:
-
-  - **tasks_ids** (Many2many) → project.task
-
-
-  - **tasks_count** (Integer)
-
-
-  - **visible_project** (Boolean) → Display project
-
-
-  - **project_ids** (Many2many) → project.project
-
-
-  - **project_count** (Integer)
-
-
-  - **milestone_count** (Integer)
-
-
-  - **is_product_milestone** (Boolean)
-
-
-  - **show_create_project_button** (Boolean)
-
-
-  - **show_project_button** (Boolean)
-
-
-  - **show_task_button** (Boolean)
-
-
-  - **closed_task_count** (Integer)
-
-
-  - **completed_task_percentage** (Float)
-
-
-  - **project_id** (Many2one) → project.project
-
-
-  - **project_account_id** (Many2one) → account.analytic.account
+#### Campos
+- **tasks_ids** (Many2many) → project.task
+- **tasks_count** (Integer)
+- **visible_project** (Boolean) → Display project
+- **project_ids** (Many2many) → project.project
+- **project_count** (Integer)
+- **milestone_count** (Integer)
+- **is_product_milestone** (Boolean)
+- **show_create_project_button** (Boolean)
+- **show_project_button** (Boolean)
+- **show_task_button** (Boolean)
+- **closed_task_count** (Integer)
+- **completed_task_percentage** (Float)
+- **project_id** (Many2one) → project.project
+- **project_account_id** (Many2one) → account.analytic.account
 
 
 
@@ -93,6 +67,7 @@ This module allows to generate a project/task from sales orders.
 
 
 
+
 ### sale.order.line
 
 
@@ -103,19 +78,22 @@ This module allows to generate a project/task from sales orders.
 
 
 
-- Campos:
-
-  - **qty_delivered_method** (Selection)
-
-
-  - **project_id** (Many2one) → project.project
-
-
-  - **task_id** (Many2one) → project.task
+#### Campos
+- **qty_delivered_method** (Selection)
+- **project_id** (Many2one) → project.project
+- **task_id** (Many2one) → project.task
+- **reached_milestones_ids** (One2many) → project.milestone
 
 
-  - **reached_milestones_ids** (One2many) → project.milestone
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | sale.order.line.list.with.create | `sale_project.view_order_line_tree_with_create` | sale.view_order_line_tree |
+| form | sale.order.line.view.form.editable | `sale_project.sale_order_line_view_form_editable` | sale.sale_order_line_view_form_readonly |
 
 
 
@@ -130,21 +108,12 @@ This module allows to generate a project/task from sales orders.
 
 
 
-- Campos:
-
-  - **service_tracking** (Selection)
-
-
-  - **project_id** (Many2one) → project.project
-
-
-  - **project_template_id** (Many2one) → project.project
-
-
-  - **service_policy** (Selection) → _selection_service_policy
-
-
-  - **service_type** (Selection)
+#### Campos
+- **service_tracking** (Selection)
+- **project_id** (Many2one) → project.project
+- **project_template_id** (Many2one) → project.project
+- **service_policy** (Selection) → _selection_service_policy
+- **service_type** (Selection)
 
 
 
@@ -164,6 +133,7 @@ This module allows to generate a project/task from sales orders.
 
 
 
+
 ### project.project
 
 
@@ -174,45 +144,20 @@ This module allows to generate a project/task from sales orders.
 
 
 
-- Campos:
-
-  - **allow_billable** (Boolean) → Billable
-
-
-  - **sale_line_id** (Many2one) → sale.order.line
-
-
-  - **sale_order_id** (Many2one)
-
-
-  - **has_any_so_to_invoice** (Boolean) → Has SO to Invoice
-
-
-  - **sale_order_line_count** (Integer)
-
-
-  - **sale_order_count** (Integer)
-
-
-  - **has_any_so_with_nothing_to_invoice** (Boolean) → Has a SO with an invoice status of No
-
-
-  - **invoice_count** (Integer)
-
-
-  - **vendor_bill_count** (Integer)
-
-
-  - **partner_id** (Many2one)
-
-
-  - **display_sales_stat_buttons** (Boolean)
-
-
-  - **sale_order_state** (Selection)
-
-
-  - **reinvoiced_sale_order_id** (Many2one) → sale.order
+#### Campos
+- **allow_billable** (Boolean) → Billable
+- **sale_line_id** (Many2one) → sale.order.line
+- **sale_order_id** (Many2one)
+- **has_any_so_to_invoice** (Boolean) → Has SO to Invoice
+- **sale_order_line_count** (Integer)
+- **sale_order_count** (Integer)
+- **has_any_so_with_nothing_to_invoice** (Boolean) → Has a SO with an invoice status of No
+- **invoice_count** (Integer)
+- **vendor_bill_count** (Integer)
+- **partner_id** (Many2one)
+- **display_sales_stat_buttons** (Boolean)
+- **sale_order_state** (Selection)
+- **reinvoiced_sale_order_id** (Many2one) → sale.order
 
 
 
@@ -232,6 +177,7 @@ This module allows to generate a project/task from sales orders.
 
 
 
+
 ### res.config.settings
 
 
@@ -243,6 +189,7 @@ This module allows to generate a project/task from sales orders.
 
 
 - No agrega campos
+
 
 
 
@@ -260,6 +207,7 @@ This module allows to generate a project/task from sales orders.
 
 
 
+
 ### sale.order.template.line
 
 
@@ -274,6 +222,7 @@ This module allows to generate a project/task from sales orders.
 
 
 
+
 ### project.milestone
 
 
@@ -284,27 +233,14 @@ This module allows to generate a project/task from sales orders.
 
 
 
-- Campos:
-
-  - **allow_billable** (Boolean)
-
-
-  - **project_partner_id** (Many2one)
-
-
-  - **sale_line_id** (Many2one) → sale.order.line
-
-
-  - **quantity_percentage** (Float) → Quantity (%)
-
-
-  - **sale_line_display_name** (Char) → Sale Line Display Name
-
-
-  - **product_uom** (Many2one)
-
-
-  - **product_uom_qty** (Float) → Quantity
+#### Campos
+- **allow_billable** (Boolean)
+- **project_partner_id** (Many2one)
+- **sale_line_id** (Many2one) → sale.order.line
+- **quantity_percentage** (Float) → Quantity (%)
+- **sale_line_display_name** (Char) → Sale Line Display Name
+- **product_uom** (Many2one)
+- **product_uom_qty** (Float) → Quantity
 
 
 
@@ -320,30 +256,15 @@ This module allows to generate a project/task from sales orders.
 
 
 
-- Campos:
-
-  - **sale_order_id** (Many2one) → sale.order
-
-
-  - **sale_line_id** (Many2one) → sale.order.line
-
-
-  - **project_sale_order_id** (Many2one) → sale.order
-
-
-  - **sale_order_state** (Selection)
-
-
-  - **task_to_invoice** (Boolean) → To invoice
-
-
-  - **allow_billable** (Boolean)
-
-
-  - **partner_id** (Many2one)
-
-
-  - **display_sale_order_button** (Boolean)
+#### Campos
+- **sale_order_id** (Many2one) → sale.order
+- **sale_line_id** (Many2one) → sale.order.line
+- **project_sale_order_id** (Many2one) → sale.order
+- **sale_order_state** (Selection)
+- **task_to_invoice** (Boolean) → To invoice
+- **allow_billable** (Boolean)
+- **partner_id** (Many2one)
+- **display_sale_order_button** (Boolean)
 
 
 
@@ -352,14 +273,5 @@ This module allows to generate a project/task from sales orders.
 
 
 
-## Vistas
-
-
-### sale.order.line
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | sale.order.line.list.with.create | `sale_project.view_order_line_tree_with_create` | sale.view_order_line_tree |
-| form | sale.order.line.view.form.editable | `sale_project.sale_order_line_view_form_editable` | sale.sale_order_line_view_form_readonly |
 
 

@@ -38,6 +38,7 @@ fields are stored in a "serialized" field in the form of a JSON mapping.
 
 
 
+
 ### ir.model.fields
 
 
@@ -48,12 +49,9 @@ fields are stored in a "serialized" field in the form of a JSON mapping.
 
 
 
-- Campos:
-
-  - **ttype** (Selection)
-
-
-  - **serialization_field_id** (Many2one) → ir.model.fields
+#### Campos
+- **ttype** (Selection)
+- **serialization_field_id** (Many2one) → ir.model.fields
 
 
 
@@ -66,27 +64,14 @@ fields are stored in a "serialized" field in the form of a JSON mapping.
 
 
 
-- Campos:
-
-  - **data** (Serialized)
-
-
-  - **boolean** (Boolean)
-
-
-  - **integer** (Integer)
-
-
-  - **float** (Float)
-
-
-  - **char** (Char)
-
-
-  - **selection** (Selection)
-
-
-  - **partner** (Many2one) → res.partner
+#### Campos
+- **data** (Serialized)
+- **boolean** (Boolean)
+- **integer** (Integer)
+- **float** (Float)
+- **char** (Char)
+- **selection** (Selection)
+- **partner** (Many2one) → res.partner
 
 
 

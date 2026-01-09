@@ -29,9 +29,8 @@ A Dutch payment provider covering Europe and the US.
 
 
 
-- Campos:
-
-  - **adyen_shopper_reference** (Char)
+#### Campos
+- **adyen_shopper_reference** (Char)
 
 
 
@@ -51,6 +50,7 @@ A Dutch payment provider covering Europe and the US.
 
 
 
+
 ### payment.provider
 
 
@@ -61,24 +61,13 @@ A Dutch payment provider covering Europe and the US.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **adyen_merchant_account** (Char)
-
-
-  - **adyen_api_key** (Char)
-
-
-  - **adyen_client_key** (Char)
-
-
-  - **adyen_hmac_key** (Char)
-
-
-  - **adyen_api_url_prefix** (Char)
+#### Campos
+- **code** (Selection)
+- **adyen_merchant_account** (Char)
+- **adyen_api_key** (Char)
+- **adyen_client_key** (Char)
+- **adyen_hmac_key** (Char)
+- **adyen_api_url_prefix** (Char)
 
 
 

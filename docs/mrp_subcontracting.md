@@ -26,12 +26,9 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **type** (Selection)
-
-
-  - **subcontractor_ids** (Many2many) → res.partner
+#### Campos
+- **type** (Selection)
+- **subcontractor_ids** (Many2many) → res.partner
 
 
 
@@ -47,24 +44,13 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **subcontracting_to_resupply** (Boolean) → Resupply Subcontractors
-
-
-  - **subcontracting_mto_pull_id** (Many2one) → stock.rule
-
-
-  - **subcontracting_pull_id** (Many2one) → stock.rule
-
-
-  - **subcontracting_route_id** (Many2one) → stock.route
-
-
-  - **subcontracting_type_id** (Many2one) → stock.picking.type
-
-
-  - **subcontracting_resupply_type_id** (Many2one) → stock.picking.type
+#### Campos
+- **subcontracting_to_resupply** (Boolean) → Resupply Subcontractors
+- **subcontracting_mto_pull_id** (Many2one) → stock.rule
+- **subcontracting_pull_id** (Many2one) → stock.rule
+- **subcontracting_route_id** (Many2one) → stock.route
+- **subcontracting_type_id** (Many2one) → stock.picking.type
+- **subcontracting_resupply_type_id** (Many2one) → stock.picking.type
 
 
 
@@ -80,21 +66,12 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **move_line_raw_ids** (One2many) → stock.move.line
-
-
-  - **subcontracting_has_been_recorded** (Boolean) → Has been recorded?
-
-
-  - **subcontractor_id** (Many2one) → res.partner
-
-
-  - **bom_product_ids** (Many2many) → product.product
-
-
-  - **incoming_picking** (Many2one)
+#### Campos
+- **move_line_raw_ids** (One2many) → stock.move.line
+- **subcontracting_has_been_recorded** (Boolean) → Has been recorded?
+- **subcontractor_id** (Many2one) → res.partner
+- **bom_product_ids** (Many2many) → product.product
+- **incoming_picking** (Many2one)
 
 
 
@@ -110,13 +87,20 @@ Subcontract Productions
 
 
 
-- Campos:
+#### Campos
+- **is_subcontract** (Boolean) → The move is a subcontract receipt
+- **show_subcontracting_details_visible** (Boolean)
 
-  - **is_subcontract** (Boolean) → The move is a subcontract receipt
 
 
-  - **show_subcontracting_details_visible** (Boolean)
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | mrp.subcontracting.move.form.view | `mrp_subcontracting.mrp_subcontracting_move_form_view` | - |
+| list | mrp.subcontracting.move.list.view | `mrp_subcontracting.mrp_subcontracting_move_tree_view` | - |
 
 
 
@@ -131,9 +115,8 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **is_subcontract** (Boolean)
+#### Campos
+- **is_subcontract** (Boolean)
 
 
 
@@ -149,12 +132,9 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **is_subcontracting_location** (Boolean) → Is a Subcontracting Location?
-
-
-  - **subcontractor_ids** (One2many) → res.partner
+#### Campos
+- **is_subcontracting_location** (Boolean) → Is a Subcontracting Location?
+- **subcontractor_ids** (One2many) → res.partner
 
 
 
@@ -174,6 +154,7 @@ Subcontract Productions
 
 
 
+
 ### stock.picking
 
 
@@ -184,14 +165,25 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **move_line_ids_without_package** (One2many)
-
-
-  - **display_action_record_components** (Selection)
+#### Campos
+- **move_line_ids_without_package** (One2many)
+- **display_action_record_components** (Selection)
 
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | subcontracting.portal.production.view.form | `mrp_subcontracting.subcontracting_portal_production_form_view` | - |
+
+
+
+**Botones (mrp_subcontracting.subcontracting_portal_production_form_view):**
+- **action_show_details** (object)
+- **Register components for subcontracted product** (object)
 
 
 
@@ -205,9 +197,8 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **is_subcontractor** (Boolean) → Subcontracted
+#### Campos
+- **is_subcontractor** (Boolean) → Subcontracted
 
 
 
@@ -227,6 +218,7 @@ Subcontract Productions
 
 
 
+
 ### stock.move.line
 
 
@@ -241,6 +233,16 @@ Subcontract Productions
 
 
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | mrp.subcontracting.stock.move.line.list.view | `mrp_subcontracting.mrp_subcontracting_stock_move_line_tree_view` | - |
+
+
+
+
 ### res.company
 
 
@@ -251,9 +253,8 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **subcontracting_location_id** (Many2one) → stock.location
+#### Campos
+- **subcontracting_location_id** (Many2one) → stock.location
 
 
 
@@ -273,6 +274,7 @@ Subcontract Productions
 
 
 
+
 ### res.partner
 
 
@@ -283,21 +285,12 @@ Subcontract Productions
 
 
 
-- Campos:
-
-  - **property_stock_subcontractor** (Many2one) → stock.location
-
-
-  - **is_subcontractor** (Boolean)
-
-
-  - **bom_ids** (Many2many) → mrp.bom
-
-
-  - **production_ids** (Many2many) → mrp.production
-
-
-  - **picking_ids** (Many2many) → stock.picking
+#### Campos
+- **property_stock_subcontractor** (Many2one) → stock.location
+- **is_subcontractor** (Boolean)
+- **bom_ids** (Many2many) → mrp.bom
+- **production_ids** (Many2many) → mrp.production
+- **picking_ids** (Many2many) → stock.picking
 
 
 
@@ -320,35 +313,6 @@ Subcontract Productions
 
 
 
-## Vistas
 
-
-### stock.picking
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | subcontracting.portal.production.view.form | `mrp_subcontracting.subcontracting_portal_production_form_view` | - |
-
-
-
-#### Botones (mrp_subcontracting.subcontracting_portal_production_form_view)
-- **action_show_details** (object)
-- **Register components for subcontracted product** (object)
-
-
-### stock.move.line
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | mrp.subcontracting.stock.move.line.list.view | `mrp_subcontracting.mrp_subcontracting_stock_move_line_tree_view` | - |
-
-
-
-### stock.move
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | mrp.subcontracting.move.form.view | `mrp_subcontracting.mrp_subcontracting_move_form_view` | - |
-| list | mrp.subcontracting.move.list.view | `mrp_subcontracting.mrp_subcontracting_move_tree_view` | - |
 
 

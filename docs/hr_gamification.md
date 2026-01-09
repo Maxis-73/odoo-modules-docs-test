@@ -31,9 +31,8 @@ Badge received are displayed on the user profile.
 
 
 
-- Campos:
-
-  - **employee_id** (Many2one) → hr.employee
+#### Campos
+- **employee_id** (Many2one) → hr.employee
 
 
 
@@ -49,9 +48,8 @@ Badge received are displayed on the user profile.
 
 
 
-- Campos:
-
-  - **granted_employees_count** (Integer)
+#### Campos
+- **granted_employees_count** (Integer)
 
 
 
@@ -67,18 +65,11 @@ Badge received are displayed on the user profile.
 
 
 
-- Campos:
-
-  - **goal_ids** (One2many) → gamification.goal
-
-
-  - **badge_ids** (One2many) → gamification.badge.user
-
-
-  - **has_badges** (Boolean)
-
-
-  - **direct_badge_ids** (One2many) → gamification.badge.user
+#### Campos
+- **goal_ids** (One2many) → gamification.goal
+- **badge_ids** (One2many) → gamification.badge.user
+- **has_badges** (Boolean)
+- **direct_badge_ids** (One2many) → gamification.badge.user
 
 
 
@@ -94,12 +85,9 @@ Badge received are displayed on the user profile.
 
 
 
-- Campos:
-
-  - **goal_ids** (One2many) → gamification.goal
-
-
-  - **badge_ids** (One2many) → gamification.badge.user
+#### Campos
+- **goal_ids** (One2many) → gamification.goal
+- **badge_ids** (One2many) → gamification.badge.user
 
 
 
@@ -108,7 +96,9 @@ Badge received are displayed on the user profile.
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### gamification.badge.user.wizard
@@ -119,6 +109,8 @@ Badge received are displayed on the user profile.
 
 
 
-#### Botones (hr_gamification.view_badge_wizard_reward)
+**Botones (hr_gamification.view_badge_wizard_reward):**
 - **Reward Employee** (object)
+
+
 

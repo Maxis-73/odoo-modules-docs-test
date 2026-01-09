@@ -32,9 +32,8 @@ Let new customers sign up for a newsletter during checkout
 
 
 
-- Campos:
-
-  - **newsletter_id** (Many2one) → mailing.list
+#### Campos
+- **newsletter_id** (Many2one) → mailing.list
 
 
 
@@ -50,12 +49,9 @@ Let new customers sign up for a newsletter during checkout
 
 
 
-- Campos:
-
-  - **is_newsletter_enabled** (Boolean)
-
-
-  - **newsletter_id** (Many2one)
+#### Campos
+- **is_newsletter_enabled** (Boolean)
+- **newsletter_id** (Many2one)
 
 
 

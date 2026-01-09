@@ -12,6 +12,7 @@
 ## Descripción
 
 This module adds a shortcut on one or several opportunity cases in the CRM.
+===========================================================================
 
 This shortcut allows you to generate a sales order based on the selected case.
 If different cases are open (a list), it generates one sales order by case.
@@ -35,9 +36,8 @@ modules.
 
 
 
-- Campos:
-
-  - **opportunity_id** (Many2one) → crm.lead
+#### Campos
+- **opportunity_id** (Many2one) → crm.lead
 
 
 
@@ -53,9 +53,8 @@ modules.
 
 
 
-- Campos:
-
-  - **target_sales_invoiced** (Integer) → Invoiced in Sales Orders Target
+#### Campos
+- **target_sales_invoiced** (Integer) → Invoiced in Sales Orders Target
 
 
 
@@ -75,6 +74,7 @@ modules.
 
 
 
+
 ### crm.lead
 
 
@@ -85,18 +85,11 @@ modules.
 
 
 
-- Campos:
-
-  - **sale_amount_total** (Monetary)
-
-
-  - **quotation_count** (Integer)
-
-
-  - **sale_order_count** (Integer)
-
-
-  - **order_ids** (One2many) → sale.order
+#### Campos
+- **sale_amount_total** (Monetary)
+- **quotation_count** (Integer)
+- **sale_order_count** (Integer)
+- **order_ids** (One2many) → sale.order
 
 
 
@@ -105,7 +98,9 @@ modules.
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### crm.quotation.partner
@@ -116,6 +111,8 @@ modules.
 
 
 
-#### Botones (sale_crm.crm_quotation_partner_view_form)
+**Botones (sale_crm.crm_quotation_partner_view_form):**
 - **Confirm** (object)
+
+
 

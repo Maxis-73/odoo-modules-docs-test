@@ -30,9 +30,8 @@ Gmail support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **smtp_authentication** (Selection)
+#### Campos
+- **smtp_authentication** (Selection)
 
 
 
@@ -52,9 +51,8 @@ Gmail support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **server_type** (Selection)
+#### Campos
+- **server_type** (Selection)
 
 
 
@@ -70,12 +68,9 @@ Gmail support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **google_gmail_client_identifier** (Char) → Gmail Client Id
-
-
-  - **google_gmail_client_secret** (Char) → Gmail Client Secret
+#### Campos
+- **google_gmail_client_identifier** (Char) → Gmail Client Id
+- **google_gmail_client_secret** (Char) → Gmail Client Secret
 
 
 
@@ -88,21 +83,12 @@ Gmail support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **google_gmail_authorization_code** (Char)
-
-
-  - **google_gmail_refresh_token** (Char)
-
-
-  - **google_gmail_access_token** (Char)
-
-
-  - **google_gmail_access_token_expiration** (Integer)
-
-
-  - **google_gmail_uri** (Char)
+#### Campos
+- **google_gmail_authorization_code** (Char)
+- **google_gmail_refresh_token** (Char)
+- **google_gmail_access_token** (Char)
+- **google_gmail_access_token_expiration** (Integer)
+- **google_gmail_uri** (Char)
 
 
 

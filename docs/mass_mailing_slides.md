@@ -12,6 +12,7 @@
 ## Descripción
 
 Mass mail course members
+========================
 
 Bridge module adding UX requirements to ease mass mailing of course members.
         
@@ -31,6 +32,7 @@ Bridge module adding UX requirements to ease mass mailing of course members.
 
 
 - No agrega campos
+
 
 
 

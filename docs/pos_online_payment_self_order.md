@@ -26,9 +26,8 @@ Support online payment in self-order
 
 
 
-- Campos:
-
-  - **self_order_online_payment_method_id** (Many2one) → pos.payment.method
+#### Campos
+- **self_order_online_payment_method_id** (Many2one) → pos.payment.method
 
 
 
@@ -48,6 +47,7 @@ Support online payment in self-order
 
 
 
+
 ### pos.order
 
 
@@ -58,9 +58,8 @@ Support online payment in self-order
 
 
 
-- Campos:
-
-  - **use_self_order_online_payment** (Boolean)
+#### Campos
+- **use_self_order_online_payment** (Boolean)
 
 
 
@@ -76,9 +75,8 @@ Support online payment in self-order
 
 
 
-- Campos:
-
-  - **pos_self_order_online_payment_method_id** (Many2one)
+#### Campos
+- **pos_self_order_online_payment_method_id** (Many2one)
 
 
 

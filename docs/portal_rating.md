@@ -33,6 +33,7 @@ inclusion of rating directly within the customer portal discuss widget.
 
 
 
+
 ### mail.message
 
 
@@ -47,6 +48,7 @@ inclusion of rating directly within the customer portal discuss widget.
 
 
 
+
 ### rating.rating
 
 
@@ -57,15 +59,10 @@ inclusion of rating directly within the customer portal discuss widget.
 
 
 
-- Campos:
-
-  - **publisher_comment** (Text) → Publisher comment
-
-
-  - **publisher_id** (Many2one) → res.partner
-
-
-  - **publisher_datetime** (Datetime) → Commented on
+#### Campos
+- **publisher_comment** (Text) → Publisher comment
+- **publisher_id** (Many2one) → res.partner
+- **publisher_datetime** (Datetime) → Commented on
 
 
 
@@ -82,6 +79,7 @@ inclusion of rating directly within the customer portal discuss widget.
 
 
 - No agrega campos
+
 
 
 

@@ -28,15 +28,10 @@ This module implements reCaptchaV3 so that you can prevent bot spam on your publ
 
 
 
-- Campos:
-
-  - **recaptcha_public_key** (Char) → Site Key
-
-
-  - **recaptcha_private_key** (Char) → Secret Key
-
-
-  - **recaptcha_min_score** (Float) → Minimum score
+#### Campos
+- **recaptcha_public_key** (Char) → Site Key
+- **recaptcha_private_key** (Char) → Secret Key
+- **recaptcha_min_score** (Float) → Minimum score
 
 
 
@@ -53,6 +48,7 @@ This module implements reCaptchaV3 so that you can prevent bot spam on your publ
 
 
 - No agrega campos
+
 
 
 

@@ -26,9 +26,8 @@ Integrate features developped in Mail in use case involving resources instead of
 
 
 
-- Campos:
-
-  - **im_status** (Char)
+#### Campos
+- **im_status** (Char)
 
 
 

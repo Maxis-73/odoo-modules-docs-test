@@ -26,9 +26,8 @@ Website - Payment Authorize
 
 
 
-- Campos:
-
-  - **authorize_capture_method** (Selection)
+#### Campos
+- **authorize_capture_method** (Selection)
 
 
 

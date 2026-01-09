@@ -12,15 +12,16 @@
 ## Descripción
 
 Electronic invoicing module
+===========================
 
 Allows to export and import formats: E-FFF, UBL Bis 3, EHF3, NLCIUS, Factur-X (CII), XRechnung (UBL).
 When generating the PDF on the invoice, the PDF will be embedded inside the xml for all UBL formats. This allows the
-receiver to retrieve the PDF with only the xml file. Note that **EHF3 is fully implemented by UBL Bis 3:** [Reference](https://anskaffelser.dev/postaward/g3/spec/current/billing-3.0/norway/#_implementation).
+receiver to retrieve the PDF with only the xml file. Note that **EHF3 is fully implemented by UBL Bis 3:** [Reference](https://anskaffelser.dev/postaward/g3/spec/current/billing-3.0/norway/#_implementation>).
 
 The formats can be chosen from the journal (Journal > Advanced Settings) linked to the invoice.
 
 Note that E-FFF, NLCIUS and XRechnung (UBL) are only available for Belgian, Dutch and German companies,
-respectively. UBL Bis 3 is only available for companies which country is present in the [EAS list](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
+respectively. UBL Bis 3 is only available for companies which country is present in the [EAS list](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/>).
 
 Note also that in order for Chorus Pro to automatically detect the "PDF/A-3 (Factur-X)" format, you need to activate
 the "Factur-X PDF/A-3" option on the journal. This option will also validate the xml against the Factur-X and Chorus
@@ -45,6 +46,7 @@ Pro rules and show the errors.
 
 
 
+
 ### account.edi.xml.ubl_sg
 
 
@@ -59,6 +61,7 @@ Pro rules and show the errors.
 
 
 
+
 ### account.edi.common
 
 
@@ -67,6 +70,7 @@ Pro rules and show the errors.
 
 
 - No agrega campos
+
 
 
 
@@ -84,6 +88,7 @@ Pro rules and show the errors.
 
 
 
+
 ### account.edi.ubl
 
 
@@ -95,6 +100,7 @@ Pro rules and show the errors.
 
 
 - No agrega campos
+
 
 
 
@@ -112,6 +118,7 @@ Pro rules and show the errors.
 
 
 
+
 ### ir.actions.report
 
 
@@ -123,6 +130,7 @@ Pro rules and show the errors.
 
 
 - No agrega campos
+
 
 
 
@@ -140,6 +148,7 @@ Pro rules and show the errors.
 
 
 
+
 ### account.move
 
 
@@ -150,12 +159,9 @@ Pro rules and show the errors.
 
 
 
-- Campos:
-
-  - **ubl_cii_xml_id** (Many2one) → ir.attachment
-
-
-  - **ubl_cii_xml_file** (Binary)
+#### Campos
+- **ubl_cii_xml_id** (Many2one) → ir.attachment
+- **ubl_cii_xml_file** (Binary)
 
 
 
@@ -175,6 +181,7 @@ Pro rules and show the errors.
 
 
 
+
 ### account.edi.xml.ubl_21
 
 
@@ -186,6 +193,7 @@ Pro rules and show the errors.
 
 
 - No agrega campos
+
 
 
 
@@ -203,6 +211,7 @@ Pro rules and show the errors.
 
 
 
+
 ### account.edi.xml.ubl_a_nz
 
 
@@ -217,6 +226,7 @@ Pro rules and show the errors.
 
 
 
+
 ### res.partner
 
 
@@ -227,24 +237,13 @@ Pro rules and show the errors.
 
 
 
-- Campos:
-
-  - **invoice_edi_format** (Selection)
-
-
-  - **is_ubl_format** (Boolean)
-
-
-  - **is_peppol_edi_format** (Boolean)
-
-
-  - **peppol_endpoint** (Char)
-
-
-  - **peppol_eas** (Selection)
-
-
-  - **available_peppol_eas** (Json)
+#### Campos
+- **invoice_edi_format** (Selection)
+- **is_ubl_format** (Boolean)
+- **is_peppol_edi_format** (Boolean)
+- **peppol_endpoint** (Char)
+- **peppol_eas** (Selection)
+- **available_peppol_eas** (Json)
 
 
 
@@ -261,6 +260,7 @@ Pro rules and show the errors.
 
 
 - No agrega campos
+
 
 
 

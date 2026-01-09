@@ -32,9 +32,8 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
-- Campos:
-
-  - **employee_id** (Many2one) → hr.employee
+#### Campos
+- **employee_id** (Many2one) → hr.employee
 
 
 
@@ -50,12 +49,9 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
-- Campos:
-
-  - **basic_employee_ids** (Many2many) → hr.employee
-
-
-  - **advanced_employee_ids** (Many2many) → hr.employee
+#### Campos
+- **basic_employee_ids** (Many2many) → hr.employee
+- **advanced_employee_ids** (Many2many) → hr.employee
 
 
 
@@ -75,6 +71,7 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
+
 ### product.product
 
 
@@ -89,6 +86,7 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
+
 ### pos.order
 
 
@@ -99,12 +97,9 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
-- Campos:
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **cashier** (Char)
+#### Campos
+- **employee_id** (Many2one) → hr.employee
+- **cashier** (Char)
 
 
 
@@ -120,9 +115,8 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
-- Campos:
-
-  - **employee_id** (Many2one) → hr.employee
+#### Campos
+- **employee_id** (Many2one) → hr.employee
 
 
 
@@ -142,6 +136,7 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
+
 ### report.pos_hr.multi_employee_sales_report
 
 
@@ -150,6 +145,7 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 - No agrega campos
+
 
 
 
@@ -163,12 +159,9 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
-- Campos:
-
-  - **pos_basic_employee_ids** (Many2many)
-
-
-  - **pos_advanced_employee_ids** (Many2many)
+#### Campos
+- **pos_basic_employee_ids** (Many2many)
+- **pos_advanced_employee_ids** (Many2many)
 
 
 
@@ -184,9 +177,8 @@ The actual till still requires one user but an unlimited number of employees can
 
 
 
-- Campos:
-
-  - **employee_id** (Many2one) → hr.employee
+#### Campos
+- **employee_id** (Many2one) → hr.employee
 
 
 

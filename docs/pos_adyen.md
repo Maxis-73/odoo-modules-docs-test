@@ -26,9 +26,8 @@ Integrate your POS with an Adyen payment terminal
 
 
 
-- Campos:
-
-  - **adyen_ask_customer_for_tip** (Boolean) → Ask Customers For Tip
+#### Campos
+- **adyen_ask_customer_for_tip** (Boolean) → Ask Customers For Tip
 
 
 
@@ -44,21 +43,12 @@ Integrate your POS with an Adyen payment terminal
 
 
 
-- Campos:
-
-  - **adyen_api_key** (Char)
-
-
-  - **adyen_terminal_identifier** (Char)
-
-
-  - **adyen_test_mode** (Boolean)
-
-
-  - **adyen_latest_response** (Char)
-
-
-  - **adyen_event_url** (Char)
+#### Campos
+- **adyen_api_key** (Char)
+- **adyen_terminal_identifier** (Char)
+- **adyen_test_mode** (Boolean)
+- **adyen_latest_response** (Char)
+- **adyen_event_url** (Char)
 
 
 
@@ -74,9 +64,8 @@ Integrate your POS with an Adyen payment terminal
 
 
 
-- Campos:
-
-  - **pos_adyen_ask_customer_for_tip** (Boolean)
+#### Campos
+- **pos_adyen_ask_customer_for_tip** (Boolean)
 
 
 

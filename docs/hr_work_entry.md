@@ -26,9 +26,8 @@ Manage work entries
 
 
 
-- Campos:
-
-  - **has_work_entries** (Boolean)
+#### Campos
+- **has_work_entries** (Boolean)
 
 
 
@@ -44,9 +43,8 @@ Manage work entries
 
 
 
-- Campos:
-
-  - **work_entry_type_id** (Many2one) → hr.work.entry.type
+#### Campos
+- **work_entry_type_id** (Many2one) → hr.work.entry.type
 
 
 
@@ -62,9 +60,8 @@ Manage work entries
 
 
 
-- Campos:
-
-  - **work_entry_type_id** (Many2one) → hr.work.entry.type
+#### Campos
+- **work_entry_type_id** (Many2one) → hr.work.entry.type
 
 
 
@@ -77,120 +74,28 @@ Manage work entries
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **active** (Boolean)
-
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **date_start** (Datetime)
-
-
-  - **date_stop** (Datetime)
-
-
-  - **duration** (Float)
-
-
-  - **work_entry_type_id** (Many2one) → hr.work.entry.type
-
-
-  - **code** (Char)
-
-
-  - **external_code** (Char)
-
-
-  - **color** (Integer)
-
-
-  - **state** (Selection)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **conflict** (Boolean) → Conflicts
-
-
-  - **department_id** (Many2one) → hr.department
-
-
-  - **country_id** (Many2one) → res.country
-
-
-
-
-
-### hr.work.entry.type
-
-
-- Hereda de: Base
-
-
-
-- Campos:
-
-  - **name** (Char)
-
-
-  - **code** (Char)
-
-
-  - **external_code** (Char)
-
-
-  - **color** (Integer)
-
-
-  - **sequence** (Integer)
-
-
-  - **active** (Boolean) → Active
-
-
-  - **country_id** (Many2one) → res.country
-
-
-  - **country_code** (Char)
-
-
-
-
-
-### hr.user.work.entry.employee
-
-
-- Hereda de: Base
-
-
-
-- Campos:
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **active** (Boolean) → Active
-
-
-
-
-
-
-
-
-## Vistas
-
-
-### hr.work.entry
+#### Campos
+- **name** (Char)
+- **active** (Boolean)
+- **employee_id** (Many2one) → hr.employee
+- **date_start** (Datetime)
+- **date_stop** (Datetime)
+- **duration** (Float)
+- **work_entry_type_id** (Many2one) → hr.work.entry.type
+- **code** (Char)
+- **external_code** (Char)
+- **color** (Integer)
+- **state** (Selection)
+- **company_id** (Many2one) → res.company
+- **conflict** (Boolean) → Conflicts
+- **department_id** (Many2one) → hr.department
+- **country_id** (Many2one) → res.country
+
+
+
+
+
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -202,9 +107,8 @@ Manage work entries
 
 
 
-#### Filtros de búsqueda (hr_work_entry.hr_work_entry_view_search)
+**Filtros de búsqueda (hr_work_entry.hr_work_entry_view_search):**
 
-**Filtros:**
 - **Draft** (`[('state', '=', 'draft')]`)
 - **Validated** (`[('state', '=', 'validated')]`)
 - **Conflicting** (`[('state', '=', 'conflict')]`)
@@ -213,14 +117,36 @@ Manage work entries
 - **Archived** (`[('active', '=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Employee
 - Department
 - Type
 - Start Date
 
 
+
 ### hr.work.entry.type
+
+
+- Hereda de: Base
+
+
+
+#### Campos
+- **name** (Char)
+- **code** (Char)
+- **external_code** (Char)
+- **color** (Integer)
+- **sequence** (Integer)
+- **active** (Boolean) → Active
+- **country_id** (Many2one) → res.country
+- **country_code** (Char)
+
+
+
+
+
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -231,8 +157,30 @@ Manage work entries
 
 
 
-#### Filtros de búsqueda (hr_work_entry.hr_work_entry_type_view_search)
+**Filtros de búsqueda (hr_work_entry.hr_work_entry_type_view_search):**
 
-**Filtros:**
 - **Archived** (`[('active', '=', False)]`)
+
+
+
+### hr.user.work.entry.employee
+
+
+- Hereda de: Base
+
+
+
+#### Campos
+- **user_id** (Many2one) → res.users
+- **employee_id** (Many2one) → hr.employee
+- **active** (Boolean) → Active
+
+
+
+
+
+
+
+
+
 

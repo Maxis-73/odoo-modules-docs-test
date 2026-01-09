@@ -30,6 +30,7 @@ Link module between Point of Sale and Event
 
 
 
+
 ### event.question.answer
 
 
@@ -48,6 +49,7 @@ Link module between Point of Sale and Event
 
 
 
+
 ### pos.order.line
 
 
@@ -58,12 +60,9 @@ Link module between Point of Sale and Event
 
 
 
-- Campos:
-
-  - **event_ticket_id** (Many2one) → event.event.ticket
-
-
-  - **event_registration_ids** (One2many) → event.registration
+#### Campos
+- **event_ticket_id** (Many2one) → event.event.ticket
+- **event_registration_ids** (One2many) → event.registration
 
 
 
@@ -79,9 +78,8 @@ Link module between Point of Sale and Event
 
 
 
-- Campos:
-
-  - **attendee_count** (Integer) → Attendee Count
+#### Campos
+- **attendee_count** (Integer) → Attendee Count
 
 
 
@@ -105,6 +103,7 @@ Link module between Point of Sale and Event
 
 
 
+
 ### event.registration.answer
 
 
@@ -123,6 +122,7 @@ Link module between Point of Sale and Event
 
 
 
+
 ### event.event
 
 
@@ -137,9 +137,8 @@ Link module between Point of Sale and Event
 
 
 
-- Campos:
-
-  - **image_1024** (Image) → PoS Image
+#### Campos
+- **image_1024** (Image) → PoS Image
 
 
 
@@ -159,12 +158,9 @@ Link module between Point of Sale and Event
 
 
 
-- Campos:
-
-  - **pos_order_id** (Many2one)
-
-
-  - **pos_order_line_id** (Many2one) → pos.order.line
+#### Campos
+- **pos_order_id** (Many2one)
+- **pos_order_line_id** (Many2one) → pos.order.line
 
 
 
@@ -184,6 +180,7 @@ Link module between Point of Sale and Event
 
 
 
+
 ### event.question
 
 
@@ -199,6 +196,7 @@ Link module between Point of Sale and Event
 
 
 - No agrega campos
+
 
 
 

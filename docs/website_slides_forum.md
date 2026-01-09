@@ -29,18 +29,11 @@ A Slide channel can be linked to forum. Also, profiles from slide and forum are 
 
 
 
-- Campos:
-
-  - **slide_channel_ids** (One2many) → slide.channel
-
-
-  - **slide_channel_id** (Many2one) → slide.channel
-
-
-  - **visibility** (Selection)
-
-
-  - **image_1920** (Image) → Image
+#### Campos
+- **slide_channel_ids** (One2many) → slide.channel
+- **slide_channel_id** (Many2one) → slide.channel
+- **visibility** (Selection)
+- **image_1920** (Image) → Image
 
 
 
@@ -56,12 +49,9 @@ A Slide channel can be linked to forum. Also, profiles from slide and forum are 
 
 
 
-- Campos:
-
-  - **forum_id** (Many2one) → forum.forum
-
-
-  - **forum_total_posts** (Integer) → Number of active forum posts
+#### Campos
+- **forum_id** (Many2one) → forum.forum
+- **forum_total_posts** (Integer) → Number of active forum posts
 
 
 
@@ -70,7 +60,9 @@ A Slide channel can be linked to forum. Also, profiles from slide and forum are 
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### forum.post
@@ -78,5 +70,7 @@ A Slide channel can be linked to forum. Also, profiles from slide and forum are 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | graph | forum.post.view.graph.slides | `website_slides_forum.forum_post_view_graph_slides` | - |
+
+
 
 

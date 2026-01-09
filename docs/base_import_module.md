@@ -12,6 +12,7 @@
 ## Descripción
 
 Import a custom data module
+===========================
 
 This module allows authorized users to import a custom data module (.xml files and static assests)
 for customization purpose.
@@ -31,13 +32,19 @@ for customization purpose.
 
 
 
-- Campos:
+#### Campos
+- **imported** (Boolean)
+- **module_type** (Selection)
 
-  - **imported** (Boolean)
 
 
-  - **module_type** (Selection)
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | Apps List Data Modules | `base_import_module.module_tree_apps_inherit` | base.module_tree |
 
 
 
@@ -56,6 +63,7 @@ for customization purpose.
 
 
 
+
 ### base.import.module
 
 
@@ -63,44 +71,19 @@ for customization purpose.
 
 
 
-- Campos:
-
-  - **module_file** (Binary)
-
-
-  - **state** (Selection)
-
-
-  - **import_message** (Text)
-
-
-  - **force** (Boolean)
-
-
-  - **with_demo** (Boolean)
-
-
-  - **modules_dependencies** (Text)
+#### Campos
+- **module_file** (Binary)
+- **state** (Selection)
+- **import_message** (Text)
+- **force** (Boolean)
+- **with_demo** (Boolean)
+- **modules_dependencies** (Text)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### ir.module.module
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | Apps List Data Modules | `base_import_module.module_tree_apps_inherit` | base.module_tree |
-
-
-
-### base.import.module
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -108,6 +91,13 @@ for customization purpose.
 
 
 
-#### Botones (base_import_module.view_base_module_import)
+**Botones (base_import_module.view_base_module_import):**
 - **Install** (object)
+
+
+
+
+
+
+
 

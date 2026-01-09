@@ -15,6 +15,7 @@ Schedule timesheet when on time off
 ## Descripción
 
 Bridge module to integrate leaves in timesheet
+================================================
 
 This module allows to automatically log timesheets when employees are
 on leaves. Project and task can be configured company-wide.
@@ -38,6 +39,7 @@ on leaves. Project and task can be configured company-wide.
 
 
 
+
 ### account.analytic.line
 
 
@@ -48,15 +50,10 @@ on leaves. Project and task can be configured company-wide.
 
 
 
-- Campos:
-
-  - **holiday_id** (Many2one) → hr.leave
-
-
-  - **global_leave_id** (Many2one) → resource.calendar.leaves
-
-
-  - **task_id** (Many2one)
+#### Campos
+- **holiday_id** (Many2one) → hr.leave
+- **global_leave_id** (Many2one) → resource.calendar.leaves
+- **task_id** (Many2one)
 
 
 
@@ -72,12 +69,9 @@ on leaves. Project and task can be configured company-wide.
 
 
 
-- Campos:
-
-  - **internal_project_id** (Many2one)
-
-
-  - **leave_timesheet_task_id** (Many2one)
+#### Campos
+- **internal_project_id** (Many2one)
+- **leave_timesheet_task_id** (Many2one)
 
 
 
@@ -93,9 +87,8 @@ on leaves. Project and task can be configured company-wide.
 
 
 
-- Campos:
-
-  - **timesheet_ids** (One2many) → account.analytic.line
+#### Campos
+- **timesheet_ids** (One2many) → account.analytic.line
 
 
 
@@ -111,9 +104,8 @@ on leaves. Project and task can be configured company-wide.
 
 
 
-- Campos:
-
-  - **leave_timesheet_task_id** (Many2one) → project.task
+#### Campos
+- **leave_timesheet_task_id** (Many2one) → project.task
 
 
 
@@ -129,15 +121,10 @@ on leaves. Project and task can be configured company-wide.
 
 
 
-- Campos:
-
-  - **timesheet_generate** (Boolean) → Generate Timesheets
-
-
-  - **timesheet_project_id** (Many2one) → project.project
-
-
-  - **timesheet_task_id** (Many2one) → project.task
+#### Campos
+- **timesheet_generate** (Boolean) → Generate Timesheets
+- **timesheet_project_id** (Many2one) → project.project
+- **timesheet_task_id** (Many2one) → project.task
 
 
 
@@ -153,9 +140,8 @@ on leaves. Project and task can be configured company-wide.
 
 
 
-- Campos:
-
-  - **timesheet_ids** (One2many) → account.analytic.line
+#### Campos
+- **timesheet_ids** (One2many) → account.analytic.line
 
 
 
@@ -171,12 +157,9 @@ on leaves. Project and task can be configured company-wide.
 
 
 
-- Campos:
-
-  - **leave_types_count** (Integer)
-
-
-  - **is_timeoff_task** (Boolean) → Is Time off Task
+#### Campos
+- **leave_types_count** (Integer)
+- **is_timeoff_task** (Boolean) → Is Time off Task
 
 
 

@@ -12,6 +12,7 @@
 ## Descripción
 
 This module provides facility to the user to install mrp and sales modulesat a time.
+====================================================================================
 
 It is basically used when we want to keep track of production orders generated
 from sales order. It adds sales name and sales Reference on production order.
@@ -35,6 +36,7 @@ from sales order. It adds sales name and sales Reference on production order.
 
 
 
+
 ### sale.order
 
 
@@ -45,12 +47,9 @@ from sales order. It adds sales name and sales Reference on production order.
 
 
 
-- Campos:
-
-  - **mrp_production_count** (Integer) → Count of MO generated
-
-
-  - **mrp_production_ids** (Many2many) → mrp.production
+#### Campos
+- **mrp_production_count** (Integer) → Count of MO generated
+- **mrp_production_ids** (Many2many) → mrp.production
 
 
 
@@ -66,12 +65,9 @@ from sales order. It adds sales name and sales Reference on production order.
 
 
 
-- Campos:
-
-  - **sale_order_count** (Integer) → Count of Source SO
-
-
-  - **sale_line_id** (Many2one) → sale.order.line
+#### Campos
+- **sale_order_count** (Integer) → Count of Source SO
+- **sale_line_id** (Many2one) → sale.order.line
 
 
 
@@ -91,6 +87,7 @@ from sales order. It adds sales name and sales Reference on production order.
 
 
 
+
 ### account.move.line
 
 
@@ -102,6 +99,7 @@ from sales order. It adds sales name and sales Reference on production order.
 
 
 - No agrega campos
+
 
 
 
@@ -119,6 +117,7 @@ from sales order. It adds sales name and sales Reference on production order.
 
 
 
+
 ### stock.move.line
 
 
@@ -130,6 +129,7 @@ from sales order. It adds sales name and sales Reference on production order.
 
 
 - No agrega campos
+
 
 
 

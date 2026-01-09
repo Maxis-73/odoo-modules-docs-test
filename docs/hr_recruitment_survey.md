@@ -33,12 +33,9 @@ to allow you to define interviews for different jobs.
 
 
 
-- Campos:
-
-  - **survey_id** (Many2one) → survey.survey
-
-
-  - **response_ids** (One2many) → survey.user_input
+#### Campos
+- **survey_id** (Many2one) → survey.survey
+- **response_ids** (One2many) → survey.user_input
 
 
 
@@ -54,9 +51,8 @@ to allow you to define interviews for different jobs.
 
 
 
-- Campos:
-
-  - **applicant_id** (Many2one) → hr.applicant
+#### Campos
+- **applicant_id** (Many2one) → hr.applicant
 
 
 
@@ -72,12 +68,9 @@ to allow you to define interviews for different jobs.
 
 
 
-- Campos:
-
-  - **survey_type** (Selection)
-
-
-  - **hr_job_ids** (One2many) → hr.job
+#### Campos
+- **survey_type** (Selection)
+- **hr_job_ids** (One2many) → hr.job
 
 
 
@@ -93,9 +86,8 @@ to allow you to define interviews for different jobs.
 
 
 
-- Campos:
-
-  - **survey_id** (Many2one) → survey.survey
+#### Campos
+- **survey_id** (Many2one) → survey.survey
 
 
 

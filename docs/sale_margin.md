@@ -12,6 +12,7 @@
 ## Descripción
 
 This module adds the 'Margin' on sales order.
+=============================================
 
 This gives the profitability by calculating the difference between the Unit
 Price and Cost Price.
@@ -31,13 +32,20 @@ Price and Cost Price.
 
 
 
-- Campos:
+#### Campos
+- **margin** (Monetary) → Margin
+- **margin_percent** (Float) → Margin (%)
 
-  - **margin** (Monetary) → Margin
 
 
-  - **margin_percent** (Float) → Margin (%)
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| pivot | sale.order.margin.view.pivot | `sale_margin.sale_margin_sale_order_pivot` | sale.view_sale_order_pivot |
+| graph | sale.order.margin.view.graph | `sale_margin.sale_margin_sale_order_graph` | sale.view_sale_order_graph |
 
 
 
@@ -52,15 +60,10 @@ Price and Cost Price.
 
 
 
-- Campos:
-
-  - **margin** (Float) → Margin
-
-
-  - **margin_percent** (Float) → Margin (%)
-
-
-  - **purchase_price** (Float)
+#### Campos
+- **margin** (Float) → Margin
+- **margin_percent** (Float) → Margin (%)
+- **purchase_price** (Float)
 
 
 
@@ -69,14 +72,5 @@ Price and Cost Price.
 
 
 
-## Vistas
-
-
-### sale.order
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| pivot | sale.order.margin.view.pivot | `sale_margin.sale_margin_sale_order_pivot` | sale.view_sale_order_pivot |
-| graph | sale.order.margin.view.graph | `sale_margin.sale_margin_sale_order_graph` | sale.view_sale_order_graph |
 
 

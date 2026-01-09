@@ -29,40 +29,29 @@ Transport Management: organize packs in your fleet, or carriers.
 
 
 
-- Campos:
-
-  - **vehicle_id** (Many2one) → fleet.vehicle
-
-
-  - **vehicle_category_id** (Many2one) → fleet.vehicle.model.category
-
-
-  - **dock_id** (Many2one) → stock.location
-
-
-  - **vehicle_weight_capacity** (Float)
-
-
-  - **weight_uom_name** (Char)
+#### Campos
+- **vehicle_id** (Many2one) → fleet.vehicle
+- **vehicle_category_id** (Many2one) → fleet.vehicle.model.category
+- **dock_id** (Many2one) → stock.location
+- **vehicle_weight_capacity** (Float)
+- **weight_uom_name** (Char)
+- **vehicle_volume_capacity** (Float)
+- **volume_uom_name** (Char)
+- **driver_id** (Many2one) → res.partner
+- **used_weight_percentage** (Float)
+- **used_volume_percentage** (Float)
+- **end_date** (Datetime) → End Date
 
 
-  - **vehicle_volume_capacity** (Float)
 
 
-  - **volume_uom_name** (Char)
 
+#### Vistas
 
-  - **driver_id** (Many2one) → res.partner
-
-
-  - **used_weight_percentage** (Float)
-
-
-  - **used_volume_percentage** (Float)
-
-
-  - **end_date** (Datetime) → End Date
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| pivot | stock.picking.batch.pivot | `stock_fleet.stock_picking_batch_pivot` | - |
+| graph | stock.picking.batch.graph | `stock_fleet.stock_picking_batch_graph` | - |
 
 
 
@@ -77,18 +66,11 @@ Transport Management: organize packs in your fleet, or carriers.
 
 
 
-- Campos:
-
-  - **weight_capacity** (Float)
-
-
-  - **weight_capacity_uom_name** (Char)
-
-
-  - **volume_capacity** (Float)
-
-
-  - **volume_capacity_uom_name** (Char)
+#### Campos
+- **weight_capacity** (Float)
+- **weight_capacity_uom_name** (Char)
+- **volume_capacity** (Float)
+- **volume_capacity_uom_name** (Char)
 
 
 
@@ -104,9 +86,8 @@ Transport Management: organize packs in your fleet, or carriers.
 
 
 
-- Campos:
-
-  - **is_a_dock** (Boolean) → Is a Dock Location
+#### Campos
+- **is_a_dock** (Boolean) → Is a Dock Location
 
 
 
@@ -122,10 +103,8 @@ Transport Management: organize packs in your fleet, or carriers.
 
 
 
-- Campos:
-
-  - **zip** (Char)
-
+#### Campos
+- **zip** (Char)
 
 
 
@@ -133,14 +112,6 @@ Transport Management: organize packs in your fleet, or carriers.
 
 
 
-## Vistas
 
-
-### stock.picking.batch
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| pivot | stock.picking.batch.pivot | `stock_fleet.stock_picking_batch_pivot` | - |
-| graph | stock.picking.batch.graph | `stock_fleet.stock_picking_batch_graph` | - |
 
 

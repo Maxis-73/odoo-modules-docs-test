@@ -26,12 +26,9 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **use_leads** (Boolean) → Use Leads
-
-
-  - **crm_lead_count** (Integer) → Leads/Opportunities count
+#### Campos
+- **use_leads** (Boolean) → Use Leads
+- **crm_lead_count** (Integer) → Leads/Opportunities count
 
 
 
@@ -44,21 +41,12 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **variable** (Char) → Variable
-
-
-  - **value** (Char) → Value
-
-
-  - **won_count** (Float) → Won Count
-
-
-  - **lost_count** (Float) → Lost Count
-
-
-  - **team_id** (Many2one) → crm.team
+#### Campos
+- **variable** (Char) → Variable
+- **value** (Char) → Value
+- **won_count** (Float) → Won Count
+- **lost_count** (Float) → Lost Count
+- **team_id** (Many2one) → crm.team
 
 
 
@@ -71,12 +59,9 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **field_id** (Many2one) → ir.model.fields
+#### Campos
+- **name** (Char)
+- **field_id** (Many2one) → ir.model.fields
 
 
 
@@ -89,17 +74,33 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **name** (Char) → Description
-
-
-  - **active** (Boolean) → Active
+#### Campos
+- **name** (Char) → Description
+- **active** (Boolean) → Active
+- **leads_count** (Integer) → Leads Count
 
 
-  - **leads_count** (Integer) → Leads Count
 
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | crm.lost.reason.view.search | `crm.crm_lost_reason_view_search` | - |
+| form | crm.lost.reason.form | `crm.crm_lost_reason_view_form` | - |
+| list | crm.lost.reason.list | `crm.crm_lost_reason_view_tree` | - |
+
+
+
+**Filtros de búsqueda (crm.crm_lost_reason_view_search):**
+
+- **Active** (`[('active', '=', True)]`)
+- **Archived** (`[('active', '=', False)]`)
+
+
+**Botones (crm.crm_lost_reason_view_form):**
+- **action_lost_leads** (object)
 
 
 
@@ -110,20 +111,28 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **name** (Char) → Plan Name
-
-
-  - **number_of_months** (Integer) → # Months
-
-
-  - **active** (Boolean) → Active
+#### Campos
+- **name** (Char) → Plan Name
+- **number_of_months** (Integer) → # Months
+- **active** (Boolean) → Active
+- **sequence** (Integer) → Sequence
 
 
-  - **sequence** (Integer) → Sequence
 
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | crm.recurring.plan.view.list | `crm.crm_recurring_plan_view_tree` | - |
+| search | crm.recurring.plan.view.search | `crm.crm_recurring_plan_view_search` | - |
+
+
+
+**Filtros de búsqueda (crm.crm_recurring_plan_view_search):**
+
+- **Archived** (`[('active', '=', False)]`)
 
 
 
@@ -134,28 +143,26 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **name** (Char) → Stage Name
-
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **is_won** (Boolean) → Is Won Stage?
-
-
-  - **requirements** (Text) → Requirements
+#### Campos
+- **name** (Char) → Stage Name
+- **sequence** (Integer) → Sequence
+- **is_won** (Boolean) → Is Won Stage?
+- **requirements** (Text) → Requirements
+- **team_id** (Many2one) → crm.team
+- **fold** (Boolean) → Folded in Pipeline
+- **team_count** (Integer) → team_count
 
 
-  - **team_id** (Many2one) → crm.team
 
 
-  - **fold** (Boolean) → Folded in Pipeline
 
+#### Vistas
 
-  - **team_count** (Integer) → team_count
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | Stage - Search | `crm.crm_lead_stage_search` | - |
+| list | crm.stage.list | `crm.crm_stage_tree` | - |
+| form | crm.stage.form | `crm.crm_stage_form` | - |
 
 
 
@@ -170,18 +177,11 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **kpi_crm_lead_created** (Boolean) → New Leads
-
-
-  - **kpi_crm_lead_created_value** (Integer)
-
-
-  - **kpi_crm_opportunities_won** (Boolean) → Opportunities Won
-
-
-  - **kpi_crm_opportunities_won_value** (Integer)
+#### Campos
+- **kpi_crm_lead_created** (Boolean) → New Leads
+- **kpi_crm_lead_created_value** (Integer)
+- **kpi_crm_opportunities_won** (Boolean) → Opportunities Won
+- **kpi_crm_opportunities_won_value** (Integer)
 
 
 
@@ -197,12 +197,9 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **target_sales_won** (Integer) → Won in Opportunities Target
-
-
-  - **target_sales_done** (Integer) → Activities Done Target
+#### Campos
+- **target_sales_won** (Integer) → Won in Opportunities Target
+- **target_sales_done** (Integer) → Activities Done Target
 
 
 
@@ -218,9 +215,8 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **opportunity_id** (Many2one) → crm.lead
+#### Campos
+- **opportunity_id** (Many2one) → crm.lead
 
 
 
@@ -236,60 +232,25 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **group_use_lead** (Boolean)
-
-
-  - **group_use_recurring_revenues** (Boolean)
-
-
-  - **is_membership_multi** (Boolean)
-
-
-  - **crm_use_auto_assignment** (Boolean)
-
-
-  - **crm_auto_assignment_action** (Selection)
-
-
-  - **crm_auto_assignment_interval_type** (Selection)
-
-
-  - **crm_auto_assignment_interval_number** (Integer)
-
-
-  - **crm_auto_assignment_run_datetime** (Datetime)
-
-
-  - **module_crm_iap_mine** (Boolean) → Generate new leads based on their country, industries, size, etc.
-
-
-  - **module_crm_iap_enrich** (Boolean) → Enrich your leads automatically with company data based on their email address.
-
-
-  - **module_website_crm_iap_reveal** (Boolean) → Create Leads/Opportunities from your website's traffic
-
-
-  - **lead_enrich_auto** (Selection)
-
-
-  - **lead_mining_in_pipeline** (Boolean) → Create a lead mining request directly from the opportunity pipeline.
-
-
-  - **predictive_lead_scoring_start_date** (Date)
-
-
-  - **predictive_lead_scoring_start_date_str** (Char)
-
-
-  - **predictive_lead_scoring_fields** (Many2many) → crm.lead.scoring.frequency.field
-
-
-  - **predictive_lead_scoring_fields_str** (Char)
-
-
-  - **predictive_lead_scoring_field_labels** (Char)
+#### Campos
+- **group_use_lead** (Boolean)
+- **group_use_recurring_revenues** (Boolean)
+- **is_membership_multi** (Boolean)
+- **crm_use_auto_assignment** (Boolean)
+- **crm_auto_assignment_action** (Selection)
+- **crm_auto_assignment_interval_type** (Selection)
+- **crm_auto_assignment_interval_number** (Integer)
+- **crm_auto_assignment_run_datetime** (Datetime)
+- **module_crm_iap_mine** (Boolean) → Generate new leads based on their country, industries, size, etc.
+- **module_crm_iap_enrich** (Boolean) → Enrich your leads automatically with company data based on their email address.
+- **module_website_crm_iap_reveal** (Boolean) → Create Leads/Opportunities from your website's traffic
+- **lead_enrich_auto** (Selection)
+- **lead_mining_in_pipeline** (Boolean) → Create a lead mining request directly from the opportunity pipeline.
+- **predictive_lead_scoring_start_date** (Date)
+- **predictive_lead_scoring_start_date_str** (Char)
+- **predictive_lead_scoring_fields** (Many2many) → crm.lead.scoring.frequency.field
+- **predictive_lead_scoring_fields_str** (Char)
+- **predictive_lead_scoring_field_labels** (Char)
 
 
 
@@ -309,6 +270,7 @@ Track leads and close opportunities
 
 
 
+
 ### crm.team
 
 
@@ -323,54 +285,23 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **use_leads** (Boolean) → Leads
-
-
-  - **use_opportunities** (Boolean) → Pipeline
-
-
-  - **alias_id** (Many2one)
-
-
-  - **assignment_enabled** (Boolean) → Lead Assign
-
-
-  - **assignment_auto_enabled** (Boolean) → Auto Assignment
-
-
-  - **assignment_optout** (Boolean) → Skip auto assignment
-
-
-  - **assignment_max** (Integer) → Lead Average Capacity
-
-
-  - **assignment_domain** (Char) → Assignment Domain
-
-
-  - **lead_unassigned_count** (Integer)
-
-
-  - **lead_all_assigned_month_count** (Integer)
-
-
-  - **lead_all_assigned_month_exceeded** (Boolean) → Exceed monthly lead assignement
-
-
-  - **opportunities_count** (Integer)
-
-
-  - **opportunities_amount** (Monetary)
-
-
-  - **opportunities_overdue_count** (Integer)
-
-
-  - **opportunities_overdue_amount** (Monetary)
-
-
-  - **lead_properties_definition** (PropertiesDefinition) → Lead Properties
+#### Campos
+- **use_leads** (Boolean) → Leads
+- **use_opportunities** (Boolean) → Pipeline
+- **alias_id** (Many2one)
+- **assignment_enabled** (Boolean) → Lead Assign
+- **assignment_auto_enabled** (Boolean) → Auto Assignment
+- **assignment_optout** (Boolean) → Skip auto assignment
+- **assignment_max** (Integer) → Lead Average Capacity
+- **assignment_domain** (Char) → Assignment Domain
+- **lead_unassigned_count** (Integer)
+- **lead_all_assigned_month_count** (Integer)
+- **lead_all_assigned_month_exceeded** (Boolean) → Exceed monthly lead assignement
+- **opportunities_count** (Integer)
+- **opportunities_amount** (Monetary)
+- **opportunities_overdue_count** (Integer)
+- **opportunities_overdue_amount** (Monetary)
+- **lead_properties_definition** (PropertiesDefinition) → Lead Properties
 
 
 
@@ -387,6 +318,7 @@ Track leads and close opportunities
 
 
 - No agrega campos
+
 
 
 
@@ -414,310 +346,82 @@ Track leads and close opportunities
 
 
 
-- Campos:
-
-  - **name** (Char) → Opportunity
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **user_company_ids** (Many2many) → res.company
-
-
-  - **team_id** (Many2one) → crm.team
-
-
-  - **lead_properties** (Properties) → Properties
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **referred** (Char) → Referred By
-
-
-  - **description** (Html) → Notes
-
-
-  - **active** (Boolean) → Active
-
-
-  - **type** (Selection)
-
-
-  - **priority** (Selection)
-
-
-  - **stage_id** (Many2one) → crm.stage
-
-
-  - **tag_ids** (Many2many) → crm.tag
-
-
-  - **color** (Integer) → Color Index
-
-
-  - **expected_revenue** (Monetary) → Expected Revenue
-
-
-  - **prorated_revenue** (Monetary) → Prorated Revenue
-
-
-  - **recurring_revenue** (Monetary) → Recurring Revenues
-
-
-  - **recurring_plan** (Many2one) → crm.recurring.plan
-
-
-  - **recurring_revenue_monthly** (Monetary) → Expected MRR
-
-
-  - **recurring_revenue_monthly_prorated** (Monetary) → Prorated MRR
-
-
-  - **recurring_revenue_prorated** (Monetary) → Prorated Recurring Revenues
-
-
-  - **company_currency** (Many2one) → res.currency
-
-
-  - **date_closed** (Datetime) → Closed Date
-
-
-  - **date_automation_last** (Datetime) → Last Action
-
-
-  - **date_open** (Datetime) → Assignment Date
-
-
-  - **day_open** (Float) → Days to Assign
-
-
-  - **day_close** (Float) → Days to Close
-
-
-  - **date_last_stage_update** (Datetime) → Last Stage Update
-
-
-  - **date_conversion** (Datetime) → Conversion Date
-
-
-  - **date_deadline** (Date) → Expected Closing
-
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **partner_is_blacklisted** (Boolean) → Partner is blacklisted
-
-
-  - **contact_name** (Char) → Contact Name
-
-
-  - **partner_name** (Char) → Company Name
-
-
-  - **function** (Char) → Job Position
-
-
-  - **title** (Many2one) → res.partner.title
-
-
-  - **email_from** (Char) → Email
-
-
-  - **email_normalized** (Char)
-
-
-  - **email_domain_criterion** (Char)
-
-
-  - **phone** (Char) → Phone
-
-
-  - **mobile** (Char) → Mobile
-
-
-  - **phone_sanitized** (Char)
-
-
-  - **phone_state** (Selection)
-
-
-  - **email_state** (Selection)
-
-
-  - **website** (Char) → Website
-
-
-  - **lang_id** (Many2one) → res.lang
-
-
-  - **lang_code** (Char)
-
-
-  - **lang_active_count** (Integer)
-
-
-  - **street** (Char) → Street
-
-
-  - **street2** (Char) → Street2
-
-
-  - **zip** (Char) → Zip
-
-
-  - **city** (Char) → City
-
-
-  - **state_id** (Many2one) → res.country.state
-
-
-  - **country_id** (Many2one) → res.country
-
-
-  - **probability** (Float) → Probability
-
-
-  - **automated_probability** (Float) → Automated Probability
-
-
-  - **is_automated_probability** (Boolean) → Is automated probability?
-
-
-  - **lost_reason_id** (Many2one) → crm.lost.reason
-
-
-  - **calendar_event_ids** (One2many) → calendar.event
-
-
-  - **duplicate_lead_ids** (Many2many) → crm.lead
-
-
-  - **duplicate_lead_count** (Integer)
-
-
-  - **meeting_display_date** (Date)
-
-
-  - **meeting_display_label** (Char)
-
-
-  - **partner_email_update** (Boolean) → Partner Email will Update
-
-
-  - **partner_phone_update** (Boolean) → Partner Phone will Update
-
-
-  - **is_partner_visible** (Boolean) → Is Partner Visible
-
-
-  - **campaign_id** (Many2one)
-
-
-  - **medium_id** (Many2one)
-
-
-  - **source_id** (Many2one)
-
-
-
-
-
-### res.partner
-
-
-- Hereda de:
-
-  - res.partner
-
-
-
-
-- Campos:
-
-  - **opportunity_ids** (One2many) → crm.lead
-
-
-  - **opportunity_count** (Integer)
-
-
-
-
-
-### crm.team.member
-
-
-- Hereda de:
-
-  - crm.team.member
-
-
-
-
-- Campos:
-
-  - **assignment_enabled** (Boolean)
-
-
-  - **assignment_domain** (Char) → Assignment Domain
-
-
-  - **assignment_optout** (Boolean) → Skip auto assignment
-
-
-  - **assignment_max** (Integer) → Average Leads Capacity (on 30 days)
-
-
-  - **lead_day_count** (Integer) → Leads (last 24h)
-
-
-  - **lead_month_count** (Integer) → Leads (30 days)
-
-
-
-
-
-
-
-
-## Vistas
-
-
-### crm.stage
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | Stage - Search | `crm.crm_lead_stage_search` | - |
-| list | crm.stage.list | `crm.crm_stage_tree` | - |
-| form | crm.stage.form | `crm.crm_stage_form` | - |
-
-
-
-### crm.lost.reason
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | crm.lost.reason.view.search | `crm.crm_lost_reason_view_search` | - |
-| form | crm.lost.reason.form | `crm.crm_lost_reason_view_form` | - |
-| list | crm.lost.reason.list | `crm.crm_lost_reason_view_tree` | - |
-
-
-
-#### Filtros de búsqueda (crm.crm_lost_reason_view_search)
-
-**Filtros:**
-- **Active** (`[('active', '=', True)]`)
-- **Archived** (`[('active', '=', False)]`)
-
-
-#### Botones (crm.crm_lost_reason_view_form)
-- **action_lost_leads** (object)
-
-
-### crm.lead
+#### Campos
+- **name** (Char) → Opportunity
+- **user_id** (Many2one) → res.users
+- **user_company_ids** (Many2many) → res.company
+- **team_id** (Many2one) → crm.team
+- **lead_properties** (Properties) → Properties
+- **company_id** (Many2one) → res.company
+- **referred** (Char) → Referred By
+- **description** (Html) → Notes
+- **active** (Boolean) → Active
+- **type** (Selection)
+- **priority** (Selection)
+- **stage_id** (Many2one) → crm.stage
+- **tag_ids** (Many2many) → crm.tag
+- **color** (Integer) → Color Index
+- **expected_revenue** (Monetary) → Expected Revenue
+- **prorated_revenue** (Monetary) → Prorated Revenue
+- **recurring_revenue** (Monetary) → Recurring Revenues
+- **recurring_plan** (Many2one) → crm.recurring.plan
+- **recurring_revenue_monthly** (Monetary) → Expected MRR
+- **recurring_revenue_monthly_prorated** (Monetary) → Prorated MRR
+- **recurring_revenue_prorated** (Monetary) → Prorated Recurring Revenues
+- **company_currency** (Many2one) → res.currency
+- **date_closed** (Datetime) → Closed Date
+- **date_automation_last** (Datetime) → Last Action
+- **date_open** (Datetime) → Assignment Date
+- **day_open** (Float) → Days to Assign
+- **day_close** (Float) → Days to Close
+- **date_last_stage_update** (Datetime) → Last Stage Update
+- **date_conversion** (Datetime) → Conversion Date
+- **date_deadline** (Date) → Expected Closing
+- **partner_id** (Many2one) → res.partner
+- **partner_is_blacklisted** (Boolean) → Partner is blacklisted
+- **contact_name** (Char) → Contact Name
+- **partner_name** (Char) → Company Name
+- **function** (Char) → Job Position
+- **title** (Many2one) → res.partner.title
+- **email_from** (Char) → Email
+- **email_normalized** (Char)
+- **email_domain_criterion** (Char)
+- **phone** (Char) → Phone
+- **mobile** (Char) → Mobile
+- **phone_sanitized** (Char)
+- **phone_state** (Selection)
+- **email_state** (Selection)
+- **website** (Char) → Website
+- **lang_id** (Many2one) → res.lang
+- **lang_code** (Char)
+- **lang_active_count** (Integer)
+- **street** (Char) → Street
+- **street2** (Char) → Street2
+- **zip** (Char) → Zip
+- **city** (Char) → City
+- **state_id** (Many2one) → res.country.state
+- **country_id** (Many2one) → res.country
+- **probability** (Float) → Probability
+- **automated_probability** (Float) → Automated Probability
+- **is_automated_probability** (Boolean) → Is automated probability?
+- **lost_reason_id** (Many2one) → crm.lost.reason
+- **calendar_event_ids** (One2many) → calendar.event
+- **duplicate_lead_ids** (Many2many) → crm.lead
+- **duplicate_lead_count** (Integer)
+- **meeting_display_date** (Date)
+- **meeting_display_label** (Char)
+- **partner_email_update** (Boolean) → Partner Email will Update
+- **partner_phone_update** (Boolean) → Partner Phone will Update
+- **is_partner_visible** (Boolean) → Is Partner Visible
+- **campaign_id** (Many2one)
+- **medium_id** (Many2one)
+- **source_id** (Many2one)
+
+
+
+
+
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -743,7 +447,7 @@ Track leads and close opportunities
 
 
 
-#### Botones (crm.crm_lead_view_form)
+**Botones (crm.crm_lead_view_form):**
 - **Won** (object)
 - **Lost** (action)
 - **Convert to Opportunity** (action)
@@ -760,9 +464,8 @@ Track leads and close opportunities
 - **phone_action_blacklist_remove** (object) - Grupos: `base.group_user`
 
 
-#### Filtros de búsqueda (crm.view_crm_case_leads_filter)
+**Filtros de búsqueda (crm.view_crm_case_leads_filter):**
 
-**Filtros:**
 - **My Leads** (`[('user_id', '=', uid)]`)
 - **Unassigned** (`[('user_id','=', False), ('type', '=', 'lead')]`)
 - **Lost** (`['&', ('probability', '=', 0), ('active', '=', False)]`)
@@ -774,7 +477,7 @@ Track leads and close opportunities
 - **Archived** (`[('active', '=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Salesperson
 - Sales Team
 - City
@@ -788,9 +491,8 @@ Track leads and close opportunities
 - Properties
 
 
-#### Filtros de búsqueda (crm.view_crm_case_opportunities_filter)
+**Filtros de búsqueda (crm.view_crm_case_opportunities_filter):**
 
-**Filtros:**
 - **My Pipeline** (`[('user_id', '=', uid)]`)
 - **Unassigned** (`[('user_id', '=', False)]`)
 - **Open Opportunities** (`[('probability', '<', 100), ('type', '=', 'opportunity'), ('active', '=', True)]`)
@@ -806,7 +508,7 @@ Track leads and close opportunities
 - **Future Activities** (`[('my_activity_date_deadline', '>', context_today().strftime('%Y-%m-%d'))]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Salesperson
 - Sales Team
 - Stage
@@ -825,9 +527,8 @@ Track leads and close opportunities
 - Properties
 
 
-#### Filtros de búsqueda (crm.crm_opportunity_report_view_search)
+**Filtros de búsqueda (crm.crm_opportunity_report_view_search):**
 
-**Filtros:**
 - **My Pipeline** (`[('user_id', '=', uid)]`)
 - **Opportunities** (`[('type','=','opportunity')]`)
 - **Leads** (`[('type','=', 'lead')]`)
@@ -841,7 +542,7 @@ Track leads and close opportunities
 - **Archived** (`[('active', '=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Salesperson
 - Sales Team
 - City
@@ -858,19 +559,53 @@ Track leads and close opportunities
 - Lost Reason
 
 
-### crm.recurring.plan
 
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | crm.recurring.plan.view.list | `crm.crm_recurring_plan_view_tree` | - |
-| search | crm.recurring.plan.view.search | `crm.crm_recurring_plan_view_search` | - |
+### res.partner
 
 
+- Hereda de:
 
-#### Filtros de búsqueda (crm.crm_recurring_plan_view_search)
+  - res.partner
 
-**Filtros:**
-- **Archived** (`[('active', '=', False)]`)
+
+
+
+#### Campos
+- **opportunity_ids** (One2many) → crm.lead
+- **opportunity_count** (Integer)
+
+
+
+
+
+### crm.team.member
+
+
+- Hereda de:
+
+  - crm.team.member
+
+
+
+
+#### Campos
+- **assignment_enabled** (Boolean)
+- **assignment_domain** (Char) → Assignment Domain
+- **assignment_optout** (Boolean) → Skip auto assignment
+- **assignment_max** (Integer) → Average Leads Capacity (on 30 days)
+- **lead_day_count** (Integer) → Leads (last 24h)
+- **lead_month_count** (Integer) → Leads (30 days)
+
+
+
+
+
+
+
+
+
+
+## Vistas Adicionales
 
 
 ### crm.merge.opportunity
@@ -881,7 +616,7 @@ Track leads and close opportunities
 
 
 
-#### Botones (crm.merge_opportunity_form)
+**Botones (crm.merge_opportunity_form):**
 - **Merge** (object)
 
 
@@ -893,7 +628,7 @@ Track leads and close opportunities
 
 
 
-#### Botones (crm.crm_lead_lost_view_form)
+**Botones (crm.crm_lead_lost_view_form):**
 - **Mark as Lost** (object)
 
 
@@ -905,7 +640,7 @@ Track leads and close opportunities
 
 
 
-#### Botones (crm.crm_lead_pls_update_view_form)
+**Botones (crm.crm_lead_pls_update_view_form):**
 - **Update** (object)
 
 
@@ -917,7 +652,7 @@ Track leads and close opportunities
 
 
 
-#### Botones (crm.view_crm_lead2opportunity_partner)
+**Botones (crm.view_crm_lead2opportunity_partner):**
 - **Create Opportunity** (object)
 
 
@@ -929,7 +664,7 @@ Track leads and close opportunities
 
 
 
-#### Botones (crm.view_crm_lead2opportunity_partner_mass)
+**Botones (crm.view_crm_lead2opportunity_partner_mass):**
 - **Convert to Opportunities** (object)
 
 
@@ -944,9 +679,8 @@ Track leads and close opportunities
 
 
 
-#### Filtros de búsqueda (crm.crm_activity_report_view_search)
+**Filtros de búsqueda (crm.crm_activity_report_view_search):**
 
-**Filtros:**
 - **Leads** (`[('lead_type', '=', 'lead')]`)
 - **Opportunities** (`[('lead_type', '=', 'opportunity')]`)
 - **Won** (`[('stage_id.is_won', '=', True)]`)
@@ -955,7 +689,7 @@ Track leads and close opportunities
 - **Archived** (`[('active', '=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Activity
 - Type
 - Assigned To
@@ -967,4 +701,6 @@ Track leads and close opportunities
 - Creation Date
 - Expected Closing
 - Closed Date
+
+
 

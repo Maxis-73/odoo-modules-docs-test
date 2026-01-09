@@ -15,6 +15,7 @@ project profitability items computation
 ## Descripción
 
 Allows the computation of some section for the project profitability
+==================================================================================================
 This module allows the computation of the 'Vendor Bills', 'Other Costs' and 'Other Revenues' section for the project profitability, in the project update view.
 
 
@@ -33,6 +34,7 @@ This module allows the computation of the 'Vendor Bills', 'Other Costs' and 'Oth
 
 
 - No agrega campos
+
 
 
 

@@ -29,9 +29,8 @@ A payment provider for running fake payment flows for demo purposes.
 
 
 
-- Campos:
-
-  - **demo_simulated_state** (Selection)
+#### Campos
+- **demo_simulated_state** (Selection)
 
 
 
@@ -47,9 +46,8 @@ A payment provider for running fake payment flows for demo purposes.
 
 
 
-- Campos:
-
-  - **capture_manually** (Boolean)
+#### Campos
+- **capture_manually** (Boolean)
 
 
 
@@ -65,9 +63,8 @@ A payment provider for running fake payment flows for demo purposes.
 
 
 
-- Campos:
-
-  - **code** (Selection)
+#### Campos
+- **code** (Selection)
 
 
 

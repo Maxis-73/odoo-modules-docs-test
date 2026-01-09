@@ -33,6 +33,7 @@ Integrate free shipping in sales orders.
 
 
 
+
 ### loyalty.program
 
 
@@ -47,6 +48,7 @@ Integrate free shipping in sales orders.
 
 
 
+
 ### loyalty.reward
 
 
@@ -57,9 +59,8 @@ Integrate free shipping in sales orders.
 
 
 
-- Campos:
-
-  - **reward_type** (Selection)
+#### Campos
+- **reward_type** (Selection)
 
 
 

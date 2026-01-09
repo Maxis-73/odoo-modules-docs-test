@@ -15,6 +15,7 @@ Analytic accounting in Manufacturing
 ## Descripción
 
 Analytic Accounting in MRP
+==========================
 
 * Cost structure report
 
@@ -38,12 +39,9 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **extra_cost** (Float)
-
-
-  - **show_valuation** (Boolean)
+#### Campos
+- **extra_cost** (Float)
+- **show_valuation** (Boolean)
 
 
 
@@ -63,6 +61,7 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
+
 ### mrp.workorder
 
 
@@ -73,12 +72,9 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **mo_analytic_account_line_ids** (Many2many) → account.analytic.line
-
-
-  - **wc_analytic_account_line_ids** (Many2many) → account.analytic.line
+#### Campos
+- **mo_analytic_account_line_ids** (Many2many) → account.analytic.line
+- **wc_analytic_account_line_ids** (Many2many) → account.analytic.line
 
 
 
@@ -94,12 +90,9 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **wip_production_ids** (Many2many) → mrp.production
-
-
-  - **wip_production_count** (Integer) → Manufacturing Orders Count
+#### Campos
+- **wip_production_ids** (Many2many) → mrp.production
+- **wip_production_count** (Integer) → Manufacturing Orders Count
 
 
 
@@ -119,6 +112,7 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
+
 ### mrp.routing.workcenter
 
 
@@ -130,6 +124,7 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 - No agrega campos
+
 
 
 
@@ -147,12 +142,9 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **costs_hour_account_ids** (Many2many) → account.analytic.account
-
-
-  - **expense_account_id** (Many2one) → account.account
+#### Campos
+- **costs_hour_account_ids** (Many2many) → account.analytic.account
+- **expense_account_id** (Many2one) → account.account
 
 
 
@@ -168,9 +160,8 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **account_move_line_id** (Many2one) → account.move.line
+#### Campos
+- **account_move_line_id** (Many2one) → account.move.line
 
 
 
@@ -190,6 +181,7 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
+
 ### product.product
 
 
@@ -204,6 +196,7 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
+
 ### product.category
 
 
@@ -214,9 +207,8 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **property_stock_account_production_cost_id** (Many2one) → account.account
+#### Campos
+- **property_stock_account_production_cost_id** (Many2one) → account.account
 
 
 
@@ -232,24 +224,13 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **production_ids** (Many2many) → mrp.production
-
-
-  - **production_count** (Integer) → Manufacturing Orders Count
-
-
-  - **bom_ids** (Many2many) → mrp.bom
-
-
-  - **bom_count** (Integer) → BoM Count
-
-
-  - **workcenter_ids** (Many2many) → mrp.workcenter
-
-
-  - **workorder_count** (Integer) → Work Order Count
+#### Campos
+- **production_ids** (Many2many) → mrp.production
+- **production_count** (Integer) → Manufacturing Orders Count
+- **bom_ids** (Many2many) → mrp.bom
+- **bom_count** (Integer) → BoM Count
+- **workcenter_ids** (Many2many) → mrp.workcenter
+- **workorder_count** (Integer) → Work Order Count
 
 
 
@@ -265,9 +246,8 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **category** (Selection)
+#### Campos
+- **category** (Selection)
 
 
 
@@ -283,10 +263,8 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-- Campos:
-
-  - **business_domain** (Selection)
-
+#### Campos
+- **business_domain** (Selection)
 
 
 
@@ -294,7 +272,10 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### mrp.account.wip.accounting
@@ -305,6 +286,8 @@ If the automated inventory valuation is active, the necessary accounting entries
 
 
 
-#### Botones (mrp_account.view_wip_accounting_form)
+**Botones (mrp_account.view_wip_accounting_form):**
 - **Post WIP** (object)
+
+
 

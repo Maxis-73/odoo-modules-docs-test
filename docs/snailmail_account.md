@@ -12,6 +12,7 @@
 ## Descripción
 
 Allows users to send invoices by post
+=====================================================
         
 
 
@@ -32,6 +33,7 @@ Allows users to send invoices by post
 
 
 
+
 ### res.partner
 
 
@@ -42,9 +44,8 @@ Allows users to send invoices by post
 
 
 
-- Campos:
-
-  - **invoice_sending_method** (Selection)
+#### Campos
+- **invoice_sending_method** (Selection)
 
 
 

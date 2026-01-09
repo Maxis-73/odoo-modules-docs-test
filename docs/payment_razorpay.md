@@ -33,6 +33,7 @@ A payment provider covering India.
 
 
 
+
 ### payment.transaction
 
 
@@ -47,6 +48,7 @@ A payment provider covering India.
 
 
 
+
 ### payment.provider
 
 
@@ -57,18 +59,11 @@ A payment provider covering India.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **razorpay_key_id** (Char)
-
-
-  - **razorpay_key_secret** (Char)
-
-
-  - **razorpay_webhook_secret** (Char)
+#### Campos
+- **code** (Selection)
+- **razorpay_key_id** (Char)
+- **razorpay_key_secret** (Char)
+- **razorpay_webhook_secret** (Char)
 
 
 

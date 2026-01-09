@@ -38,32 +38,34 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
-- Campos:
-
-  - **name** (Char) → Floor Name
-
-
-  - **pos_config_ids** (Many2many) → pos.config
-
-
-  - **background_image** (Binary) → Background Image
-
-
-  - **background_color** (Char) → Background Color
+#### Campos
+- **name** (Char) → Floor Name
+- **pos_config_ids** (Many2many) → pos.config
+- **background_image** (Binary) → Background Image
+- **background_color** (Char) → Background Color
+- **table_ids** (One2many) → restaurant.table
+- **sequence** (Integer) → Sequence
+- **active** (Boolean)
+- **floor_background_image** (Image)
 
 
-  - **table_ids** (One2many) → restaurant.table
 
 
-  - **sequence** (Integer) → Sequence
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | Restaurant Floors | `pos_restaurant.view_restaurant_floor_form` | - |
+| list | Restaurant Floors | `pos_restaurant.view_restaurant_floor_tree` | - |
+| search | restaurant.floor.search | `pos_restaurant.view_restaurant_floor_search` | - |
+| kanban | restaurant.floor.kanban | `pos_restaurant.view_restaurant_floor_kanban` | - |
 
 
-  - **active** (Boolean)
 
+**Filtros de búsqueda (pos_restaurant.view_restaurant_floor_search):**
 
-  - **floor_background_image** (Image)
-
-
+- **Archived** (`[('active', '=', False)]`)
 
 
 
@@ -79,40 +81,28 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
-- Campos:
-
-  - **floor_id** (Many2one) → restaurant.floor
-
-
-  - **table_number** (Integer) → Table Number
-
-
-  - **shape** (Selection)
-
-
-  - **position_h** (Float) → Horizontal Position
-
-
-  - **position_v** (Float) → Vertical Position
+#### Campos
+- **floor_id** (Many2one) → restaurant.floor
+- **table_number** (Integer) → Table Number
+- **shape** (Selection)
+- **position_h** (Float) → Horizontal Position
+- **position_v** (Float) → Vertical Position
+- **width** (Float) → Width
+- **height** (Float) → Height
+- **seats** (Integer) → Seats
+- **color** (Char) → Color
+- **parent_id** (Many2one) → restaurant.table
+- **active** (Boolean) → Active
 
 
-  - **width** (Float) → Width
 
 
-  - **height** (Float) → Height
 
+#### Vistas
 
-  - **seats** (Integer) → Seats
-
-
-  - **color** (Char) → Color
-
-
-  - **parent_id** (Many2one) → restaurant.table
-
-
-  - **active** (Boolean) → Active
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | Restaurant Table | `pos_restaurant.view_restaurant_table_form` | - |
 
 
 
@@ -127,27 +117,14 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
-- Campos:
-
-  - **iface_splitbill** (Boolean)
-
-
-  - **iface_printbill** (Boolean)
-
-
-  - **floor_ids** (Many2many) → restaurant.floor
-
-
-  - **set_tip_after_payment** (Boolean) → Set Tip After Payment
-
-
-  - **module_pos_restaurant_appointment** (Boolean) → Table Booking
-
-
-  - **takeaway** (Boolean) → Takeaway
-
-
-  - **takeaway_fp_id** (Many2one) → account.fiscal.position
+#### Campos
+- **iface_splitbill** (Boolean)
+- **iface_printbill** (Boolean)
+- **floor_ids** (Many2many) → restaurant.floor
+- **set_tip_after_payment** (Boolean) → Set Tip After Payment
+- **module_pos_restaurant_appointment** (Boolean) → Table Booking
+- **takeaway** (Boolean) → Takeaway
+- **takeaway_fp_id** (Many2one) → account.fiscal.position
 
 
 
@@ -163,15 +140,10 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
-- Campos:
-
-  - **table_id** (Many2one) → restaurant.table
-
-
-  - **customer_count** (Integer)
-
-
-  - **takeaway** (Boolean)
+#### Campos
+- **table_id** (Many2one) → restaurant.table
+- **customer_count** (Integer)
+- **takeaway** (Boolean)
 
 
 
@@ -191,6 +163,7 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
+
 ### account.fiscal.position
 
 
@@ -205,6 +178,7 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
+
 ### res.config.settings
 
 
@@ -215,27 +189,14 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
-- Campos:
-
-  - **pos_floor_ids** (Many2many)
-
-
-  - **pos_iface_printbill** (Boolean)
-
-
-  - **pos_iface_splitbill** (Boolean)
-
-
-  - **pos_set_tip_after_payment** (Boolean)
-
-
-  - **pos_module_pos_restaurant_appointment** (Boolean)
-
-
-  - **pos_takeaway** (Boolean)
-
-
-  - **pos_takeaway_fp_id** (Many2one)
+#### Campos
+- **pos_floor_ids** (Many2many)
+- **pos_iface_printbill** (Boolean)
+- **pos_iface_splitbill** (Boolean)
+- **pos_set_tip_after_payment** (Boolean)
+- **pos_module_pos_restaurant_appointment** (Boolean)
+- **pos_takeaway** (Boolean)
+- **pos_takeaway_fp_id** (Many2one)
 
 
 
@@ -258,30 +219,6 @@ This module adds several features to the Point of Sale that are specific to rest
 
 
 
-## Vistas
 
-
-### restaurant.floor
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | Restaurant Floors | `pos_restaurant.view_restaurant_floor_form` | - |
-| list | Restaurant Floors | `pos_restaurant.view_restaurant_floor_tree` | - |
-| search | restaurant.floor.search | `pos_restaurant.view_restaurant_floor_search` | - |
-| kanban | restaurant.floor.kanban | `pos_restaurant.view_restaurant_floor_kanban` | - |
-
-
-
-#### Filtros de búsqueda (pos_restaurant.view_restaurant_floor_search)
-
-**Filtros:**
-- **Archived** (`[('active', '=', False)]`)
-
-
-### restaurant.table
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | Restaurant Table | `pos_restaurant.view_restaurant_table_form` | - |
 
 

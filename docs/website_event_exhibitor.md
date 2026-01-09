@@ -26,9 +26,8 @@ Event: manage sponsors and exhibitors
 
 
 
-- Campos:
-
-  - **exhibitor_menu** (Boolean)
+#### Campos
+- **exhibitor_menu** (Boolean)
 
 
 
@@ -44,9 +43,8 @@ Event: manage sponsors and exhibitors
 
 
 
-- Campos:
-
-  - **menu_type** (Selection)
+#### Campos
+- **menu_type** (Selection)
 
 
 
@@ -70,95 +68,63 @@ Event: manage sponsors and exhibitors
 
 
 
-- Campos:
-
-  - **event_id** (Many2one) → event.event
-
-
-  - **sponsor_type_id** (Many2one) → event.sponsor.type
-
-
-  - **url** (Char) → Sponsor Website
-
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **active** (Boolean)
-
-
-  - **subtitle** (Char) → Slogan
-
-
-  - **exhibitor_type** (Selection)
-
-
-  - **website_description** (Html) → Description
-
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **partner_name** (Char) → Name
-
-
-  - **partner_email** (Char) → Email
+#### Campos
+- **event_id** (Many2one) → event.event
+- **sponsor_type_id** (Many2one) → event.sponsor.type
+- **url** (Char) → Sponsor Website
+- **sequence** (Integer) → Sequence
+- **active** (Boolean)
+- **subtitle** (Char) → Slogan
+- **exhibitor_type** (Selection)
+- **website_description** (Html) → Description
+- **partner_id** (Many2one) → res.partner
+- **partner_name** (Char) → Name
+- **partner_email** (Char) → Email
+- **partner_phone** (Char) → Phone
+- **partner_mobile** (Char) → Mobile
+- **name** (Char) → Sponsor Name
+- **email** (Char) → Sponsor Email
+- **phone** (Char) → Sponsor Phone
+- **mobile** (Char) → Sponsor Mobile
+- **image_512** (Image)
+- **image_256** (Image) → Image 256
+- **image_128** (Image) → Image 128
+- **website_image_url** (Char)
+- **hour_from** (Float) → Opening hour
+- **hour_to** (Float) → End hour
+- **event_date_tz** (Selection)
+- **is_in_opening_hours** (Boolean) → Within opening hours
+- **chat_room_id** (Many2one)
+- **room_name** (Char)
+- **country_id** (Many2one) → res.country
+- **country_flag_url** (Char)
 
 
-  - **partner_phone** (Char) → Phone
 
 
-  - **partner_mobile** (Char) → Mobile
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | event.sponsor.search | `website_event_exhibitor.event_sponsor_view_search` | - |
+| form | event.sponsor.view.form | `website_event_exhibitor.event_sponsor_view_form` | - |
+| list | event.sponsor.view.list | `website_event_exhibitor.event_sponsor_view_tree` | - |
+| kanban | event.sponsor.view.kanban | `website_event_exhibitor.event_sponsor_view_kanban` | - |
 
 
-  - **name** (Char) → Sponsor Name
+
+**Filtros de búsqueda (website_event_exhibitor.event_sponsor_view_search):**
+
+- **Published** (`[('website_published', '=', True)]`)
+- **Archived** (`[('active', '=', False)]`)
+- **Exhibitors** (`[('exhibitor_type', 'in', ['exhibitor', 'online'])]`)
+- **Online** (`[('exhibitor_type', '=', 'online')]`)
 
 
-  - **email** (Char) → Sponsor Email
-
-
-  - **phone** (Char) → Sponsor Phone
-
-
-  - **mobile** (Char) → Sponsor Mobile
-
-
-  - **image_512** (Image)
-
-
-  - **image_256** (Image) → Image 256
-
-
-  - **image_128** (Image) → Image 128
-
-
-  - **website_image_url** (Char)
-
-
-  - **hour_from** (Float) → Opening hour
-
-
-  - **hour_to** (Float) → End hour
-
-
-  - **event_date_tz** (Selection)
-
-
-  - **is_in_opening_hours** (Boolean) → Within opening hours
-
-
-  - **chat_room_id** (Many2one)
-
-
-  - **room_name** (Char)
-
-
-  - **country_id** (Many2one) → res.country
-
-
-  - **country_flag_url** (Char)
-
-
+*Agrupar por:*
+- Event
+- Level
 
 
 
@@ -169,16 +135,21 @@ Event: manage sponsors and exhibitors
 
 
 
-- Campos:
-
-  - **name** (Char) → Sponsor Level
-
-
-  - **sequence** (Integer) → Sequence
+#### Campos
+- **name** (Char) → Sponsor Level
+- **sequence** (Integer) → Sequence
+- **display_ribbon_style** (Selection)
 
 
-  - **display_ribbon_style** (Selection)
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | Sponsor Levels | `website_event_exhibitor.event_sponsor_type_view_form` | - |
+| list | Sponsor Levels | `website_event_exhibitor.event_sponsor_type_view_tree` | - |
 
 
 
@@ -193,18 +164,11 @@ Event: manage sponsors and exhibitors
 
 
 
-- Campos:
-
-  - **sponsor_ids** (One2many) → event.sponsor
-
-
-  - **sponsor_count** (Integer) → Sponsor Count
-
-
-  - **exhibitor_menu** (Boolean)
-
-
-  - **exhibitor_menu_ids** (One2many) → website.event.menu
+#### Campos
+- **sponsor_ids** (One2many) → event.sponsor
+- **sponsor_count** (Integer) → Sponsor Count
+- **exhibitor_menu** (Boolean)
+- **exhibitor_menu_ids** (One2many) → website.event.menu
 
 
 
@@ -213,39 +177,5 @@ Event: manage sponsors and exhibitors
 
 
 
-## Vistas
 
-
-### event.sponsor.type
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | Sponsor Levels | `website_event_exhibitor.event_sponsor_type_view_form` | - |
-| list | Sponsor Levels | `website_event_exhibitor.event_sponsor_type_view_tree` | - |
-
-
-
-### event.sponsor
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | event.sponsor.search | `website_event_exhibitor.event_sponsor_view_search` | - |
-| form | event.sponsor.view.form | `website_event_exhibitor.event_sponsor_view_form` | - |
-| list | event.sponsor.view.list | `website_event_exhibitor.event_sponsor_view_tree` | - |
-| kanban | event.sponsor.view.kanban | `website_event_exhibitor.event_sponsor_view_kanban` | - |
-
-
-
-#### Filtros de búsqueda (website_event_exhibitor.event_sponsor_view_search)
-
-**Filtros:**
-- **Published** (`[('website_published', '=', True)]`)
-- **Archived** (`[('active', '=', False)]`)
-- **Exhibitors** (`[('exhibitor_type', 'in', ['exhibitor', 'online'])]`)
-- **Online** (`[('exhibitor_type', '=', 'online')]`)
-
-
-**Agrupar por:**
-- Event
-- Level
 

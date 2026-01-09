@@ -15,6 +15,7 @@ Add a link to edit a translation in Transifex
 ## Descripción
 
 Transifex integration
+=====================
 This module will add a link to the Transifex project in the translation view.
 The purpose of this module is to speed up translations of the main modules.
 
@@ -41,6 +42,7 @@ project.
 
 
 
+
 ### transifex.code.translation
 
 
@@ -48,23 +50,33 @@ project.
 
 
 
-- Campos:
-
-  - **source** (Text)
-
-
-  - **value** (Text)
-
-
-  - **module** (Char)
+#### Campos
+- **source** (Text)
+- **value** (Text)
+- **module** (Char)
+- **lang** (Selection)
+- **transifex_url** (Char) → Transifex URL
 
 
-  - **lang** (Selection)
 
 
-  - **transifex_url** (Char) → Transifex URL
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | transifex.code.translation.list | `transifex.transifex_code_translation_tree_view` | - |
+| search | transifex.code.translation.view.search | `transifex.transifex_code_translation_view_search` | - |
 
 
+
+**Filtros de búsqueda (transifex.transifex_code_translation_view_search):**
+
+- **Not Translated** (`[('value', '=', '')]`)
+
+
+*Agrupar por:*
+- Module
 
 
 
@@ -85,24 +97,6 @@ project.
 
 
 
-## Vistas
 
 
-### transifex.code.translation
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | transifex.code.translation.list | `transifex.transifex_code_translation_tree_view` | - |
-| search | transifex.code.translation.view.search | `transifex.transifex_code_translation_view_search` | - |
-
-
-
-#### Filtros de búsqueda (transifex.transifex_code_translation_view_search)
-
-**Filtros:**
-- **Not Translated** (`[('value', '=', '')]`)
-
-
-**Agrupar por:**
-- Module
 

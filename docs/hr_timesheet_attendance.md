@@ -35,7 +35,10 @@
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### hr.timesheet.attendance.report
@@ -48,9 +51,8 @@
 
 
 
-#### Filtros de búsqueda (hr_timesheet_attendance.view_hr_timesheet_attendance_report_search)
+**Filtros de búsqueda (hr_timesheet_attendance.view_hr_timesheet_attendance_report_search):**
 
-**Filtros:**
 - **My Team** (`[('employee_id.parent_id.user_id', '=', uid)]`)
 - **My Department** (`[('employee_id.member_of_department', '=', True)]`)
 - **Date**
@@ -59,7 +61,9 @@
 - **Last Week** (`[                             ('date', '>=', context_today() + relativedelta(weeks=-2,days=1,weekday=0)),                             ('date', '<', context_today() + relativedelta(weeks=-1,days=1,weekday=0)),                         ]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Employee
 - Date
+
+
 

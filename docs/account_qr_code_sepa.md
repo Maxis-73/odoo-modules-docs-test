@@ -34,3 +34,4 @@ This module adds support for SEPA Credit Transfer QR-code generation.
 
 
 
+

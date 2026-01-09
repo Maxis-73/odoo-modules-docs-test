@@ -12,6 +12,7 @@
 ## Descripción
 
 Mass mail event track speakers
+==============================
 
 Bridge module adding UX requirements to ease mass mailing of event track speakers.
         
@@ -34,6 +35,7 @@ Bridge module adding UX requirements to ease mass mailing of event track speaker
 
 
 
+
 ### event.event
 
 
@@ -45,6 +47,7 @@ Bridge module adding UX requirements to ease mass mailing of event track speaker
 
 
 - No agrega campos
+
 
 
 

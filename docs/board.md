@@ -15,6 +15,7 @@ Build your own dashboards
 ## Descripción
 
 Lets the user create a custom dashboard.
+========================================
 
 Allows users to create custom dashboard.
     
@@ -30,24 +31,24 @@ Allows users to create custom dashboard.
 
 
 
-- Campos:
-
-  - **id** (Id)
-
+#### Campos
+- **id** (Id)
 
 
 
 
 
-
-
-## Vistas
-
-
-### board.board
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | form | My Dashboard | `board.board_my_dash_view` | - |
+
+
+
+
+
+
+
 
 

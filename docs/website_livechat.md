@@ -31,9 +31,8 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
-- Campos:
-
-  - **channel_id** (Many2one) → im_livechat.channel
+#### Campos
+- **channel_id** (Many2one) → im_livechat.channel
 
 
 
@@ -53,6 +52,7 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
+
 ### im_livechat.channel
 
 
@@ -64,6 +64,16 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 - No agrega campos
+
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | im_livechat.channel.view.form.add | `website_livechat.im_livechat_channel_view_form_add` | - |
+
 
 
 
@@ -81,10 +91,18 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
-- Campos:
+#### Campos
+- **website_description** (Html) → Website description
 
-  - **website_description** (Html) → Website description
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | im_livechat.channel.view.form.add | `website_livechat.im_livechat_channel_view_form_add` | - |
 
 
 
@@ -99,9 +117,8 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
-- Campos:
-
-  - **livechat_visitor_id** (Many2one) → website.visitor
+#### Campos
+- **livechat_visitor_id** (Many2one) → website.visitor
 
 
 
@@ -117,9 +134,8 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
-- Campos:
-
-  - **channel_id** (Many2one) → im_livechat.channel
+#### Campos
+- **channel_id** (Many2one) → im_livechat.channel
 
 
 
@@ -139,6 +155,7 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
+
 ### ir.http
 
 
@@ -153,6 +170,7 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
+
 ### website.visitor
 
 
@@ -163,18 +181,11 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
-- Campos:
-
-  - **livechat_operator_id** (Many2one) → res.partner
-
-
-  - **livechat_operator_name** (Char) → Operator Name
-
-
-  - **discuss_channel_ids** (One2many) → discuss.channel
-
-
-  - **session_count** (Integer) → # Sessions
+#### Campos
+- **livechat_operator_id** (Many2one) → res.partner
+- **livechat_operator_name** (Char) → Operator Name
+- **discuss_channel_ids** (One2many) → discuss.channel
+- **session_count** (Integer) → # Sessions
 
 
 
@@ -183,13 +194,5 @@ Allow website visitors to chat with the collaborators. This module also brings a
 
 
 
-## Vistas
-
-
-### im_livechat.channel
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | im_livechat.channel.view.form.add | `website_livechat.im_livechat_channel_view_form_add` | - |
 
 

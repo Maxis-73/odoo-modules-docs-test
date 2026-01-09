@@ -15,6 +15,7 @@ Add certification to resume of your employees
 ## Descripción
 
 Certification and Skills for HR
+===============================
 
 This module adds certification to resume for employees.
         
@@ -37,6 +38,7 @@ This module adds certification to resume for employees.
 
 
 
+
 ### survey.survey
 
 
@@ -47,9 +49,8 @@ This module adds certification to resume for employees.
 
 
 
-- Campos:
-
-  - **certification_validity_months** (Integer) → Validity
+#### Campos
+- **certification_validity_months** (Integer) → Validity
 
 
 
@@ -65,30 +66,17 @@ This module adds certification to resume for employees.
 
 
 
-- Campos:
-
-  - **display_type** (Selection)
-
-
-  - **department_id** (Many2one)
-
-
-  - **survey_id** (Many2one) → survey.survey
-
-
-  - **expiration_status** (Selection)
+#### Campos
+- **display_type** (Selection)
+- **department_id** (Many2one)
+- **survey_id** (Many2one) → survey.survey
+- **expiration_status** (Selection)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### hr.resume.line
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -97,17 +85,23 @@ This module adds certification to resume for employees.
 
 
 
-#### Filtros de búsqueda (hr_skills_survey.hr_resume_line_view_search)
+**Filtros de búsqueda (hr_skills_survey.hr_resume_line_view_search):**
 
-**Filtros:**
 - **Expiring Soon** (`[('expiration_status', '=', 'expiring')]`)
 - **Expired** (`[('expiration_status', '=', 'expired')]`)
 - **Valid Until**
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Employee
 - Department
 - Certification
 - Expiration date
+
+
+
+
+
+
+
 

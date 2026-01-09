@@ -15,6 +15,7 @@ Sales Teams
 ## Descripción
 
 Using this application you can manage Sales Teams with CRM and/or Sales
+=======================================================================
  
 
 
@@ -31,15 +32,10 @@ Using this application you can manage Sales Teams with CRM and/or Sales
 
 
 
-- Campos:
-
-  - **crm_team_ids** (Many2many) → crm.team
-
-
-  - **crm_team_member_ids** (One2many) → crm.team.member
-
-
-  - **sale_team_id** (Many2one) → crm.team
+#### Campos
+- **crm_team_ids** (Many2many) → crm.team
+- **crm_team_member_ids** (One2many) → crm.team.member
+- **sale_team_id** (Many2one) → crm.team
 
 
 
@@ -57,146 +53,30 @@ Using this application you can manage Sales Teams with CRM and/or Sales
 
 
 
-- Campos:
-
-  - **name** (Char) → Sales Team
-
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **active** (Boolean)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **currency_id** (Many2one) → res.currency
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **is_membership_multi** (Boolean) → Multiple Memberships Allowed
-
-
-  - **member_ids** (Many2many) → res.users
-
-
-  - **member_company_ids** (Many2many) → res.company
-
-
-  - **member_warning** (Text) → Membership Issue Warning
-
-
-  - **crm_team_member_ids** (One2many) → crm.team.member
-
-
-  - **crm_team_member_all_ids** (One2many) → crm.team.member
-
-
-  - **color** (Integer)
-
-
-  - **favorite_user_ids** (Many2many) → res.users
-
-
-  - **is_favorite** (Boolean)
-
-
-  - **dashboard_button_name** (Char)
-
-
-  - **dashboard_graph_data** (Text)
-
-
-
-
-
-### crm.tag
-
-
-- Hereda de: Base
-
-
-
-- Campos:
-
-  - **name** (Char) → Tag Name
-
-
-  - **color** (Integer) → Color
-
-
-
-
-
-### crm.team.member
-
-
-- Hereda de:
-
-
-  - mail.thread
-
-
-
-
-
-- Campos:
-
-  - **crm_team_id** (Many2one) → crm.team
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **user_in_teams_ids** (Many2many) → res.users
-
-
-  - **user_company_ids** (Many2many) → res.company
-
-
-  - **active** (Boolean)
-
-
-  - **is_membership_multi** (Boolean) → Multiple Memberships Allowed
-
-
-  - **member_warning** (Text)
-
-
-  - **image_1920** (Image) → Image
-
-
-  - **image_128** (Image) → Image (128)
-
-
-  - **name** (Char)
-
-
-  - **email** (Char)
-
-
-  - **phone** (Char)
-
-
-  - **mobile** (Char)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-
-
-
-
-
-
-## Vistas
-
-
-### crm.team
+#### Campos
+- **name** (Char) → Sales Team
+- **sequence** (Integer) → Sequence
+- **active** (Boolean)
+- **company_id** (Many2one) → res.company
+- **currency_id** (Many2one) → res.currency
+- **user_id** (Many2one) → res.users
+- **is_membership_multi** (Boolean) → Multiple Memberships Allowed
+- **member_ids** (Many2many) → res.users
+- **member_company_ids** (Many2many) → res.company
+- **member_warning** (Text) → Membership Issue Warning
+- **crm_team_member_ids** (One2many) → crm.team.member
+- **crm_team_member_all_ids** (One2many) → crm.team.member
+- **color** (Integer)
+- **favorite_user_ids** (Many2many) → res.users
+- **is_favorite** (Boolean)
+- **dashboard_button_name** (Char)
+- **dashboard_graph_data** (Text)
+
+
+
+
+
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -208,18 +88,33 @@ Using this application you can manage Sales Teams with CRM and/or Sales
 
 
 
-#### Filtros de búsqueda (sales_team.crm_team_view_search)
+**Filtros de búsqueda (sales_team.crm_team_view_search):**
 
-**Filtros:**
 - **Archived** (`[('active','=',False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Company
 - Team Leader
 
 
+
 ### crm.tag
+
+
+- Hereda de: Base
+
+
+
+#### Campos
+- **name** (Char) → Tag Name
+- **color** (Integer) → Color
+
+
+
+
+
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -228,7 +123,40 @@ Using this application you can manage Sales Teams with CRM and/or Sales
 
 
 
+
 ### crm.team.member
+
+
+- Hereda de:
+
+
+  - mail.thread
+
+
+
+
+
+#### Campos
+- **crm_team_id** (Many2one) → crm.team
+- **user_id** (Many2one) → res.users
+- **user_in_teams_ids** (Many2many) → res.users
+- **user_company_ids** (Many2many) → res.company
+- **active** (Boolean)
+- **is_membership_multi** (Boolean) → Multiple Memberships Allowed
+- **member_warning** (Text)
+- **image_1920** (Image) → Image
+- **image_128** (Image) → Image (128)
+- **name** (Char)
+- **email** (Char)
+- **phone** (Char)
+- **mobile** (Char)
+- **company_id** (Many2one) → res.company
+
+
+
+
+
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -239,12 +167,18 @@ Using this application you can manage Sales Teams with CRM and/or Sales
 
 
 
-#### Filtros de búsqueda (sales_team.crm_team_member_view_search)
+**Filtros de búsqueda (sales_team.crm_team_member_view_search):**
 
-**Filtros:**
 - **Archived** (`[('active', '=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Sales Team
+
+
+
+
+
+
+
 

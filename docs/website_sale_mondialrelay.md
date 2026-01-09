@@ -35,6 +35,7 @@ This module allow your customer to choose a Point Relais® and use it as shippin
 
 
 
+
 ### res.partner
 
 
@@ -46,6 +47,7 @@ This module allow your customer to choose a Point Relais® and use it as shippin
 
 
 - No agrega campos
+
 
 
 

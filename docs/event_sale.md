@@ -12,6 +12,7 @@
 ## Descripción
 
 Creating registration with sales orders.
+========================================
 
 This module allows you to automate and connect your registration creation with
 your main sale flow and therefore, to enable the invoicing feature of registrations.
@@ -37,9 +38,8 @@ this event.
 
 
 
-- Campos:
-
-  - **attendee_count** (Integer) → Attendee Count
+#### Campos
+- **attendee_count** (Integer) → Attendee Count
 
 
 
@@ -55,15 +55,10 @@ this event.
 
 
 
-- Campos:
-
-  - **event_id** (Many2one) → event.event
-
-
-  - **event_ticket_id** (Many2one) → event.event.ticket
-
-
-  - **registration_ids** (One2many) → event.registration
+#### Campos
+- **event_id** (Many2one) → event.event
+- **event_ticket_id** (Many2one) → event.event.ticket
+- **registration_ids** (One2many) → event.registration
 
 
 
@@ -83,6 +78,7 @@ this event.
 
 
 
+
 ### event.event.ticket
 
 
@@ -97,6 +93,7 @@ this event.
 
 
 
+
 ### event.event
 
 
@@ -107,12 +104,9 @@ this event.
 
 
 
-- Campos:
-
-  - **sale_order_lines_ids** (One2many) → sale.order.line
-
-
-  - **sale_price_subtotal** (Monetary)
+#### Campos
+- **sale_order_lines_ids** (One2many) → sale.order.line
+- **sale_price_subtotal** (Monetary)
 
 
 
@@ -128,27 +122,14 @@ this event.
 
 
 
-- Campos:
-
-  - **sale_order_id** (Many2one) → sale.order
-
-
-  - **sale_order_line_id** (Many2one) → sale.order.line
-
-
-  - **sale_status** (Selection)
-
-
-  - **state** (Selection)
-
-
-  - **utm_campaign_id** (Many2one)
-
-
-  - **utm_source_id** (Many2one)
-
-
-  - **utm_medium_id** (Many2one)
+#### Campos
+- **sale_order_id** (Many2one) → sale.order
+- **sale_order_line_id** (Many2one) → sale.order.line
+- **sale_status** (Selection)
+- **state** (Selection)
+- **utm_campaign_id** (Many2one)
+- **utm_source_id** (Many2one)
+- **utm_medium_id** (Many2one)
 
 
 
@@ -157,7 +138,9 @@ this event.
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### event.event.configurator
@@ -176,7 +159,7 @@ this event.
 
 
 
-#### Botones (event_sale.view_event_registration_editor_form)
+**Botones (event_sale.view_event_registration_editor_form):**
 - **Create/Update registrations** (object)
 
 
@@ -192,9 +175,8 @@ this event.
 
 
 
-#### Filtros de búsqueda (event_sale.event_sale_report_view_search)
+**Filtros de búsqueda (event_sale.event_sale_report_view_search):**
 
-**Filtros:**
 - **Non-free tickets** (`[('event_ticket_price', '!=', 0)]`)
 - **Free** (`[('sale_status', '=', 'free')]`)
 - **Pending payment** (`[('sale_status', '=', 'to_pay')]`)
@@ -206,7 +188,7 @@ this event.
 - **Event End Date**
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Event Type
 - Event
 - Product
@@ -214,4 +196,6 @@ this event.
 - Registration Status
 - Sale Order Status
 - Customer
+
+
 

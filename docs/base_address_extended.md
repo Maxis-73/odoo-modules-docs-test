@@ -15,6 +15,7 @@ Add extra fields on addresses
 ## Descripción
 
 Extended Addresses Management
+=============================
 
 This module provides the ability to choose a city from a list (in specific countries).
 
@@ -35,9 +36,8 @@ It is primarily used for EDIs that might need a special city code.
 
 
 
-- Campos:
-
-  - **enforce_cities** (Boolean)
+#### Campos
+- **enforce_cities** (Boolean)
 
 
 
@@ -50,19 +50,22 @@ It is primarily used for EDIs that might need a special city code.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **zipcode** (Char) → Zip
-
-
-  - **country_id** (Many2one) → res.country
+#### Campos
+- **name** (Char) → Name
+- **zipcode** (Char) → Zip
+- **country_id** (Many2one) → res.country
+- **state_id** (Many2one) → res.country.state
 
 
-  - **state_id** (Many2one) → res.country.state
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | res.city.list | `base_address_extended.view_city_tree` | - |
+| search | - | `base_address_extended.view_city_filter` | - |
 
 
 
@@ -79,33 +82,18 @@ It is primarily used for EDIs that might need a special city code.
 
 
 
-- Campos:
-
-  - **street_name** (Char) → Street Name
-
-
-  - **street_number** (Char) → House
-
-
-  - **street_number2** (Char) → Door
-
-
-  - **city_id** (Many2one) → res.city
-
-
-  - **country_enforce_cities** (Boolean)
+#### Campos
+- **street_name** (Char) → Street Name
+- **street_number** (Char) → House
+- **street_number2** (Char) → Door
+- **city_id** (Many2one) → res.city
+- **country_enforce_cities** (Boolean)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### res.partner
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -113,11 +101,9 @@ It is primarily used for EDIs that might need a special city code.
 
 
 
-### res.city
 
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | res.city.list | `base_address_extended.view_city_tree` | - |
-| search | - | `base_address_extended.view_city_filter` | - |
+
+
+
 
 

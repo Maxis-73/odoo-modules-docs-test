@@ -30,31 +30,26 @@ Odoo database.
 
 
 
-- Campos:
-
-  - **active** (Boolean)
-
-
-  - **id_client** (Char)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **edi_identification** (Char)
+#### Campos
+- **active** (Boolean)
+- **id_client** (Char)
+- **company_id** (Many2one) → res.company
+- **edi_identification** (Char)
+- **private_key_id** (Many2one) → certificate.key
+- **refresh_token** (Char)
+- **proxy_type** (Selection)
+- **edi_mode** (Selection)
 
 
-  - **private_key_id** (Many2one) → certificate.key
 
 
-  - **refresh_token** (Char)
 
+#### Vistas
 
-  - **proxy_type** (Selection)
-
-
-  - **edi_mode** (Selection)
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | EDI Proxy User | `account_edi_proxy_client.view_form_account_edi_proxy_client_user` | - |
+| list | EDI Proxy Users | `account_edi_proxy_client.view_tree_account_edi_proxy_client_user` | - |
 
 
 
@@ -73,6 +68,7 @@ Odoo database.
 
 
 
+
 ### res.company
 
 
@@ -83,10 +79,8 @@ Odoo database.
 
 
 
-- Campos:
-
-  - **account_edi_proxy_client_ids** (One2many) → account_edi_proxy_client.user
-
+#### Campos
+- **account_edi_proxy_client_ids** (One2many) → account_edi_proxy_client.user
 
 
 
@@ -94,14 +88,6 @@ Odoo database.
 
 
 
-## Vistas
 
-
-### account_edi_proxy_client.user
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | EDI Proxy User | `account_edi_proxy_client.view_form_account_edi_proxy_client_user` | - |
-| list | EDI Proxy Users | `account_edi_proxy_client.view_tree_account_edi_proxy_client_user` | - |
 
 

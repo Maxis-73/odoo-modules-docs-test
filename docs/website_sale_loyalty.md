@@ -37,6 +37,7 @@ Coupon & promotion programs can be edited in the Catalog menu of the Website app
 
 
 
+
 ### sale.order
 
 
@@ -47,9 +48,8 @@ Coupon & promotion programs can be edited in the Catalog menu of the Website app
 
 
 
-- Campos:
-
-  - **disabled_auto_rewards** (Many2many) → loyalty.reward
+#### Campos
+- **disabled_auto_rewards** (Many2many) → loyalty.reward
 
 
 
@@ -69,9 +69,8 @@ Coupon & promotion programs can be edited in the Catalog menu of the Website app
 
 
 
-- Campos:
-
-  - **ecommerce_ok** (Boolean) → Available on Website
+#### Campos
+- **ecommerce_ok** (Boolean) → Available on Website
 
 
 
@@ -91,6 +90,7 @@ Coupon & promotion programs can be edited in the Catalog menu of the Website app
 
 
 
+
 ### loyalty.rule
 
 
@@ -101,10 +101,8 @@ Coupon & promotion programs can be edited in the Catalog menu of the Website app
 
 
 
-- Campos:
-
-  - **website_id** (Many2one)
-
+#### Campos
+- **website_id** (Many2one)
 
 
 
@@ -112,7 +110,10 @@ Coupon & promotion programs can be edited in the Catalog menu of the Website app
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### coupon.share
@@ -123,6 +124,8 @@ Coupon & promotion programs can be edited in the Catalog menu of the Website app
 
 
 
-#### Botones (website_sale_loyalty.coupon_share_view_form)
+**Botones (website_sale_loyalty.coupon_share_view_form):**
 - **Generate Short Link** (object)
+
+
 

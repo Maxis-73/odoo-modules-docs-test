@@ -31,9 +31,8 @@ Display your booths on your website for the users to register.
 
 
 
-- Campos:
-
-  - **booth_menu** (Boolean)
+#### Campos
+- **booth_menu** (Boolean)
 
 
 
@@ -49,9 +48,8 @@ Display your booths on your website for the users to register.
 
 
 
-- Campos:
-
-  - **menu_type** (Selection)
+#### Campos
+- **menu_type** (Selection)
 
 
 
@@ -67,15 +65,10 @@ Display your booths on your website for the users to register.
 
 
 
-- Campos:
-
-  - **exhibition_map** (Image)
-
-
-  - **booth_menu** (Boolean)
-
-
-  - **booth_menu_ids** (One2many) → website.event.menu
+#### Campos
+- **exhibition_map** (Image)
+- **booth_menu** (Boolean)
+- **booth_menu_ids** (One2many) → website.event.menu
 
 
 

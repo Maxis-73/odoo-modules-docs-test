@@ -15,6 +15,7 @@ Integrate your POS with a Razorpay payment terminal
 ## Descripción
 
 Allow Razorpay POS payments
+==============================
 
 This module allows customers to pay for their orders with debit/credit
 cards and UPI. The transactions are processed by Razorpay POS. A Razorpay merchant account is necessary. It allows the
@@ -38,21 +39,12 @@ following:
 
 
 
-- Campos:
-
-  - **razorpay_tid** (Char)
-
-
-  - **razorpay_allowed_payment_modes** (Selection)
-
-
-  - **razorpay_username** (Char)
-
-
-  - **razorpay_api_key** (Char)
-
-
-  - **razorpay_test_mode** (Boolean)
+#### Campos
+- **razorpay_tid** (Char)
+- **razorpay_allowed_payment_modes** (Selection)
+- **razorpay_username** (Char)
+- **razorpay_api_key** (Char)
+- **razorpay_test_mode** (Boolean)
 
 
 
@@ -68,9 +60,8 @@ following:
 
 
 
-- Campos:
-
-  - **razorpay_reverse_ref_no** (Char) → Razorpay Reverse Reference No.
+#### Campos
+- **razorpay_reverse_ref_no** (Char) → Razorpay Reverse Reference No.
 
 
 

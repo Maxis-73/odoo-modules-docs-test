@@ -33,30 +33,15 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **subject** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **guest_ids** (Many2many) → res.partner
-
-
-  - **phone_nbr** (Char)
-
-
-  - **mobile_nbr** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **country_id** (Many2one) → res.country
+#### Campos
+- **name** (Char)
+- **subject** (Char)
+- **email_from** (Char)
+- **guest_ids** (Many2many) → res.partner
+- **phone_nbr** (Char)
+- **mobile_nbr** (Char)
+- **customer_id** (Many2one) → res.partner
+- **country_id** (Many2one) → res.country
 
 
 
@@ -74,24 +59,13 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **subject** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **phone_nbr** (Char)
-
-
-  - **mobile_nbr** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **subject** (Char)
+- **email_from** (Char)
+- **phone_nbr** (Char)
+- **mobile_nbr** (Char)
+- **customer_id** (Many2one) → res.partner
 
 
 
@@ -115,6 +89,7 @@ tests independently to functional aspects of other models.
 
 
 
+
 ### mail.test.sms.bl.optout
 
 
@@ -127,27 +102,14 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **subject** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **phone_nbr** (Char)
-
-
-  - **mobile_nbr** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **opt_out** (Boolean)
+#### Campos
+- **name** (Char)
+- **subject** (Char)
+- **email_from** (Char)
+- **phone_nbr** (Char)
+- **mobile_nbr** (Char)
+- **customer_id** (Many2one) → res.partner
+- **opt_out** (Boolean)
 
 
 
@@ -165,15 +127,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **opt_out** (Boolean)
+#### Campos
+- **name** (Char)
+- **customer_id** (Many2one) → res.partner
+- **opt_out** (Boolean)
 
 
 
@@ -191,15 +148,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **customer_ids** (Many2many) → res.partner
-
-
-  - **opt_out** (Boolean)
+#### Campos
+- **name** (Char)
+- **customer_ids** (Many2many) → res.partner
+- **opt_out** (Boolean)
 
 
 
@@ -212,15 +164,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **customer_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **company_id** (Many2one) → res.company
+- **customer_id** (Many2one) → res.partner
 
 
 

@@ -12,6 +12,7 @@
 ## Descripción
 
 Add all information on the employee form to manage contracts.
+=============================================================
 
     * Contract
     * Place of Birth,
@@ -39,89 +40,75 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **name** (Char) → Contract Reference
-
-
-  - **active** (Boolean)
-
-
-  - **structure_type_id** (Many2one) → hr.payroll.structure.type
-
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **active_employee** (Boolean)
-
-
-  - **department_id** (Many2one) → hr.department
-
-
-  - **job_id** (Many2one) → hr.job
-
-
-  - **date_start** (Date) → Start Date
-
-
-  - **date_end** (Date) → End Date
-
-
-  - **trial_date_end** (Date) → End of Trial Period
+#### Campos
+- **name** (Char) → Contract Reference
+- **active** (Boolean)
+- **structure_type_id** (Many2one) → hr.payroll.structure.type
+- **employee_id** (Many2one) → hr.employee
+- **active_employee** (Boolean)
+- **department_id** (Many2one) → hr.department
+- **job_id** (Many2one) → hr.job
+- **date_start** (Date) → Start Date
+- **date_end** (Date) → End Date
+- **trial_date_end** (Date) → End of Trial Period
+- **resource_calendar_id** (Many2one) → resource.calendar
+- **wage** (Monetary) → Wage
+- **contract_wage** (Monetary) → Contract Wage
+- **notes** (Html) → Notes
+- **state** (Selection)
+- **company_id** (Many2one) → res.company
+- **company_country_id** (Many2one) → res.country
+- **country_code** (Char)
+- **contract_type_id** (Many2one) → hr.contract.type
+- **contracts_count** (Integer)
+- **kanban_state** (Selection)
+- **currency_id** (Many2one)
+- **permit_no** (Char) → Work Permit No
+- **visa_no** (Char) → Visa No
+- **hr_responsible_id** (Many2one) → res.users
+- **calendar_mismatch** (Boolean)
+- **first_contract_date** (Date)
 
 
-  - **resource_calendar_id** (Many2one) → resource.calendar
 
 
-  - **wage** (Monetary) → Wage
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | hr.contract.search | `hr_contract.hr_contract_view_search` | - |
+| form | hr.contract.form | `hr_contract.hr_contract_view_form` | - |
+| list | hr.contract.list | `hr_contract.hr_contract_view_tree` | - |
+| kanban | hr.contract.kanban | `hr_contract.hr_contract_view_kanban` | - |
+| activity | hr.contract.activity | `hr_contract.hr_contract_view_activity` | - |
 
 
-  - **contract_wage** (Monetary) → Contract Wage
+
+**Filtros de búsqueda (hr_contract.hr_contract_view_search):**
+
+- **Running Contracts** (`[('state', '=', 'open')]`)
+- **Contracts to review** (`[('state', 'in', ['draft', 'close'])]`)
+- **Start Date**
+- **End Date**
+- **Archived** (`[('active', '=', False)]`)
+- **Late Activities** (`[('my_activity_date_deadline', '<', context_today().strftime('%Y-%m-%d'))]`)
+- **Today Activities** (`[('my_activity_date_deadline', '=', context_today().strftime('%Y-%m-%d'))]`)
+- **Future Activities** (`[('my_activity_date_deadline', '>', context_today().strftime('%Y-%m-%d'))]`)
 
 
-  - **notes** (Html) → Notes
+*Agrupar por:*
+- Status
+- Employee
+- Start Date
+- Job Position
+- Department
+- Working Schedule
+- Salary Structure Type
 
 
-  - **state** (Selection)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **company_country_id** (Many2one) → res.country
-
-
-  - **country_code** (Char)
-
-
-  - **contract_type_id** (Many2one) → hr.contract.type
-
-
-  - **contracts_count** (Integer)
-
-
-  - **kanban_state** (Selection)
-
-
-  - **currency_id** (Many2one)
-
-
-  - **permit_no** (Char) → Work Permit No
-
-
-  - **visa_no** (Char) → Visa No
-
-
-  - **hr_responsible_id** (Many2one) → res.users
-
-
-  - **calendar_mismatch** (Boolean)
-
-
-  - **first_contract_date** (Date)
-
-
+**Botones (hr_contract.hr_contract_view_form):**
+- **action_open_contract_list** (object) - Grupos: `hr_contract.group_hr_contract_employee_manager`
 
 
 
@@ -135,9 +122,8 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **first_contract_date** (Date)
+#### Campos
+- **first_contract_date** (Date)
 
 
 
@@ -157,6 +143,7 @@ You can assign several contracts per employee.
 
 
 
+
 ### hr.employee
 
 
@@ -167,30 +154,15 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **legal_name** (Char)
-
-
-  - **vehicle** (Char)
-
-
-  - **contract_ids** (One2many) → hr.contract
-
-
-  - **contract_id** (Many2one) → hr.contract
-
-
-  - **calendar_mismatch** (Boolean)
-
-
-  - **contracts_count** (Integer)
-
-
-  - **contract_warning** (Boolean)
-
-
-  - **first_contract_date** (Date)
+#### Campos
+- **legal_name** (Char)
+- **vehicle** (Char)
+- **contract_ids** (One2many) → hr.contract
+- **contract_id** (Many2one) → hr.contract
+- **calendar_mismatch** (Boolean)
+- **contracts_count** (Integer)
+- **contract_warning** (Boolean)
+- **first_contract_date** (Date)
 
 
 
@@ -208,12 +180,9 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **vehicle** (Char)
-
-
-  - **bank_account_id** (Many2one)
+#### Campos
+- **vehicle** (Char)
+- **bank_account_id** (Many2one)
 
 
 
@@ -229,12 +198,9 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **contract_expiration_notice_period** (Integer)
-
-
-  - **work_permit_expiration_notice_period** (Integer)
+#### Campos
+- **contract_expiration_notice_period** (Integer)
+- **work_permit_expiration_notice_period** (Integer)
 
 
 
@@ -254,6 +220,7 @@ You can assign several contracts per employee.
 
 
 
+
 ### resource.calendar
 
 
@@ -264,9 +231,8 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **contracts_count** (Integer) → # Contracts using it
+#### Campos
+- **contracts_count** (Integer) → # Contracts using it
 
 
 
@@ -286,6 +252,7 @@ You can assign several contracts per employee.
 
 
 
+
 ### res.company
 
 
@@ -296,12 +263,9 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **contract_expiration_notice_period** (Integer) → Contract Expiry Notice Period
-
-
-  - **work_permit_expiration_notice_period** (Integer) → Work Permit Expiry Notice Period
+#### Campos
+- **contract_expiration_notice_period** (Integer) → Contract Expiry Notice Period
+- **work_permit_expiration_notice_period** (Integer) → Work Permit Expiry Notice Period
 
 
 
@@ -321,6 +285,7 @@ You can assign several contracts per employee.
 
 
 
+
 ### hr.payroll.structure.type
 
 
@@ -328,18 +293,11 @@ You can assign several contracts per employee.
 
 
 
-- Campos:
-
-  - **name** (Char) → Salary Structure Type
-
-
-  - **default_resource_calendar_id** (Many2one) → resource.calendar
-
-
-  - **country_id** (Many2one) → res.country
-
-
-  - **country_code** (Char)
+#### Campos
+- **name** (Char) → Salary Structure Type
+- **default_resource_calendar_id** (Many2one) → resource.calendar
+- **country_id** (Many2one) → res.country
+- **country_code** (Char)
 
 
 
@@ -348,46 +306,9 @@ You can assign several contracts per employee.
 
 
 
-## Vistas
 
 
-### hr.contract
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | hr.contract.search | `hr_contract.hr_contract_view_search` | - |
-| form | hr.contract.form | `hr_contract.hr_contract_view_form` | - |
-| list | hr.contract.list | `hr_contract.hr_contract_view_tree` | - |
-| kanban | hr.contract.kanban | `hr_contract.hr_contract_view_kanban` | - |
-| activity | hr.contract.activity | `hr_contract.hr_contract_view_activity` | - |
-
-
-
-#### Filtros de búsqueda (hr_contract.hr_contract_view_search)
-
-**Filtros:**
-- **Running Contracts** (`[('state', '=', 'open')]`)
-- **Contracts to review** (`[('state', 'in', ['draft', 'close'])]`)
-- **Start Date**
-- **End Date**
-- **Archived** (`[('active', '=', False)]`)
-- **Late Activities** (`[('my_activity_date_deadline', '<', context_today().strftime('%Y-%m-%d'))]`)
-- **Today Activities** (`[('my_activity_date_deadline', '=', context_today().strftime('%Y-%m-%d'))]`)
-- **Future Activities** (`[('my_activity_date_deadline', '>', context_today().strftime('%Y-%m-%d'))]`)
-
-
-**Agrupar por:**
-- Status
-- Employee
-- Start Date
-- Job Position
-- Department
-- Working Schedule
-- Salary Structure Type
-
-
-#### Botones (hr_contract.hr_contract_view_form)
-- **action_open_contract_list** (object) - Grupos: `hr_contract.group_hr_contract_employee_manager`
+## Vistas Adicionales
 
 
 ### hr.contract.history
@@ -401,9 +322,8 @@ You can assign several contracts per employee.
 
 
 
-#### Filtros de búsqueda (hr_contract.hr_contract_history_view_search)
+**Filtros de búsqueda (hr_contract.hr_contract_history_view_search):**
 
-**Filtros:**
 - **Running Contracts** (`[('state', '=', 'open')]`)
 - **Contracts to Review** (`['|', ('state', 'in', ['draft', 'close', 'cancel']), ('is_under_contract', '!=', True)]`)
 - **No Contracts** (`[('contract_id', '=', False)]`)
@@ -411,14 +331,16 @@ You can assign several contracts per employee.
 - **Active Employees** (`[('active_employee', '=', True)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Job Position
 - Status
 - Reference Working Time
 - Salary Structure Type
 
 
-#### Botones (hr_contract.hr_contract_history_view_form)
+**Botones (hr_contract.hr_contract_history_view_form):**
 - **Create** (object) - Grupos: `hr_contract.group_hr_contract_manager`
 - **action_open_contract_form** (object)
+
+
 

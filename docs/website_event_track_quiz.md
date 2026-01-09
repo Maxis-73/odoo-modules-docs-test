@@ -23,23 +23,33 @@ Quizzes on tracks
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **question_ids** (One2many) → event.quiz.question
-
-
-  - **event_track_id** (Many2one) → event.track
+#### Campos
+- **name** (Char) → Name
+- **question_ids** (One2many) → event.quiz.question
+- **event_track_id** (Many2one) → event.track
+- **event_id** (Many2one) → event.event
+- **repeatable** (Boolean) → Unlimited Tries
 
 
-  - **event_id** (Many2one) → event.event
 
 
-  - **repeatable** (Boolean) → Unlimited Tries
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | event.quiz.view.search | `website_event_track_quiz.event_quiz_view_search` | - |
+| list | event.quiz.view.list | `website_event_track_quiz.event_quiz_view_tree` | - |
+| form | event.quiz.view.form | `website_event_track_quiz.event_quiz_view_form` | - |
 
 
+
+**Filtros de búsqueda (website_event_track_quiz.event_quiz_view_search):**
+
+
+*Agrupar por:*
+- Track
+- Event
 
 
 
@@ -50,26 +60,33 @@ Quizzes on tracks
 
 
 
-- Campos:
-
-  - **name** (Char) → Question
-
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **quiz_id** (Many2one) → event.quiz
+#### Campos
+- **name** (Char) → Question
+- **sequence** (Integer) → Sequence
+- **quiz_id** (Many2one) → event.quiz
+- **correct_answer_id** (One2many) → event.quiz.answer
+- **awarded_points** (Integer) → Number of Points
+- **answer_ids** (One2many) → event.quiz.answer
 
 
-  - **correct_answer_id** (One2many) → event.quiz.answer
 
 
-  - **awarded_points** (Integer) → Number of Points
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | event.quiz.question.view.search | `website_event_track_quiz.event_quiz_question_view_search` | - |
+| list | event.quiz.question.view.list | `website_event_track_quiz.event_quiz_question_view_tree` | - |
+| form | event.quiz.question.view.form | `website_event_track_quiz.event_quiz_question_view_form` | - |
 
 
-  - **answer_ids** (One2many) → event.quiz.answer
+
+**Filtros de búsqueda (website_event_track_quiz.event_quiz_question_view_search):**
 
 
+*Agrupar por:*
+- Quiz
 
 
 
@@ -80,24 +97,13 @@ Quizzes on tracks
 
 
 
-- Campos:
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **question_id** (Many2one) → event.quiz.question
-
-
-  - **text_value** (Char) → Answer
-
-
-  - **is_correct** (Boolean) → Correct
-
-
-  - **comment** (Text) → Extra Comment
-
-
-  - **awarded_points** (Integer) → Points
+#### Campos
+- **sequence** (Integer) → Sequence
+- **question_id** (Many2one) → event.quiz.question
+- **text_value** (Char) → Answer
+- **is_correct** (Boolean) → Correct
+- **comment** (Text) → Extra Comment
+- **awarded_points** (Integer) → Points
 
 
 
@@ -115,12 +121,9 @@ Quizzes on tracks
 
 
 
-- Campos:
-
-  - **quiz_completed** (Boolean) → Completed
-
-
-  - **quiz_points** (Integer) → Quiz Points
+#### Campos
+- **quiz_completed** (Boolean) → Completed
+- **quiz_points** (Integer) → Quiz Points
 
 
 
@@ -138,21 +141,12 @@ Quizzes on tracks
 
 
 
-- Campos:
-
-  - **quiz_id** (Many2one) → event.quiz
-
-
-  - **quiz_ids** (One2many) → event.quiz
-
-
-  - **quiz_questions_count** (Integer)
-
-
-  - **is_quiz_completed** (Boolean) → Is Quiz Done
-
-
-  - **quiz_points** (Integer) → Quiz Points
+#### Campos
+- **quiz_id** (Many2one) → event.quiz
+- **quiz_ids** (One2many) → event.quiz
+- **quiz_questions_count** (Integer)
+- **is_quiz_completed** (Boolean) → Is Quiz Done
+- **quiz_points** (Integer) → Quiz Points
 
 
 
@@ -175,40 +169,6 @@ Quizzes on tracks
 
 
 
-## Vistas
 
 
-### event.quiz.question
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | event.quiz.question.view.search | `website_event_track_quiz.event_quiz_question_view_search` | - |
-| list | event.quiz.question.view.list | `website_event_track_quiz.event_quiz_question_view_tree` | - |
-| form | event.quiz.question.view.form | `website_event_track_quiz.event_quiz_question_view_form` | - |
-
-
-
-#### Filtros de búsqueda (website_event_track_quiz.event_quiz_question_view_search)
-
-
-**Agrupar por:**
-- Quiz
-
-
-### event.quiz
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | event.quiz.view.search | `website_event_track_quiz.event_quiz_view_search` | - |
-| list | event.quiz.view.list | `website_event_track_quiz.event_quiz_view_tree` | - |
-| form | event.quiz.view.form | `website_event_track_quiz.event_quiz_view_form` | - |
-
-
-
-#### Filtros de búsqueda (website_event_track_quiz.event_quiz_view_search)
-
-
-**Agrupar por:**
-- Track
-- Event
 

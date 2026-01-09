@@ -33,21 +33,12 @@ The check settings are located in the accounting journals configuration page.
 
 
 
-- Campos:
-
-  - **check_amount_in_words** (Char)
-
-
-  - **check_manual_sequencing** (Boolean)
-
-
-  - **check_number** (Char)
-
-
-  - **payment_method_line_id** (Many2one)
-
-
-  - **show_check_number** (Boolean)
+#### Campos
+- **check_amount_in_words** (Char)
+- **check_manual_sequencing** (Boolean)
+- **check_number** (Char)
+- **payment_method_line_id** (Many2one)
+- **show_check_number** (Boolean)
 
 
 
@@ -67,6 +58,7 @@ The check settings are located in the accounting journals configuration page.
 
 
 
+
 ### account.journal
 
 
@@ -77,18 +69,11 @@ The check settings are located in the accounting journals configuration page.
 
 
 
-- Campos:
-
-  - **check_manual_sequencing** (Boolean)
-
-
-  - **check_sequence_id** (Many2one) → ir.sequence
-
-
-  - **check_next_number** (Char)
-
-
-  - **bank_check_printing_layout** (Selection)
+#### Campos
+- **check_manual_sequencing** (Boolean)
+- **check_sequence_id** (Many2one) → ir.sequence
+- **check_next_number** (Char)
+- **bank_check_printing_layout** (Selection)
 
 
 
@@ -104,24 +89,13 @@ The check settings are located in the accounting journals configuration page.
 
 
 
-- Campos:
-
-  - **account_check_printing_layout** (Selection)
-
-
-  - **account_check_printing_date_label** (Boolean)
-
-
-  - **account_check_printing_multi_stub** (Boolean)
-
-
-  - **account_check_printing_margin_top** (Float)
-
-
-  - **account_check_printing_margin_left** (Float)
-
-
-  - **account_check_printing_margin_right** (Float)
+#### Campos
+- **account_check_printing_layout** (Selection)
+- **account_check_printing_date_label** (Boolean)
+- **account_check_printing_multi_stub** (Boolean)
+- **account_check_printing_margin_top** (Float)
+- **account_check_printing_margin_left** (Float)
+- **account_check_printing_margin_right** (Float)
 
 
 
@@ -137,24 +111,13 @@ The check settings are located in the accounting journals configuration page.
 
 
 
-- Campos:
-
-  - **account_check_printing_layout** (Selection)
-
-
-  - **account_check_printing_date_label** (Boolean)
-
-
-  - **account_check_printing_multi_stub** (Boolean)
-
-
-  - **account_check_printing_margin_top** (Float)
-
-
-  - **account_check_printing_margin_left** (Float)
-
-
-  - **account_check_printing_margin_right** (Float)
+#### Campos
+- **account_check_printing_layout** (Selection)
+- **account_check_printing_date_label** (Boolean)
+- **account_check_printing_multi_stub** (Boolean)
+- **account_check_printing_margin_top** (Float)
+- **account_check_printing_margin_left** (Float)
+- **account_check_printing_margin_right** (Float)
 
 
 
@@ -163,7 +126,9 @@ The check settings are located in the accounting journals configuration page.
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### print.prenumbered.checks
@@ -174,6 +139,8 @@ The check settings are located in the accounting journals configuration page.
 
 
 
-#### Botones (account_check_printing.print_pre_numbered_checks_view)
+**Botones (account_check_printing.print_pre_numbered_checks_view):**
 - **Print** (object)
+
+
 

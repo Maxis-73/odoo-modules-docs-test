@@ -33,6 +33,7 @@ A payment provider for Indonesian and the Philippines.
 
 
 
+
 ### payment.provider
 
 
@@ -43,18 +44,11 @@ A payment provider for Indonesian and the Philippines.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **xendit_public_key** (Char)
-
-
-  - **xendit_secret_key** (Char)
-
-
-  - **xendit_webhook_token** (Char)
+#### Campos
+- **code** (Selection)
+- **xendit_public_key** (Char)
+- **xendit_secret_key** (Char)
+- **xendit_webhook_token** (Char)
 
 
 

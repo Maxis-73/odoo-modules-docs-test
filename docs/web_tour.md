@@ -12,6 +12,7 @@
 ## Descripción
 
 Odoo Web tours.
+========================
 
 
 
@@ -29,9 +30,8 @@ Odoo Web tours.
 
 
 
-- Campos:
-
-  - **tour_enabled** (Boolean)
+#### Campos
+- **tour_enabled** (Boolean)
 
 
 
@@ -44,31 +44,27 @@ Odoo Web tours.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **step_ids** (One2many) → web_tour.tour.step
-
-
-  - **url** (Char)
-
-
-  - **sharing_url** (Char)
+#### Campos
+- **name** (Char)
+- **step_ids** (One2many) → web_tour.tour.step
+- **url** (Char)
+- **sharing_url** (Char)
+- **rainbow_man_message** (Html)
+- **sequence** (Integer)
+- **custom** (Boolean)
+- **user_consumed_ids** (Many2many) → res.users
 
 
-  - **rainbow_man_message** (Html)
 
 
-  - **sequence** (Integer)
 
+#### Vistas
 
-  - **custom** (Boolean)
-
-
-  - **user_consumed_ids** (Many2many) → res.users
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | - | `web_tour.tour_form` | - |
+| list | - | `web_tour.tour_list` | - |
+| search | tour.search | `web_tour.tour_search` | - |
 
 
 
@@ -80,21 +76,12 @@ Odoo Web tours.
 
 
 
-- Campos:
-
-  - **trigger** (Char)
-
-
-  - **content** (Char)
-
-
-  - **tour_id** (Many2one) → web_tour.tour
-
-
-  - **run** (Char)
-
-
-  - **sequence** (Integer)
+#### Campos
+- **trigger** (Char)
+- **content** (Char)
+- **tour_id** (Many2one) → web_tour.tour
+- **run** (Char)
+- **sequence** (Integer)
 
 
 
@@ -117,15 +104,6 @@ Odoo Web tours.
 
 
 
-## Vistas
 
-
-### web_tour.tour
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | - | `web_tour.tour_form` | - |
-| list | - | `web_tour.tour_list` | - |
-| search | tour.search | `web_tour.tour_search` | - |
 
 

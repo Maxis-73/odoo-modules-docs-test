@@ -30,9 +30,8 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
-- Campos:
-
-  - **source_pos_order_id** (Many2one) → pos.order
+#### Campos
+- **source_pos_order_id** (Many2one) → pos.order
 
 
 
@@ -52,6 +51,7 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
+
 ### loyalty.program
 
 
@@ -66,18 +66,11 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
-- Campos:
-
-  - **pos_config_ids** (Many2many) → pos.config
-
-
-  - **pos_order_count** (Integer) → PoS Order Count
-
-
-  - **pos_ok** (Boolean) → Point of Sale
-
-
-  - **pos_report_print_id** (Many2one) → ir.actions.report
+#### Campos
+- **pos_config_ids** (Many2many) → pos.config
+- **pos_order_count** (Integer) → PoS Order Count
+- **pos_ok** (Boolean) → Point of Sale
+- **pos_report_print_id** (Many2one) → ir.actions.report
 
 
 
@@ -97,6 +90,7 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
+
 ### pos.order.line
 
 
@@ -107,21 +101,12 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
-- Campos:
-
-  - **is_reward_line** (Boolean)
-
-
-  - **reward_id** (Many2one) → loyalty.reward
-
-
-  - **coupon_id** (Many2one) → loyalty.card
-
-
-  - **reward_identifier_code** (Char)
-
-
-  - **points_cost** (Float)
+#### Campos
+- **is_reward_line** (Boolean)
+- **reward_id** (Many2one) → loyalty.reward
+- **coupon_id** (Many2one) → loyalty.card
+- **reward_identifier_code** (Char)
+- **points_cost** (Float)
 
 
 
@@ -137,9 +122,8 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
-- Campos:
-
-  - **pos_report_print_id** (Many2one) → ir.actions.report
+#### Campos
+- **pos_report_print_id** (Many2one) → ir.actions.report
 
 
 
@@ -159,6 +143,7 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
+
 ### barcode.rule
 
 
@@ -169,9 +154,8 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
-- Campos:
-
-  - **type** (Selection)
+#### Campos
+- **type** (Selection)
 
 
 
@@ -191,15 +175,10 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
-- Campos:
-
-  - **valid_product_ids** (Many2many) → product.product
-
-
-  - **any_product** (Boolean)
-
-
-  - **promo_barcode** (Char) → Barcode
+#### Campos
+- **valid_product_ids** (Many2many) → product.product
+- **any_product** (Boolean)
+- **promo_barcode** (Char) → Barcode
 
 
 
@@ -223,6 +202,7 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
+
 ### pos.session
 
 
@@ -237,6 +217,7 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
+
 ### res.partner
 
 
@@ -247,9 +228,8 @@ Use Coupons, Gift Cards and Loyalty programs in Point of Sale
 
 
 
-- Campos:
-
-  - **loyalty_card_count** (Integer)
+#### Campos
+- **loyalty_card_count** (Integer)
 
 
 

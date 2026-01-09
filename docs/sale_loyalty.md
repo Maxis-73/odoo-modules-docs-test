@@ -29,9 +29,8 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-- Campos:
-
-  - **order_id** (Many2one) → sale.order
+#### Campos
+- **order_id** (Many2one) → sale.order
 
 
 
@@ -47,21 +46,12 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-- Campos:
-
-  - **applied_coupon_ids** (Many2many) → loyalty.card
-
-
-  - **code_enabled_rule_ids** (Many2many) → loyalty.rule
-
-
-  - **coupon_point_ids** (One2many) → sale.order.coupon.points
-
-
-  - **reward_amount** (Float)
-
-
-  - **loyalty_data** (Json)
+#### Campos
+- **applied_coupon_ids** (Many2many) → loyalty.card
+- **code_enabled_rule_ids** (Many2many) → loyalty.rule
+- **coupon_point_ids** (One2many) → sale.order.coupon.points
+- **reward_amount** (Float)
+- **loyalty_data** (Json)
 
 
 
@@ -77,12 +67,9 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-- Campos:
-
-  - **order_count** (Integer)
-
-
-  - **sale_ok** (Boolean)
+#### Campos
+- **order_count** (Integer)
+- **sale_ok** (Boolean)
 
 
 
@@ -98,21 +85,12 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-- Campos:
-
-  - **is_reward_line** (Boolean)
-
-
-  - **reward_id** (Many2one) → loyalty.reward
-
-
-  - **coupon_id** (Many2one) → loyalty.card
-
-
-  - **reward_identifier_code** (Char)
-
-
-  - **points_cost** (Float)
+#### Campos
+- **is_reward_line** (Boolean)
+- **reward_id** (Many2one) → loyalty.reward
+- **coupon_id** (Many2one) → loyalty.card
+- **reward_identifier_code** (Char)
+- **points_cost** (Float)
 
 
 
@@ -132,6 +110,7 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
+
 ### sale.order.coupon.points
 
 
@@ -139,15 +118,10 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-- Campos:
-
-  - **order_id** (Many2one) → sale.order
-
-
-  - **coupon_id** (Many2one) → loyalty.card
-
-
-  - **points** (Float)
+#### Campos
+- **order_id** (Many2one) → sale.order
+- **coupon_id** (Many2one) → loyalty.card
+- **points** (Float)
 
 
 
@@ -170,7 +144,10 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### sale.loyalty.reward.wizard
@@ -181,7 +158,7 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-#### Botones (sale_loyalty.sale_loyalty_reward_wizard_view_form)
+**Botones (sale_loyalty.sale_loyalty_reward_wizard_view_form):**
 - **Apply** (object)
 - **Coupons & Loyalty** (action) - Grupos: `sales_team.group_sale_manager`
 
@@ -194,6 +171,8 @@ Integrate discount and loyalty programs mechanisms in sales orders.
 
 
 
-#### Botones (sale_loyalty.sale_loyalty_coupon_wizard_view_form)
+**Botones (sale_loyalty.sale_loyalty_coupon_wizard_view_form):**
 - **Apply** (object)
+
+
 

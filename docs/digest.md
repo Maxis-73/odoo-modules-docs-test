@@ -12,6 +12,7 @@
 ## Descripción
 
 Send KPI Digests periodically
+=============================
 
 
 
@@ -25,22 +26,24 @@ Send KPI Digests periodically
 
 
 
-- Campos:
-
-  - **sequence** (Integer) → Sequence
-
-
-  - **name** (Char) → Name
-
-
-  - **user_ids** (Many2many) → res.users
+#### Campos
+- **sequence** (Integer) → Sequence
+- **name** (Char) → Name
+- **user_ids** (Many2many) → res.users
+- **tip_description** (Html) → Tip description
+- **group_id** (Many2one) → res.groups
 
 
-  - **tip_description** (Html) → Tip description
 
 
-  - **group_id** (Many2one) → res.groups
 
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | digest.tip.view.list | `digest.digest_tip_view_tree` | - |
+| form | digest.tip.view.form | `digest.digest_tip_view_form` | - |
+| search | digest.tip.view.search | `digest.digest_tip_view_search` | - |
 
 
 
@@ -52,47 +55,49 @@ Send KPI Digests periodically
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **user_ids** (Many2many) → res.users
-
-
-  - **periodicity** (Selection)
-
-
-  - **next_run_date** (Date)
-
-
-  - **currency_id** (Many2one)
-
-
-  - **company_id** (Many2one) → res.company
+#### Campos
+- **name** (Char)
+- **user_ids** (Many2many) → res.users
+- **periodicity** (Selection)
+- **next_run_date** (Date)
+- **currency_id** (Many2one)
+- **company_id** (Many2one) → res.company
+- **available_fields** (Char)
+- **is_subscribed** (Boolean) → Is user subscribed
+- **state** (Selection)
+- **kpi_res_users_connected** (Boolean) → Connected Users
+- **kpi_res_users_connected_value** (Integer)
+- **kpi_mail_message_total** (Boolean) → Messages Sent
+- **kpi_mail_message_total_value** (Integer)
 
 
-  - **available_fields** (Char)
 
 
-  - **is_subscribed** (Boolean) → Is user subscribed
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | digest.digest.view.list | `digest.digest_digest_view_tree` | - |
+| form | digest.digest.view.form | `digest.digest_digest_view_form` | - |
+| search | digest.digest.view.search | `digest.digest_digest_view_search` | - |
 
 
-  - **state** (Selection)
+
+**Botones (digest.digest_digest_view_form):**
+- **Send Now** (object) - Grupos: `base.group_system`
+- **Deactivate** (object) - Grupos: `base.group_system`
+- **Activate** (object) - Grupos: `base.group_system`
 
 
-  - **kpi_res_users_connected** (Boolean) → Connected Users
+**Filtros de búsqueda (digest.digest_digest_view_search):**
+
+- **Activated** (`[('state', '=', 'activated')]`)
+- **Deactivated** (`[('state', '=', 'deactivated')]`)
 
 
-  - **kpi_res_users_connected_value** (Integer)
-
-
-  - **kpi_mail_message_total** (Boolean) → Messages Sent
-
-
-  - **kpi_mail_message_total_value** (Integer)
-
-
+*Agrupar por:*
+- Periodicity
 
 
 
@@ -110,6 +115,7 @@ Send KPI Digests periodically
 
 
 
+
 ### res.config.settings
 
 
@@ -120,12 +126,9 @@ Send KPI Digests periodically
 
 
 
-- Campos:
-
-  - **digest_emails** (Boolean)
-
-
-  - **digest_id** (Many2one) → digest.digest
+#### Campos
+- **digest_emails** (Boolean)
+- **digest_id** (Many2one) → digest.digest
 
 
 
@@ -134,42 +137,5 @@ Send KPI Digests periodically
 
 
 
-## Vistas
-
-
-### digest.digest
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | digest.digest.view.list | `digest.digest_digest_view_tree` | - |
-| form | digest.digest.view.form | `digest.digest_digest_view_form` | - |
-| search | digest.digest.view.search | `digest.digest_digest_view_search` | - |
-
-
-
-#### Botones (digest.digest_digest_view_form)
-- **Send Now** (object) - Grupos: `base.group_system`
-- **Deactivate** (object) - Grupos: `base.group_system`
-- **Activate** (object) - Grupos: `base.group_system`
-
-
-#### Filtros de búsqueda (digest.digest_digest_view_search)
-
-**Filtros:**
-- **Activated** (`[('state', '=', 'activated')]`)
-- **Deactivated** (`[('state', '=', 'deactivated')]`)
-
-
-**Agrupar por:**
-- Periodicity
-
-
-### digest.tip
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | digest.tip.view.list | `digest.digest_tip_view_tree` | - |
-| form | digest.tip.view.form | `digest.digest_tip_view_form` | - |
-| search | digest.tip.view.search | `digest.digest_tip_view_search` | - |
 
 

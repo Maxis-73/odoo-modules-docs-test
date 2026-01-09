@@ -31,9 +31,8 @@ Project skills
 
 
 
-- Campos:
-
-  - **user_skill_ids** (One2many) → hr.employee.skill
+#### Campos
+- **user_skill_ids** (One2many) → hr.employee.skill
 
 
 

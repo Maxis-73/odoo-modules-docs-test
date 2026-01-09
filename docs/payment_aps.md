@@ -33,6 +33,7 @@ An Amazon payment provider covering the MENA region.
 
 
 
+
 ### payment.provider
 
 
@@ -43,21 +44,12 @@ An Amazon payment provider covering the MENA region.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **aps_merchant_identifier** (Char)
-
-
-  - **aps_access_code** (Char)
-
-
-  - **aps_sha_request** (Char)
-
-
-  - **aps_sha_response** (Char)
+#### Campos
+- **code** (Selection)
+- **aps_merchant_identifier** (Char)
+- **aps_access_code** (Char)
+- **aps_sha_request** (Char)
+- **aps_sha_response** (Char)
 
 
 

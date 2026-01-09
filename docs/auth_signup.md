@@ -12,6 +12,7 @@
 ## Descripción
 
 Allow users to sign up and reset their password
+===============================================
     
 
 
@@ -28,9 +29,8 @@ Allow users to sign up and reset their password
 
 
 
-- Campos:
-
-  - **state** (Selection)
+#### Campos
+- **state** (Selection)
 
 
 
@@ -46,15 +46,10 @@ Allow users to sign up and reset their password
 
 
 
-- Campos:
-
-  - **auth_signup_reset_password** (Boolean)
-
-
-  - **auth_signup_uninvited** (Selection)
-
-
-  - **auth_signup_template_user_id** (Many2one) → res.users
+#### Campos
+- **auth_signup_reset_password** (Boolean)
+- **auth_signup_uninvited** (Selection)
+- **auth_signup_template_user_id** (Many2one) → res.users
 
 
 
@@ -74,6 +69,7 @@ Allow users to sign up and reset their password
 
 
 
+
 ### res.partner
 
 
@@ -84,9 +80,8 @@ Allow users to sign up and reset their password
 
 
 
-- Campos:
-
-  - **signup_type** (Char)
+#### Campos
+- **signup_type** (Char)
 
 
 

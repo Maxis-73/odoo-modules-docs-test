@@ -35,12 +35,9 @@ This is a base module. It holds website-related stuff for Contact model (res.par
 
 
 
-- Campos:
-
-  - **website_description** (Html) → Website Partner Full Description
-
-
-  - **website_short_description** (Text) → Website Partner Short Description
+#### Campos
+- **website_description** (Html) → Website Partner Full Description
+- **website_short_description** (Text) → Website Partner Short Description
 
 
 

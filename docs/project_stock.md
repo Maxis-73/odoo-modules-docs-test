@@ -30,6 +30,7 @@ Link Stock pickings to Project
 
 
 
+
 ### stock.picking
 
 
@@ -40,9 +41,8 @@ Link Stock pickings to Project
 
 
 
-- Campos:
-
-  - **project_id** (Many2one) → project.project
+#### Campos
+- **project_id** (Many2one) → project.project
 
 
 

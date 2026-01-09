@@ -15,6 +15,7 @@ From quotations to invoices
 ## Descripción
 
 Manage sales quotations and orders
+==================================
 
 This application allows you to manage your sales goals in an effective and efficient manner by keeping track of all sales orders and history.
 
@@ -52,27 +53,14 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **sale_order_template_id** (Many2one) → sale.order.template
-
-
-  - **company_id** (Many2one)
-
-
-  - **product_id** (Many2one) → product.product
-
-
-  - **name** (Text)
-
-
-  - **uom_id** (Many2one) → uom.uom
-
-
-  - **product_uom_category_id** (Many2one)
-
-
-  - **quantity** (Float)
+#### Campos
+- **sale_order_template_id** (Many2one) → sale.order.template
+- **company_id** (Many2one)
+- **product_id** (Many2one) → product.product
+- **name** (Text)
+- **uom_id** (Many2one) → uom.uom
+- **product_uom_category_id** (Many2one)
+- **quantity** (Float)
 
 
 
@@ -88,14 +76,25 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **sale_order_template_id** (Many2one) → sale.order.template
-
-
-  - **sale_order_option_ids** (One2many) → sale.order.option
+#### Campos
+- **sale_order_template_id** (Many2one) → sale.order.template
+- **sale_order_option_ids** (One2many) → sale.order.option
 
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | sale.order.form.inherit.sale_management | `sale_management.sale_order_form_quote` | sale.view_order_form |
+
+
+
+**Botones (sale_management.sale_order_form_quote):**
+- **button_add_to_order** (object)
+- **button_add_to_order** (object)
 
 
 
@@ -109,9 +108,8 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **sale_order_option_ids** (One2many) → sale.order.option
+#### Campos
+- **sale_order_option_ids** (One2many) → sale.order.option
 
 
 
@@ -127,12 +125,9 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **kpi_all_sale_total** (Boolean) → All Sales
-
-
-  - **kpi_all_sale_total_value** (Monetary)
+#### Campos
+- **kpi_all_sale_total** (Boolean) → All Sales
+- **kpi_all_sale_total_value** (Monetary)
 
 
 
@@ -148,12 +143,9 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **group_sale_order_template** (Boolean) → Quotation Templates
-
-
-  - **company_so_template_id** (Many2one)
+#### Campos
+- **group_sale_order_template** (Boolean) → Quotation Templates
+- **company_so_template_id** (Many2one)
 
 
 
@@ -166,39 +158,18 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **order_id** (Many2one) → sale.order
-
-
-  - **product_id** (Many2one) → product.product
-
-
-  - **line_id** (Many2one) → sale.order.line
-
-
-  - **sequence** (Integer)
-
-
-  - **name** (Text)
-
-
-  - **quantity** (Float)
-
-
-  - **uom_id** (Many2one) → uom.uom
-
-
-  - **product_uom_category_id** (Many2one)
-
-
-  - **price_unit** (Float)
-
-
-  - **discount** (Float)
-
-
-  - **is_present** (Boolean)
+#### Campos
+- **order_id** (Many2one) → sale.order
+- **product_id** (Many2one) → product.product
+- **line_id** (Many2one) → sale.order.line
+- **sequence** (Integer)
+- **name** (Text)
+- **quantity** (Float)
+- **uom_id** (Many2one) → uom.uom
+- **product_uom_category_id** (Many2one)
+- **price_unit** (Float)
+- **discount** (Float)
+- **is_present** (Boolean)
 
 
 
@@ -214,9 +185,8 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **sale_order_template_id** (Many2one) → sale.order.template
+#### Campos
+- **sale_order_template_id** (Many2one) → sale.order.template
 
 
 
@@ -229,33 +199,16 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **sale_order_template_id** (Many2one) → sale.order.template
-
-
-  - **sequence** (Integer)
-
-
-  - **company_id** (Many2one)
-
-
-  - **product_id** (Many2one) → product.product
-
-
-  - **name** (Text)
-
-
-  - **product_uom_id** (Many2one) → uom.uom
-
-
-  - **product_uom_category_id** (Many2one)
-
-
-  - **product_uom_qty** (Float)
-
-
-  - **display_type** (Selection)
+#### Campos
+- **sale_order_template_id** (Many2one) → sale.order.template
+- **sequence** (Integer)
+- **company_id** (Many2one)
+- **product_id** (Many2one) → product.product
+- **name** (Text)
+- **product_uom_id** (Many2one) → uom.uom
+- **product_uom_category_id** (Many2one)
+- **product_uom_qty** (Float)
+- **display_type** (Selection)
 
 
 
@@ -268,70 +221,26 @@ The Dashboard for the Sales Manager will include
 
 
 
-- Campos:
-
-  - **active** (Boolean)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **name** (Char)
-
-
-  - **note** (Html)
-
-
-  - **sequence** (Integer)
-
-
-  - **mail_template_id** (Many2one) → mail.template
-
-
-  - **number_of_days** (Integer)
-
-
-  - **require_signature** (Boolean)
-
-
-  - **require_payment** (Boolean)
-
-
-  - **prepayment_percent** (Float)
-
-
-  - **sale_order_template_line_ids** (One2many) → sale.order.template.line
-
-
-  - **sale_order_template_option_ids** (One2many) → sale.order.template.option
-
-
-  - **journal_id** (Many2one) → account.journal
+#### Campos
+- **active** (Boolean)
+- **company_id** (Many2one) → res.company
+- **name** (Char)
+- **note** (Html)
+- **sequence** (Integer)
+- **mail_template_id** (Many2one) → mail.template
+- **number_of_days** (Integer)
+- **require_signature** (Boolean)
+- **require_payment** (Boolean)
+- **prepayment_percent** (Float)
+- **sale_order_template_line_ids** (One2many) → sale.order.template.line
+- **sale_order_template_option_ids** (One2many) → sale.order.template.option
+- **journal_id** (Many2one) → account.journal
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### sale.order
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | sale.order.form.inherit.sale_management | `sale_management.sale_order_form_quote` | sale.view_order_form |
-
-
-
-#### Botones (sale_management.sale_order_form_quote)
-- **button_add_to_order** (object)
-- **button_add_to_order** (object)
-
-
-### sale.order.template
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -341,12 +250,18 @@ The Dashboard for the Sales Manager will include
 
 
 
-#### Filtros de búsqueda (sale_management.sale_order_template_view_search)
+**Filtros de búsqueda (sale_management.sale_order_template_view_search):**
 
-**Filtros:**
 - **Archived** (`[('active','=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Company
+
+
+
+
+
+
+
 

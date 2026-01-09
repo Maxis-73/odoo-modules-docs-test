@@ -12,6 +12,7 @@
 ## Descripción
 
 Track different dates on products and production lots.
+======================================================
 
 Following dates can be tracked:
 -------------------------------
@@ -37,27 +38,14 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-- Campos:
-
-  - **use_expiration_date** (Boolean)
-
-
-  - **expiration_date** (Datetime)
-
-
-  - **use_date** (Datetime)
-
-
-  - **removal_date** (Datetime)
-
-
-  - **alert_date** (Datetime)
-
-
-  - **product_expiry_alert** (Boolean)
-
-
-  - **product_expiry_reminded** (Boolean)
+#### Campos
+- **use_expiration_date** (Boolean)
+- **expiration_date** (Datetime)
+- **use_date** (Datetime)
+- **removal_date** (Datetime)
+- **alert_date** (Datetime)
+- **product_expiry_alert** (Boolean)
+- **product_expiry_reminded** (Boolean)
 
 
 
@@ -77,6 +65,7 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
+
 ### product.product
 
 
@@ -91,6 +80,7 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
+
 ### product.template
 
 
@@ -101,21 +91,12 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-- Campos:
-
-  - **use_expiration_date** (Boolean)
-
-
-  - **expiration_time** (Integer)
-
-
-  - **use_time** (Integer)
-
-
-  - **removal_time** (Integer)
-
-
-  - **alert_time** (Integer)
+#### Campos
+- **use_expiration_date** (Boolean)
+- **expiration_time** (Integer)
+- **use_time** (Integer)
+- **removal_time** (Integer)
+- **alert_time** (Integer)
 
 
 
@@ -131,9 +112,8 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-- Campos:
-
-  - **use_expiration_date** (Boolean)
+#### Campos
+- **use_expiration_date** (Boolean)
 
 
 
@@ -149,15 +129,10 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-- Campos:
-
-  - **expiration_date** (Datetime)
-
-
-  - **removal_date** (Datetime)
-
-
-  - **use_expiration_date** (Boolean)
+#### Campos
+- **expiration_date** (Datetime)
+- **removal_date** (Datetime)
+- **use_expiration_date** (Boolean)
 
 
 
@@ -177,6 +152,7 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
+
 ### res.config.settings
 
 
@@ -187,9 +163,8 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-- Campos:
-
-  - **group_expiry_date_on_delivery_slip** (Boolean) → Display Expiration Dates on Delivery Slips
+#### Campos
+- **group_expiry_date_on_delivery_slip** (Boolean) → Display Expiration Dates on Delivery Slips
 
 
 
@@ -205,15 +180,10 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-- Campos:
-
-  - **expiration_date** (Datetime)
-
-
-  - **is_expired** (Boolean)
-
-
-  - **use_expiration_date** (Boolean)
+#### Campos
+- **expiration_date** (Datetime)
+- **is_expired** (Boolean)
+- **use_expiration_date** (Boolean)
 
 
 
@@ -222,7 +192,9 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### expiry.picking.confirmation
@@ -233,7 +205,9 @@ Also implements the removal strategy First Expiry First Out (FEFO) widely used, 
 
 
 
-#### Botones (product_expiry.confirm_expiry_view)
+**Botones (product_expiry.confirm_expiry_view):**
 - **Confirm** (object)
 - **Proceed except for expired one** (object)
+
+
 

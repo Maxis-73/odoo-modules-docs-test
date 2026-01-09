@@ -15,6 +15,7 @@ Log in with a Passkey
 ## Descripción
 
 The implementation of Passkeys using the webauthn protocol.
+===========================================================
 
 Passkeys are a secure alternative to a username and a password.
 When a user logs in with a Passkey, MFA will not be required.
@@ -31,19 +32,21 @@ When a user logs in with a Passkey, MFA will not be required.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **credential_identifier** (Char)
-
-
-  - **public_key** (Char)
+#### Campos
+- **name** (Char)
+- **credential_identifier** (Char)
+- **public_key** (Char)
+- **sign_count** (Integer)
 
 
-  - **sign_count** (Integer)
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | auth.passkey.key.rename | `auth_passkey.auth_passkey_key_rename` | - |
 
 
 
@@ -55,11 +58,23 @@ When a user logs in with a Passkey, MFA will not be required.
 
 
 
-- Campos:
+#### Campos
+- **name** (Char) → Name
 
-  - **name** (Char) → Name
 
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | Create Passkey Wizard Form | `auth_passkey.auth_passkey_key_create_view_form` | - |
+
+
+
+**Botones (auth_passkey.auth_passkey_key_create_view_form):**
+- **Create** (object)
 
 
 
@@ -73,10 +88,19 @@ When a user logs in with a Passkey, MFA will not be required.
 
 
 
-- Campos:
+#### Campos
+- **auth_passkey_key_ids** (One2many) → auth.passkey.key
 
-  - **auth_passkey_key_ids** (One2many) → auth.passkey.key
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| kanban | auth.passkey.users.form | `auth_passkey.auth_passkey_users_form` | base.view_users_form |
+| kanban | auth.passkey.users.preferences | `auth_passkey.auth_passkey_users_preferences` | base.view_users_form_simple_modif |
 
 
 
@@ -91,10 +115,8 @@ When a user logs in with a Passkey, MFA will not be required.
 
 
 
-- Campos:
-
-  - **auth_method** (Selection)
-
+#### Campos
+- **auth_method** (Selection)
 
 
 
@@ -102,34 +124,6 @@ When a user logs in with a Passkey, MFA will not be required.
 
 
 
-## Vistas
 
-
-### auth.passkey.key
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | auth.passkey.key.rename | `auth_passkey.auth_passkey_key_rename` | - |
-
-
-
-### auth.passkey.key.create
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | Create Passkey Wizard Form | `auth_passkey.auth_passkey_key_create_view_form` | - |
-
-
-
-#### Botones (auth_passkey.auth_passkey_key_create_view_form)
-- **Create** (object)
-
-
-### res.users
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| kanban | auth.passkey.users.form | `auth_passkey.auth_passkey_users_form` | base.view_users_form |
-| kanban | auth.passkey.users.preferences | `auth_passkey.auth_passkey_users_preferences` | base.view_users_form_simple_modif |
 
 

@@ -17,6 +17,7 @@
 ## Descripción
 
 Html Editor
+==========================
 This addon provides an extensible, maintainable editor.
     
 
@@ -34,21 +35,12 @@ This addon provides an extensible, maintainable editor.
 
 
 
-- Campos:
-
-  - **local_url** (Char) → Attachment URL
-
-
-  - **image_src** (Char)
-
-
-  - **image_width** (Integer)
-
-
-  - **image_height** (Integer)
-
-
-  - **original_id** (Many2one) → ir.attachment
+#### Campos
+- **local_url** (Char) → Attachment URL
+- **image_src** (Char)
+- **image_width** (Integer)
+- **image_height** (Integer)
+- **original_id** (Many2one) → ir.attachment
 
 
 

@@ -34,15 +34,10 @@ discount to a customer.
 
 
 
-- Campos:
-
-  - **iface_discount** (Boolean)
-
-
-  - **discount_pc** (Float)
-
-
-  - **discount_product_id** (Many2one) → product.product
+#### Campos
+- **iface_discount** (Boolean)
+- **discount_pc** (Float)
+- **discount_product_id** (Many2one) → product.product
 
 
 
@@ -62,6 +57,7 @@ discount to a customer.
 
 
 
+
 ### res.config.settings
 
 
@@ -72,12 +68,9 @@ discount to a customer.
 
 
 
-- Campos:
-
-  - **pos_discount_pc** (Float)
-
-
-  - **pos_discount_product_id** (Many2one) → product.product
+#### Campos
+- **pos_discount_pc** (Float)
+- **pos_discount_product_id** (Many2one) → product.product
 
 
 

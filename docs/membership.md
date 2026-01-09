@@ -12,6 +12,7 @@
 ## Descripción
 
 This module allows you to manage all operations for managing memberships.
+=========================================================================
 
 It supports different kind of members:
 --------------------------------------
@@ -35,39 +36,18 @@ invoice and send propositions for membership renewal.
 
 
 
-- Campos:
-
-  - **partner** (Many2one) → res.partner
-
-
-  - **membership_id** (Many2one) → product.product
-
-
-  - **date_from** (Date)
-
-
-  - **date_to** (Date)
-
-
-  - **date_cancel** (Date)
-
-
-  - **date** (Date)
-
-
-  - **member_price** (Float)
-
-
-  - **account_invoice_line** (Many2one) → account.move.line
-
-
-  - **account_invoice_id** (Many2one) → account.move
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **state** (Selection)
+#### Campos
+- **partner** (Many2one) → res.partner
+- **membership_id** (Many2one) → product.product
+- **date_from** (Date)
+- **date_to** (Date)
+- **date_cancel** (Date)
+- **date** (Date)
+- **member_price** (Float)
+- **account_invoice_line** (Many2one) → account.move.line
+- **account_invoice_id** (Many2one) → account.move
+- **company_id** (Many2one) → res.company
+- **state** (Selection)
 
 
 
@@ -87,6 +67,7 @@ invoice and send propositions for membership renewal.
 
 
 
+
 ### account.move.line
 
 
@@ -101,6 +82,7 @@ invoice and send propositions for membership renewal.
 
 
 
+
 ### res.partner
 
 
@@ -111,32 +93,49 @@ invoice and send propositions for membership renewal.
 
 
 
-- Campos:
-
-  - **associate_member** (Many2one) → res.partner
-
-
-  - **member_lines** (One2many) → membership.membership_line
-
-
-  - **free_member** (Boolean)
-
-
-  - **membership_amount** (Float)
+#### Campos
+- **associate_member** (Many2one) → res.partner
+- **member_lines** (One2many) → membership.membership_line
+- **free_member** (Boolean)
+- **membership_amount** (Float)
+- **membership_state** (Selection)
+- **membership_start** (Date)
+- **membership_stop** (Date)
+- **membership_cancel** (Date)
 
 
-  - **membership_state** (Selection)
 
 
-  - **membership_start** (Date)
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | Members | `membership.membership_members_tree` | - |
+| search | res.partner.select | `membership.view_res_partner_member_filter` | - |
+| form | res.partner.form.inherit | `membership.view_partner_form` | base.view_partner_form |
 
 
-  - **membership_stop** (Date)
+
+**Filtros de búsqueda (membership.view_res_partner_member_filter):**
+
+- **Customers** (`[('customer_rank' ,'>', 0)]`)
+- **Vendors** (`[('supplier_rank', '>', 0)]`)
+- **Members** (`[('membership_state', 'in', ['invoiced', 'paid', 'free'])]`)
+- **Start Date**
+- **End Date**
 
 
-  - **membership_cancel** (Date)
+*Agrupar por:*
+- Salesperson
+- Associate Member
+- Membership State
+- Start Date
+- End Date
 
 
+**Botones (membership.view_partner_form):**
+- **Buy Membership** (action)
 
 
 
@@ -150,27 +149,16 @@ invoice and send propositions for membership renewal.
 
 
 
-- Campos:
-
-  - **membership** (Boolean)
-
-
-  - **membership_date_from** (Date)
-
-
-  - **membership_date_to** (Date)
+#### Campos
+- **membership** (Boolean)
+- **membership_date_from** (Date)
+- **membership_date_to** (Date)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### product.template
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -181,47 +169,23 @@ invoice and send propositions for membership renewal.
 
 
 
-#### Filtros de búsqueda (membership.membership_product_search_form_view)
+**Filtros de búsqueda (membership.membership_product_search_form_view):**
 
-**Filtros:**
 - **Inactive** (`[('active','=',False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Category
 - Start Date
 
 
-### res.partner
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | Members | `membership.membership_members_tree` | - |
-| search | res.partner.select | `membership.view_res_partner_member_filter` | - |
-| form | res.partner.form.inherit | `membership.view_partner_form` | base.view_partner_form |
 
 
 
-#### Filtros de búsqueda (membership.view_res_partner_member_filter)
-
-**Filtros:**
-- **Customers** (`[('customer_rank' ,'>', 0)]`)
-- **Vendors** (`[('supplier_rank', '>', 0)]`)
-- **Members** (`[('membership_state', 'in', ['invoiced', 'paid', 'free'])]`)
-- **Start Date**
-- **End Date**
 
 
-**Agrupar por:**
-- Salesperson
-- Associate Member
-- Membership State
-- Start Date
-- End Date
 
-
-#### Botones (membership.view_partner_form)
-- **Buy Membership** (action)
+## Vistas Adicionales
 
 
 ### membership.invoice
@@ -232,7 +196,7 @@ invoice and send propositions for membership renewal.
 
 
 
-#### Botones (membership.view_membership_invoice_view)
+**Botones (membership.view_membership_invoice_view):**
 - **Invoice Membership** (object)
 
 
@@ -247,19 +211,20 @@ invoice and send propositions for membership renewal.
 
 
 
-#### Filtros de búsqueda (membership.view_report_membership_search)
+**Filtros de búsqueda (membership.view_report_membership_search):**
 
-**Filtros:**
 - **Forecast**
 - **Revenue Done**
 - **filter_start_date**
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Salesperson
 - Associated Partner
 - Membership Product
 - Current Membership State
 - Company
 - Month
+
+
 

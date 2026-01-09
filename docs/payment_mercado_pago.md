@@ -33,6 +33,7 @@ A payment provider covering several countries in Latin America.
 
 
 
+
 ### payment.provider
 
 
@@ -43,12 +44,9 @@ A payment provider covering several countries in Latin America.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **mercado_pago_access_token** (Char)
+#### Campos
+- **code** (Selection)
+- **mercado_pago_access_token** (Char)
 
 
 

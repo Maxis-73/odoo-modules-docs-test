@@ -36,6 +36,7 @@ This module is used to send/receive documents with PEPPOL
 
 
 
+
 ### account.move
 
 
@@ -46,12 +47,9 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-- Campos:
-
-  - **peppol_message_uuid** (Char)
-
-
-  - **peppol_move_state** (Selection)
+#### Campos
+- **peppol_message_uuid** (Char)
+- **peppol_move_state** (Selection)
 
 
 
@@ -67,12 +65,9 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-- Campos:
-
-  - **account_peppol_proxy_state** (Selection)
-
-
-  - **is_peppol_journal** (Boolean)
+#### Campos
+- **account_peppol_proxy_state** (Selection)
+- **is_peppol_journal** (Boolean)
 
 
 
@@ -88,12 +83,9 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-- Campos:
-
-  - **peppol_verification_code** (Char)
-
-
-  - **proxy_type** (Selection)
+#### Campos
+- **peppol_verification_code** (Char)
+- **proxy_type** (Selection)
 
 
 
@@ -109,36 +101,17 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-- Campos:
-
-  - **account_peppol_edi_user** (Many2one) → account_edi_proxy_client.user
-
-
-  - **account_peppol_edi_mode** (Selection)
-
-
-  - **account_peppol_contact_email** (Char)
-
-
-  - **account_peppol_eas** (Selection)
-
-
-  - **account_peppol_edi_identification** (Char)
-
-
-  - **account_peppol_endpoint** (Char)
-
-
-  - **account_peppol_migration_key** (Char)
-
-
-  - **account_peppol_phone_number** (Char)
-
-
-  - **account_peppol_proxy_state** (Selection)
-
-
-  - **account_peppol_purchase_journal_id** (Many2one)
+#### Campos
+- **account_peppol_edi_user** (Many2one) → account_edi_proxy_client.user
+- **account_peppol_edi_mode** (Selection)
+- **account_peppol_contact_email** (Char)
+- **account_peppol_eas** (Selection)
+- **account_peppol_edi_identification** (Char)
+- **account_peppol_endpoint** (Char)
+- **account_peppol_migration_key** (Char)
+- **account_peppol_phone_number** (Char)
+- **account_peppol_proxy_state** (Selection)
+- **account_peppol_purchase_journal_id** (Many2one)
 
 
 
@@ -154,27 +127,14 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-- Campos:
-
-  - **account_peppol_contact_email** (Char)
-
-
-  - **account_peppol_migration_key** (Char)
-
-
-  - **account_peppol_phone_number** (Char)
-
-
-  - **account_peppol_proxy_state** (Selection)
-
-
-  - **peppol_eas** (Selection)
-
-
-  - **peppol_endpoint** (Char)
-
-
-  - **peppol_purchase_journal_id** (Many2one) → account.journal
+#### Campos
+- **account_peppol_contact_email** (Char)
+- **account_peppol_migration_key** (Char)
+- **account_peppol_phone_number** (Char)
+- **account_peppol_proxy_state** (Selection)
+- **peppol_eas** (Selection)
+- **peppol_endpoint** (Char)
+- **peppol_purchase_journal_id** (Many2one) → account.journal
 
 
 
@@ -190,21 +150,12 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-- Campos:
-
-  - **invoice_sending_method** (Selection)
-
-
-  - **peppol_eas** (Selection)
-
-
-  - **available_peppol_sending_methods** (Json)
-
-
-  - **available_peppol_edi_formats** (Json)
-
-
-  - **peppol_verification_state** (Selection)
+#### Campos
+- **invoice_sending_method** (Selection)
+- **peppol_eas** (Selection)
+- **available_peppol_sending_methods** (Json)
+- **available_peppol_edi_formats** (Json)
+- **peppol_verification_state** (Selection)
 
 
 
@@ -213,7 +164,9 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### account_peppol.service.wizard
@@ -224,7 +177,7 @@ This module is used to send/receive documents with PEPPOL
 
 
 
-#### Botones (account_peppol.peppol_service_configuration)
+**Botones (account_peppol.peppol_service_configuration):**
 - **Confirm** (object)
 
 
@@ -233,5 +186,7 @@ This module is used to send/receive documents with PEPPOL
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | form | peppol.registration.form | `account_peppol.peppol_registration_form` | - |
+
+
 
 

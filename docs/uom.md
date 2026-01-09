@@ -12,6 +12,7 @@
 ## Descripción
 
 This is the base module for managing Units of measure.
+========================================================================
     
 
 
@@ -25,16 +26,22 @@ This is the base module for managing Units of measure.
 
 
 
-- Campos:
-
-  - **name** (Char) → Unit of Measure Category
-
-
-  - **uom_ids** (One2many) → uom.uom
+#### Campos
+- **name** (Char) → Unit of Measure Category
+- **uom_ids** (One2many) → uom.uom
+- **reference_uom_id** (Many2one) → uom.uom
 
 
-  - **reference_uom_id** (Many2one) → uom.uom
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | uom.category.form | `uom.product_uom_categ_form_view` | - |
+| list | uom.category.list | `uom.product_uom_categ_tree_view` | - |
+| search | uom.category.view.search | `uom.uom_categ_view_search` | - |
 
 
 
@@ -46,45 +53,22 @@ This is the base module for managing Units of measure.
 
 
 
-- Campos:
-
-  - **name** (Char) → Unit of Measure
-
-
-  - **category_id** (Many2one) → uom.category
-
-
-  - **factor** (Float) → Ratio
-
-
-  - **factor_inv** (Float) → Bigger Ratio
-
-
-  - **rounding** (Float) → Rounding Precision
-
-
-  - **active** (Boolean) → Active
-
-
-  - **uom_type** (Selection)
-
-
-  - **ratio** (Float) → Combined Ratio
-
-
-  - **color** (Integer) → Color
+#### Campos
+- **name** (Char) → Unit of Measure
+- **category_id** (Many2one) → uom.category
+- **factor** (Float) → Ratio
+- **factor_inv** (Float) → Bigger Ratio
+- **rounding** (Float) → Rounding Precision
+- **active** (Boolean) → Active
+- **uom_type** (Selection)
+- **ratio** (Float) → Combined Ratio
+- **color** (Integer) → Color
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### uom.uom
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -94,22 +78,18 @@ This is the base module for managing Units of measure.
 
 
 
-#### Filtros de búsqueda (uom.uom_uom_view_search)
+**Filtros de búsqueda (uom.uom_uom_view_search):**
 
-**Filtros:**
 - **Archived** (`[('active', '=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Category
 
 
-### uom.category
 
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | uom.category.form | `uom.product_uom_categ_form_view` | - |
-| list | uom.category.list | `uom.product_uom_categ_tree_view` | - |
-| search | uom.category.view.search | `uom.uom_categ_view_search` | - |
+
+
+
 
 

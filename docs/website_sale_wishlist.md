@@ -28,27 +28,14 @@ Allow shoppers of your eCommerce store to create personalized collections of pro
 
 
 
-- Campos:
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **product_id** (Many2one) → product.product
-
-
-  - **currency_id** (Many2one) → res.currency
-
-
-  - **pricelist_id** (Many2one) → product.pricelist
-
-
-  - **price** (Monetary)
-
-
-  - **website_id** (Many2one) → website
-
-
-  - **active** (Boolean)
+#### Campos
+- **partner_id** (Many2one) → res.partner
+- **product_id** (Many2one) → product.product
+- **currency_id** (Many2one) → res.currency
+- **pricelist_id** (Many2one) → product.pricelist
+- **price** (Monetary)
+- **website_id** (Many2one) → website
+- **active** (Boolean)
 
 
 
@@ -64,9 +51,8 @@ Allow shoppers of your eCommerce store to create personalized collections of pro
 
 
 
-- Campos:
-
-  - **wishlist_ids** (One2many) → product.wishlist
+#### Campos
+- **wishlist_ids** (One2many) → product.wishlist
 
 
 
@@ -86,6 +72,7 @@ Allow shoppers of your eCommerce store to create personalized collections of pro
 
 
 
+
 ### product.product
 
 
@@ -100,6 +87,7 @@ Allow shoppers of your eCommerce store to create personalized collections of pro
 
 
 
+
 ### res.users
 
 
@@ -111,6 +99,7 @@ Allow shoppers of your eCommerce store to create personalized collections of pro
 
 
 - No agrega campos
+
 
 
 

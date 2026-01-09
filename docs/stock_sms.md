@@ -33,6 +33,7 @@ Send text messages when final stock move
 
 
 
+
 ### res.config.settings
 
 
@@ -43,12 +44,9 @@ Send text messages when final stock move
 
 
 
-- Campos:
-
-  - **stock_move_sms_validation** (Boolean)
-
-
-  - **stock_sms_confirmation_template_id** (Many2one)
+#### Campos
+- **stock_move_sms_validation** (Boolean)
+- **stock_sms_confirmation_template_id** (Many2one)
 
 
 
@@ -64,15 +62,10 @@ Send text messages when final stock move
 
 
 
-- Campos:
-
-  - **stock_move_sms_validation** (Boolean) → SMS Confirmation
-
-
-  - **stock_sms_confirmation_template_id** (Many2one) → sms.template
-
-
-  - **has_received_warning_stock_sms** (Boolean)
+#### Campos
+- **stock_move_sms_validation** (Boolean) → SMS Confirmation
+- **stock_sms_confirmation_template_id** (Many2one) → sms.template
+- **has_received_warning_stock_sms** (Boolean)
 
 
 
@@ -81,7 +74,9 @@ Send text messages when final stock move
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### confirm.stock.sms
@@ -92,7 +87,9 @@ Send text messages when final stock move
 
 
 
-#### Botones (stock_sms.view_confirm_stock_sms)
+**Botones (stock_sms.view_confirm_stock_sms):**
 - **Confirm** (object)
 - **Disable SMS** (object)
+
+
 

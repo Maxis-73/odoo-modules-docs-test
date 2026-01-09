@@ -12,6 +12,7 @@
 ## Descripción
 
 The module adds Microsoft user in res user.
+===========================================
 
 
 
@@ -29,6 +30,7 @@ The module adds Microsoft user in res user.
 
 
 
+
 ### res.users
 
 
@@ -39,15 +41,10 @@ The module adds Microsoft user in res user.
 
 
 
-- Campos:
-
-  - **microsoft_calendar_rtoken** (Char) → Microsoft Refresh Token
-
-
-  - **microsoft_calendar_token** (Char) → Microsoft User token
-
-
-  - **microsoft_calendar_token_validity** (Datetime) → Microsoft Token Validity
+#### Campos
+- **microsoft_calendar_rtoken** (Char) → Microsoft Refresh Token
+- **microsoft_calendar_token** (Char) → Microsoft User token
+- **microsoft_calendar_token_validity** (Datetime) → Microsoft Token Validity
 
 
 

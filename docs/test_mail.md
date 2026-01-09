@@ -33,9 +33,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -53,18 +52,11 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **parent_id** (Many2one) → mail.test.properties
-
-
-  - **properties** (Properties) → Properties
-
-
-  - **definition_properties** (PropertiesDefinition) → Definitions
+#### Campos
+- **name** (Char) → Name
+- **parent_id** (Many2one) → mail.test.properties
+- **properties** (Properties) → Properties
+- **definition_properties** (PropertiesDefinition) → Definitions
 
 
 
@@ -86,33 +78,16 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **email_from** (Char)
-
-
-  - **customer_name** (Char)
-
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **lang_code** (Char)
-
-
-  - **mobile** (Char)
-
-
-  - **phone** (Char)
+#### Campos
+- **name** (Char)
+- **company_id** (Many2one) → res.company
+- **user_id** (Many2one) → res.users
+- **email_from** (Char)
+- **customer_name** (Char)
+- **partner_id** (Many2one) → res.partner
+- **lang_code** (Char)
+- **mobile** (Char)
+- **phone** (Char)
 
 
 
@@ -130,21 +105,12 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **phone** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **access** (Selection)
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **phone** (Char)
+- **customer_id** (Many2one) → res.partner
+- **access** (Selection)
 
 
 
@@ -162,21 +128,12 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **phone** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **is_locked** (Boolean)
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **phone** (Char)
+- **customer_id** (Many2one) → res.partner
+- **is_locked** (Boolean)
 
 
 
@@ -194,12 +151,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
 
 
 
@@ -217,9 +171,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **description** (Char)
+#### Campos
+- **description** (Char)
 
 
 
@@ -243,6 +196,7 @@ tests independently to functional aspects of other models.
 
 
 
+
 ### mail.test.simple.unfollow
 
 
@@ -255,15 +209,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **email_from** (Char)
+#### Campos
+- **name** (Char)
+- **company_id** (Many2one) → res.company
+- **email_from** (Char)
 
 
 
@@ -281,15 +230,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **email_from** (Char)
+#### Campos
+- **name** (Char)
+- **company_id** (Many2one) → res.company
+- **email_from** (Char)
 
 
 
@@ -307,15 +251,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **custom_field** (Char)
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **custom_field** (Char)
 
 
 
@@ -333,9 +272,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **company_id** (Many2one) → res.company
+#### Campos
+- **company_id** (Many2one) → res.company
 
 
 
@@ -355,9 +293,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **company_id** (Many2one) → res.company
+#### Campos
+- **company_id** (Many2one) → res.company
 
 
 
@@ -377,18 +314,11 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **custom_field** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **custom_field** (Char)
+- **customer_id** (Many2one) → res.partner
 
 
 
@@ -406,27 +336,14 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **container_id** (Many2one) → mail.test.container
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **track_fields_tofilter** (Char)
-
-
-  - **track_enable_default_log** (Boolean)
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **user_id** (Many2one) → res.users
+- **container_id** (Many2one) → mail.test.container
+- **company_id** (Many2one) → res.company
+- **track_fields_tofilter** (Char)
+- **track_enable_default_log** (Boolean)
 
 
 
@@ -446,21 +363,12 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **date** (Date)
-
-
-  - **email_from** (Char)
-
-
-  - **active** (Boolean)
-
-
-  - **company_id** (Many2one) → res.company
+#### Campos
+- **name** (Char)
+- **date** (Date)
+- **email_from** (Char)
+- **active** (Boolean)
+- **company_id** (Many2one) → res.company
 
 
 
@@ -478,36 +386,17 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **mobile_number** (Char)
-
-
-  - **phone_number** (Char)
-
-
-  - **count** (Integer)
-
-
-  - **datetime** (Datetime)
-
-
-  - **mail_template** (Many2one) → mail.template
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **container_id** (Many2one) → mail.test.container
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **mobile_number** (Char)
+- **phone_number** (Char)
+- **count** (Integer)
+- **datetime** (Datetime)
+- **mail_template** (Many2one) → mail.template
+- **customer_id** (Many2one) → res.partner
+- **user_id** (Many2one) → res.users
+- **container_id** (Many2one) → mail.test.container
 
 
 
@@ -527,9 +416,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **email_from** (Char) → Email
+#### Campos
+- **email_from** (Char) → Email
 
 
 
@@ -547,12 +435,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **container_id** (Many2one) → mail.test.container.mc
+#### Campos
+- **company_id** (Many2one) → res.company
+- **container_id** (Many2one) → mail.test.container.mc
 
 
 
@@ -572,15 +457,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **description** (Text)
-
-
-  - **customer_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **description** (Text)
+- **customer_id** (Many2one) → res.partner
 
 
 
@@ -598,9 +478,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **company_id** (Many2one) → res.company
+#### Campos
+- **company_id** (Many2one) → res.company
 
 
 
@@ -618,18 +497,11 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **author_id** (Many2one) → res.partner
-
-
-  - **description** (Html) → Description
-
-
-  - **source_ids** (Many2many) → mail.test.composer.source
+#### Campos
+- **name** (Char) → Name
+- **author_id** (Many2one) → res.partner
+- **description** (Html) → Description
+- **source_ids** (Many2many) → mail.test.composer.source
 
 
 
@@ -647,15 +519,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **email_from** (Char) → Email
+#### Campos
+- **name** (Char) → Name
+- **customer_id** (Many2one) → res.partner
+- **email_from** (Char) → Email
 
 
 
@@ -675,12 +542,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **customer_id** (Many2one) → res.partner
 
 
 
@@ -698,9 +562,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
+#### Campos
+- **name** (Char) → Name
 
 
 
@@ -718,21 +581,12 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **value** (Integer)
-
-
-  - **value_pc** (Float)
-
-
-  - **track** (Char)
-
-
-  - **partner_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **value** (Integer)
+- **value_pc** (Float)
+- **track** (Char)
+- **partner_id** (Many2one) → res.partner
 
 
 
@@ -750,18 +604,11 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **field_0** (Char)
-
-
-  - **field_1** (Char)
-
-
-  - **field_2** (Char)
+#### Campos
+- **name** (Char)
+- **field_0** (Char)
+- **field_1** (Char)
+- **field_2** (Char)
 
 
 
@@ -779,24 +626,13 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **datetime** (Datetime)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **type** (Selection)
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **datetime** (Datetime)
+- **customer_id** (Many2one) → res.partner
+- **type** (Selection)
+- **user_id** (Many2one) → res.users
 
 
 
@@ -814,18 +650,11 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **lang** (Char) → Lang
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **customer_id** (Many2one) → res.partner
+- **lang** (Char) → Lang
 
 
 
@@ -843,9 +672,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
+#### Campos
+- **name** (Char) → Name
 
 
 
@@ -863,12 +691,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **mail_track_all_id** (Many2one) → mail.test.track.all
+#### Campos
+- **name** (Char) → Name
+- **mail_track_all_id** (Many2one) → mail.test.track.all
 
 
 
@@ -886,57 +711,24 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **boolean_field** (Boolean) → Boolean
-
-
-  - **char_field** (Char) → Char
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **currency_id** (Many2one) → res.currency
-
-
-  - **date_field** (Date) → Date
-
-
-  - **datetime_field** (Datetime) → Datetime
-
-
-  - **float_field** (Float) → Float
-
-
-  - **float_field_with_digits** (Float) → Precise Float
-
-
-  - **html_field** (Html) → Html
-
-
-  - **integer_field** (Integer) → Integer
-
-
-  - **many2many_field** (Many2many) → mail.test.track.all.m2m
-
-
-  - **many2one_field_id** (Many2one) → res.partner
-
-
-  - **monetary_field** (Monetary) → Monetary
-
-
-  - **one2many_field** (One2many) → mail.test.track.all.o2m
-
-
-  - **selection_field** (Selection)
-
-
-  - **text_field** (Text) → Text
-
-
-  - **name** (Char) → Name
+#### Campos
+- **boolean_field** (Boolean) → Boolean
+- **char_field** (Char) → Char
+- **company_id** (Many2one) → res.company
+- **currency_id** (Many2one) → res.currency
+- **date_field** (Date) → Date
+- **datetime_field** (Datetime) → Datetime
+- **float_field** (Float) → Float
+- **float_field_with_digits** (Float) → Precise Float
+- **html_field** (Html) → Html
+- **integer_field** (Integer) → Integer
+- **many2many_field** (Many2many) → mail.test.track.all.m2m
+- **many2one_field_id** (Many2one) → res.partner
+- **monetary_field** (Monetary) → Monetary
+- **one2many_field** (One2many) → mail.test.track.all.o2m
+- **selection_field** (Selection)
+- **text_field** (Text) → Text
+- **name** (Char) → Name
 
 
 
@@ -954,18 +746,11 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **partner_name** (Char)
-
-
-  - **partner_email** (Char)
-
-
-  - **partner_phone** (Char)
+#### Campos
+- **partner_id** (Many2one) → res.partner
+- **partner_name** (Char)
+- **partner_email** (Char)
+- **partner_phone** (Char)
 
 
 
@@ -983,15 +768,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **secret** (Char)
+#### Campos
+- **name** (Char)
+- **partner_id** (Many2one) → res.partner
+- **secret** (Char)
 
 
 
@@ -1009,15 +789,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **company_currency** (Many2one) → res.currency
-
-
-  - **revenue** (Monetary) → Revenue
+#### Campos
+- **company_id** (Many2one) → res.company
+- **company_currency** (Many2one) → res.currency
+- **revenue** (Monetary) → Revenue
 
 
 
@@ -1035,12 +810,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **selection_type** (Selection)
+#### Campos
+- **name** (Char)
+- **selection_type** (Selection)
 
 
 
@@ -1056,12 +828,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **company_id** (Many2one) → res.company
+#### Campos
+- **name** (Char)
+- **company_id** (Many2one) → res.company
 
 
 
@@ -1083,6 +852,7 @@ tests independently to functional aspects of other models.
 
 
 
+
 ### mail.test.multi.company.with.activity
 
 
@@ -1097,12 +867,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **company_id** (Many2one) → res.company
+#### Campos
+- **name** (Char)
+- **company_id** (Many2one) → res.company
 
 
 
@@ -1115,15 +882,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **customer_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **company_id** (Many2one) → res.company
+- **customer_id** (Many2one) → res.partner
 
 
 

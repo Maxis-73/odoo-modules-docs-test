@@ -12,6 +12,7 @@
 ## Descripción
 
 Add email templates to products to be sent on invoice confirmation
+==================================================================
 
 With this module, link your products to a template to send complete information and tools to your customer.
 For instance when invoicing a training, the training agenda and materials will automatically be sent to your customers.'
@@ -35,6 +36,7 @@ For instance when invoicing a training, the training agenda and materials will a
 
 
 
+
 ### product.template
 
 
@@ -45,10 +47,8 @@ For instance when invoicing a training, the training agenda and materials will a
 
 
 
-- Campos:
-
-  - **email_template_id** (Many2one) → mail.template
-
+#### Campos
+- **email_template_id** (Many2one) → mail.template
 
 
 
@@ -56,7 +56,10 @@ For instance when invoicing a training, the training agenda and materials will a
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### mail.template
@@ -64,5 +67,7 @@ For instance when invoicing a training, the training agenda and materials will a
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | form | mail.template.form.simplified | `product_email_template.email_template_form_simplified` | - |
+
+
 
 

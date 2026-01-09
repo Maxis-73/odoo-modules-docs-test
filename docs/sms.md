@@ -36,15 +36,10 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **state** (Selection)
-
-
-  - **sms_template_id** (Many2one) → sms.template
-
-
-  - **sms_method** (Selection)
+#### Campos
+- **state** (Selection)
+- **sms_template_id** (Many2one) → sms.template
+- **sms_method** (Selection)
 
 
 
@@ -60,9 +55,8 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **message_has_sms_error** (Boolean) → SMS Delivery error
+#### Campos
+- **message_has_sms_error** (Boolean) → SMS Delivery error
 
 
 
@@ -84,6 +78,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
+
 ### sms.tracker
 
 
@@ -91,12 +86,9 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **sms_uuid** (Char) → SMS uuid
-
-
-  - **mail_notification_id** (Many2one) → mail.notification
+#### Campos
+- **sms_uuid** (Char) → SMS uuid
+- **mail_notification_id** (Many2one) → mail.notification
 
 
 
@@ -112,9 +104,8 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **is_mail_thread_sms** (Boolean)
+#### Campos
+- **is_mail_thread_sms** (Boolean)
 
 
 
@@ -130,24 +121,13 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **notification_type** (Selection)
-
-
-  - **sms_id_int** (Integer) → SMS ID
-
-
-  - **sms_id** (Many2one) → sms.sms
-
-
-  - **sms_tracker_ids** (One2many) → sms.tracker
-
-
-  - **sms_number** (Char) → SMS Number
-
-
-  - **failure_type** (Selection)
+#### Campos
+- **notification_type** (Selection)
+- **sms_id_int** (Integer) → SMS ID
+- **sms_id** (Many2one) → sms.sms
+- **sms_tracker_ids** (One2many) → sms.tracker
+- **sms_number** (Char) → SMS Number
+- **failure_type** (Selection)
 
 
 
@@ -163,12 +143,9 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **message_type** (Selection)
-
-
-  - **has_sms_error** (Boolean) → Has SMS error
+#### Campos
+- **message_type** (Selection)
+- **has_sms_error** (Boolean) → Has SMS error
 
 
 
@@ -181,35 +158,35 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **uuid** (Char) → UUID
-
-
-  - **number** (Char) → Number
-
-
-  - **body** (Text)
-
-
-  - **partner_id** (Many2one) → res.partner
+#### Campos
+- **uuid** (Char) → UUID
+- **number** (Char) → Number
+- **body** (Text)
+- **partner_id** (Many2one) → res.partner
+- **mail_message_id** (Many2one) → mail.message
+- **state** (Selection)
+- **failure_type** (Selection)
+- **sms_tracker_id** (Many2one) → sms.tracker
+- **to_delete** (Boolean) → Marked for deletion
 
 
-  - **mail_message_id** (Many2one) → mail.message
 
 
-  - **state** (Selection)
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | sms.sms.view.form | `sms.sms_tsms_view_form` | - |
+| list | sms.sms.view.list | `sms.sms_sms_view_tree` | - |
+| search | sms.sms.view.search | `sms.sms_sms_view_search` | - |
 
 
-  - **failure_type** (Selection)
 
-
-  - **sms_tracker_id** (Many2one) → sms.tracker
-
-
-  - **to_delete** (Boolean) → Marked for deletion
-
-
+**Botones (sms.sms_tsms_view_form):**
+- **Send Now** (object)
+- **Retry** (object)
+- **Cancel** (object)
 
 
 
@@ -227,6 +204,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
+
 ### sms.template
 
 
@@ -241,23 +219,32 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **model_id** (Many2one) → ir.model
-
-
-  - **model** (Char) → Related Document Model
+#### Campos
+- **name** (Char) → Name
+- **model_id** (Many2one) → ir.model
+- **model** (Char) → Related Document Model
+- **body** (Char) → Body
+- **sidebar_action_id** (Many2one) → ir.actions.act_window
 
 
-  - **body** (Char) → Body
 
 
-  - **sidebar_action_id** (Many2one) → ir.actions.act_window
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | sms.template.view.form | `sms.sms_template_view_form` | - |
+| list | sms.template.view.list | `sms.sms_template_view_tree` | - |
+| search | sms.template.view.search | `sms.sms_template_view_search` | - |
 
 
+
+**Botones (sms.sms_template_view_form):**
+- **Reset Template** (action) - Grupos: `base.group_system`
+- **action_create_sidebar_action** (object) - Grupos: `base.group_no_one`
+- **action_unlink_sidebar_action** (object) - Grupos: `base.group_no_one`
+- **%(sms_template_preview_action)d** (action)
 
 
 
@@ -271,9 +258,8 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-- Campos:
-
-  - **sender_name** (Char)
+#### Campos
+- **sender_name** (Char)
 
 
 
@@ -297,6 +283,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
+
 ### base
 
 
@@ -314,40 +301,10 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-## Vistas
-
-
-### sms.sms
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | sms.sms.view.form | `sms.sms_tsms_view_form` | - |
-| list | sms.sms.view.list | `sms.sms_sms_view_tree` | - |
-| search | sms.sms.view.search | `sms.sms_sms_view_search` | - |
 
 
 
-#### Botones (sms.sms_tsms_view_form)
-- **Send Now** (object)
-- **Retry** (object)
-- **Cancel** (object)
-
-
-### sms.template
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | sms.template.view.form | `sms.sms_template_view_form` | - |
-| list | sms.template.view.list | `sms.sms_template_view_tree` | - |
-| search | sms.template.view.search | `sms.sms_template_view_search` | - |
-
-
-
-#### Botones (sms.sms_template_view_form)
-- **Reset Template** (action) - Grupos: `base.group_system`
-- **action_create_sidebar_action** (object) - Grupos: `base.group_no_one`
-- **action_unlink_sidebar_action** (object) - Grupos: `base.group_no_one`
-- **%(sms_template_preview_action)d** (action)
+## Vistas Adicionales
 
 
 ### sms.resend
@@ -358,7 +315,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-#### Botones (sms.mail_resend_message_view_form)
+**Botones (sms.mail_resend_message_view_form):**
 - **Buy credits** (object)
 - **Set up an account** (object)
 - **Send & Close** (object)
@@ -374,7 +331,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-#### Botones (sms.sms_template_reset_view_form)
+**Botones (sms.sms_template_reset_view_form):**
 - **Proceed** (object)
 
 
@@ -386,7 +343,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-#### Botones (sms.sms_account_sender_view_form)
+**Botones (sms.sms_account_sender_view_form):**
 - **Set sender name** (object)
 
 
@@ -406,7 +363,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-#### Botones (sms.sms_composer_view_form)
+**Botones (sms.sms_composer_view_form):**
 - **Send SMS** (object)
 - **Send SMS** (object)
 - **Put in queue** (object)
@@ -421,7 +378,7 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-#### Botones (sms.sms_account_code_view_form)
+**Botones (sms.sms_account_code_view_form):**
 - **Register** (object)
 
 
@@ -433,6 +390,8 @@ The service is provided by the In App Purchase Odoo platform.
 
 
 
-#### Botones (sms.sms_account_phone_view_form)
+**Botones (sms.sms_account_phone_view_form):**
 - **Send verification code** (object)
+
+
 

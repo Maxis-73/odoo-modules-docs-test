@@ -25,9 +25,8 @@
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 

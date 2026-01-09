@@ -26,9 +26,8 @@ This module adds the Global Location Number to the partner. Used on delivery add
 
 
 
-- Campos:
-
-  - **global_location_number** (Char)
+#### Campos
+- **global_location_number** (Char)
 
 
 

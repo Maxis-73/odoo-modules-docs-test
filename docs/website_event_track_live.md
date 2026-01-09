@@ -26,18 +26,11 @@ Support live tracks: streaming, participation, youtube
 
 
 
-- Campos:
-
-  - **youtube_video_url** (Char) → YouTube Video Link
-
-
-  - **youtube_video_id** (Char) → YouTube video ID
-
-
-  - **is_youtube_replay** (Boolean) → Is YouTube Replay
-
-
-  - **is_youtube_chat_available** (Boolean) → Is Chat Available
+#### Campos
+- **youtube_video_url** (Char) → YouTube Video Link
+- **youtube_video_id** (Char) → YouTube video ID
+- **is_youtube_replay** (Boolean) → Is YouTube Replay
+- **is_youtube_chat_available** (Boolean) → Is Chat Available
 
 
 

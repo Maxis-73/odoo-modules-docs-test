@@ -38,6 +38,7 @@ You can track your vendors, customers and other contacts.
 
 
 
+
 ### res.partner
 
 
@@ -49,6 +50,7 @@ You can track your vendors, customers and other contacts.
 
 
 - No agrega campos
+
 
 
 

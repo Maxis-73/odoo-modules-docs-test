@@ -28,45 +28,20 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **state** (Selection)
-
-
-  - **active** (Boolean)
-
-
-  - **tag_ids** (Many2many) → test_base_automation.tag
-
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **date_automation_last** (Datetime)
-
-
-  - **employee** (Boolean)
-
-
-  - **line_ids** (One2many) → base.automation.line.test
-
-
-  - **priority** (Boolean)
-
-
-  - **deadline** (Boolean)
-
-
-  - **is_assigned_to_admin** (Boolean)
-
-
-  - **stage_id** (Many2one) → test_base_automation.stage
+#### Campos
+- **name** (Char)
+- **user_id** (Many2one) → res.users
+- **state** (Selection)
+- **active** (Boolean)
+- **tag_ids** (Many2many) → test_base_automation.tag
+- **partner_id** (Many2one) → res.partner
+- **date_automation_last** (Datetime)
+- **employee** (Boolean)
+- **line_ids** (One2many) → base.automation.line.test
+- **priority** (Boolean)
+- **deadline** (Boolean)
+- **is_assigned_to_admin** (Boolean)
+- **stage_id** (Many2one) → test_base_automation.stage
 
 
 
@@ -90,6 +65,7 @@ tests independently to functional aspects of other models.
 
 
 
+
 ### base.automation.line.test
 
 
@@ -97,15 +73,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **lead_id** (Many2one) → base.automation.lead.test
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **name** (Char)
+- **lead_id** (Many2one) → base.automation.lead.test
+- **user_id** (Many2one) → res.users
 
 
 
@@ -118,12 +89,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **linked_id** (Many2one) → base.automation.linked.test
+#### Campos
+- **name** (Char)
+- **linked_id** (Many2one) → base.automation.linked.test
 
 
 
@@ -136,12 +104,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **another_field** (Char)
+#### Campos
+- **name** (Char)
+- **another_field** (Char)
 
 
 
@@ -154,24 +119,13 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **task_ids** (One2many) → test_base_automation.task
-
-
-  - **stage_id** (Many2one) → test_base_automation.stage
-
-
-  - **tag_ids** (Many2many) → test_base_automation.tag
-
-
-  - **priority** (Selection)
-
-
-  - **user_ids** (Many2many) → res.users
+#### Campos
+- **name** (Char)
+- **task_ids** (One2many) → test_base_automation.task
+- **stage_id** (Many2one) → test_base_automation.stage
+- **tag_ids** (Many2many) → test_base_automation.tag
+- **priority** (Selection)
+- **user_ids** (Many2many) → res.users
 
 
 
@@ -184,15 +138,10 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **parent_id** (Many2one) → test_base_automation.task
-
-
-  - **project_id** (Many2one) → test_base_automation.project
+#### Campos
+- **name** (Char)
+- **parent_id** (Many2one) → test_base_automation.task
+- **project_id** (Many2one) → test_base_automation.project
 
 
 
@@ -205,9 +154,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -220,9 +168,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -246,6 +193,7 @@ tests independently to functional aspects of other models.
 
 
 
+
 ### base.automation.model.with.recname.char
 
 
@@ -253,12 +201,9 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **description** (Char)
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **description** (Char)
+- **user_id** (Many2one) → res.users
 
 
 
@@ -271,9 +216,8 @@ tests independently to functional aspects of other models.
 
 
 
-- Campos:
-
-  - **user_id** (Many2one) → base.automation.model.with.recname.char
+#### Campos
+- **user_id** (Many2one) → base.automation.model.with.recname.char
 
 
 

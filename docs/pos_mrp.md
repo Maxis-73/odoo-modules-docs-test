@@ -35,6 +35,7 @@ This is a link module between Point of Sale and Mrp.
 
 
 
+
 ### pos.order
 
 
@@ -46,6 +47,7 @@ This is a link module between Point of Sale and Mrp.
 
 
 - No agrega campos
+
 
 
 

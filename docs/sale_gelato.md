@@ -26,12 +26,9 @@ Place orders through Gelato's print-on-demand service
 
 
 
-- Campos:
-
-  - **delivery_type** (Selection)
-
-
-  - **gelato_shipping_service_type** (Selection)
+#### Campos
+- **delivery_type** (Selection)
+- **gelato_shipping_service_type** (Selection)
 
 
 
@@ -51,6 +48,7 @@ Place orders through Gelato's print-on-demand service
 
 
 
+
 ### product.document
 
 
@@ -61,10 +59,18 @@ Place orders through Gelato's print-on-demand service
 
 
 
-- Campos:
+#### Campos
+- **is_gelato** (Boolean)
 
-  - **is_gelato** (Boolean)
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | Product Document Form | `sale_gelato.product_document_form` | - |
 
 
 
@@ -79,9 +85,8 @@ Place orders through Gelato's print-on-demand service
 
 
 
-- Campos:
-
-  - **gelato_product_uid** (Char)
+#### Campos
+- **gelato_product_uid** (Char)
 
 
 
@@ -101,6 +106,7 @@ Place orders through Gelato's print-on-demand service
 
 
 
+
 ### product.template
 
 
@@ -111,18 +117,11 @@ Place orders through Gelato's print-on-demand service
 
 
 
-- Campos:
-
-  - **gelato_template_ref** (Char)
-
-
-  - **gelato_product_uid** (Char)
-
-
-  - **gelato_image_ids** (One2many) → product.document
-
-
-  - **gelato_missing_images** (Boolean)
+#### Campos
+- **gelato_template_ref** (Char)
+- **gelato_product_uid** (Char)
+- **gelato_image_ids** (One2many) → product.document
+- **gelato_missing_images** (Boolean)
 
 
 
@@ -138,12 +137,9 @@ Place orders through Gelato's print-on-demand service
 
 
 
-- Campos:
-
-  - **gelato_api_key** (Char)
-
-
-  - **gelato_webhook_secret** (Char)
+#### Campos
+- **gelato_api_key** (Char)
+- **gelato_webhook_secret** (Char)
 
 
 
@@ -166,13 +162,6 @@ Place orders through Gelato's print-on-demand service
 
 
 
-## Vistas
 
-
-### product.document
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | Product Document Form | `sale_gelato.product_document_form` | - |
 
 

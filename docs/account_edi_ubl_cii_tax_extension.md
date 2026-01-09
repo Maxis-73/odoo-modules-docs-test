@@ -36,6 +36,7 @@ Tax extension for UBL/CII
 
 
 
+
 ### account.tax
 
 
@@ -46,12 +47,9 @@ Tax extension for UBL/CII
 
 
 
-- Campos:
-
-  - **ubl_cii_tax_category_code** (Selection)
-
-
-  - **ubl_cii_tax_exemption_reason_code** (Selection)
+#### Campos
+- **ubl_cii_tax_category_code** (Selection)
+- **ubl_cii_tax_exemption_reason_code** (Selection)
 
 
 

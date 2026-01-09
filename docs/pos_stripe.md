@@ -26,9 +26,8 @@ Integrate your POS with a Stripe payment terminal
 
 
 
-- Campos:
-
-  - **stripe_serial_number** (Char)
+#### Campos
+- **stripe_serial_number** (Char)
 
 
 

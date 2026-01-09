@@ -26,9 +26,8 @@ Monitor MRP account using project
 
 
 
-- Campos:
-
-  - **has_analytic_account** (Boolean)
+#### Campos
+- **has_analytic_account** (Boolean)
 
 
 
@@ -48,6 +47,7 @@ Monitor MRP account using project
 
 
 
+
 ### mrp.workorder
 
 
@@ -59,6 +59,7 @@ Monitor MRP account using project
 
 
 - No agrega campos
+
 
 
 
@@ -76,6 +77,7 @@ Monitor MRP account using project
 
 
 
+
 ### stock.rule
 
 
@@ -87,6 +89,7 @@ Monitor MRP account using project
 
 
 - No agrega campos
+
 
 
 

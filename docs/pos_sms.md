@@ -26,9 +26,8 @@ This module integrates the Point of Sale with SMS
 
 
 
-- Campos:
-
-  - **sms_receipt_template_id** (Many2one) → sms.template
+#### Campos
+- **sms_receipt_template_id** (Many2one) → sms.template
 
 
 
@@ -48,6 +47,7 @@ This module integrates the Point of Sale with SMS
 
 
 
+
 ### res.config.settings
 
 
@@ -58,9 +58,8 @@ This module integrates the Point of Sale with SMS
 
 
 
-- Campos:
-
-  - **pos_sms_receipt_template_id** (Many2one) → sms.template
+#### Campos
+- **pos_sms_receipt_template_id** (Many2one) → sms.template
 
 
 

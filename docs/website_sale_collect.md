@@ -28,9 +28,8 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
-- Campos:
-
-  - **in_store_dm_id** (Many2one) → delivery.carrier
+#### Campos
+- **in_store_dm_id** (Many2one) → delivery.carrier
 
 
 
@@ -46,13 +45,19 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
-- Campos:
+#### Campos
+- **delivery_type** (Selection)
+- **warehouse_ids** (Many2many) → stock.warehouse
 
-  - **delivery_type** (Selection)
 
 
-  - **warehouse_ids** (Many2many) → stock.warehouse
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | In-store Delivery Carrier Form | `website_sale_collect.delivery_carrier_form` | delivery.view_delivery_carrier_form |
 
 
 
@@ -71,6 +76,7 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
+
 ### stock.warehouse
 
 
@@ -81,9 +87,8 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
-- Campos:
-
-  - **opening_hours** (Many2one) → resource.calendar
+#### Campos
+- **opening_hours** (Many2one) → resource.calendar
 
 
 
@@ -103,6 +108,7 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
+
 ### product.template
 
 
@@ -117,6 +123,7 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
+
 ### payment.provider
 
 
@@ -127,9 +134,8 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
-- Campos:
-
-  - **custom_mode** (Selection)
+#### Campos
+- **custom_mode** (Selection)
 
 
 
@@ -152,13 +158,6 @@ Allows customers to check in-store stock, pay on site, and pick up their orders 
 
 
 
-## Vistas
 
-
-### delivery.carrier
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | In-store Delivery Carrier Form | `website_sale_collect.delivery_carrier_form` | delivery.view_delivery_carrier_form |
 
 

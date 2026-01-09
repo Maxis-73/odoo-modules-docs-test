@@ -36,15 +36,10 @@ real applications.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **name** (Char) → Name
+- **partner_id** (Many2one) → res.partner
+- **user_id** (Many2one) → res.users
 
 
 
@@ -64,9 +59,8 @@ real applications.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -86,6 +80,7 @@ real applications.
 
 
 
+
 ### mail.test.rating
 
 
@@ -102,30 +97,15 @@ real applications.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **subject** (Char) → Subject
-
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **email_from** (Char) → From
-
-
-  - **mobile_nbr** (Char) → Mobile
-
-
-  - **phone_nbr** (Char) → Phone Number
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **name** (Char) → Name
+- **subject** (Char) → Subject
+- **company_id** (Many2one) → res.company
+- **customer_id** (Many2one) → res.partner
+- **email_from** (Char) → From
+- **mobile_nbr** (Char) → Mobile
+- **phone_nbr** (Char) → Phone Number
+- **user_id** (Many2one) → res.users
 
 
 
@@ -141,15 +121,10 @@ real applications.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **name** (Char) → Name
+- **customer_id** (Many2one) → res.partner
+- **user_id** (Many2one) → res.users
 
 
 
@@ -166,6 +141,7 @@ real applications.
 
 
 - No agrega campos
+
 
 
 

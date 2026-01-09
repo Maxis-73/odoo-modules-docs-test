@@ -29,9 +29,8 @@ Assist your users with automatic completion & suggestions when filling their add
 
 
 
-- Campos:
-
-  - **google_places_api_key** (Char)
+#### Campos
+- **google_places_api_key** (Char)
 
 
 
@@ -47,9 +46,8 @@ Assist your users with automatic completion & suggestions when filling their add
 
 
 
-- Campos:
-
-  - **google_places_api_key** (Char)
+#### Campos
+- **google_places_api_key** (Char)
 
 
 

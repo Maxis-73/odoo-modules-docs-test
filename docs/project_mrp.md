@@ -26,9 +26,8 @@ Monitor MRP using project
 
 
 
-- Campos:
-
-  - **project_id** (Many2one) → project.project
+#### Campos
+- **project_id** (Many2one) → project.project
 
 
 
@@ -44,9 +43,8 @@ Monitor MRP using project
 
 
 
-- Campos:
-
-  - **project_id** (Many2one) → project.project
+#### Campos
+- **project_id** (Many2one) → project.project
 
 
 
@@ -62,12 +60,9 @@ Monitor MRP using project
 
 
 
-- Campos:
-
-  - **bom_count** (Integer)
-
-
-  - **production_count** (Integer)
+#### Campos
+- **bom_count** (Integer)
+- **production_count** (Integer)
 
 
 
@@ -87,6 +82,7 @@ Monitor MRP using project
 
 
 
+
 ### stock.move
 
 
@@ -98,6 +94,7 @@ Monitor MRP using project
 
 
 - No agrega campos
+
 
 
 

@@ -26,9 +26,8 @@ Send order status emails asynchronously
 
 
 
-- Campos:
-
-  - **pending_email_template_id** (Many2one) → mail.template
+#### Campos
+- **pending_email_template_id** (Many2one) → mail.template
 
 
 

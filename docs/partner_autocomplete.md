@@ -32,6 +32,7 @@ Auto-complete partner companies' data
 
 
 
+
 ### res.partner.autocomplete.sync
 
 
@@ -39,12 +40,9 @@ Auto-complete partner companies' data
 
 
 
-- Campos:
-
-  - **partner_id** (Many2one) → res.partner
-
-
-  - **synched** (Boolean) → Is synched
+#### Campos
+- **partner_id** (Many2one) → res.partner
+- **synched** (Boolean) → Is synched
 
 
 
@@ -60,9 +58,8 @@ Auto-complete partner companies' data
 
 
 
-- Campos:
-
-  - **partner_autocomplete_insufficient_credit** (Boolean) → Insufficient credit
+#### Campos
+- **partner_autocomplete_insufficient_credit** (Boolean) → Insufficient credit
 
 
 
@@ -78,12 +75,9 @@ Auto-complete partner companies' data
 
 
 
-- Campos:
-
-  - **partner_gid** (Integer) → Company database ID
-
-
-  - **iap_enrich_auto_done** (Boolean) → Enrich Done
+#### Campos
+- **partner_gid** (Integer) → Company database ID
+- **iap_enrich_auto_done** (Boolean) → Enrich Done
 
 
 
@@ -103,6 +97,7 @@ Auto-complete partner companies' data
 
 
 
+
 ### res.partner
 
 
@@ -113,12 +108,9 @@ Auto-complete partner companies' data
 
 
 
-- Campos:
-
-  - **partner_gid** (Integer) → Company database ID
-
-
-  - **additional_info** (Char) → Additional info
+#### Campos
+- **partner_gid** (Integer) → Company database ID
+- **additional_info** (Char) → Additional info
 
 
 

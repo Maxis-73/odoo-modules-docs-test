@@ -33,12 +33,9 @@ This module includes contact phone and mobile numbers validation.
 
 
 
-- Campos:
-
-  - **crm_default_team_id** (Many2one) → crm.team
-
-
-  - **crm_default_user_id** (Many2one) → res.users
+#### Campos
+- **crm_default_team_id** (Many2one) → crm.team
+- **crm_default_user_id** (Many2one) → res.users
 
 
 
@@ -54,12 +51,9 @@ This module includes contact phone and mobile numbers validation.
 
 
 
-- Campos:
-
-  - **visitor_ids** (Many2many) → website.visitor
-
-
-  - **visitor_page_count** (Integer) → # Page Views
+#### Campos
+- **visitor_ids** (Many2many) → website.visitor
+- **visitor_page_count** (Integer) → # Page Views
 
 
 
@@ -75,12 +69,9 @@ This module includes contact phone and mobile numbers validation.
 
 
 
-- Campos:
-
-  - **lead_ids** (Many2many) → crm.lead
-
-
-  - **lead_count** (Integer) → # Leads
+#### Campos
+- **lead_ids** (Many2many) → crm.lead
+- **lead_count** (Integer) → # Leads
 
 
 

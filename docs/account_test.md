@@ -12,6 +12,7 @@
 ## Descripción
 
 Asserts on accounting.
+======================
 With this module you can manually check consistencies and inconsistencies of accounting module from menu Reporting/Accounting/Accounting Tests.
 
 You can write a query in order to create Consistency Test and you will get the result of the test 
@@ -30,33 +31,18 @@ and print the report from Print button in header area.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **desc** (Text)
-
-
-  - **code_exec** (Text)
-
-
-  - **active** (Boolean)
-
-
-  - **sequence** (Integer)
+#### Campos
+- **name** (Char)
+- **desc** (Text)
+- **code_exec** (Text)
+- **active** (Boolean)
+- **sequence** (Integer)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### accounting.assert.test
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -66,8 +52,14 @@ and print the report from Print button in header area.
 
 
 
-#### Filtros de búsqueda (account_test.accounting_assert_test_view_search)
+**Filtros de búsqueda (account_test.accounting_assert_test_view_search):**
 
-**Filtros:**
 - **Archived** (`[('active', '=', False)]`)
+
+
+
+
+
+
+
 

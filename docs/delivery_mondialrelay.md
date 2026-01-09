@@ -34,15 +34,10 @@ Delivery price pre-configured is an example, you need to adapt the pricing's rul
 
 
 
-- Campos:
-
-  - **is_mondialrelay** (Boolean)
-
-
-  - **mondialrelay_brand** (Char)
-
-
-  - **mondialrelay_packagetype** (Char)
+#### Campos
+- **is_mondialrelay** (Boolean)
+- **mondialrelay_brand** (Char)
+- **mondialrelay_packagetype** (Char)
 
 
 
@@ -62,6 +57,7 @@ Delivery price pre-configured is an example, you need to adapt the pricing's rul
 
 
 
+
 ### res.partner
 
 
@@ -72,10 +68,8 @@ Delivery price pre-configured is an example, you need to adapt the pricing's rul
 
 
 
-- Campos:
-
-  - **is_mondialrelay** (Boolean)
-
+#### Campos
+- **is_mondialrelay** (Boolean)
 
 
 
@@ -83,7 +77,10 @@ Delivery price pre-configured is an example, you need to adapt the pricing's rul
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### choose.delivery.carrier
@@ -91,5 +88,7 @@ Delivery price pre-configured is an example, you need to adapt the pricing's rul
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | form | choose.delivery.carrier.form | `delivery_mondialrelay.choose_delivery_carrier_view_form` | delivery.choose_delivery_carrier_view_form |
+
+
 
 

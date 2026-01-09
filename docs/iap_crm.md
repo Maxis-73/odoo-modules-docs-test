@@ -29,9 +29,8 @@ Bridge between IAP and CRM
 
 
 
-- Campos:
-
-  - **reveal_id** (Char)
+#### Campos
+- **reveal_id** (Char)
 
 
 

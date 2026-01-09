@@ -26,9 +26,8 @@ Event / Jitsi
 
 
 
-- Campos:
-
-  - **jitsi_server_domain** (Char) → Jitsi Server Domain
+#### Campos
+- **jitsi_server_domain** (Char) → Jitsi Server Domain
 
 
 

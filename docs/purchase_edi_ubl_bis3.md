@@ -34,6 +34,7 @@ receiver to retrieve the PDF with only the xml file.
 
 
 
+
 ### purchase.edi.xml.ubl_bis3
 
 
@@ -45,6 +46,7 @@ receiver to retrieve the PDF with only the xml file.
 
 
 - No agrega campos
+
 
 
 

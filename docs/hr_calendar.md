@@ -23,9 +23,8 @@
 
 
 
-- Campos:
-
-  - **unavailable_partner_ids** (Many2many) → res.partner
+#### Campos
+- **unavailable_partner_ids** (Many2many) → res.partner
 
 
 
@@ -44,6 +43,7 @@
 
 
 - No agrega campos
+
 
 
 

@@ -15,6 +15,7 @@ Validate and format phone numbers
 ## Descripción
 
 Phone Numbers Validation
+========================
 
 This module adds the feature of validation and formatting phone numbers
 according to a destination country.
@@ -41,21 +42,12 @@ records numbers.
 
 
 
-- Campos:
-
-  - **phone_sanitized** (Char)
-
-
-  - **phone_sanitized_blacklisted** (Boolean)
-
-
-  - **phone_blacklisted** (Boolean)
-
-
-  - **mobile_blacklisted** (Boolean)
-
-
-  - **phone_mobile_search** (Char) → Phone/Mobile
+#### Campos
+- **phone_sanitized** (Char)
+- **phone_sanitized_blacklisted** (Boolean)
+- **phone_blacklisted** (Boolean)
+- **mobile_blacklisted** (Boolean)
+- **phone_mobile_search** (Char) → Phone/Mobile
 
 
 
@@ -75,6 +67,7 @@ records numbers.
 
 
 
+
 ### phone.blacklist
 
 
@@ -87,14 +80,32 @@ records numbers.
 
 
 
-- Campos:
-
-  - **number** (Char)
-
-
-  - **active** (Boolean)
+#### Campos
+- **number** (Char)
+- **active** (Boolean)
 
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | phone.blacklist.view.list | `phone_validation.phone_blacklist_view_tree` | - |
+| form | phone.blacklist.view.form | `phone_validation.phone_blacklist_view_form` | - |
+| search | phone.blacklist.view.search | `phone_validation.phone_blacklist_view_search` | - |
+
+
+
+**Botones (phone_validation.phone_blacklist_view_form):**
+- **Unblacklist** (object)
+- **Blacklist** (object)
+
+
+**Filtros de búsqueda (phone_validation.phone_blacklist_view_search):**
+
+- **Archived** (`[('active','=',False)]`)
 
 
 
@@ -111,6 +122,7 @@ records numbers.
 
 
 - No agrega campos
+
 
 
 
@@ -131,28 +143,10 @@ records numbers.
 
 
 
-## Vistas
-
-
-### phone.blacklist
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | phone.blacklist.view.list | `phone_validation.phone_blacklist_view_tree` | - |
-| form | phone.blacklist.view.form | `phone_validation.phone_blacklist_view_form` | - |
-| search | phone.blacklist.view.search | `phone_validation.phone_blacklist_view_search` | - |
 
 
 
-#### Botones (phone_validation.phone_blacklist_view_form)
-- **Unblacklist** (object)
-- **Blacklist** (object)
-
-
-#### Filtros de búsqueda (phone_validation.phone_blacklist_view_search)
-
-**Filtros:**
-- **Archived** (`[('active','=',False)]`)
+## Vistas Adicionales
 
 
 ### phone.blacklist.remove
@@ -163,6 +157,8 @@ records numbers.
 
 
 
-#### Botones (phone_validation.phone_blacklist_remove_view_form)
+**Botones (phone_validation.phone_blacklist_remove_view_form):**
 - **Remove phone from blacklist** (object)
+
+
 

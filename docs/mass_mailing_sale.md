@@ -29,9 +29,8 @@ UTM and mass mailing on sale orders
 
 
 
-- Campos:
-
-  - **ab_testing_winner_selection** (Selection)
+#### Campos
+- **ab_testing_winner_selection** (Selection)
 
 
 
@@ -51,6 +50,7 @@ UTM and mass mailing on sale orders
 
 
 
+
 ### mailing.mailing
 
 
@@ -61,12 +61,9 @@ UTM and mass mailing on sale orders
 
 
 
-- Campos:
-
-  - **sale_quotation_count** (Integer) → Quotation Count
-
-
-  - **sale_invoiced_amount** (Integer) → Invoiced Amount
+#### Campos
+- **sale_quotation_count** (Integer) → Quotation Count
+- **sale_invoiced_amount** (Integer) → Invoiced Amount
 
 
 

@@ -25,12 +25,9 @@
 
 
 
-- Campos:
-
-  - **versioned_field_1** (Html)
-
-
-  - **versioned_field_2** (Html)
+#### Campos
+- **versioned_field_1** (Html)
+- **versioned_field_2** (Html)
 
 
 

@@ -33,6 +33,7 @@ An payment provider based in Hong Kong covering most Asian countries.
 
 
 
+
 ### payment.provider
 
 
@@ -43,21 +44,12 @@ An payment provider based in Hong Kong covering most Asian countries.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **asiapay_brand** (Selection)
-
-
-  - **asiapay_merchant_id** (Char)
-
-
-  - **asiapay_secure_hash_secret** (Char)
-
-
-  - **asiapay_secure_hash_function** (Selection)
+#### Campos
+- **code** (Selection)
+- **asiapay_brand** (Selection)
+- **asiapay_merchant_id** (Char)
+- **asiapay_secure_hash_secret** (Char)
+- **asiapay_secure_hash_function** (Selection)
 
 
 

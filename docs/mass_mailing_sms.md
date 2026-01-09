@@ -26,19 +26,21 @@ Design, send and track SMS
 
 
 
-- Campos:
-
-  - **mailing_sms_ids** (One2many) → mailing.mailing
-
-
-  - **mailing_sms_count** (Integer) → Number of Mass SMS
-
-
-  - **ab_testing_mailings_sms_count** (Integer) → A/B Test Mailings SMS #
+#### Campos
+- **mailing_sms_ids** (One2many) → mailing.mailing
+- **mailing_sms_count** (Integer) → Number of Mass SMS
+- **ab_testing_mailings_sms_count** (Integer) → A/B Test Mailings SMS #
+- **ab_testing_sms_winner_selection** (Selection)
 
 
-  - **ab_testing_sms_winner_selection** (Selection)
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | utm.campaign.view.form | `mass_mailing_sms.utm_campaign_view_form` | utm.utm_campaign_view_form |
 
 
 
@@ -57,6 +59,7 @@ Design, send and track SMS
 
 
 
+
 ### mailing.contact
 
 
@@ -71,9 +74,8 @@ Design, send and track SMS
 
 
 
-- Campos:
-
-  - **mobile** (Char)
+#### Campos
+- **mobile** (Char)
 
 
 
@@ -89,9 +91,8 @@ Design, send and track SMS
 
 
 
-- Campos:
-
-  - **mailing_trace_id** (Many2one) → mailing.trace
+#### Campos
+- **mailing_trace_id** (Many2one) → mailing.trace
 
 
 
@@ -107,9 +108,8 @@ Design, send and track SMS
 
 
 
-- Campos:
-
-  - **contact_count_sms** (Integer)
+#### Campos
+- **contact_count_sms** (Integer)
 
 
 
@@ -125,29 +125,30 @@ Design, send and track SMS
 
 
 
-- Campos:
-
-  - **trace_type** (Selection)
-
-
-  - **sms_id** (Many2one) → sms.sms
-
-
-  - **sms_id_int** (Integer)
-
-
-  - **sms_tracker_ids** (One2many) → sms.tracker
+#### Campos
+- **trace_type** (Selection)
+- **sms_id** (Many2one) → sms.sms
+- **sms_id_int** (Integer)
+- **sms_tracker_ids** (One2many) → sms.tracker
+- **sms_number** (Char) → Number
+- **sms_code** (Char) → Code
+- **failure_type** (Selection)
 
 
-  - **sms_number** (Char) → Number
 
 
-  - **sms_code** (Char) → Code
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | mailing.trace.view.list.sms | `mass_mailing_sms.mailing_trace_view_tree_sms` | - |
+| form | mailing.trace.view.form.sms | `mass_mailing_sms.mailing_trace_view_form_sms` | - |
 
 
-  - **failure_type** (Selection)
 
-
+**Botones (mass_mailing_sms.mailing_trace_view_form_sms):**
+- **action_view_contact** (object)
 
 
 
@@ -163,12 +164,9 @@ Design, send and track SMS
 
 
 
-- Campos:
-
-  - **mailing_id** (Many2one) → mailing.mailing
-
-
-  - **mailing_trace_ids** (One2many) → mailing.trace
+#### Campos
+- **mailing_id** (Many2one) → mailing.mailing
+- **mailing_trace_ids** (One2many) → mailing.trace
 
 
 
@@ -190,6 +188,7 @@ Design, send and track SMS
 
 
 
+
 ### mailing.mailing
 
 
@@ -200,48 +199,23 @@ Design, send and track SMS
 
 
 
-- Campos:
-
-  - **mailing_type** (Selection)
-
-
-  - **sms_subject** (Char) → Title
-
-
-  - **body_plaintext** (Text) → SMS Body
-
-
-  - **sms_template_id** (Many2one) → sms.template
-
-
-  - **sms_has_insufficient_credit** (Boolean) → Insufficient IAP credits
-
-
-  - **sms_has_unregistered_account** (Boolean) → Unregistered IAP account
-
-
-  - **sms_force_send** (Boolean) → Send Directly
-
-
-  - **sms_allow_unsubscribe** (Boolean) → Include opt-out link
-
-
-  - **ab_testing_sms_winner_selection** (Selection)
-
-
-  - **ab_testing_mailings_sms_count** (Integer)
+#### Campos
+- **mailing_type** (Selection)
+- **sms_subject** (Char) → Title
+- **body_plaintext** (Text) → SMS Body
+- **sms_template_id** (Many2one) → sms.template
+- **sms_has_insufficient_credit** (Boolean) → Insufficient IAP credits
+- **sms_has_unregistered_account** (Boolean) → Unregistered IAP account
+- **sms_force_send** (Boolean) → Send Directly
+- **sms_allow_unsubscribe** (Boolean) → Include opt-out link
+- **ab_testing_sms_winner_selection** (Selection)
+- **ab_testing_mailings_sms_count** (Integer)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### mailing.mailing
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -249,25 +223,13 @@ Design, send and track SMS
 
 
 
-### utm.campaign
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | utm.campaign.view.form | `mass_mailing_sms.utm_campaign_view_form` | utm.utm_campaign_view_form |
 
 
 
-### mailing.trace
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | mailing.trace.view.list.sms | `mass_mailing_sms.mailing_trace_view_tree_sms` | - |
-| form | mailing.trace.view.form.sms | `mass_mailing_sms.mailing_trace_view_form_sms` | - |
 
 
 
-#### Botones (mass_mailing_sms.mailing_trace_view_form_sms)
-- **action_view_contact** (object)
+## Vistas Adicionales
 
 
 ### mailing.sms.test
@@ -278,6 +240,8 @@ Design, send and track SMS
 
 
 
-#### Botones (mass_mailing_sms.mailing_sms_test_view_form)
+**Botones (mass_mailing_sms.mailing_sms_test_view_form):**
 - **Send Test** (object)
+
+
 

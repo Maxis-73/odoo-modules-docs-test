@@ -23,9 +23,8 @@
 
 
 
-- Campos:
-
-  - **event_ticket_ids** (One2many) → event.event.ticket
+#### Campos
+- **event_ticket_ids** (One2many) → event.event.ticket
 
 
 
@@ -41,9 +40,8 @@
 
 
 
-- Campos:
-
-  - **service_tracking** (Selection)
+#### Campos
+- **service_tracking** (Selection)
 
 
 
@@ -59,21 +57,12 @@
 
 
 
-- Campos:
-
-  - **description** (Text)
-
-
-  - **product_id** (Many2one) → product.product
-
-
-  - **currency_id** (Many2one)
-
-
-  - **price** (Float)
-
-
-  - **price_reduce** (Float)
+#### Campos
+- **description** (Text)
+- **product_id** (Many2one) → product.product
+- **currency_id** (Many2one)
+- **price** (Float)
+- **price_reduce** (Float)
 
 
 
@@ -89,12 +78,9 @@
 
 
 
-- Campos:
-
-  - **price_reduce_taxinc** (Float)
-
-
-  - **price_incl** (Float)
+#### Campos
+- **price_reduce_taxinc** (Float)
+- **price_incl** (Float)
 
 
 
@@ -110,9 +96,8 @@
 
 
 
-- Campos:
-
-  - **currency_id** (Many2one) → res.currency
+#### Campos
+- **currency_id** (Many2one) → res.currency
 
 
 

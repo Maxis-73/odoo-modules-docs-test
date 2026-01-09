@@ -26,9 +26,8 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **identifier** (Char) → Security Token
+#### Campos
+- **identifier** (Char) → Security Token
 
 
 
@@ -48,6 +47,7 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
+
 ### pos.config
 
 
@@ -58,45 +58,20 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **status** (Selection)
-
-
-  - **self_ordering_url** (Char)
-
-
-  - **self_ordering_takeaway** (Boolean) → Self Takeaway
-
-
-  - **self_ordering_mode** (Selection)
-
-
-  - **self_ordering_service_mode** (Selection)
-
-
-  - **self_ordering_default_language_id** (Many2one) → res.lang
-
-
-  - **self_ordering_available_language_ids** (Many2many) → res.lang
-
-
-  - **self_ordering_image_home_ids** (Many2many) → ir.attachment
-
-
-  - **self_ordering_default_user_id** (Many2one) → res.users
-
-
-  - **self_ordering_pay_after** (Selection)
-
-
-  - **self_ordering_image_brand** (Image)
-
-
-  - **self_ordering_image_brand_name** (Char)
-
-
-  - **has_paper** (Boolean) → Has paper
+#### Campos
+- **status** (Selection)
+- **self_ordering_url** (Char)
+- **self_ordering_takeaway** (Boolean) → Self Takeaway
+- **self_ordering_mode** (Selection)
+- **self_ordering_service_mode** (Selection)
+- **self_ordering_default_language_id** (Many2one) → res.lang
+- **self_ordering_available_language_ids** (Many2many) → res.lang
+- **self_ordering_image_home_ids** (Many2many) → ir.attachment
+- **self_ordering_default_user_id** (Many2one) → res.users
+- **self_ordering_pay_after** (Selection)
+- **self_ordering_image_brand** (Image)
+- **self_ordering_image_brand_name** (Char)
+- **has_paper** (Boolean) → Has paper
 
 
 
@@ -112,12 +87,9 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **hour_until** (Float)
-
-
-  - **hour_after** (Float)
+#### Campos
+- **hour_until** (Float)
+- **hour_after** (Float)
 
 
 
@@ -133,9 +105,8 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **self_order_available** (Boolean)
+#### Campos
+- **self_order_available** (Boolean)
 
 
 
@@ -155,6 +126,7 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
+
 ### pos.payment.method
 
 
@@ -169,6 +141,7 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
+
 ### pos.order.line
 
 
@@ -179,9 +152,8 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **combo_id** (Many2one) → product.combo
+#### Campos
+- **combo_id** (Many2one) → product.combo
 
 
 
@@ -197,9 +169,8 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **table_stand_number** (Char)
+#### Campos
+- **table_stand_number** (Char)
 
 
 
@@ -219,6 +190,7 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
+
 ### account.fiscal.position
 
 
@@ -233,6 +205,7 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
+
 ### res.config.settings
 
 
@@ -243,36 +216,17 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **pos_self_ordering_takeaway** (Boolean)
-
-
-  - **pos_self_ordering_service_mode** (Selection)
-
-
-  - **pos_self_ordering_mode** (Selection)
-
-
-  - **pos_self_ordering_default_language_id** (Many2one)
-
-
-  - **pos_self_ordering_available_language_ids** (Many2many)
-
-
-  - **pos_self_ordering_image_home_ids** (Many2many)
-
-
-  - **pos_self_ordering_image_brand** (Image)
-
-
-  - **pos_self_ordering_image_brand_name** (Char)
-
-
-  - **pos_self_ordering_pay_after** (Selection)
-
-
-  - **pos_self_ordering_default_user_id** (Many2one)
+#### Campos
+- **pos_self_ordering_takeaway** (Boolean)
+- **pos_self_ordering_service_mode** (Selection)
+- **pos_self_ordering_mode** (Selection)
+- **pos_self_ordering_default_language_id** (Many2one)
+- **pos_self_ordering_available_language_ids** (Many2many)
+- **pos_self_ordering_image_home_ids** (Many2many)
+- **pos_self_ordering_image_brand** (Image)
+- **pos_self_ordering_image_brand_name** (Char)
+- **pos_self_ordering_pay_after** (Selection)
+- **pos_self_ordering_default_user_id** (Many2one)
 
 
 
@@ -292,6 +246,7 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
+
 ### pos_self_order.custom_link
 
 
@@ -302,25 +257,23 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **url** (Char)
-
-
-  - **pos_config_ids** (Many2many) → pos.config
+#### Campos
+- **name** (Char)
+- **url** (Char)
+- **pos_config_ids** (Many2many) → pos.config
+- **style** (Selection)
+- **link_html** (Html) → Preview
+- **sequence** (Integer) → Sequence
 
 
-  - **style** (Selection)
 
 
-  - **link_html** (Html) → Preview
 
+#### Vistas
 
-  - **sequence** (Integer) → Sequence
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | custom.link.list | `pos_self_order.custom_link_tree` | - |
 
 
 
@@ -336,6 +289,7 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 - No agrega campos
+
 
 
 
@@ -356,13 +310,6 @@ Addon for the POS App that allows customers to view the menu on their smartphone
 
 
 
-## Vistas
 
-
-### pos_self_order.custom_link
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | custom.link.list | `pos_self_order.custom_link_tree` | - |
 
 

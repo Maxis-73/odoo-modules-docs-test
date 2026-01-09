@@ -32,9 +32,8 @@ Use Epson ePOS Printers without the IoT Box in the Point of Sale
 
 
 
-- Campos:
-
-  - **epson_printer_ip** (Char)
+#### Campos
+- **epson_printer_ip** (Char)
 
 
 
@@ -50,9 +49,8 @@ Use Epson ePOS Printers without the IoT Box in the Point of Sale
 
 
 
-- Campos:
-
-  - **pos_epson_printer_ip** (Char)
+#### Campos
+- **pos_epson_printer_ip** (Char)
 
 
 
@@ -68,12 +66,9 @@ Use Epson ePOS Printers without the IoT Box in the Point of Sale
 
 
 
-- Campos:
-
-  - **printer_type** (Selection)
-
-
-  - **epson_printer_ip** (Char)
+#### Campos
+- **printer_type** (Selection)
+- **epson_printer_ip** (Char)
 
 
 

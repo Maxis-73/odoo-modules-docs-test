@@ -30,6 +30,7 @@ Organize your work with memos and to-do lists
 
 
 
+
 ### project.task
 
 
@@ -45,12 +46,7 @@ Organize your work with memos and to-do lists
 
 
 
-
-
-## Vistas
-
-
-### project.task
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -64,13 +60,12 @@ Organize your work with memos and to-do lists
 
 
 
-#### Botones (project_todo.project_task_view_todo_conversion_form)
+**Botones (project_todo.project_task_view_todo_conversion_form):**
 - **Convert to Task** (object)
 
 
-#### Filtros de búsqueda (project_todo.project_task_view_todo_search)
+**Filtros de búsqueda (project_todo.project_task_view_todo_search):**
 
-**Filtros:**
 - **Starred** (`[('priority', '=', '1')]`)
 - **Open** (`[('is_closed', '=', False)]`)
 - **Closed** (`[('is_closed', '=', True)]`)
@@ -81,10 +76,19 @@ Organize your work with memos and to-do lists
 - **Future Activities** (`[('my_activity_date_deadline', '>', context_today().strftime('%Y-%m-%d'))]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Tags
 - Assignees
 - Stage
+
+
+
+
+
+
+
+
+## Vistas Adicionales
 
 
 ### mail.activity.todo.create
@@ -95,6 +99,8 @@ Organize your work with memos and to-do lists
 
 
 
-#### Botones (project_todo.mail_activity_todo_create_popup)
+**Botones (project_todo.mail_activity_todo_create_popup):**
 - **create_todo_activity** (object)
+
+
 

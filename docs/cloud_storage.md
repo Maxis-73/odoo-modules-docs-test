@@ -26,9 +26,8 @@ Store chatter attachments in the cloud
 
 
 
-- Campos:
-
-  - **type** (Selection)
+#### Campos
+- **type** (Selection)
 
 
 
@@ -44,12 +43,9 @@ Store chatter attachments in the cloud
 
 
 
-- Campos:
-
-  - **cloud_storage_provider** (Selection)
-
-
-  - **cloud_storage_min_file_size** (Integer)
+#### Campos
+- **cloud_storage_provider** (Selection)
+- **cloud_storage_min_file_size** (Integer)
 
 
 
@@ -66,6 +62,7 @@ Store chatter attachments in the cloud
 
 
 - No agrega campos
+
 
 
 

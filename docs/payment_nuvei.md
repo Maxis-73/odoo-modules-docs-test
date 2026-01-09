@@ -33,6 +33,7 @@ A payment provider covering Latin America.
 
 
 
+
 ### payment.provider
 
 
@@ -43,18 +44,11 @@ A payment provider covering Latin America.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **nuvei_merchant_identifier** (Char)
-
-
-  - **nuvei_site_identifier** (Char)
-
-
-  - **nuvei_secret_key** (Char)
+#### Campos
+- **code** (Selection)
+- **nuvei_merchant_identifier** (Char)
+- **nuvei_site_identifier** (Char)
+- **nuvei_secret_key** (Char)
 
 
 

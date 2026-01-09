@@ -12,6 +12,7 @@
 ## Descripción
 
 Two-Factor Authentication (TOTP)
+================================
 Allows users to configure two-factor authentication on their user account
 for extra security, using time-based one-time passwords (TOTP).
 
@@ -42,6 +43,7 @@ can setup API keys to replace their main password.
 
 
 
+
 ### res.users
 
 
@@ -52,33 +54,31 @@ can setup API keys to replace their main password.
 
 
 
-- Campos:
-
-  - **totp_secret** (Char)
-
-
-  - **totp_enabled** (Boolean)
-
-
-  - **totp_trusted_device_ids** (One2many) → auth_totp.device
+#### Campos
+- **totp_secret** (Char)
+- **totp_enabled** (Boolean)
+- **totp_trusted_device_ids** (One2many) → auth_totp.device
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### res.users
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | list | user form: add totp status | `auth_totp.view_totp_form` | base.view_users_form |
 | list | users preference: totp | `auth_totp.view_totp_field` | base.view_users_form_simple_modif |
 
+
+
+
+
+
+
+
+
+## Vistas Adicionales
 
 
 ### auth_totp.wizard
@@ -89,6 +89,8 @@ can setup API keys to replace their main password.
 
 
 
-#### Botones (auth_totp.view_totp_wizard)
+**Botones (auth_totp.view_totp_wizard):**
 - **Activate** (object)
+
+
 

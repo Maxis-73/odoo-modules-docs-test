@@ -27,6 +27,7 @@
 
 
 
+
 ### res.partner
 
 
@@ -44,7 +45,10 @@
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### homework.location.wizard
@@ -55,6 +59,8 @@
 
 
 
-#### Botones (hr_homeworking_calendar.homework_location_wizard_view_form)
+**Botones (hr_homeworking_calendar.homework_location_wizard_view_form):**
 - **Set Location** (object)
+
+
 

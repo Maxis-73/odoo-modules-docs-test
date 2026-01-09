@@ -15,6 +15,7 @@ Track employee time on tasks
 ## Descripción
 
 This module implements a timesheet system.
+==========================================
 
 Each employee can encode and track their time spent on the different projects.
 
@@ -38,9 +39,8 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **timesheet_widget** (Char) → Widget
+#### Campos
+- **timesheet_widget** (Char) → Widget
 
 
 
@@ -60,6 +60,7 @@ up a management by affair.
 
 
 
+
 ### account.analytic.line
 
 
@@ -70,46 +71,37 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **task_id** (Many2one) → project.task
-
-
-  - **parent_task_id** (Many2one) → project.task
-
-
-  - **project_id** (Many2one) → project.project
-
-
-  - **user_id** (Many2one)
-
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **job_title** (Char)
+#### Campos
+- **task_id** (Many2one) → project.task
+- **parent_task_id** (Many2one) → project.task
+- **project_id** (Many2one) → project.project
+- **user_id** (Many2one)
+- **employee_id** (Many2one) → hr.employee
+- **job_title** (Char)
+- **department_id** (Many2one) → hr.department
+- **manager_id** (Many2one) → hr.employee
+- **encoding_uom_id** (Many2one) → uom.uom
+- **partner_id** (Many2one)
+- **readonly_timesheet** (Boolean)
+- **milestone_id** (Many2one) → project.milestone
+- **message_partner_ids** (Many2many) → res.partner
 
 
-  - **department_id** (Many2one) → hr.department
 
 
-  - **manager_id** (Many2one) → hr.employee
 
+#### Vistas
 
-  - **encoding_uom_id** (Many2one) → uom.uom
-
-
-  - **partner_id** (Many2one)
-
-
-  - **readonly_timesheet** (Boolean)
-
-
-  - **milestone_id** (Many2one) → project.milestone
-
-
-  - **message_partner_ids** (Many2many) → res.partner
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | account.analytic.line.list.hr_timesheet | `hr_timesheet.hr_timesheet_line_tree` | - |
+| pivot | account.analytic.line.pivot | `hr_timesheet.view_hr_timesheet_line_pivot` | - |
+| pivot | account.analytic.line.pivot | `hr_timesheet.view_my_timesheet_line_pivot` | - |
+| graph | account.analytic.line.graph | `hr_timesheet.view_hr_timesheet_line_graph` | - |
+| graph | account.analytic.line.graph | `hr_timesheet.view_hr_timesheet_line_graph_my` | - |
+| graph | account.analytic.line.graph | `hr_timesheet.view_hr_timesheet_line_graph_all` | - |
+| form | account.analytic.line.form | `hr_timesheet.hr_timesheet_line_form` | - |
+| kanban | account.analytic.line.kanban | `hr_timesheet.view_kanban_account_analytic_line` | - |
 
 
 
@@ -124,9 +116,8 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **business_domain** (Selection)
+#### Campos
+- **business_domain** (Selection)
 
 
 
@@ -142,42 +133,19 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **allow_timesheets** (Boolean) → Timesheets
-
-
-  - **account_id** (Many2one)
-
-
-  - **analytic_account_active** (Boolean) → Active Account
-
-
-  - **timesheet_ids** (One2many) → account.analytic.line
-
-
-  - **timesheet_encode_uom_id** (Many2one) → uom.uom
-
-
-  - **total_timesheet_time** (Integer)
-
-
-  - **encode_uom_in_days** (Boolean)
-
-
-  - **is_internal_project** (Boolean)
-
-
-  - **remaining_hours** (Float)
-
-
-  - **is_project_overtime** (Boolean) → Project in Overtime
-
-
-  - **allocated_hours** (Float)
-
-
-  - **effective_hours** (Float)
+#### Campos
+- **allow_timesheets** (Boolean) → Timesheets
+- **account_id** (Many2one)
+- **analytic_account_active** (Boolean) → Active Account
+- **timesheet_ids** (One2many) → account.analytic.line
+- **timesheet_encode_uom_id** (Many2one) → uom.uom
+- **total_timesheet_time** (Integer)
+- **encode_uom_in_days** (Boolean)
+- **is_internal_project** (Boolean)
+- **remaining_hours** (Float)
+- **is_project_overtime** (Boolean) → Project in Overtime
+- **allocated_hours** (Float)
+- **effective_hours** (Float)
 
 
 
@@ -193,9 +161,8 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **has_timesheet** (Boolean)
+#### Campos
+- **has_timesheet** (Boolean)
 
 
 
@@ -211,21 +178,12 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **display_timesheet_stats** (Boolean)
-
-
-  - **allocated_time** (Integer) → Allocated Time
-
-
-  - **timesheet_time** (Integer) → Timesheet Time
-
-
-  - **timesheet_percentage** (Integer)
-
-
-  - **uom_id** (Many2one) → uom.uom
+#### Campos
+- **display_timesheet_stats** (Boolean)
+- **allocated_time** (Integer) → Allocated Time
+- **timesheet_time** (Integer) → Timesheet Time
+- **timesheet_percentage** (Integer)
+- **uom_id** (Many2one) → uom.uom
 
 
 
@@ -241,24 +199,13 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **module_project_timesheet_holidays** (Boolean) → Time Off
-
-
-  - **reminder_user_allow** (Boolean)
-
-
-  - **reminder_allow** (Boolean)
-
-
-  - **project_time_mode_id** (Many2one) → uom.uom
-
-
-  - **is_encode_uom_days** (Boolean)
-
-
-  - **timesheet_encode_method** (Selection)
+#### Campos
+- **module_project_timesheet_holidays** (Boolean) → Time Off
+- **reminder_user_allow** (Boolean)
+- **reminder_allow** (Boolean)
+- **project_time_mode_id** (Many2one) → uom.uom
+- **is_encode_uom_days** (Boolean)
+- **timesheet_encode_method** (Selection)
 
 
 
@@ -278,6 +225,7 @@ up a management by affair.
 
 
 
+
 ### res.company
 
 
@@ -288,15 +236,10 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **project_time_mode_id** (Many2one) → uom.uom
-
-
-  - **timesheet_encode_uom_id** (Many2one) → uom.uom
-
-
-  - **internal_project_id** (Many2one) → project.project
+#### Campos
+- **project_time_mode_id** (Many2one) → uom.uom
+- **timesheet_encode_uom_id** (Many2one) → uom.uom
+- **internal_project_id** (Many2one) → project.project
 
 
 
@@ -316,6 +259,7 @@ up a management by affair.
 
 
 
+
 ### project.task
 
 
@@ -326,57 +270,26 @@ up a management by affair.
 
 
 
-- Campos:
-
-  - **project_id** (Many2one)
-
-
-  - **analytic_account_active** (Boolean) → Active Analytic Account
-
-
-  - **allow_timesheets** (Boolean) → Allow timesheets
-
-
-  - **remaining_hours** (Float) → Time Remaining
-
-
-  - **remaining_hours_percentage** (Float)
-
-
-  - **effective_hours** (Float) → Time Spent
-
-
-  - **total_hours_spent** (Float) → Total Time Spent
-
-
-  - **progress** (Float) → Progress
-
-
-  - **overtime** (Float)
-
-
-  - **subtask_effective_hours** (Float) → Time Spent on Sub-tasks
-
-
-  - **timesheet_ids** (One2many) → account.analytic.line
-
-
-  - **encode_uom_in_days** (Boolean)
-
-
-  - **display_name** (Char)
+#### Campos
+- **project_id** (Many2one)
+- **analytic_account_active** (Boolean) → Active Analytic Account
+- **allow_timesheets** (Boolean) → Allow timesheets
+- **remaining_hours** (Float) → Time Remaining
+- **remaining_hours_percentage** (Float)
+- **effective_hours** (Float) → Time Spent
+- **total_hours_spent** (Float) → Total Time Spent
+- **progress** (Float) → Progress
+- **overtime** (Float)
+- **subtask_effective_hours** (Float) → Time Spent on Sub-tasks
+- **timesheet_ids** (One2many) → account.analytic.line
+- **encode_uom_in_days** (Boolean)
+- **display_name** (Char)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### project.task
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -385,23 +298,17 @@ up a management by affair.
 
 
 
-#### Botones (hr_timesheet.view_task_form2_inherited)
+**Botones (hr_timesheet.view_task_form2_inherited):**
 - **action_view_subtask_timesheet** (object)
 
 
-### account.analytic.line
 
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | account.analytic.line.list.hr_timesheet | `hr_timesheet.hr_timesheet_line_tree` | - |
-| pivot | account.analytic.line.pivot | `hr_timesheet.view_hr_timesheet_line_pivot` | - |
-| pivot | account.analytic.line.pivot | `hr_timesheet.view_my_timesheet_line_pivot` | - |
-| graph | account.analytic.line.graph | `hr_timesheet.view_hr_timesheet_line_graph` | - |
-| graph | account.analytic.line.graph | `hr_timesheet.view_hr_timesheet_line_graph_my` | - |
-| graph | account.analytic.line.graph | `hr_timesheet.view_hr_timesheet_line_graph_all` | - |
-| form | account.analytic.line.form | `hr_timesheet.hr_timesheet_line_form` | - |
-| kanban | account.analytic.line.kanban | `hr_timesheet.view_kanban_account_analytic_line` | - |
 
+
+
+
+
+## Vistas Adicionales
 
 
 ### hr.employee.delete.wizard
@@ -412,7 +319,7 @@ up a management by affair.
 
 
 
-#### Botones (hr_timesheet.hr_employee_delete_wizard_form)
+**Botones (hr_timesheet.hr_employee_delete_wizard_form):**
 - **Archive Employees** (object)
 - **See Timesheets** (object) - Grupos: `hr_timesheet.group_hr_timesheet_approver`
 - **See Timesheets** (object) - Grupos: `hr_timesheet.group_hr_timesheet_approver`
@@ -440,5 +347,7 @@ up a management by affair.
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | pivot | report.project.task.user.pivot.inherited | `hr_timesheet.view_task_project_user_pivot_inherited` | project.view_task_project_user_pivot |
+
+
 
 

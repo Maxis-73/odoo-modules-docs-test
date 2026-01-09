@@ -26,9 +26,8 @@ When re-invoicing the expense on the SO, set the cost to the total untaxed amoun
 
 
 
-- Campos:
-
-  - **expense_id** (Many2one) → hr.expense
+#### Campos
+- **expense_id** (Many2one) → hr.expense
 
 
 
@@ -45,6 +44,7 @@ When re-invoicing the expense on the SO, set the cost to the total untaxed amoun
 
 
 - No agrega campos
+
 
 
 

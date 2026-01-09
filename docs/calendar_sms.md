@@ -33,6 +33,7 @@ Send text messages as event reminders
 
 
 
+
 ### calendar.alarm
 
 
@@ -43,15 +44,10 @@ Send text messages as event reminders
 
 
 
-- Campos:
-
-  - **alarm_type** (Selection)
-
-
-  - **sms_template_id** (Many2one) → sms.template
-
-
-  - **sms_notify_responsible** (Boolean) → Notify Responsible
+#### Campos
+- **alarm_type** (Selection)
+- **sms_template_id** (Many2one) → sms.template
+- **sms_notify_responsible** (Boolean) → Notify Responsible
 
 
 
@@ -68,6 +64,7 @@ Send text messages as event reminders
 
 
 - No agrega campos
+
 
 
 

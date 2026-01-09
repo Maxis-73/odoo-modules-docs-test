@@ -12,6 +12,7 @@
 ## Descripción
 
 2FA Invite mail
+===============
 Allow the users to invite another user to use Two-Factor authentication
 by sending an email to the target user. This email redirects them to:
 - the users security settings if the user is internal.
@@ -36,6 +37,7 @@ by sending an email to the target user. This email redirects them to:
 
 
 
+
 ### res.users
 
 
@@ -51,15 +53,17 @@ by sending an email to the target user. This email redirects them to:
 
 
 
-
-
-## Vistas
-
-
-### res.users
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | form | res.users.view.form.auth.totp.mail | `auth_totp_mail.res_users_view_form` | base.view_users_form_simple_modif |
+
+
+
+
+
+
+
 
 

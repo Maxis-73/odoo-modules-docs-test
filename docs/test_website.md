@@ -33,9 +33,8 @@ models which only purpose is to run tests.
 
 
 
-- Campos:
-
-  - **some_translatable_field** (Char)
+#### Campos
+- **some_translatable_field** (Char)
 
 
 
@@ -51,9 +50,8 @@ models which only purpose is to run tests.
 
 
 
-- Campos:
-
-  - **name_translated** (Char)
+#### Campos
+- **name_translated** (Char)
 
 
 
@@ -75,19 +73,23 @@ models which only purpose is to run tests.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **submodel_ids** (One2many) → test.submodel
-
-
-  - **website_description** (Html)
+#### Campos
+- **name** (Char)
+- **submodel_ids** (One2many) → test.submodel
+- **website_description** (Html)
+- **tag_id** (Many2one) → test.tag
 
 
-  - **tag_id** (Many2one) → test.tag
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| kanban | test.model.kanban | `test_website.test_model_view_kanban` | - |
+| list | Test Model Pages List | `test_website.test_model_view_list` | - |
+| form | test.model.form | `test_website.view_test_model_form` | - |
 
 
 
@@ -99,15 +101,10 @@ models which only purpose is to run tests.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **test_model_id** (Many2one) → test.model
-
-
-  - **tag_id** (Many2one) → test.tag
+#### Campos
+- **name** (Char)
+- **test_model_id** (Many2one) → test.model
+- **tag_id** (Many2one) → test.tag
 
 
 
@@ -120,9 +117,8 @@ models which only purpose is to run tests.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -140,13 +136,21 @@ models which only purpose is to run tests.
 
 
 
-- Campos:
+#### Campos
+- **name** (Char)
+- **website_id** (Many2one) → website
 
-  - **name** (Char)
 
 
-  - **website_id** (Many2one) → website
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| kanban | test.model.multi.website.kanban | `test_website.test_model_multi_website_view_kanban` | - |
+| list | Test Multi Model Pages List | `test_website.test_model_multi_website_view_list` | - |
+| list | Test Multi Model Pages list js_class bug | `test_website.test_model_multi_website_view_list_js_class_bug` | - |
 
 
 
@@ -165,9 +169,8 @@ models which only purpose is to run tests.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -190,25 +193,6 @@ models which only purpose is to run tests.
 
 
 
-## Vistas
 
-
-### test.model
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| kanban | test.model.kanban | `test_website.test_model_view_kanban` | - |
-| list | Test Model Pages List | `test_website.test_model_view_list` | - |
-| form | test.model.form | `test_website.view_test_model_form` | - |
-
-
-
-### test.model.multi.website
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| kanban | test.model.multi.website.kanban | `test_website.test_model_multi_website_view_kanban` | - |
-| list | Test Multi Model Pages List | `test_website.test_model_multi_website_view_list` | - |
-| list | Test Multi Model Pages list js_class bug | `test_website.test_model_multi_website_view_list_js_class_bug` | - |
 
 

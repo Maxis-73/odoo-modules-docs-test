@@ -26,9 +26,8 @@ Adds American style tipping to Adyen
 
 
 
-- Campos:
-
-  - **adyen_merchant_account** (Char)
+#### Campos
+- **adyen_merchant_account** (Char)
 
 
 
@@ -48,6 +47,7 @@ Adds American style tipping to Adyen
 
 
 
+
 ### pos.payment
 
 
@@ -59,6 +59,7 @@ Adds American style tipping to Adyen
 
 
 - No agrega campos
+
 
 
 

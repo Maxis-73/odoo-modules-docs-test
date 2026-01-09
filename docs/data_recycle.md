@@ -26,29 +26,31 @@ Find old records and archive/delete them
 
 
 
-- Campos:
-
-  - **active** (Boolean) → Active
-
-
-  - **name** (Char) → Record Name
-
-
-  - **recycle_model_id** (Many2one) → data_recycle.model
-
-
-  - **res_id** (Integer) → Record ID
+#### Campos
+- **active** (Boolean) → Active
+- **name** (Char) → Record Name
+- **recycle_model_id** (Many2one) → data_recycle.model
+- **res_id** (Integer) → Record ID
+- **res_model_id** (Many2one)
+- **res_model_name** (Char)
+- **company_id** (Many2one) → res.company
 
 
-  - **res_model_id** (Many2one)
 
 
-  - **res_model_name** (Char)
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | Field Recycle Record List | `data_recycle.view_data_recycle_record_list` | - |
+| search | Field Recycle Record Search | `data_recycle.view_data_recycle_record_search` | - |
 
 
-  - **company_id** (Many2one) → res.company
 
+**Filtros de búsqueda (data_recycle.view_data_recycle_record_search):**
 
+- **Discarded** (`[('active', '=', False)]`)
 
 
 
@@ -59,69 +61,30 @@ Find old records and archive/delete them
 
 
 
-- Campos:
-
-  - **active** (Boolean)
-
-
-  - **name** (Char)
-
-
-  - **res_model_id** (Many2one) → ir.model
-
-
-  - **res_model_name** (Char)
-
-
-  - **recycle_record_ids** (One2many) → data_recycle.record
-
-
-  - **recycle_mode** (Selection)
-
-
-  - **recycle_action** (Selection)
-
-
-  - **domain** (Char)
-
-
-  - **time_field_id** (Many2one) → ir.model.fields
-
-
-  - **time_field_delta** (Integer)
-
-
-  - **time_field_delta_unit** (Selection)
-
-
-  - **include_archived** (Boolean)
-
-
-  - **records_to_recycle_count** (Integer) → Records To Recycle
-
-
-  - **notify_user_ids** (Many2many) → res.users
-
-
-  - **notify_frequency** (Integer)
-
-
-  - **notify_frequency_period** (Selection)
-
-
-  - **last_notification** (Datetime)
+#### Campos
+- **active** (Boolean)
+- **name** (Char)
+- **res_model_id** (Many2one) → ir.model
+- **res_model_name** (Char)
+- **recycle_record_ids** (One2many) → data_recycle.record
+- **recycle_mode** (Selection)
+- **recycle_action** (Selection)
+- **domain** (Char)
+- **time_field_id** (Many2one) → ir.model.fields
+- **time_field_delta** (Integer)
+- **time_field_delta_unit** (Selection)
+- **include_archived** (Boolean)
+- **records_to_recycle_count** (Integer) → Records To Recycle
+- **notify_user_ids** (Many2many) → res.users
+- **notify_frequency** (Integer)
+- **notify_frequency_period** (Selection)
+- **last_notification** (Datetime)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### data_recycle.model
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -130,22 +93,14 @@ Find old records and archive/delete them
 
 
 
-#### Botones (data_recycle.view_data_merge_model_form)
+**Botones (data_recycle.view_data_merge_model_form):**
 - **Run Now** (object)
 - **open_records** (object)
 
 
-### data_recycle.record
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | Field Recycle Record List | `data_recycle.view_data_recycle_record_list` | - |
-| search | Field Recycle Record Search | `data_recycle.view_data_recycle_record_search` | - |
 
 
 
-#### Filtros de búsqueda (data_recycle.view_data_recycle_record_search)
 
-**Filtros:**
-- **Discarded** (`[('active', '=', False)]`)
+
 

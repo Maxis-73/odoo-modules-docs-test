@@ -23,36 +23,17 @@
 
 
 
-- Campos:
-
-  - **monday_location_id** (Many2one) → hr.work.location
-
-
-  - **tuesday_location_id** (Many2one) → hr.work.location
-
-
-  - **wednesday_location_id** (Many2one) → hr.work.location
-
-
-  - **thursday_location_id** (Many2one) → hr.work.location
-
-
-  - **friday_location_id** (Many2one) → hr.work.location
-
-
-  - **saturday_location_id** (Many2one) → hr.work.location
-
-
-  - **sunday_location_id** (Many2one) → hr.work.location
-
-
-  - **exceptional_location_id** (Many2one) → hr.work.location
-
-
-  - **hr_icon_display** (Selection)
-
-
-  - **today_location_name** (Char)
+#### Campos
+- **monday_location_id** (Many2one) → hr.work.location
+- **tuesday_location_id** (Many2one) → hr.work.location
+- **wednesday_location_id** (Many2one) → hr.work.location
+- **thursday_location_id** (Many2one) → hr.work.location
+- **friday_location_id** (Many2one) → hr.work.location
+- **saturday_location_id** (Many2one) → hr.work.location
+- **sunday_location_id** (Many2one) → hr.work.location
+- **exceptional_location_id** (Many2one) → hr.work.location
+- **hr_icon_display** (Selection)
+- **today_location_name** (Char)
 
 
 
@@ -70,27 +51,14 @@
 
 
 
-- Campos:
-
-  - **monday_location_id** (Many2one) → hr.work.location
-
-
-  - **tuesday_location_id** (Many2one) → hr.work.location
-
-
-  - **wednesday_location_id** (Many2one) → hr.work.location
-
-
-  - **thursday_location_id** (Many2one) → hr.work.location
-
-
-  - **friday_location_id** (Many2one) → hr.work.location
-
-
-  - **saturday_location_id** (Many2one) → hr.work.location
-
-
-  - **sunday_location_id** (Many2one) → hr.work.location
+#### Campos
+- **monday_location_id** (Many2one) → hr.work.location
+- **tuesday_location_id** (Many2one) → hr.work.location
+- **wednesday_location_id** (Many2one) → hr.work.location
+- **thursday_location_id** (Many2one) → hr.work.location
+- **friday_location_id** (Many2one) → hr.work.location
+- **saturday_location_id** (Many2one) → hr.work.location
+- **sunday_location_id** (Many2one) → hr.work.location
 
 
 
@@ -110,6 +78,7 @@
 
 
 
+
 ### hr.employee.location
 
 
@@ -117,27 +86,14 @@
 
 
 
-- Campos:
-
-  - **work_location_id** (Many2one) → hr.work.location
-
-
-  - **work_location_name** (Char)
-
-
-  - **work_location_type** (Selection)
-
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **employee_name** (Char)
-
-
-  - **date** (Date)
-
-
-  - **day_week_string** (Char)
+#### Campos
+- **work_location_id** (Many2one) → hr.work.location
+- **work_location_name** (Char)
+- **work_location_type** (Selection)
+- **employee_id** (Many2one) → hr.employee
+- **employee_name** (Char)
+- **date** (Date)
+- **day_week_string** (Char)
 
 
 
@@ -154,6 +110,7 @@
 
 
 - No agrega campos
+
 
 
 

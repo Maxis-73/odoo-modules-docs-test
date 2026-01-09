@@ -32,9 +32,8 @@ by external providers and will automatically generate purchase orders directed t
 
 
 
-- Campos:
-
-  - **purchase_order_count** (Integer) → Number of Purchase Order Generated
+#### Campos
+- **purchase_order_count** (Integer) → Number of Purchase Order Generated
 
 
 
@@ -50,9 +49,8 @@ by external providers and will automatically generate purchase orders directed t
 
 
 
-- Campos:
-
-  - **sale_order_count** (Integer) → Number of Source Sale
+#### Campos
+- **sale_order_count** (Integer) → Number of Source Sale
 
 
 
@@ -68,12 +66,9 @@ by external providers and will automatically generate purchase orders directed t
 
 
 
-- Campos:
-
-  - **sale_order_id** (Many2one)
-
-
-  - **sale_line_id** (Many2one) → sale.order.line
+#### Campos
+- **sale_order_id** (Many2one)
+- **sale_line_id** (Many2one) → sale.order.line
 
 
 
@@ -89,12 +84,9 @@ by external providers and will automatically generate purchase orders directed t
 
 
 
-- Campos:
-
-  - **purchase_line_ids** (One2many) → purchase.order.line
-
-
-  - **purchase_line_count** (Integer) → Number of generated purchase items
+#### Campos
+- **purchase_line_ids** (One2many) → purchase.order.line
+- **purchase_line_count** (Integer) → Number of generated purchase items
 
 
 
@@ -110,9 +102,8 @@ by external providers and will automatically generate purchase orders directed t
 
 
 
-- Campos:
-
-  - **service_to_purchase** (Boolean) → Subcontract Service
+#### Campos
+- **service_to_purchase** (Boolean) → Subcontract Service
 
 
 

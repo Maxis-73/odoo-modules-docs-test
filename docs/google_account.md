@@ -12,6 +12,7 @@
 ## Descripción
 
 The module adds google user in res user.
+========================================
 
 
 
@@ -26,6 +27,7 @@ The module adds google user in res user.
 
 
 - No agrega campos
+
 
 
 

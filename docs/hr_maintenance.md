@@ -30,12 +30,9 @@ Bridge between HR and Maintenance.
 
 
 
-- Campos:
-
-  - **equipment_ids** (One2many) → maintenance.equipment
-
-
-  - **equipment_count** (Integer)
+#### Campos
+- **equipment_ids** (One2many) → maintenance.equipment
+- **equipment_count** (Integer)
 
 
 
@@ -51,12 +48,9 @@ Bridge between HR and Maintenance.
 
 
 
-- Campos:
-
-  - **equipment_ids** (One2many) → maintenance.equipment
-
-
-  - **equipment_count** (Integer) → Equipment Count
+#### Campos
+- **equipment_ids** (One2many) → maintenance.equipment
+- **equipment_count** (Integer) → Equipment Count
 
 
 
@@ -72,21 +66,12 @@ Bridge between HR and Maintenance.
 
 
 
-- Campos:
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **department_id** (Many2one) → hr.department
-
-
-  - **equipment_assign_to** (Selection)
-
-
-  - **owner_user_id** (Many2one)
-
-
-  - **assign_date** (Date)
+#### Campos
+- **employee_id** (Many2one) → hr.employee
+- **department_id** (Many2one) → hr.department
+- **equipment_assign_to** (Selection)
+- **owner_user_id** (Many2one)
+- **assign_date** (Date)
 
 
 
@@ -102,15 +87,10 @@ Bridge between HR and Maintenance.
 
 
 
-- Campos:
-
-  - **employee_id** (Many2one) → hr.employee
-
-
-  - **owner_user_id** (Many2one)
-
-
-  - **equipment_id** (Many2one)
+#### Campos
+- **employee_id** (Many2one) → hr.employee
+- **owner_user_id** (Many2one)
+- **equipment_id** (Many2one)
 
 
 

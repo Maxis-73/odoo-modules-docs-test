@@ -23,16 +23,21 @@ Scan and Parse Barcodes
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **rule_ids** (One2many) → barcode.rule
+#### Campos
+- **name** (Char)
+- **rule_ids** (One2many) → barcode.rule
+- **upc_ean_conv** (Selection)
 
 
-  - **upc_ean_conv** (Selection)
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | Barcode Nomenclatures | `barcodes.view_barcode_nomenclature_form` | - |
+| list | Barcode Nomenclatures | `barcodes.view_barcode_nomenclature_tree` | - |
 
 
 
@@ -44,9 +49,8 @@ Scan and Parse Barcodes
 
 
 
-- Campos:
-
-  - **_barcode_scanned** (Char) → Barcode Scanned
+#### Campos
+- **_barcode_scanned** (Char) → Barcode Scanned
 
 
 
@@ -59,28 +63,24 @@ Scan and Parse Barcodes
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **barcode_nomenclature_id** (Many2one) → barcode.nomenclature
-
-
-  - **sequence** (Integer)
-
-
-  - **encoding** (Selection)
+#### Campos
+- **name** (Char)
+- **barcode_nomenclature_id** (Many2one) → barcode.nomenclature
+- **sequence** (Integer)
+- **encoding** (Selection)
+- **type** (Selection)
+- **pattern** (Char)
+- **alias** (Char)
 
 
-  - **type** (Selection)
 
 
-  - **pattern** (Char)
 
+#### Vistas
 
-  - **alias** (Char)
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | Barcode Rule | `barcodes.view_barcode_rule_form` | - |
 
 
 
@@ -95,9 +95,8 @@ Scan and Parse Barcodes
 
 
 
-- Campos:
-
-  - **nomenclature_id** (Many2one) → barcode.nomenclature
+#### Campos
+- **nomenclature_id** (Many2one) → barcode.nomenclature
 
 
 
@@ -120,22 +119,6 @@ Scan and Parse Barcodes
 
 
 
-## Vistas
 
-
-### barcode.nomenclature
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | Barcode Nomenclatures | `barcodes.view_barcode_nomenclature_form` | - |
-| list | Barcode Nomenclatures | `barcodes.view_barcode_nomenclature_tree` | - |
-
-
-
-### barcode.rule
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | Barcode Rule | `barcodes.view_barcode_rule_form` | - |
 
 

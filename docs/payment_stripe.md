@@ -29,12 +29,9 @@ An Irish-American payment provider covering the US and many others.
 
 
 
-- Campos:
-
-  - **stripe_payment_method** (Char)
-
-
-  - **stripe_mandate** (Char)
+#### Campos
+- **stripe_payment_method** (Char)
+- **stripe_mandate** (Char)
 
 
 
@@ -54,6 +51,7 @@ An Irish-American payment provider covering the US and many others.
 
 
 
+
 ### payment.provider
 
 
@@ -64,18 +62,11 @@ An Irish-American payment provider covering the US and many others.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **stripe_publishable_key** (Char)
-
-
-  - **stripe_secret_key** (Char)
-
-
-  - **stripe_webhook_secret** (Char)
+#### Campos
+- **code** (Selection)
+- **stripe_publishable_key** (Char)
+- **stripe_secret_key** (Char)
+- **stripe_webhook_secret** (Char)
 
 
 

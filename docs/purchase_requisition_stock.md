@@ -23,9 +23,8 @@
 
 
 
-- Campos:
-
-  - **on_time_rate_perc** (Float)
+#### Campos
+- **on_time_rate_perc** (Float)
 
 
 
@@ -41,9 +40,8 @@
 
 
 
-- Campos:
-
-  - **on_time_rate_perc** (Float)
+#### Campos
+- **on_time_rate_perc** (Float)
 
 
 
@@ -63,6 +61,7 @@
 
 
 
+
 ### stock.move
 
 
@@ -73,9 +72,8 @@
 
 
 
-- Campos:
-
-  - **requisition_line_ids** (One2many) → purchase.requisition.line
+#### Campos
+- **requisition_line_ids** (One2many) → purchase.requisition.line
 
 
 
@@ -91,12 +89,9 @@
 
 
 
-- Campos:
-
-  - **warehouse_id** (Many2one) → stock.warehouse
-
-
-  - **picking_type_id** (Many2one) → stock.picking.type
+#### Campos
+- **warehouse_id** (Many2one) → stock.warehouse
+- **picking_type_id** (Many2one) → stock.picking.type
 
 
 
@@ -112,9 +107,8 @@
 
 
 
-- Campos:
-
-  - **move_dest_id** (Many2one) → stock.move
+#### Campos
+- **move_dest_id** (Many2one) → stock.move
 
 
 

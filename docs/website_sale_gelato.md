@@ -27,6 +27,7 @@
 
 
 
+
 ### product.document
 
 
@@ -41,6 +42,7 @@
 
 
 
+
 ### product.template
 
 
@@ -52,6 +54,7 @@
 
 
 - No agrega campos
+
 
 
 

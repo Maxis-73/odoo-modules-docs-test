@@ -30,6 +30,7 @@ Schedule SMS in event management
 
 
 
+
 ### event.type.mail
 
 
@@ -40,12 +41,9 @@ Schedule SMS in event management
 
 
 
-- Campos:
-
-  - **notification_type** (Selection)
-
-
-  - **template_ref** (Reference)
+#### Campos
+- **notification_type** (Selection)
+- **template_ref** (Reference)
 
 
 
@@ -61,12 +59,9 @@ Schedule SMS in event management
 
 
 
-- Campos:
-
-  - **notification_type** (Selection)
-
-
-  - **template_ref** (Reference)
+#### Campos
+- **notification_type** (Selection)
+- **template_ref** (Reference)
 
 
 
@@ -83,6 +78,7 @@ Schedule SMS in event management
 
 
 - No agrega campos
+
 
 
 

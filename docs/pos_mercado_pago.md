@@ -26,18 +26,11 @@ Integrate your POS with the Mercado Pago Smart Point terminal
 
 
 
-- Campos:
-
-  - **mp_bearer_token** (Char)
-
-
-  - **mp_webhook_secret_key** (Char)
-
-
-  - **mp_id_point_smart** (Char)
-
-
-  - **mp_id_point_smart_complet** (Char)
+#### Campos
+- **mp_bearer_token** (Char)
+- **mp_webhook_secret_key** (Char)
+- **mp_id_point_smart** (Char)
+- **mp_id_point_smart_complet** (Char)
 
 
 
@@ -54,6 +47,7 @@ Integrate your POS with the Mercado Pago Smart Point terminal
 
 
 - No agrega campos
+
 
 
 

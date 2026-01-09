@@ -15,6 +15,7 @@ Manage Time Off in Payslips
 ## Descripción
 
 Manage Time Off in Payslips
+============================
 
 This application allows you to integrate time off in payslips.
     
@@ -37,6 +38,7 @@ This application allows you to integrate time off in payslips.
 
 
 
+
 ### hr.leave.type
 
 
@@ -47,9 +49,8 @@ This application allows you to integrate time off in payslips.
 
 
 
-- Campos:
-
-  - **work_entry_type_id** (Many2one) → hr.work.entry.type
+#### Campos
+- **work_entry_type_id** (Many2one) → hr.work.entry.type
 
 
 
@@ -69,6 +70,7 @@ This application allows you to integrate time off in payslips.
 
 
 
+
 ### hr.work.entry
 
 
@@ -79,12 +81,9 @@ This application allows you to integrate time off in payslips.
 
 
 
-- Campos:
-
-  - **leave_id** (Many2one) → hr.leave
-
-
-  - **leave_state** (Selection)
+#### Campos
+- **leave_id** (Many2one) → hr.leave
+- **leave_state** (Selection)
 
 
 
@@ -100,9 +99,8 @@ This application allows you to integrate time off in payslips.
 
 
 
-- Campos:
-
-  - **leave_type_ids** (One2many) → hr.leave.type
+#### Campos
+- **leave_type_ids** (One2many) → hr.leave.type
 
 
 

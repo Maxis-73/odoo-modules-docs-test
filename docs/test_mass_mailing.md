@@ -33,15 +33,10 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **customer_id** (Many2one) → res.partner
 
 
 
@@ -59,12 +54,9 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
 
 
 
@@ -84,9 +76,8 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
+#### Campos
+- **name** (Char)
 
 
 
@@ -104,18 +95,11 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **customer_id** (Many2one) → res.partner
+- **user_id** (Many2one) → res.users
 
 
 
@@ -133,21 +117,12 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **opt_out** (Boolean)
-
-
-  - **customer_id** (Many2one) → res.partner
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **opt_out** (Boolean)
+- **customer_id** (Many2one) → res.partner
+- **user_id** (Many2one) → res.users
 
 
 
@@ -165,15 +140,10 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **partner_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **partner_id** (Many2one) → res.partner
 
 
 
@@ -191,12 +161,9 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
 
 
 
@@ -214,18 +181,11 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **container_id** (Many2one) → mail.test.container
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **user_id** (Many2one) → res.users
+- **container_id** (Many2one) → mail.test.container
 
 
 
@@ -243,12 +203,9 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **title** (Char)
+#### Campos
+- **name** (Char)
+- **title** (Char)
 
 
 
@@ -268,12 +225,9 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **title** (Char)
+#### Campos
+- **name** (Char)
+- **title** (Char)
 
 
 
@@ -291,15 +245,10 @@ test_mail.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **email_from** (Char)
-
-
-  - **partner_id** (Many2one) → res.partner
+#### Campos
+- **name** (Char)
+- **email_from** (Char)
+- **partner_id** (Many2one) → res.partner
 
 
 
@@ -316,6 +265,7 @@ test_mail.
 
 
 - No agrega campos
+
 
 
 

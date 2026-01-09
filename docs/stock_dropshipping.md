@@ -15,6 +15,7 @@ Drop Shipping
 ## Descripción
 
 Manage drop shipping orders
+===========================
 
 This module adds a pre-configured Drop Shipping operation type
 as well as a procurement route that allow configuring Drop
@@ -41,9 +42,8 @@ internal transfer document is needed.
 
 
 
-- Campos:
-
-  - **dropship_picking_count** (Integer) → Dropship Count
+#### Campos
+- **dropship_picking_count** (Integer) → Dropship Count
 
 
 
@@ -63,6 +63,7 @@ internal transfer document is needed.
 
 
 
+
 ### purchase.order
 
 
@@ -73,9 +74,8 @@ internal transfer document is needed.
 
 
 
-- Campos:
-
-  - **dropship_picking_count** (Integer) → Dropship Count
+#### Campos
+- **dropship_picking_count** (Integer) → Dropship Count
 
 
 
@@ -95,6 +95,7 @@ internal transfer document is needed.
 
 
 
+
 ### stock.rule
 
 
@@ -106,6 +107,7 @@ internal transfer document is needed.
 
 
 - No agrega campos
+
 
 
 
@@ -123,6 +125,7 @@ internal transfer document is needed.
 
 
 
+
 ### stock.picking
 
 
@@ -133,9 +136,8 @@ internal transfer document is needed.
 
 
 
-- Campos:
-
-  - **is_dropship** (Boolean) → Is a Dropship
+#### Campos
+- **is_dropship** (Boolean) → Is a Dropship
 
 
 
@@ -151,9 +153,8 @@ internal transfer document is needed.
 
 
 
-- Campos:
-
-  - **code** (Selection)
+#### Campos
+- **code** (Selection)
 
 
 
@@ -173,6 +174,7 @@ internal transfer document is needed.
 
 
 
+
 ### stock.move
 
 
@@ -184,6 +186,7 @@ internal transfer document is needed.
 
 
 - No agrega campos
+
 
 
 
@@ -201,6 +204,7 @@ internal transfer document is needed.
 
 
 
+
 ### stock.replenish.mixin
 
 
@@ -212,6 +216,7 @@ internal transfer document is needed.
 
 
 - No agrega campos
+
 
 
 

@@ -12,6 +12,7 @@
 ## Descripción
 
 Partners Geolocation
+========================
     
 
 
@@ -28,15 +29,10 @@ Partners Geolocation
 
 
 
-- Campos:
-
-  - **geoloc_provider_id** (Many2one) → base.geo_provider
-
-
-  - **geoloc_provider_techname** (Char)
-
-
-  - **geoloc_provider_googlemap_key** (Char)
+#### Campos
+- **geoloc_provider_id** (Many2one) → base.geo_provider
+- **geoloc_provider_techname** (Char)
+- **geoloc_provider_googlemap_key** (Char)
 
 
 
@@ -49,13 +45,19 @@ Partners Geolocation
 
 
 
-- Campos:
+#### Campos
+- **tech_name** (Char)
+- **name** (Char)
 
-  - **tech_name** (Char)
 
 
-  - **name** (Char)
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | base.geo_provider.form | `base_geolocalize.view_geo_provider_form` | - |
 
 
 
@@ -71,6 +73,7 @@ Partners Geolocation
 
 
 
+
 ### res.partner
 
 
@@ -81,10 +84,8 @@ Partners Geolocation
 
 
 
-- Campos:
-
-  - **date_localization** (Date)
-
+#### Campos
+- **date_localization** (Date)
 
 
 
@@ -92,13 +93,6 @@ Partners Geolocation
 
 
 
-## Vistas
 
-
-### base.geo_provider
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | base.geo_provider.form | `base_geolocalize.view_geo_provider_form` | - |
 
 

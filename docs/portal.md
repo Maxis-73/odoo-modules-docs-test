@@ -37,9 +37,8 @@ a dependency towards website editing and customization capabilities.
 
 
 
-- Campos:
-
-  - **website_message_ids** (One2many) → mail.message
+#### Campos
+- **website_message_ids** (One2many) → mail.message
 
 
 
@@ -55,9 +54,8 @@ a dependency towards website editing and customization capabilities.
 
 
 
-- Campos:
-
-  - **customize_show** (Boolean) → Show As Optional Inherit
+#### Campos
+- **customize_show** (Boolean) → Show As Optional Inherit
 
 
 
@@ -77,6 +75,7 @@ a dependency towards website editing and customization capabilities.
 
 
 
+
 ### portal.mixin
 
 
@@ -84,15 +83,10 @@ a dependency towards website editing and customization capabilities.
 
 
 
-- Campos:
-
-  - **access_url** (Char) → Portal Access URL
-
-
-  - **access_token** (Char) → Security Token
-
-
-  - **access_warning** (Text) → Access warning
+#### Campos
+- **access_url** (Char) → Portal Access URL
+- **access_token** (Char) → Security Token
+- **access_warning** (Text) → Access warning
 
 
 
@@ -112,6 +106,7 @@ a dependency towards website editing and customization capabilities.
 
 
 
+
 ### res.config.settings
 
 
@@ -122,9 +117,8 @@ a dependency towards website editing and customization capabilities.
 
 
 
-- Campos:
-
-  - **portal_allow_api_keys** (Boolean)
+#### Campos
+- **portal_allow_api_keys** (Boolean)
 
 
 
@@ -144,6 +138,7 @@ a dependency towards website editing and customization capabilities.
 
 
 
+
 ### ir.qweb
 
 
@@ -155,6 +150,7 @@ a dependency towards website editing and customization capabilities.
 
 
 - No agrega campos
+
 
 
 
@@ -175,7 +171,10 @@ a dependency towards website editing and customization capabilities.
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### portal.share
@@ -186,7 +185,7 @@ a dependency towards website editing and customization capabilities.
 
 
 
-#### Botones (portal.portal_share_wizard)
+**Botones (portal.portal_share_wizard):**
 - **Send** (object)
 
 
@@ -198,11 +197,13 @@ a dependency towards website editing and customization capabilities.
 
 
 
-#### Botones (portal.wizard_view)
+**Botones (portal.wizard_view):**
 - **action_refresh_modal** (object)
 - **action_refresh_modal** (object)
 - **action_refresh_modal** (object)
 - **Grant Access** (object)
 - **Revoke Access** (object)
 - **Re-Invite** (object)
+
+
 

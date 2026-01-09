@@ -35,6 +35,7 @@ Bridge module between time off and contract
 
 
 
+
 ### hr.leave
 
 
@@ -49,6 +50,7 @@ Bridge module between time off and contract
 
 
 
+
 ### hr.employee.base
 
 
@@ -60,6 +62,7 @@ Bridge module between time off and contract
 
 
 - No agrega campos
+
 
 
 

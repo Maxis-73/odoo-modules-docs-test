@@ -29,9 +29,8 @@ Allows to access the website profile of the users and see their statistics (karm
 
 
 
-- Campos:
-
-  - **karma_profile_min** (Integer)
+#### Campos
+- **karma_profile_min** (Integer)
 
 
 
@@ -51,6 +50,7 @@ Allows to access the website profile of the users and see their statistics (karm
 
 
 
+
 ### gamification.badge
 
 
@@ -66,6 +66,7 @@ Allows to access the website profile of the users and see their statistics (karm
 
 
 - No agrega campos
+
 
 
 

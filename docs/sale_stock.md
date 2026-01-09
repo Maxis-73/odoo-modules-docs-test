@@ -15,6 +15,7 @@ Quotation, Sales Orders, Delivery & Invoicing Control
 ## Descripción
 
 Manage sales quotations and orders
+==================================
 
 This module makes the link between the sales and warehouses management applications.
 
@@ -40,42 +41,19 @@ Preferences
 
 
 
-- Campos:
-
-  - **incoterm** (Many2one) → account.incoterms
-
-
-  - **incoterm_location** (Char)
-
-
-  - **picking_policy** (Selection)
-
-
-  - **warehouse_id** (Many2one) → stock.warehouse
-
-
-  - **picking_ids** (One2many) → stock.picking
-
-
-  - **delivery_count** (Integer)
-
-
-  - **delivery_status** (Selection)
-
-
-  - **procurement_group_id** (Many2one) → procurement.group
-
-
-  - **effective_date** (Datetime) → Effective Date
-
-
-  - **expected_date** (Datetime)
-
-
-  - **json_popover** (Char) → JSON data for the popover widget
-
-
-  - **show_json_popover** (Boolean) → Has late picking
+#### Campos
+- **incoterm** (Many2one) → account.incoterms
+- **incoterm_location** (Char)
+- **picking_policy** (Selection)
+- **warehouse_id** (Many2one) → stock.warehouse
+- **picking_ids** (One2many) → stock.picking
+- **delivery_count** (Integer)
+- **delivery_status** (Selection)
+- **procurement_group_id** (Many2one) → procurement.group
+- **effective_date** (Datetime) → Effective Date
+- **expected_date** (Datetime)
+- **json_popover** (Char) → JSON data for the popover widget
+- **show_json_popover** (Boolean) → Has late picking
 
 
 
@@ -95,6 +73,7 @@ Preferences
 
 
 
+
 ### sale.order.line
 
 
@@ -105,48 +84,21 @@ Preferences
 
 
 
-- Campos:
-
-  - **qty_delivered_method** (Selection)
-
-
-  - **route_id** (Many2one) → stock.route
-
-
-  - **move_ids** (One2many) → stock.move
-
-
-  - **virtual_available_at_date** (Float)
-
-
-  - **scheduled_date** (Datetime)
-
-
-  - **forecast_expected_date** (Datetime)
-
-
-  - **free_qty_today** (Float)
-
-
-  - **qty_available_today** (Float)
-
-
-  - **warehouse_id** (Many2one) → stock.warehouse
-
-
-  - **qty_to_deliver** (Float)
-
-
-  - **is_mto** (Boolean)
-
-
-  - **display_qty_widget** (Boolean)
-
-
-  - **is_storable** (Boolean)
-
-
-  - **customer_lead** (Float)
+#### Campos
+- **qty_delivered_method** (Selection)
+- **route_id** (Many2one) → stock.route
+- **move_ids** (One2many) → stock.move
+- **virtual_available_at_date** (Float)
+- **scheduled_date** (Datetime)
+- **forecast_expected_date** (Datetime)
+- **free_qty_today** (Float)
+- **qty_available_today** (Float)
+- **warehouse_id** (Many2one) → stock.warehouse
+- **qty_to_deliver** (Float)
+- **is_mto** (Boolean)
+- **display_qty_widget** (Boolean)
+- **is_storable** (Boolean)
+- **customer_lead** (Float)
 
 
 
@@ -166,6 +118,7 @@ Preferences
 
 
 
+
 ### account.move
 
 
@@ -177,6 +130,7 @@ Preferences
 
 
 - No agrega campos
+
 
 
 
@@ -194,6 +148,7 @@ Preferences
 
 
 
+
 ### stock.valuation.layer
 
 
@@ -205,6 +160,7 @@ Preferences
 
 
 - No agrega campos
+
 
 
 
@@ -220,9 +176,8 @@ Preferences
 
 
 
-- Campos:
-
-  - **property_warehouse_id** (Many2one) → stock.warehouse
+#### Campos
+- **property_warehouse_id** (Many2one) → stock.warehouse
 
 
 
@@ -238,9 +193,8 @@ Preferences
 
 
 
-- Campos:
-
-  - **sale_selectable** (Boolean) → Selectable on Sales Order Line
+#### Campos
+- **sale_selectable** (Boolean) → Selectable on Sales Order Line
 
 
 
@@ -256,9 +210,8 @@ Preferences
 
 
 
-- Campos:
-
-  - **sale_line_id** (Many2one) → sale.order.line
+#### Campos
+- **sale_line_id** (Many2one) → sale.order.line
 
 
 
@@ -278,6 +231,7 @@ Preferences
 
 
 
+
 ### procurement.group
 
 
@@ -288,9 +242,8 @@ Preferences
 
 
 
-- Campos:
-
-  - **sale_id** (Many2one) → sale.order
+#### Campos
+- **sale_id** (Many2one) → sale.order
 
 
 
@@ -310,6 +263,7 @@ Preferences
 
 
 
+
 ### stock.picking
 
 
@@ -320,9 +274,8 @@ Preferences
 
 
 
-- Campos:
-
-  - **sale_id** (Many2one) → sale.order
+#### Campos
+- **sale_id** (Many2one) → sale.order
 
 
 
@@ -338,13 +291,19 @@ Preferences
 
 
 
-- Campos:
+#### Campos
+- **sale_order_ids** (Many2many) → sale.order
+- **sale_order_count** (Integer) → Sale order count
 
-  - **sale_order_ids** (Many2many) → sale.order
 
 
-  - **sale_order_count** (Integer) → Sale order count
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | stock.production.lot.view.form | `sale_stock.stock_production_lot_view_form` | stock.view_production_lot_form |
 
 
 
@@ -359,15 +318,10 @@ Preferences
 
 
 
-- Campos:
-
-  - **security_lead** (Float)
-
-
-  - **use_security_lead** (Boolean)
-
-
-  - **default_picking_policy** (Selection)
+#### Campos
+- **security_lead** (Float)
+- **use_security_lead** (Boolean)
+- **default_picking_policy** (Selection)
 
 
 
@@ -383,10 +337,8 @@ Preferences
 
 
 
-- Campos:
-
-  - **security_lead** (Float) → Sales Safety Days
-
+#### Campos
+- **security_lead** (Float) → Sales Safety Days
 
 
 
@@ -394,13 +346,6 @@ Preferences
 
 
 
-## Vistas
 
-
-### stock.lot
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | stock.production.lot.view.form | `sale_stock.stock_production_lot_view_form` | stock.view_production_lot_form |
 
 

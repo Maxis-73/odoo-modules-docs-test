@@ -29,9 +29,8 @@ An payment provider covering the US, Australia, and Canada.
 
 
 
-- Campos:
-
-  - **authorize_profile** (Char)
+#### Campos
+- **authorize_profile** (Char)
 
 
 
@@ -51,6 +50,7 @@ An payment provider covering the US, Australia, and Canada.
 
 
 
+
 ### payment.provider
 
 
@@ -61,21 +61,12 @@ An payment provider covering the US, Australia, and Canada.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **authorize_login** (Char)
-
-
-  - **authorize_transaction_key** (Char)
-
-
-  - **authorize_signature_key** (Char)
-
-
-  - **authorize_client_key** (Char)
+#### Campos
+- **code** (Selection)
+- **authorize_login** (Char)
+- **authorize_transaction_key** (Char)
+- **authorize_signature_key** (Char)
+- **authorize_client_key** (Char)
 
 
 

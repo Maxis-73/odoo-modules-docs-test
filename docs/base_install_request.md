@@ -12,6 +12,7 @@
 ## Descripción
 
 Allow internal users requesting a module installation
+=====================================================
     
 
 
@@ -35,7 +36,10 @@ Allow internal users requesting a module installation
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### base.module.install.request
@@ -46,7 +50,7 @@ Allow internal users requesting a module installation
 
 
 
-#### Botones (base_install_request.base_module_install_request_view_form)
+**Botones (base_install_request.base_module_install_request_view_form):**
 - **Request Activation** (object)
 
 
@@ -58,6 +62,8 @@ Allow internal users requesting a module installation
 
 
 
-#### Botones (base_install_request.base_module_install_review_view_form)
+**Botones (base_install_request.base_module_install_review_view_form):**
 - **Install App** (object)
+
+
 

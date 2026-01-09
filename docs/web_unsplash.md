@@ -33,6 +33,7 @@ Explore the free high-resolution image library of Unsplash.com and find images t
 
 
 
+
 ### ir.attachment
 
 
@@ -47,6 +48,7 @@ Explore the free high-resolution image library of Unsplash.com and find images t
 
 
 
+
 ### res.config.settings
 
 
@@ -57,12 +59,9 @@ Explore the free high-resolution image library of Unsplash.com and find images t
 
 
 
-- Campos:
-
-  - **unsplash_access_key** (Char) → Access Key
-
-
-  - **unsplash_app_id** (Char) → Application ID
+#### Campos
+- **unsplash_access_key** (Char) → Access Key
+- **unsplash_app_id** (Char) → Application ID
 
 
 
@@ -79,6 +78,7 @@ Explore the free high-resolution image library of Unsplash.com and find images t
 
 
 - No agrega campos
+
 
 
 

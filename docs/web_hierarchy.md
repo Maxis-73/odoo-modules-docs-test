@@ -12,6 +12,7 @@
 ## Descripción
 
 Odoo Web Hierarchy view
+=======================
 
 This module adds a new view called to be able to define a view to display
 an organization such as an Organization Chart for employees for instance.
@@ -31,9 +32,8 @@ an organization such as an Organization Chart for employees for instance.
 
 
 
-- Campos:
-
-  - **type** (Selection)
+#### Campos
+- **type** (Selection)
 
 
 
@@ -49,9 +49,8 @@ an organization such as an Organization Chart for employees for instance.
 
 
 
-- Campos:
-
-  - **view_mode** (Selection)
+#### Campos
+- **view_mode** (Selection)
 
 
 
@@ -68,6 +67,7 @@ an organization such as an Organization Chart for employees for instance.
 
 
 - No agrega campos
+
 
 
 

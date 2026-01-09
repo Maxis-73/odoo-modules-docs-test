@@ -31,9 +31,8 @@ Convert employee's extra hours to leave allocations.
 
 
 
-- Campos:
-
-  - **frequency_hourly_source** (Selection)
+#### Campos
+- **frequency_hourly_source** (Selection)
 
 
 
@@ -49,15 +48,10 @@ Convert employee's extra hours to leave allocations.
 
 
 
-- Campos:
-
-  - **overtime_deductible** (Boolean)
-
-
-  - **overtime_id** (Many2one) → hr.attendance.overtime
-
-
-  - **employee_overtime** (Float)
+#### Campos
+- **overtime_deductible** (Boolean)
+- **overtime_id** (Many2one) → hr.attendance.overtime
+- **employee_overtime** (Float)
 
 
 
@@ -77,6 +71,7 @@ Convert employee's extra hours to leave allocations.
 
 
 
+
 ### hr.leave.type
 
 
@@ -87,9 +82,8 @@ Convert employee's extra hours to leave allocations.
 
 
 
-- Campos:
-
-  - **overtime_deductible** (Boolean) → Deduct Extra Hours
+#### Campos
+- **overtime_deductible** (Boolean) → Deduct Extra Hours
 
 
 
@@ -105,15 +99,10 @@ Convert employee's extra hours to leave allocations.
 
 
 
-- Campos:
-
-  - **overtime_id** (Many2one) → hr.attendance.overtime
-
-
-  - **employee_overtime** (Float)
-
-
-  - **overtime_deductible** (Boolean)
+#### Campos
+- **overtime_id** (Many2one) → hr.attendance.overtime
+- **employee_overtime** (Float)
+- **overtime_deductible** (Boolean)
 
 
 
@@ -129,9 +118,8 @@ Convert employee's extra hours to leave allocations.
 
 
 
-- Campos:
-
-  - **request_overtime** (Boolean)
+#### Campos
+- **request_overtime** (Boolean)
 
 
 

@@ -12,6 +12,7 @@
 ## Descripción
 
 Control Employees Presence
+==========================
 
 Based on:
     * The IP Address
@@ -35,21 +36,12 @@ Allows to contact directly the employee in case of unjustified absence.
 
 
 
-- Campos:
-
-  - **email_sent** (Boolean)
-
-
-  - **ip_connected** (Boolean)
-
-
-  - **manually_set_present** (Boolean)
-
-
-  - **manually_set_presence** (Boolean)
-
-
-  - **hr_presence_state_display** (Selection)
+#### Campos
+- **email_sent** (Boolean)
+- **ip_connected** (Boolean)
+- **manually_set_present** (Boolean)
+- **manually_set_presence** (Boolean)
+- **hr_presence_state_display** (Selection)
 
 
 
@@ -65,12 +57,9 @@ Allows to contact directly the employee in case of unjustified absence.
 
 
 
-- Campos:
-
-  - **create_uid** (Integer)
-
-
-  - **ip** (Char)
+#### Campos
+- **create_uid** (Integer)
+- **ip** (Char)
 
 
 
@@ -90,6 +79,7 @@ Allows to contact directly the employee in case of unjustified absence.
 
 
 
+
 ### res.company
 
 
@@ -100,9 +90,8 @@ Allows to contact directly the employee in case of unjustified absence.
 
 
 
-- Campos:
-
-  - **hr_presence_last_compute_date** (Datetime)
+#### Campos
+- **hr_presence_last_compute_date** (Datetime)
 
 
 
@@ -122,6 +111,7 @@ Allows to contact directly the employee in case of unjustified absence.
 
 
 
+
 ### ir.websocket
 
 
@@ -133,6 +123,7 @@ Allows to contact directly the employee in case of unjustified absence.
 
 
 - No agrega campos
+
 
 
 

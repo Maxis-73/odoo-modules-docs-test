@@ -28,18 +28,11 @@ Bridge module addings support for EMV Merchant-Presented QR-code generation for 
 
 
 
-- Campos:
-
-  - **display_qr_setting** (Boolean)
-
-
-  - **include_reference** (Boolean)
-
-
-  - **proxy_type** (Selection)
-
-
-  - **proxy_value** (Char)
+#### Campos
+- **display_qr_setting** (Boolean)
+- **include_reference** (Boolean)
+- **proxy_type** (Selection)
+- **proxy_value** (Char)
 
 
 

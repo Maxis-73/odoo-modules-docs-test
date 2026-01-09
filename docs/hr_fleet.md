@@ -26,9 +26,8 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **purchaser_employee_id** (Many2one)
+#### Campos
+- **purchaser_employee_id** (Many2one)
 
 
 
@@ -44,18 +43,11 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **mobility_card** (Char)
-
-
-  - **driver_employee_id** (Many2one) → hr.employee
-
-
-  - **driver_employee_name** (Char)
-
-
-  - **future_driver_employee_id** (Many2one) → hr.employee
+#### Campos
+- **mobility_card** (Char)
+- **driver_employee_id** (Many2one) → hr.employee
+- **driver_employee_name** (Char)
+- **future_driver_employee_id** (Many2one) → hr.employee
 
 
 
@@ -71,9 +63,8 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **purchaser_employee_id** (Many2one) → hr.employee
+#### Campos
+- **purchaser_employee_id** (Many2one) → hr.employee
 
 
 
@@ -89,12 +80,9 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **driver_employee_id** (Many2one) → hr.employee
-
-
-  - **attachment_number** (Integer) → Number of Attachments
+#### Campos
+- **driver_employee_id** (Many2one) → hr.employee
+- **attachment_number** (Integer) → Number of Attachments
 
 
 
@@ -112,9 +100,8 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **employee_cars_count** (Integer)
+#### Campos
+- **employee_cars_count** (Integer)
 
 
 
@@ -130,9 +117,8 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **responsible_type** (Selection)
+#### Campos
+- **responsible_type** (Selection)
 
 
 
@@ -148,9 +134,8 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **driver_employee_id** (Many2one)
+#### Campos
+- **driver_employee_id** (Many2one)
 
 
 
@@ -166,18 +151,11 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **employee_cars_count** (Integer)
-
-
-  - **car_ids** (One2many) → fleet.vehicle
-
-
-  - **license_plate** (Char)
-
-
-  - **mobility_card** (Char)
+#### Campos
+- **employee_cars_count** (Integer)
+- **car_ids** (One2many) → fleet.vehicle
+- **license_plate** (Char)
+- **mobility_card** (Char)
 
 
 
@@ -193,9 +171,8 @@ Get history of driven cars by employees
 
 
 
-- Campos:
-
-  - **mobility_card** (Char)
+#### Campos
+- **mobility_card** (Char)
 
 
 

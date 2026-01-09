@@ -12,6 +12,7 @@
 ## Descripción
 
 This module provides facility to the user to install mrp and purchase modules at a time.
+========================================================================================
 
 It is basically used when we want to keep track of production orders generated
 from purchase order.
@@ -35,6 +36,7 @@ from purchase order.
 
 
 
+
 ### mrp.bom.line
 
 
@@ -45,9 +47,8 @@ from purchase order.
 
 
 
-- Campos:
-
-  - **cost_share** (Float) → Cost Share (%)
+#### Campos
+- **cost_share** (Float) → Cost Share (%)
 
 
 
@@ -63,9 +64,8 @@ from purchase order.
 
 
 
-- Campos:
-
-  - **purchase_order_count** (Integer) → Count of generated PO
+#### Campos
+- **purchase_order_count** (Integer) → Count of generated PO
 
 
 
@@ -85,6 +85,7 @@ from purchase order.
 
 
 
+
 ### account.move.line
 
 
@@ -99,6 +100,7 @@ from purchase order.
 
 
 
+
 ### purchase.order
 
 
@@ -109,9 +111,8 @@ from purchase order.
 
 
 
-- Campos:
-
-  - **mrp_production_count** (Integer) → Count of MO Source
+#### Campos
+- **mrp_production_count** (Integer) → Count of MO Source
 
 
 
@@ -128,6 +129,7 @@ from purchase order.
 
 
 - No agrega campos
+
 
 
 

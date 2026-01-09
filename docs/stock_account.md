@@ -15,6 +15,7 @@ Inventory, Logistic, Valuation, Accounting
 ## Descripción
 
 WMS Accounting module
+======================
 This module makes the link between the 'stock' and 'account' modules and allows you to create accounting entries to value your stock movements
 
 Key Features
@@ -41,18 +42,11 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **to_refund** (Boolean)
-
-
-  - **account_move_ids** (One2many) → account.move
-
-
-  - **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
-
-
-  - **analytic_account_line_ids** (Many2many) → account.analytic.line
+#### Campos
+- **to_refund** (Boolean)
+- **account_move_ids** (One2many) → account.move
+- **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
+- **analytic_account_line_ids** (Many2many) → account.analytic.line
 
 
 
@@ -68,18 +62,11 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **value** (Monetary) → Value
-
-
-  - **currency_id** (Many2one) → res.currency
-
-
-  - **accounting_date** (Date) → Accounting Date
-
-
-  - **cost_method** (Selection)
+#### Campos
+- **value** (Monetary) → Value
+- **currency_id** (Many2one) → res.currency
+- **accounting_date** (Date) → Accounting Date
+- **cost_method** (Selection)
 
 
 
@@ -95,12 +82,9 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **stock_move_id** (Many2one) → stock.move
-
-
-  - **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
+#### Campos
+- **stock_move_id** (Many2one) → stock.move
+- **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
 
 
 
@@ -116,12 +100,9 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
-
-
-  - **cogs_origin_id** (Many2one) → account.move.line
+#### Campos
+- **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
+- **cogs_origin_id** (Many2one) → account.move.line
 
 
 
@@ -134,71 +115,58 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **product_id** (Many2one) → product.product
-
-
-  - **categ_id** (Many2one) → product.category
-
-
-  - **product_tmpl_id** (Many2one) → product.template
-
-
-  - **quantity** (Float) → Quantity
-
-
-  - **uom_id** (Many2one)
-
-
-  - **currency_id** (Many2one) → res.currency
-
-
-  - **unit_cost** (Float) → Unit Value
+#### Campos
+- **company_id** (Many2one) → res.company
+- **product_id** (Many2one) → product.product
+- **categ_id** (Many2one) → product.category
+- **product_tmpl_id** (Many2one) → product.template
+- **quantity** (Float) → Quantity
+- **uom_id** (Many2one)
+- **currency_id** (Many2one) → res.currency
+- **unit_cost** (Float) → Unit Value
+- **value** (Monetary) → Total Value
+- **remaining_qty** (Float)
+- **remaining_value** (Monetary) → Remaining Value
+- **description** (Char) → Description
+- **stock_valuation_layer_id** (Many2one) → stock.valuation.layer
+- **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
+- **stock_move_id** (Many2one) → stock.move
+- **account_move_id** (Many2one) → account.move
+- **account_move_line_id** (Many2one) → account.move.line
+- **reference** (Char)
+- **price_diff_value** (Float) → Invoice value correction with invoice currency
+- **warehouse_id** (Many2one) → stock.warehouse
+- **lot_id** (Many2one) → stock.lot
 
 
-  - **value** (Monetary) → Total Value
 
 
-  - **remaining_qty** (Float)
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | stock.valuation.layer.form | `stock_account.stock_valuation_layer_form` | - |
+| list | stock.valuation.layer.list | `stock_account.stock_valuation_layer_tree` | - |
+| pivot | stock.valuation.layer.pivot | `stock_account.stock_valuation_layer_pivot` | - |
+| graph | inventory.aging.graph | `stock_account.stock_valuation_layer_graph` | - |
+| search | Inventory Valuation | `stock_account.view_inventory_valuation_search` | - |
 
 
-  - **remaining_value** (Monetary) → Remaining Value
+
+**Filtros de búsqueda (stock_account.view_inventory_valuation_search):**
+
+- **Incoming** (`[('stock_move_id.location_id.usage', 'not in', ('internal', 'transit')), ('stock_move_id.location_dest_id.usage', 'in', ('internal', 'transit'))]`)
+- **Outgoing** (`[('stock_move_id.location_id.usage', 'in', ('internal', 'transit')), ('stock_move_id.location_dest_id.usage', 'not in', ('internal', 'transit'))]`)
+- **Has Remaining Qty** (`[('remaining_qty', '>', 0)]`)
 
 
-  - **description** (Char) → Description
-
-
-  - **stock_valuation_layer_id** (Many2one) → stock.valuation.layer
-
-
-  - **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
-
-
-  - **stock_move_id** (Many2one) → stock.move
-
-
-  - **account_move_id** (Many2one) → account.move
-
-
-  - **account_move_line_id** (Many2one) → account.move.line
-
-
-  - **reference** (Char)
-
-
-  - **price_diff_value** (Float) → Invoice value correction with invoice currency
-
-
-  - **warehouse_id** (Many2one) → stock.warehouse
-
-
-  - **lot_id** (Many2one) → stock.lot
-
-
+*Agrupar por:*
+- Product
+- Lot/Serial Number
+- Product Category
+- Date
+- Company
 
 
 
@@ -212,12 +180,9 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **valuation_in_account_id** (Many2one) → account.account
-
-
-  - **valuation_out_account_id** (Many2one) → account.account
+#### Campos
+- **valuation_in_account_id** (Many2one) → account.account
+- **valuation_out_account_id** (Many2one) → account.account
 
 
 
@@ -237,6 +202,7 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
+
 ### stock.picking
 
 
@@ -247,9 +213,8 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **country_code** (Char)
+#### Campos
+- **country_code** (Char)
 
 
 
@@ -265,15 +230,10 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **cost_method** (Selection)
-
-
-  - **valuation** (Selection)
-
-
-  - **lot_valuated** (Boolean) → Valuation by Lot/Serial number
+#### Campos
+- **cost_method** (Selection)
+- **valuation** (Selection)
+- **lot_valuated** (Boolean) → Valuation by Lot/Serial number
 
 
 
@@ -289,30 +249,15 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **value_svl** (Float)
-
-
-  - **quantity_svl** (Float)
-
-
-  - **avg_cost** (Monetary)
-
-
-  - **total_value** (Monetary)
-
-
-  - **company_currency_id** (Many2one) → res.currency
-
-
-  - **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
-
-
-  - **valuation** (Selection)
-
-
-  - **cost_method** (Selection)
+#### Campos
+- **value_svl** (Float)
+- **quantity_svl** (Float)
+- **avg_cost** (Monetary)
+- **total_value** (Monetary)
+- **company_currency_id** (Many2one) → res.currency
+- **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
+- **valuation** (Selection)
+- **cost_method** (Selection)
 
 
 
@@ -328,24 +273,13 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **property_valuation** (Selection)
-
-
-  - **property_cost_method** (Selection)
-
-
-  - **property_stock_journal** (Many2one) → account.journal
-
-
-  - **property_stock_account_input_categ_id** (Many2one) → account.account
-
-
-  - **property_stock_account_output_categ_id** (Many2one) → account.account
-
-
-  - **property_stock_valuation_account_id** (Many2one) → account.account
+#### Campos
+- **property_valuation** (Selection)
+- **property_cost_method** (Selection)
+- **property_stock_journal** (Many2one) → account.journal
+- **property_stock_account_input_categ_id** (Many2one) → account.account
+- **property_stock_account_output_categ_id** (Many2one) → account.account
+- **property_stock_valuation_account_id** (Many2one) → account.account
 
 
 
@@ -365,6 +299,7 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
+
 ### account.analytic.account
 
 
@@ -379,6 +314,7 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
+
 ### res.config.settings
 
 
@@ -389,15 +325,10 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **module_stock_landed_costs** (Boolean) → Landed Costs
-
-
-  - **group_lot_on_invoice** (Boolean) → Display Lots & Serial Numbers on Invoices
-
-
-  - **group_stock_accounting_automatic** (Boolean) → Automatic Stock Accounting
+#### Campos
+- **module_stock_landed_costs** (Boolean) → Landed Costs
+- **group_lot_on_invoice** (Boolean) → Display Lots & Serial Numbers on Invoices
+- **group_stock_accounting_automatic** (Boolean) → Automatic Stock Accounting
 
 
 
@@ -417,6 +348,7 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
+
 ### res.company
 
 
@@ -427,12 +359,9 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **account_production_wip_account_id** (Many2one) → account.account
-
-
-  - **account_production_wip_overhead_account_id** (Many2one) → account.account
+#### Campos
+- **account_production_wip_account_id** (Many2one) → account.account
+- **account_production_wip_overhead_account_id** (Many2one) → account.account
 
 
 
@@ -452,6 +381,7 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
+
 ### stock.lot
 
 
@@ -462,27 +392,14 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-- Campos:
-
-  - **value_svl** (Float)
-
-
-  - **quantity_svl** (Float)
-
-
-  - **avg_cost** (Monetary)
-
-
-  - **total_value** (Monetary)
-
-
-  - **company_currency_id** (Many2one) → res.currency
-
-
-  - **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
-
-
-  - **standard_price** (Float) → Cost
+#### Campos
+- **value_svl** (Float)
+- **quantity_svl** (Float)
+- **avg_cost** (Monetary)
+- **total_value** (Monetary)
+- **company_currency_id** (Many2one) → res.currency
+- **stock_valuation_layer_ids** (One2many) → stock.valuation.layer
+- **standard_price** (Float) → Cost
 
 
 
@@ -491,35 +408,9 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-## Vistas
 
 
-### stock.valuation.layer
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | stock.valuation.layer.form | `stock_account.stock_valuation_layer_form` | - |
-| list | stock.valuation.layer.list | `stock_account.stock_valuation_layer_tree` | - |
-| pivot | stock.valuation.layer.pivot | `stock_account.stock_valuation_layer_pivot` | - |
-| graph | inventory.aging.graph | `stock_account.stock_valuation_layer_graph` | - |
-| search | Inventory Valuation | `stock_account.view_inventory_valuation_search` | - |
-
-
-
-#### Filtros de búsqueda (stock_account.view_inventory_valuation_search)
-
-**Filtros:**
-- **Incoming** (`[('stock_move_id.location_id.usage', 'not in', ('internal', 'transit')), ('stock_move_id.location_dest_id.usage', 'in', ('internal', 'transit'))]`)
-- **Outgoing** (`[('stock_move_id.location_id.usage', 'in', ('internal', 'transit')), ('stock_move_id.location_dest_id.usage', 'not in', ('internal', 'transit'))]`)
-- **Has Remaining Qty** (`[('remaining_qty', '>', 0)]`)
-
-
-**Agrupar por:**
-- Product
-- Lot/Serial Number
-- Product Category
-- Date
-- Company
+## Vistas Adicionales
 
 
 ### stock.valuation.layer.revaluation
@@ -530,6 +421,8 @@ Dashboard / Reports for Warehouse Management includes:
 
 
 
-#### Botones (stock_account.stock_valuation_layer_revaluation_form_view)
+**Botones (stock_account.stock_valuation_layer_revaluation_form_view):**
 - **Revalue** (object)
+
+
 

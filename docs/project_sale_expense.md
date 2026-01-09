@@ -30,6 +30,7 @@ Adds a full traceability of reinvoice expenses on the profitability report.
 
 
 
+
 ### project.project
 
 
@@ -41,6 +42,7 @@ Adds a full traceability of reinvoice expenses on the profitability report.
 
 
 - No agrega campos
+
 
 
 
@@ -58,6 +60,7 @@ Adds a full traceability of reinvoice expenses on the profitability report.
 
 
 
+
 ### account.move.line
 
 
@@ -69,6 +72,7 @@ Adds a full traceability of reinvoice expenses on the profitability report.
 
 
 - No agrega campos
+
 
 
 

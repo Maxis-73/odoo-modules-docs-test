@@ -33,6 +33,7 @@ Sell your courses using the e-commerce features of the website.
 
 
 
+
 ### product.product
 
 
@@ -43,9 +44,8 @@ Sell your courses using the e-commerce features of the website.
 
 
 
-- Campos:
-
-  - **channel_ids** (One2many) → slide.channel
+#### Campos
+- **channel_ids** (One2many) → slide.channel
 
 
 
@@ -61,9 +61,8 @@ Sell your courses using the e-commerce features of the website.
 
 
 
-- Campos:
-
-  - **service_tracking** (Selection)
+#### Campos
+- **service_tracking** (Selection)
 
 
 
@@ -79,18 +78,11 @@ Sell your courses using the e-commerce features of the website.
 
 
 
-- Campos:
-
-  - **enroll** (Selection)
-
-
-  - **product_id** (Many2one) → product.product
-
-
-  - **product_sale_revenues** (Monetary)
-
-
-  - **currency_id** (Many2one)
+#### Campos
+- **enroll** (Selection)
+- **product_id** (Many2one) → product.product
+- **product_sale_revenues** (Monetary)
+- **currency_id** (Many2one)
 
 
 
@@ -99,7 +91,9 @@ Sell your courses using the e-commerce features of the website.
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### sale.report
@@ -107,5 +101,7 @@ Sell your courses using the e-commerce features of the website.
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | graph | sale.report.view.graph.slides | `website_sale_slides.sale_report_view_graph_slides` | - |
+
+
 
 

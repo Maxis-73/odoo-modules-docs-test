@@ -12,6 +12,7 @@
 ## Descripción
 
 Org Chart Widget for HR
+=======================
 
 This module extend the employee form with a organizational chart.
 (N+1, N+2, direct subordinates)
@@ -31,15 +32,10 @@ This module extend the employee form with a organizational chart.
 
 
 
-- Campos:
-
-  - **child_all_count** (Integer) → Indirect Subordinates Count
-
-
-  - **department_color** (Integer) → Department Color
-
-
-  - **child_count** (Integer) → Direct Subordinates Count
+#### Campos
+- **child_all_count** (Integer) → Indirect Subordinates Count
+- **department_color** (Integer) → Department Color
+- **child_count** (Integer) → Direct Subordinates Count
 
 
 
@@ -57,12 +53,9 @@ This module extend the employee form with a organizational chart.
 
 
 
-- Campos:
-
-  - **subordinate_ids** (One2many) → hr.employee
-
-
-  - **is_subordinate** (Boolean)
+#### Campos
+- **subordinate_ids** (One2many) → hr.employee
+- **is_subordinate** (Boolean)
 
 
 
@@ -80,12 +73,9 @@ This module extend the employee form with a organizational chart.
 
 
 
-- Campos:
-
-  - **subordinate_ids** (One2many) → hr.employee.public
-
-
-  - **is_subordinate** (Boolean)
+#### Campos
+- **subordinate_ids** (One2many) → hr.employee.public
+- **is_subordinate** (Boolean)
 
 
 

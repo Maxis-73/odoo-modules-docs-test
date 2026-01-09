@@ -35,6 +35,7 @@ Sell event tickets through eCommerce app.
 
 
 
+
 ### sale.order.line
 
 
@@ -49,6 +50,7 @@ Sell event tickets through eCommerce app.
 
 
 
+
 ### product.product
 
 
@@ -59,9 +61,8 @@ Sell event tickets through eCommerce app.
 
 
 
-- Campos:
-
-  - **event_ticket_ids** (One2many) → event.event.ticket
+#### Campos
+- **event_ticket_ids** (One2many) → event.event.ticket
 
 
 
@@ -81,6 +82,7 @@ Sell event tickets through eCommerce app.
 
 
 
+
 ### product.pricelist.item
 
 
@@ -92,6 +94,7 @@ Sell event tickets through eCommerce app.
 
 
 - No agrega campos
+
 
 
 

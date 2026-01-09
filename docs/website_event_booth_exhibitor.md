@@ -31,36 +31,17 @@ Automatically create a sponsor when renting a booth.
 
 
 
-- Campos:
-
-  - **use_sponsor** (Boolean)
-
-
-  - **sponsor_type_id** (Many2one)
-
-
-  - **sponsor_id** (Many2one) → event.sponsor
-
-
-  - **sponsor_name** (Char)
-
-
-  - **sponsor_email** (Char)
-
-
-  - **sponsor_mobile** (Char)
-
-
-  - **sponsor_phone** (Char)
-
-
-  - **sponsor_subtitle** (Char)
-
-
-  - **sponsor_website_description** (Html)
-
-
-  - **sponsor_image_512** (Image)
+#### Campos
+- **use_sponsor** (Boolean)
+- **sponsor_type_id** (Many2one)
+- **sponsor_id** (Many2one) → event.sponsor
+- **sponsor_name** (Char)
+- **sponsor_email** (Char)
+- **sponsor_mobile** (Char)
+- **sponsor_phone** (Char)
+- **sponsor_subtitle** (Char)
+- **sponsor_website_description** (Html)
+- **sponsor_image_512** (Image)
 
 
 
@@ -76,15 +57,10 @@ Automatically create a sponsor when renting a booth.
 
 
 
-- Campos:
-
-  - **use_sponsor** (Boolean)
-
-
-  - **sponsor_type_id** (Many2one) → event.sponsor.type
-
-
-  - **exhibitor_type** (Selection)
+#### Campos
+- **use_sponsor** (Boolean)
+- **sponsor_type_id** (Many2one) → event.sponsor.type
+- **exhibitor_type** (Selection)
 
 
 

@@ -33,6 +33,7 @@ View livechat sessions for leads
 
 
 
+
 ### chatbot.script.step
 
 
@@ -47,6 +48,7 @@ View livechat sessions for leads
 
 
 
+
 ### crm.lead
 
 
@@ -57,9 +59,8 @@ View livechat sessions for leads
 
 
 
-- Campos:
-
-  - **visitor_sessions_count** (Integer) → # Sessions
+#### Campos
+- **visitor_sessions_count** (Integer) → # Sessions
 
 
 

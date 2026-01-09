@@ -12,6 +12,7 @@
 ## Descripción
 
 Allow users to login through OAuth2 Provider.
+=============================================
 
 
 
@@ -25,37 +26,28 @@ Allow users to login through OAuth2 Provider.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **client_id** (Char)
-
-
-  - **auth_endpoint** (Char)
-
-
-  - **scope** (Char)
-
-
-  - **validation_endpoint** (Char)
+#### Campos
+- **name** (Char)
+- **client_id** (Char)
+- **auth_endpoint** (Char)
+- **scope** (Char)
+- **validation_endpoint** (Char)
+- **data_endpoint** (Char)
+- **enabled** (Boolean)
+- **css_class** (Char)
+- **body** (Char)
+- **sequence** (Integer)
 
 
-  - **data_endpoint** (Char)
 
 
-  - **enabled** (Boolean)
 
+#### Vistas
 
-  - **css_class** (Char)
-
-
-  - **body** (Char)
-
-
-  - **sequence** (Integer)
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | auth.oauth.provider.form | `auth_oauth.view_oauth_provider_form` | - |
+| list | auth.oauth.provider.list | `auth_oauth.view_oauth_provider_tree` | - |
 
 
 
@@ -70,15 +62,10 @@ Allow users to login through OAuth2 Provider.
 
 
 
-- Campos:
-
-  - **oauth_provider_id** (Many2one) → auth.oauth.provider
-
-
-  - **oauth_uid** (Char)
-
-
-  - **oauth_access_token** (Char)
+#### Campos
+- **oauth_provider_id** (Many2one) → auth.oauth.provider
+- **oauth_uid** (Char)
+- **oauth_access_token** (Char)
 
 
 
@@ -94,15 +81,10 @@ Allow users to login through OAuth2 Provider.
 
 
 
-- Campos:
-
-  - **auth_oauth_google_enabled** (Boolean)
-
-
-  - **auth_oauth_google_client_id** (Char)
-
-
-  - **server_uri_google** (Char)
+#### Campos
+- **auth_oauth_google_enabled** (Boolean)
+- **auth_oauth_google_client_id** (Char)
+- **server_uri_google** (Char)
 
 
 
@@ -125,14 +107,6 @@ Allow users to login through OAuth2 Provider.
 
 
 
-## Vistas
 
-
-### auth.oauth.provider
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | auth.oauth.provider.form | `auth_oauth.view_oauth_provider_form` | - |
-| list | auth.oauth.provider.list | `auth_oauth.view_oauth_provider_tree` | - |
 
 

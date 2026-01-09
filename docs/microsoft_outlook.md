@@ -30,9 +30,8 @@ Outlook support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **smtp_authentication** (Selection)
+#### Campos
+- **smtp_authentication** (Selection)
 
 
 
@@ -45,21 +44,12 @@ Outlook support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **is_microsoft_outlook_configured** (Boolean) → Is Outlook Credential Configured
-
-
-  - **microsoft_outlook_refresh_token** (Char)
-
-
-  - **microsoft_outlook_access_token** (Char)
-
-
-  - **microsoft_outlook_access_token_expiration** (Integer)
-
-
-  - **microsoft_outlook_uri** (Char)
+#### Campos
+- **is_microsoft_outlook_configured** (Boolean) → Is Outlook Credential Configured
+- **microsoft_outlook_refresh_token** (Char)
+- **microsoft_outlook_access_token** (Char)
+- **microsoft_outlook_access_token_expiration** (Integer)
+- **microsoft_outlook_uri** (Char)
 
 
 
@@ -79,9 +69,8 @@ Outlook support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **server_type** (Selection)
+#### Campos
+- **server_type** (Selection)
 
 
 
@@ -97,12 +86,9 @@ Outlook support for incoming / outgoing mail servers
 
 
 
-- Campos:
-
-  - **microsoft_outlook_client_identifier** (Char) → Outlook Client Id
-
-
-  - **microsoft_outlook_client_secret** (Char) → Outlook Client Secret
+#### Campos
+- **microsoft_outlook_client_identifier** (Char) → Outlook Client Id
+- **microsoft_outlook_client_secret** (Char) → Outlook Client Secret
 
 
 

@@ -35,15 +35,10 @@ A tax defined as python code consists of two snippets of python code which are e
 
 
 
-- Campos:
-
-  - **amount_type** (Selection)
-
-
-  - **formula** (Text)
-
-
-  - **formula_decoded_info** (Json)
+#### Campos
+- **amount_type** (Selection)
+- **formula** (Text)
+- **formula_decoded_info** (Json)
 
 
 

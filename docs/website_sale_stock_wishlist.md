@@ -31,9 +31,8 @@ Allow the user to select if he wants to receive email notifications when a produ
 
 
 
-- Campos:
-
-  - **stock_notification** (Boolean)
+#### Campos
+- **stock_notification** (Boolean)
 
 
 
@@ -50,6 +49,7 @@ Allow the user to select if he wants to receive email notifications when a produ
 
 
 - No agrega campos
+
 
 
 

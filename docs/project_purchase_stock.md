@@ -30,6 +30,7 @@ Add a project link between POs and their generated stock pickings.
 
 
 
+
 ### stock.rule
 
 
@@ -41,6 +42,7 @@ Add a project link between POs and their generated stock pickings.
 
 
 - No agrega campos
+
 
 
 

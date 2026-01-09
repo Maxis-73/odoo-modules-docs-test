@@ -29,9 +29,8 @@ Send text messages when project/task stage move
 
 
 
-- Campos:
-
-  - **sms_template_id** (Many2one) → sms.template
+#### Campos
+- **sms_template_id** (Many2one) → sms.template
 
 
 
@@ -47,9 +46,8 @@ Send text messages when project/task stage move
 
 
 
-- Campos:
-
-  - **sms_template_id** (Many2one) → sms.template
+#### Campos
+- **sms_template_id** (Many2one) → sms.template
 
 
 
@@ -69,6 +67,7 @@ Send text messages when project/task stage move
 
 
 
+
 ### project.task
 
 
@@ -80,6 +79,7 @@ Send text messages when project/task stage move
 
 
 - No agrega campos
+
 
 
 

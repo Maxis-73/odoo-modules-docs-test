@@ -26,12 +26,9 @@ Manage accounting with fleets
 
 
 
-- Campos:
-
-  - **bill_count** (Integer)
-
-
-  - **account_move_ids** (One2many) → account.move
+#### Campos
+- **bill_count** (Integer)
+- **account_move_ids** (One2many) → account.move
 
 
 
@@ -47,18 +44,11 @@ Manage accounting with fleets
 
 
 
-- Campos:
-
-  - **account_move_line_id** (Many2one) → account.move.line
-
-
-  - **account_move_state** (Selection)
-
-
-  - **amount** (Monetary)
-
-
-  - **vehicle_id** (Many2one) → fleet.vehicle
+#### Campos
+- **account_move_line_id** (Many2one) → account.move.line
+- **account_move_state** (Selection)
+- **amount** (Monetary)
+- **vehicle_id** (Many2one) → fleet.vehicle
 
 
 
@@ -78,6 +68,7 @@ Manage accounting with fleets
 
 
 
+
 ### account.move.line
 
 
@@ -88,15 +79,10 @@ Manage accounting with fleets
 
 
 
-- Campos:
-
-  - **vehicle_id** (Many2one) → fleet.vehicle
-
-
-  - **need_vehicle** (Boolean)
-
-
-  - **vehicle_log_service_ids** (One2many) → fleet.vehicle.log.services
+#### Campos
+- **vehicle_id** (Many2one) → fleet.vehicle
+- **need_vehicle** (Boolean)
+- **vehicle_log_service_ids** (One2many) → fleet.vehicle.log.services
 
 
 

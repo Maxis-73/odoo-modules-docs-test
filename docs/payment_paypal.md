@@ -29,9 +29,8 @@ An American payment provider for online payments all over the world.
 
 
 
-- Campos:
-
-  - **paypal_type** (Char)
+#### Campos
+- **paypal_type** (Char)
 
 
 
@@ -47,27 +46,14 @@ An American payment provider for online payments all over the world.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **paypal_email_account** (Char)
-
-
-  - **paypal_client_id** (Char)
-
-
-  - **paypal_client_secret** (Char)
-
-
-  - **paypal_access_token** (Char)
-
-
-  - **paypal_access_token_expiry** (Datetime)
-
-
-  - **paypal_webhook_id** (Char)
+#### Campos
+- **code** (Selection)
+- **paypal_email_account** (Char)
+- **paypal_client_id** (Char)
+- **paypal_client_secret** (Char)
+- **paypal_access_token** (Char)
+- **paypal_access_token_expiry** (Datetime)
+- **paypal_webhook_id** (Char)
 
 
 

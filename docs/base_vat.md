@@ -12,6 +12,7 @@
 ## Descripción
 
 VAT validation for Partner's VAT numbers.
+=========================================
 
 After installing this module, values entered in the VAT field of Partners will
 be validated for all supported countries. The country is inferred from the
@@ -57,6 +58,7 @@ only the country code will be validated.
 
 
 
+
 ### res.config.settings
 
 
@@ -67,9 +69,8 @@ only the country code will be validated.
 
 
 
-- Campos:
-
-  - **vat_check_vies** (Boolean)
+#### Campos
+- **vat_check_vies** (Boolean)
 
 
 
@@ -85,9 +86,8 @@ only the country code will be validated.
 
 
 
-- Campos:
-
-  - **vat_check_vies** (Boolean)
+#### Campos
+- **vat_check_vies** (Boolean)
 
 
 
@@ -103,15 +103,10 @@ only the country code will be validated.
 
 
 
-- Campos:
-
-  - **vies_valid** (Boolean)
-
-
-  - **perform_vies_validation** (Boolean)
-
-
-  - **vies_vat_to_check** (Char)
+#### Campos
+- **vies_valid** (Boolean)
+- **perform_vies_validation** (Boolean)
+- **vies_vat_to_check** (Char)
 
 
 

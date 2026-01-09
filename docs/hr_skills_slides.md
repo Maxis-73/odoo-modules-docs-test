@@ -15,6 +15,7 @@ Add completed courses to resume of your employees
 ## Descripción
 
 E-learning and Skills for HR
+============================
 
 This module add completed courses to resume for employees.
         
@@ -33,15 +34,10 @@ This module add completed courses to resume for employees.
 
 
 
-- Campos:
-
-  - **subscribed_courses** (Many2many) → slide.channel
-
-
-  - **has_subscribed_courses** (Boolean)
-
-
-  - **courses_completion_text** (Char)
+#### Campos
+- **subscribed_courses** (Many2many) → slide.channel
+- **has_subscribed_courses** (Boolean)
+- **courses_completion_text** (Char)
 
 
 
@@ -57,15 +53,10 @@ This module add completed courses to resume for employees.
 
 
 
-- Campos:
-
-  - **display_type** (Selection)
-
-
-  - **channel_id** (Many2one) → slide.channel
-
-
-  - **course_url** (Char)
+#### Campos
+- **display_type** (Selection)
+- **channel_id** (Many2one) → slide.channel
+- **course_url** (Char)
 
 
 
@@ -85,6 +76,7 @@ This module add completed courses to resume for employees.
 
 
 
+
 ### slide.channel
 
 
@@ -96,6 +88,7 @@ This module add completed courses to resume for employees.
 
 
 - No agrega campos
+
 
 
 

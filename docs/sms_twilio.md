@@ -33,9 +33,8 @@ up their account to start sending SMS messages.
 
 
 
-- Campos:
-
-  - **sms_twilio_sid** (Char)
+#### Campos
+- **sms_twilio_sid** (Char)
 
 
 
@@ -51,9 +50,8 @@ up their account to start sending SMS messages.
 
 
 
-- Campos:
-
-  - **failure_type** (Selection)
+#### Campos
+- **failure_type** (Selection)
 
 
 
@@ -66,21 +64,12 @@ up their account to start sending SMS messages.
 
 
 
-- Campos:
-
-  - **company_id** (Many2one) → res.company
-
-
-  - **sequence** (Integer)
-
-
-  - **number** (Char)
-
-
-  - **country_id** (Many2one) → res.country
-
-
-  - **country_code** (Char)
+#### Campos
+- **company_id** (Many2one) → res.company
+- **sequence** (Integer)
+- **number** (Char)
+- **country_id** (Many2one) → res.country
+- **country_code** (Char)
 
 
 
@@ -96,15 +85,10 @@ up their account to start sending SMS messages.
 
 
 
-- Campos:
-
-  - **sms_twilio_sid** (Char)
-
-
-  - **record_company_id** (Many2one) → res.company
-
-
-  - **failure_type** (Selection)
+#### Campos
+- **sms_twilio_sid** (Char)
+- **record_company_id** (Many2one) → res.company
+- **failure_type** (Selection)
 
 
 
@@ -120,9 +104,8 @@ up their account to start sending SMS messages.
 
 
 
-- Campos:
-
-  - **sms_provider** (Selection)
+#### Campos
+- **sms_provider** (Selection)
 
 
 
@@ -138,18 +121,11 @@ up their account to start sending SMS messages.
 
 
 
-- Campos:
-
-  - **sms_provider** (Selection)
-
-
-  - **sms_twilio_account_sid** (Char) → Account SID
-
-
-  - **sms_twilio_auth_token** (Char) → Auth Token
-
-
-  - **sms_twilio_number_ids** (One2many) → sms.twilio.number
+#### Campos
+- **sms_provider** (Selection)
+- **sms_twilio_account_sid** (Char) → Account SID
+- **sms_twilio_auth_token** (Char) → Auth Token
+- **sms_twilio_number_ids** (One2many) → sms.twilio.number
 
 
 
@@ -172,7 +148,10 @@ up their account to start sending SMS messages.
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### sms.twilio.account.manage
@@ -183,9 +162,11 @@ up their account to start sending SMS messages.
 
 
 
-#### Botones (sms_twilio.sms_twilio_account_manage_view_form)
+**Botones (sms_twilio.sms_twilio_account_manage_view_form):**
 - **Send test SMS** (object)
 - **Reload Numbers from Twilio** (object)
 - **action_unlink** (object)
 - **Update Account** (object)
+
+
 

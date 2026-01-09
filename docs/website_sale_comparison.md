@@ -32,16 +32,20 @@ Finally, the module comes with an option to display an attribute summary table i
 
 
 
-- Campos:
-
-  - **name** (Char) → Category Name
-
-
-  - **sequence** (Integer) → Sequence
+#### Campos
+- **name** (Char) → Category Name
+- **sequence** (Integer) → Sequence
+- **attribute_ids** (One2many) → product.attribute
 
 
-  - **attribute_ids** (One2many) → product.attribute
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | product.attribute.category.list | `website_sale_comparison.product_attribute_category_tree_view` | - |
 
 
 
@@ -60,6 +64,7 @@ Finally, the module comes with an option to display an attribute summary table i
 
 
 
+
 ### product.template.attribute.line
 
 
@@ -74,6 +79,7 @@ Finally, the module comes with an option to display an attribute summary table i
 
 
 
+
 ### product.attribute
 
 
@@ -84,10 +90,8 @@ Finally, the module comes with an option to display an attribute summary table i
 
 
 
-- Campos:
-
-  - **category_id** (Many2one) → product.attribute.category
-
+#### Campos
+- **category_id** (Many2one) → product.attribute.category
 
 
 
@@ -95,13 +99,6 @@ Finally, the module comes with an option to display an attribute summary table i
 
 
 
-## Vistas
 
-
-### product.attribute.category
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | product.attribute.category.list | `website_sale_comparison.product_attribute_category_tree_view` | - |
 
 

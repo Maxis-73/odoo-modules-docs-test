@@ -29,9 +29,8 @@ Create new lead with using /lead command in the channel
 
 
 
-- Campos:
-
-  - **lead_count** (Integer)
+#### Campos
+- **lead_count** (Integer)
 
 
 
@@ -51,6 +50,7 @@ Create new lead with using /lead command in the channel
 
 
 
+
 ### chatbot.script.step
 
 
@@ -61,12 +61,9 @@ Create new lead with using /lead command in the channel
 
 
 
-- Campos:
-
-  - **step_type** (Selection)
-
-
-  - **crm_team_id** (Many2one) → crm.team
+#### Campos
+- **step_type** (Selection)
+- **crm_team_id** (Many2one) → crm.team
 
 
 

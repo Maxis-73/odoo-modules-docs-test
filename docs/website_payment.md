@@ -31,9 +31,8 @@ This is a bridge module that adds multi-website support for payment providers.
 
 
 
-- Campos:
-
-  - **is_donation** (Boolean)
+#### Campos
+- **is_donation** (Boolean)
 
 
 
@@ -49,9 +48,8 @@ This is a bridge module that adds multi-website support for payment providers.
 
 
 
-- Campos:
-
-  - **is_donation** (Boolean)
+#### Campos
+- **is_donation** (Boolean)
 
 
 
@@ -67,9 +65,8 @@ This is a bridge module that adds multi-website support for payment providers.
 
 
 
-- Campos:
-
-  - **website_id** (Many2one) → website
+#### Campos
+- **website_id** (Many2one) → website
 
 
 
@@ -85,15 +82,10 @@ This is a bridge module that adds multi-website support for payment providers.
 
 
 
-- Campos:
-
-  - **providers_state** (Selection)
-
-
-  - **first_provider_label** (Char)
-
-
-  - **is_stripe_supported_country** (Boolean)
+#### Campos
+- **providers_state** (Selection)
+- **first_provider_label** (Char)
+- **is_stripe_supported_country** (Boolean)
 
 
 

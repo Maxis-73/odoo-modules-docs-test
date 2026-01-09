@@ -15,6 +15,7 @@ Employee Hourly Wage
 ## Descripción
 
 This module assigns an hourly wage to employees to be used by other modules.
+============================================================================
 
     
 
@@ -32,9 +33,8 @@ This module assigns an hourly wage to employees to be used by other modules.
 
 
 
-- Campos:
-
-  - **hourly_cost** (Monetary) → Hourly Cost
+#### Campos
+- **hourly_cost** (Monetary) → Hourly Cost
 
 
 

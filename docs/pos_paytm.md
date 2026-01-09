@@ -15,6 +15,7 @@ Integrate your POS with a PayTM payment terminal
 ## Descripción
 
 Allow Paytm POS payments
+==============================
 
 This module allows customers to pay for their orders with debit/credit
 cards and UPI. The transactions are processed by Paytm POS. A Paytm merchant account is necessary. It allows the
@@ -38,27 +39,14 @@ following:
 
 
 
-- Campos:
-
-  - **paytm_tid** (Char)
-
-
-  - **channel_id** (Char)
-
-
-  - **accept_payment** (Selection)
-
-
-  - **allowed_payment_modes** (Selection)
-
-
-  - **paytm_mid** (Char)
-
-
-  - **paytm_merchant_key** (Char)
-
-
-  - **paytm_test_mode** (Boolean)
+#### Campos
+- **paytm_tid** (Char)
+- **channel_id** (Char)
+- **accept_payment** (Selection)
+- **allowed_payment_modes** (Selection)
+- **paytm_mid** (Char)
+- **paytm_merchant_key** (Char)
+- **paytm_test_mode** (Boolean)
 
 
 

@@ -33,6 +33,7 @@ A French payment provider covering several European countries.
 
 
 
+
 ### payment.provider
 
 
@@ -43,24 +44,13 @@ A French payment provider covering several European countries.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **worldline_pspid** (Char)
-
-
-  - **worldline_api_key** (Char)
-
-
-  - **worldline_api_secret** (Char)
-
-
-  - **worldline_webhook_key** (Char)
-
-
-  - **worldline_webhook_secret** (Char)
+#### Campos
+- **code** (Selection)
+- **worldline_pspid** (Char)
+- **worldline_api_key** (Char)
+- **worldline_api_secret** (Char)
+- **worldline_webhook_key** (Char)
+- **worldline_webhook_secret** (Char)
 
 
 

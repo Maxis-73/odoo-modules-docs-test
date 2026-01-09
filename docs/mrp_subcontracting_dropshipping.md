@@ -28,12 +28,9 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 
-- Campos:
-
-  - **subcontracting_dropshipping_to_resupply** (Boolean) → Dropship Subcontractors
-
-
-  - **subcontracting_dropshipping_pull_id** (Many2one) → stock.rule
+#### Campos
+- **subcontracting_dropshipping_to_resupply** (Boolean) → Dropship Subcontractors
+- **subcontracting_dropshipping_pull_id** (Many2one) → stock.rule
 
 
 
@@ -53,6 +50,7 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 
+
 ### stock.warehouse.orderpoint
 
 
@@ -67,6 +65,7 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 
+
 ### purchase.order
 
 
@@ -77,9 +76,8 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 
-- Campos:
-
-  - **default_location_dest_id_is_subcontracting_loc** (Boolean)
+#### Campos
+- **default_location_dest_id_is_subcontracting_loc** (Boolean)
 
 
 
@@ -99,6 +97,7 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 
+
 ### stock.picking
 
 
@@ -113,6 +112,7 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 
+
 ### res.company
 
 
@@ -123,9 +123,8 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 
-- Campos:
-
-  - **dropship_subcontractor_pick_type_id** (Many2one) → stock.picking.type
+#### Campos
+- **dropship_subcontractor_pick_type_id** (Many2one) → stock.picking.type
 
 
 
@@ -142,6 +141,7 @@ This bridge module allows to manage subcontracting with the dropshipping module.
 
 
 - No agrega campos
+
 
 
 

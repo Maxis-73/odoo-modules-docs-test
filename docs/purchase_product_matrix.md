@@ -32,18 +32,11 @@ by choosing product variants quantity through a Grid Entry.
 
 
 
-- Campos:
-
-  - **report_grids** (Boolean)
-
-
-  - **grid_product_tmpl_id** (Many2one) → product.template
-
-
-  - **grid_update** (Boolean)
-
-
-  - **grid** (Char)
+#### Campos
+- **report_grids** (Boolean)
+- **grid_product_tmpl_id** (Many2one) → product.template
+- **grid_update** (Boolean)
+- **grid** (Char)
 
 
 
@@ -59,18 +52,11 @@ by choosing product variants quantity through a Grid Entry.
 
 
 
-- Campos:
-
-  - **product_template_id** (Many2one) → product.template
-
-
-  - **is_configurable_product** (Boolean) → Is the product configurable?
-
-
-  - **product_template_attribute_value_ids** (Many2many)
-
-
-  - **product_no_variant_attribute_value_ids** (Many2many) → product.template.attribute.value
+#### Campos
+- **product_template_id** (Many2one) → product.template
+- **is_configurable_product** (Boolean) → Is the product configurable?
+- **product_template_attribute_value_ids** (Many2many)
+- **product_no_variant_attribute_value_ids** (Many2many) → product.template.attribute.value
 
 
 

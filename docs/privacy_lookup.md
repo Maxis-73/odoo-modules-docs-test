@@ -27,6 +27,7 @@
 
 
 
+
 ### privacy.log
 
 
@@ -34,45 +35,35 @@
 
 
 
-- Campos:
-
-  - **date** (Datetime)
-
-
-  - **anonymized_name** (Char)
-
-
-  - **anonymized_email** (Char)
-
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **execution_details** (Text)
-
-
-  - **records_description** (Text)
-
-
-  - **additional_note** (Text)
+#### Campos
+- **date** (Datetime)
+- **anonymized_name** (Char)
+- **anonymized_email** (Char)
+- **user_id** (Many2one) → res.users
+- **execution_details** (Text)
+- **records_description** (Text)
+- **additional_note** (Text)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### privacy.log
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | list | privacy.log.view.list | `privacy_lookup.privacy_log_view_list` | - |
 | form | privacy.log.view.form | `privacy_lookup.privacy_log_view_form` | - |
 
+
+
+
+
+
+
+
+
+## Vistas Adicionales
 
 
 ### privacy.lookup.wizard
@@ -83,7 +74,7 @@
 
 
 
-#### Botones (privacy_lookup.privacy_lookup_wizard_view_form)
+**Botones (privacy_lookup.privacy_lookup_wizard_view_form):**
 - **Lookup** (object)
 - **action_open_lines** (object)
 
@@ -97,13 +88,14 @@
 
 
 
-#### Filtros de búsqueda (privacy_lookup.privacy_lookup_wizard_line_view_search)
+**Filtros de búsqueda (privacy_lookup.privacy_lookup_wizard_line_view_search):**
 
-**Filtros:**
 - **Can be archived** (`[('has_active', '=', True)]`)
 - **Archived** (`[('is_active', '=', False)]`)
 
 
-**Agrupar por:**
+*Agrupar por:*
 - Model
+
+
 

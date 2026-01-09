@@ -15,6 +15,7 @@ Quotation, Sales Orders, Delivery & Invoicing Control
 ## Descripción
 
 Reinvoice Employee Expense
+==========================
 
 Create some products for which you can re-invoice the costs.
 This module allow to reinvoice employee expense, by setting the SO directly on the expense.
@@ -34,12 +35,9 @@ This module allow to reinvoice employee expense, by setting the SO directly on t
 
 
 
-- Campos:
-
-  - **expense_ids** (One2many) → hr.expense
-
-
-  - **expense_count** (Integer) → # of Expenses
+#### Campos
+- **expense_ids** (One2many) → hr.expense
+- **expense_count** (Integer) → # of Expenses
 
 
 
@@ -55,9 +53,8 @@ This module allow to reinvoice employee expense, by setting the SO directly on t
 
 
 
-- Campos:
-
-  - **expense_policy_tooltip** (Char)
+#### Campos
+- **expense_policy_tooltip** (Char)
 
 
 
@@ -73,12 +70,9 @@ This module allow to reinvoice employee expense, by setting the SO directly on t
 
 
 
-- Campos:
-
-  - **sale_order_id** (Many2one) → sale.order
-
-
-  - **can_be_reinvoiced** (Boolean) → Can be reinvoiced
+#### Campos
+- **sale_order_id** (Many2one) → sale.order
+- **can_be_reinvoiced** (Boolean) → Can be reinvoiced
 
 
 
@@ -94,9 +88,8 @@ This module allow to reinvoice employee expense, by setting the SO directly on t
 
 
 
-- Campos:
-
-  - **sale_order_count** (Integer)
+#### Campos
+- **sale_order_count** (Integer)
 
 
 
@@ -112,12 +105,9 @@ This module allow to reinvoice employee expense, by setting the SO directly on t
 
 
 
-- Campos:
-
-  - **sale_order_id** (Many2one) → sale.order
-
-
-  - **can_be_reinvoiced** (Boolean) → Can be reinvoiced
+#### Campos
+- **sale_order_id** (Many2one) → sale.order
+- **can_be_reinvoiced** (Boolean) → Can be reinvoiced
 
 
 
@@ -137,6 +127,7 @@ This module allow to reinvoice employee expense, by setting the SO directly on t
 
 
 
+
 ### account.move
 
 
@@ -148,6 +139,7 @@ This module allow to reinvoice employee expense, by setting the SO directly on t
 
 
 - No agrega campos
+
 
 
 

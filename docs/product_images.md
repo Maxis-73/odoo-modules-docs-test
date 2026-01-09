@@ -12,6 +12,7 @@
 ## Descripción
 
 Automatically set product images based on the barcode
+=====================================================
 
 This module integrates with the Google Custom Search API to set images on products based on the
 barcode.
@@ -31,9 +32,8 @@ barcode.
 
 
 
-- Campos:
-
-  - **image_fetch_pending** (Boolean)
+#### Campos
+- **image_fetch_pending** (Boolean)
 
 
 
@@ -49,12 +49,9 @@ barcode.
 
 
 
-- Campos:
-
-  - **google_custom_search_key** (Char)
-
-
-  - **google_pse_id** (Char)
+#### Campos
+- **google_custom_search_key** (Char)
+- **google_pse_id** (Char)
 
 
 
@@ -77,7 +74,10 @@ barcode.
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### product.fetch.image.wizard
@@ -88,6 +88,8 @@ barcode.
 
 
 
-#### Botones (product_images.product_fetch_image_wizard_view_form)
+**Botones (product_images.product_fetch_image_wizard_view_form):**
 - **Get Pictures** (object)
+
+
 

@@ -33,6 +33,7 @@ Bridge created to add the number of expenses linked to an AA to a project form
 
 
 
+
 ### hr.expense
 
 
@@ -44,6 +45,7 @@ Bridge created to add the number of expenses linked to an AA to a project form
 
 
 - No agrega campos
+
 
 
 

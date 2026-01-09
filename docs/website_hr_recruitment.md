@@ -33,6 +33,7 @@ This module allows to publish your available job positions on your website and k
 
 
 
+
 ### hr.applicant
 
 
@@ -47,6 +48,7 @@ This module allows to publish your available job positions on your website and k
 
 
 
+
 ### hr.department
 
 
@@ -57,9 +59,8 @@ This module allows to publish your available job positions on your website and k
 
 
 
-- Campos:
-
-  - **display_name** (Char)
+#### Campos
+- **display_name** (Char)
 
 
 
@@ -83,25 +84,23 @@ This module allows to publish your available job positions on your website and k
 
 
 
-- Campos:
-
-  - **description** (Html) → Job Description
-
-
-  - **website_published** (Boolean)
-
-
-  - **website_description** (Html) → Website description
+#### Campos
+- **description** (Html) → Job Description
+- **website_published** (Boolean)
+- **website_description** (Html) → Website description
+- **job_details** (Html) → Process Details
+- **published_date** (Date)
+- **full_url** (Char) → job URL
 
 
-  - **job_details** (Html) → Process Details
 
 
-  - **published_date** (Date)
 
+#### Vistas
 
-  - **full_url** (Char) → job URL
-
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| kanban | Job Pages Kanban | `website_hr_recruitment.job_pages_kanban_view` | hr_job_website_inherit |
 
 
 
@@ -116,10 +115,8 @@ This module allows to publish your available job positions on your website and k
 
 
 
-- Campos:
-
-  - **url** (Char)
-
+#### Campos
+- **url** (Char)
 
 
 
@@ -127,13 +124,6 @@ This module allows to publish your available job positions on your website and k
 
 
 
-## Vistas
 
-
-### hr.job
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| kanban | Job Pages Kanban | `website_hr_recruitment.job_pages_kanban_view` | hr_job_website_inherit |
 
 

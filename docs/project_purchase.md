@@ -26,9 +26,8 @@ Monitor purchase in project
 
 
 
-- Campos:
-
-  - **project_id** (Many2one) → project.project
+#### Campos
+- **project_id** (Many2one) → project.project
 
 
 
@@ -44,9 +43,8 @@ Monitor purchase in project
 
 
 
-- Campos:
-
-  - **purchase_orders_count** (Integer) → # Purchase Orders
+#### Campos
+- **purchase_orders_count** (Integer) → # Purchase Orders
 
 
 
@@ -63,6 +61,7 @@ Monitor purchase in project
 
 
 - No agrega campos
+
 
 
 

@@ -26,21 +26,12 @@ Manage work entries
 
 
 
-- Campos:
-
-  - **date_generated_from** (Datetime)
-
-
-  - **date_generated_to** (Datetime)
-
-
-  - **last_generation_date** (Date)
-
-
-  - **work_entry_source** (Selection)
-
-
-  - **work_entry_source_calendar_invalid** (Boolean)
+#### Campos
+- **date_generated_from** (Datetime)
+- **date_generated_to** (Datetime)
+- **last_generation_date** (Date)
+- **work_entry_source** (Selection)
+- **work_entry_source_calendar_invalid** (Boolean)
 
 
 
@@ -60,6 +51,7 @@ Manage work entries
 
 
 
+
 ### resource.calendar
 
 
@@ -74,6 +66,7 @@ Manage work entries
 
 
 
+
 ### hr.work.entry
 
 
@@ -84,15 +77,10 @@ Manage work entries
 
 
 
-- Campos:
-
-  - **contract_id** (Many2one) → hr.contract
-
-
-  - **employee_id** (Many2one)
-
-
-  - **work_entry_source** (Selection)
+#### Campos
+- **contract_id** (Many2one) → hr.contract
+- **employee_id** (Many2one)
+- **work_entry_source** (Selection)
 
 
 
@@ -108,10 +96,8 @@ Manage work entries
 
 
 
-- Campos:
-
-  - **is_leave** (Boolean)
-
+#### Campos
+- **is_leave** (Boolean)
 
 
 
@@ -119,7 +105,10 @@ Manage work entries
 
 
 
-## Vistas
+
+
+
+## Vistas Adicionales
 
 
 ### hr.work.entry.regeneration.wizard
@@ -130,8 +119,10 @@ Manage work entries
 
 
 
-#### Botones (hr_work_entry_contract.hr_work_entry_regeneration_wizard)
+**Botones (hr_work_entry_contract.hr_work_entry_regeneration_wizard):**
 - **Regenerate Work Entries** (object)
 - **Regenerate Work Entries**
 - **Cancel**
+
+
 

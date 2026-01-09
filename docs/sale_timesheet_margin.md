@@ -15,6 +15,7 @@ Bridge module between Sales Margin and Sales Timesheet
 ## Descripción
 
 Allows to compute accurate margin for Service sales.
+======================================================
 
 
 
@@ -32,6 +33,7 @@ Allows to compute accurate margin for Service sales.
 
 
 - No agrega campos
+
 
 
 

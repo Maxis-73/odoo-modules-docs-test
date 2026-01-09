@@ -30,6 +30,7 @@ Migrate local attachments to cloud storage
 
 
 
+
 ### res.config.settings
 
 
@@ -40,21 +41,12 @@ Migrate local attachments to cloud storage
 
 
 
-- Campos:
-
-  - **cloud_storage_migration_progress** (Integer)
-
-
-  - **cloud_storage_migration_message_model_ids** (One2many) → ir.model
-
-
-  - **cloud_storage_migration_message_models** (Char)
-
-
-  - **cloud_storage_migration_all_model_ids** (One2many) → ir.model
-
-
-  - **cloud_storage_migration_all_models** (Char)
+#### Campos
+- **cloud_storage_migration_progress** (Integer)
+- **cloud_storage_migration_message_model_ids** (One2many) → ir.model
+- **cloud_storage_migration_message_models** (Char)
+- **cloud_storage_migration_all_model_ids** (One2many) → ir.model
+- **cloud_storage_migration_all_models** (Char)
 
 
 
@@ -67,54 +59,34 @@ Migrate local attachments to cloud storage
 
 
 
-- Campos:
-
-  - **res_model** (Char)
-
-
-  - **res_model_name** (Char)
-
-
-  - **message_sum_size** (Integer)
-
-
-  - **message_max_size** (Integer)
-
-
-  - **message_count** (Integer)
-
-
-  - **message_to_migrate** (Boolean)
-
-
-  - **all_sum_size** (Integer)
-
-
-  - **all_max_size** (Integer)
-
-
-  - **all_count** (Integer)
-
-
-  - **all_to_migrate** (Boolean)
-
-
-  - **has_attachment_rel** (Boolean)
+#### Campos
+- **res_model** (Char)
+- **res_model_name** (Char)
+- **message_sum_size** (Integer)
+- **message_max_size** (Integer)
+- **message_count** (Integer)
+- **message_to_migrate** (Boolean)
+- **all_sum_size** (Integer)
+- **all_max_size** (Integer)
+- **all_count** (Integer)
+- **all_to_migrate** (Boolean)
+- **has_attachment_rel** (Boolean)
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### cloud.storage.migration.report
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
 | list | cloud.storage.migration.report.list | `cloud_storage_migration.view_cloud_storage_migration_report_list` | - |
+
+
+
+
+
+
+
 
 

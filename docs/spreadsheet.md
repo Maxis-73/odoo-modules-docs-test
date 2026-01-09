@@ -33,6 +33,7 @@ Spreadsheet
 
 
 
+
 ### res.currency
 
 
@@ -44,6 +45,7 @@ Spreadsheet
 
 
 - No agrega campos
+
 
 
 
@@ -61,6 +63,7 @@ Spreadsheet
 
 
 
+
 ### spreadsheet.mixin
 
 
@@ -68,18 +71,11 @@ Spreadsheet
 
 
 
-- Campos:
-
-  - **spreadsheet_binary_data** (Binary)
-
-
-  - **spreadsheet_data** (Text)
-
-
-  - **spreadsheet_file_name** (Char)
-
-
-  - **thumbnail** (Binary)
+#### Campos
+- **spreadsheet_binary_data** (Binary)
+- **spreadsheet_data** (Text)
+- **spreadsheet_file_name** (Char)
+- **thumbnail** (Binary)
 
 
 
@@ -96,6 +92,7 @@ Spreadsheet
 
 
 - No agrega campos
+
 
 
 

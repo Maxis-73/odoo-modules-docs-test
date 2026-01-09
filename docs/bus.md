@@ -34,6 +34,7 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
+
 ### ir.model
 
 
@@ -48,6 +49,7 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
+
 ### bus.bus
 
 
@@ -55,12 +57,9 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
-- Campos:
-
-  - **channel** (Char) → Channel
-
-
-  - **message** (Char) → Message
+#### Campos
+- **channel** (Char) → Channel
+- **message** (Char) → Message
 
 
 
@@ -80,9 +79,8 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
-- Campos:
-
-  - **im_status** (Char) → IM Status
+#### Campos
+- **im_status** (Char) → IM Status
 
 
 
@@ -106,6 +104,7 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
+
 ### bus.listener.mixin
 
 
@@ -114,6 +113,7 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 - No agrega campos
+
 
 
 
@@ -131,6 +131,7 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
+
 ### ir.websocket
 
 
@@ -139,6 +140,7 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 - No agrega campos
+
 
 
 
@@ -156,9 +158,8 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
-- Campos:
-
-  - **im_status** (Char) → IM Status
+#### Campos
+- **im_status** (Char) → IM Status
 
 
 
@@ -171,18 +172,11 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 
-- Campos:
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **last_poll** (Datetime) → Last Poll
-
-
-  - **last_presence** (Datetime) → Last Presence
-
-
-  - **status** (Selection)
+#### Campos
+- **user_id** (Many2one) → res.users
+- **last_poll** (Datetime) → Last Poll
+- **last_presence** (Datetime) → Last Presence
+- **status** (Selection)
 
 
 
@@ -203,6 +197,7 @@ Instant Messaging Bus allow you to send messages to users, in live.
 
 
 - No agrega campos
+
 
 
 

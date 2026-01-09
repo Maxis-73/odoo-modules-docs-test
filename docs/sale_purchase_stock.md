@@ -35,6 +35,7 @@ Add relation information between Sale Orders and Purchase Orders if Make to Orde
 
 
 
+
 ### purchase.order
 
 
@@ -49,6 +50,7 @@ Add relation information between Sale Orders and Purchase Orders if Make to Orde
 
 
 
+
 ### purchase.order.line
 
 
@@ -60,6 +62,7 @@ Add relation information between Sale Orders and Purchase Orders if Make to Orde
 
 
 - No agrega campos
+
 
 
 

@@ -12,6 +12,7 @@
 ## Descripción
 
 2FA by mail
+===============
 Two-Factor authentication by sending a code to the user email inbox
 when the 2FA using an authenticator app is not configured.
 To enforce users to use a two-factor authentication by default,
@@ -29,18 +30,11 @@ and encourage users to configure their 2FA using an authenticator app.
 
 
 
-- Campos:
-
-  - **user_id** (Many2one) → res.users
-
-
-  - **scope** (Char)
-
-
-  - **ip** (Char)
-
-
-  - **limit_type** (Selection)
+#### Campos
+- **user_id** (Many2one) → res.users
+- **scope** (Char)
+- **ip** (Char)
+- **limit_type** (Selection)
 
 
 
@@ -60,6 +54,7 @@ and encourage users to configure their 2FA using an authenticator app.
 
 
 
+
 ### res.config.settings
 
 
@@ -70,12 +65,9 @@ and encourage users to configure their 2FA using an authenticator app.
 
 
 
-- Campos:
-
-  - **auth_totp_enforce** (Boolean)
-
-
-  - **auth_totp_policy** (Selection)
+#### Campos
+- **auth_totp_enforce** (Boolean)
+- **auth_totp_policy** (Selection)
 
 
 

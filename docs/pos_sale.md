@@ -36,15 +36,10 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **pos_order_line_ids** (One2many) → pos.order.line
-
-
-  - **pos_order_count** (Integer)
-
-
-  - **amount_unpaid** (Monetary)
+#### Campos
+- **pos_order_line_ids** (One2many) → pos.order.line
+- **pos_order_count** (Integer)
+- **amount_unpaid** (Monetary)
 
 
 
@@ -64,9 +59,8 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **pos_order_line_ids** (One2many) → pos.order.line
+#### Campos
+- **pos_order_line_ids** (One2many) → pos.order.line
 
 
 
@@ -82,12 +76,9 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **crm_team_id** (Many2one) → crm.team
-
-
-  - **down_payment_product_id** (Many2one) → product.product
+#### Campos
+- **crm_team_id** (Many2one) → crm.team
+- **down_payment_product_id** (Many2one) → product.product
 
 
 
@@ -107,6 +98,7 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
+
 ### pos.order
 
 
@@ -117,15 +109,10 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **currency_rate** (Float)
-
-
-  - **crm_team_id** (Many2one) → crm.team
-
-
-  - **sale_order_count** (Integer)
+#### Campos
+- **currency_rate** (Float)
+- **crm_team_id** (Many2one) → crm.team
+- **sale_order_count** (Integer)
 
 
 
@@ -141,18 +128,11 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **sale_order_origin_id** (Many2one) → sale.order
-
-
-  - **sale_order_line_id** (Many2one) → sale.order.line
-
-
-  - **down_payment_details** (Text)
-
-
-  - **qty_delivered** (Float)
+#### Campos
+- **sale_order_origin_id** (Many2one) → sale.order
+- **sale_order_line_id** (Many2one) → sale.order.line
+- **down_payment_details** (Text)
+- **qty_delivered** (Float)
 
 
 
@@ -172,6 +152,7 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
+
 ### res.config.settings
 
 
@@ -182,12 +163,9 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **pos_crm_team_id** (Many2one)
-
-
-  - **pos_down_payment_product_id** (Many2one)
+#### Campos
+- **pos_crm_team_id** (Many2one)
+- **pos_down_payment_product_id** (Many2one)
 
 
 
@@ -203,15 +181,10 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **pos_config_ids** (One2many) → pos.config
-
-
-  - **pos_sessions_open_count** (Integer)
-
-
-  - **pos_order_amount_total** (Float)
+#### Campos
+- **pos_config_ids** (One2many) → pos.config
+- **pos_sessions_open_count** (Integer)
+- **pos_order_amount_total** (Float)
 
 
 
@@ -227,9 +200,8 @@ This module adds a custom Sales Team for the Point of Sale. This enables you to 
 
 
 
-- Campos:
-
-  - **crm_team_id** (Many2one) → crm.team
+#### Campos
+- **crm_team_id** (Many2one) → crm.team
 
 
 

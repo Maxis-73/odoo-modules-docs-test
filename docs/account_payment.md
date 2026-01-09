@@ -26,12 +26,9 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
-- Campos:
-
-  - **payment_provider_id** (Many2one) → payment.provider
-
-
-  - **payment_provider_state** (Selection)
+#### Campos
+- **payment_provider_id** (Many2one) → payment.provider
+- **payment_provider_state** (Selection)
 
 
 
@@ -47,15 +44,10 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
-- Campos:
-
-  - **payment_id** (Many2one) → account.payment
-
-
-  - **invoice_ids** (Many2many) → account.move
-
-
-  - **invoices_count** (Integer)
+#### Campos
+- **payment_id** (Many2one) → account.payment
+- **invoice_ids** (Many2many) → account.move
+- **invoices_count** (Integer)
 
 
 
@@ -71,27 +63,14 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
-- Campos:
-
-  - **payment_transaction_id** (Many2one) → payment.transaction
-
-
-  - **payment_token_id** (Many2one) → payment.token
-
-
-  - **amount_available_for_refund** (Monetary)
-
-
-  - **suitable_payment_token_ids** (Many2many) → payment.token
-
-
-  - **use_electronic_payment_method** (Boolean)
-
-
-  - **source_payment_id** (Many2one) → account.payment
-
-
-  - **refunds_count** (Integer)
+#### Campos
+- **payment_transaction_id** (Many2one) → payment.transaction
+- **payment_token_id** (Many2one) → payment.token
+- **amount_available_for_refund** (Monetary)
+- **suitable_payment_token_ids** (Many2many) → payment.token
+- **use_electronic_payment_method** (Boolean)
+- **source_payment_id** (Many2one) → account.payment
+- **refunds_count** (Integer)
 
 
 
@@ -111,6 +90,7 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
+
 ### account.payment.method
 
 
@@ -125,6 +105,7 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
+
 ### account.move
 
 
@@ -135,18 +116,11 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
-- Campos:
-
-  - **transaction_ids** (Many2many) → payment.transaction
-
-
-  - **authorized_transaction_ids** (Many2many) → payment.transaction
-
-
-  - **transaction_count** (Integer)
-
-
-  - **amount_paid** (Monetary)
+#### Campos
+- **transaction_ids** (Many2many) → payment.transaction
+- **authorized_transaction_ids** (Many2many) → payment.transaction
+- **transaction_count** (Integer)
+- **amount_paid** (Monetary)
 
 
 
@@ -166,6 +140,7 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
+
 ### payment.provider
 
 
@@ -176,9 +151,8 @@ Enable customers to pay invoices on the portal and post payments when transactio
 
 
 
-- Campos:
-
-  - **journal_id** (Many2one) → account.journal
+#### Campos
+- **journal_id** (Many2one) → account.journal
 
 
 

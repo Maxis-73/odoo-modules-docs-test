@@ -31,18 +31,11 @@ Generate tasks in Project app from a form published on your website. This module
 
 
 
-- Campos:
-
-  - **email_from** (Char) → Email From
-
-
-  - **partner_name** (Char)
-
-
-  - **partner_phone** (Char)
-
-
-  - **partner_company_name** (Char)
+#### Campos
+- **email_from** (Char) → Email From
+- **partner_name** (Char)
+- **partner_phone** (Char)
+- **partner_company_name** (Char)
 
 
 

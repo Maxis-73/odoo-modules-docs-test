@@ -32,6 +32,7 @@ This bridge module allows to manage subcontracting with valuation.
 
 
 
+
 ### mrp.production
 
 
@@ -43,6 +44,7 @@ This bridge module allows to manage subcontracting with valuation.
 
 
 - No agrega campos
+
 
 
 
@@ -60,6 +62,7 @@ This bridge module allows to manage subcontracting with valuation.
 
 
 
+
 ### stock.picking
 
 
@@ -71,6 +74,7 @@ This bridge module allows to manage subcontracting with valuation.
 
 
 - No agrega campos
+
 
 
 

@@ -20,15 +20,10 @@
 
 
 
-- Campos:
-
-  - **google_id** (Char) → Google Calendar Id
-
-
-  - **need_sync** (Boolean)
-
-
-  - **active** (Boolean)
+#### Campos
+- **google_id** (Char) → Google Calendar Id
+- **need_sync** (Boolean)
+- **active** (Boolean)
 
 
 
@@ -48,6 +43,7 @@
 
 
 
+
 ### calendar.attendee
 
 
@@ -62,6 +58,7 @@
 
 
 
+
 ### res.users
 
 
@@ -72,24 +69,13 @@
 
 
 
-- Campos:
-
-  - **google_calendar_rtoken** (Char)
-
-
-  - **google_calendar_token** (Char)
-
-
-  - **google_calendar_token_validity** (Datetime)
-
-
-  - **google_calendar_sync_token** (Char)
-
-
-  - **google_calendar_cal_id** (Char)
-
-
-  - **google_synchronization_stopped** (Boolean)
+#### Campos
+- **google_calendar_rtoken** (Char)
+- **google_calendar_token** (Char)
+- **google_calendar_token_validity** (Datetime)
+- **google_calendar_sync_token** (Char)
+- **google_calendar_cal_id** (Char)
+- **google_synchronization_stopped** (Boolean)
 
 
 
@@ -109,15 +95,10 @@
 
 
 
-- Campos:
-
-  - **google_id** (Char) → Google Calendar Event Id
-
-
-  - **guests_readonly** (Boolean) → Guests Event Modification Permission
-
-
-  - **videocall_source** (Selection)
+#### Campos
+- **google_id** (Char) → Google Calendar Event Id
+- **guests_readonly** (Boolean) → Guests Event Modification Permission
+- **videocall_source** (Selection)
 
 
 
@@ -133,15 +114,10 @@
 
 
 
-- Campos:
-
-  - **cal_client_id** (Char) → Client_id
-
-
-  - **cal_client_secret** (Char) → Client_key
-
-
-  - **cal_sync_paused** (Boolean) → Google Synchronization Paused
+#### Campos
+- **cal_client_id** (Char) → Client_id
+- **cal_client_secret** (Char) → Client_key
+- **cal_sync_paused** (Boolean) → Google Synchronization Paused
 
 
 
@@ -165,6 +141,7 @@
 
 
 
+
 ### res.users.settings
 
 
@@ -175,24 +152,13 @@
 
 
 
-- Campos:
-
-  - **google_calendar_rtoken** (Char) → Refresh Token
-
-
-  - **google_calendar_token** (Char) → User token
-
-
-  - **google_calendar_token_validity** (Datetime) → Token Validity
-
-
-  - **google_calendar_sync_token** (Char) → Next Sync Token
-
-
-  - **google_calendar_cal_id** (Char) → Calendar ID
-
-
-  - **google_synchronization_stopped** (Boolean) → Google Synchronization stopped
+#### Campos
+- **google_calendar_rtoken** (Char) → Refresh Token
+- **google_calendar_token** (Char) → User token
+- **google_calendar_token_validity** (Datetime) → Token Validity
+- **google_calendar_sync_token** (Char) → Next Sync Token
+- **google_calendar_cal_id** (Char) → Calendar ID
+- **google_synchronization_stopped** (Boolean) → Google Synchronization stopped
 
 
 
@@ -201,7 +167,9 @@
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### google.calendar.account.reset
@@ -212,6 +180,8 @@
 
 
 
-#### Botones (google_calendar.google_calendar_reset_account_view_form)
+**Botones (google_calendar.google_calendar_reset_account_view_form):**
 - **Confirm** (object)
+
+
 

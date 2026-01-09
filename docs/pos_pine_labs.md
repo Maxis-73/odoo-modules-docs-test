@@ -15,6 +15,7 @@ Integrate your POS with Pine Labs payment terminals
 ## Descripción
 
 Allow Pine Labs POS payments
+==============================
 
 This module is available only for companies that use INR currency.
 It enables customers to pay for their orders using debit/credit cards and UPI through Pine Labs POS terminals.
@@ -39,24 +40,13 @@ Features include:
 
 
 
-- Campos:
-
-  - **pine_labs_merchant** (Char)
-
-
-  - **pine_labs_store** (Char)
-
-
-  - **pine_labs_client** (Char)
-
-
-  - **pine_labs_security_token** (Char)
-
-
-  - **pine_labs_allowed_payment_mode** (Selection)
-
-
-  - **pine_labs_test_mode** (Boolean)
+#### Campos
+- **pine_labs_merchant** (Char)
+- **pine_labs_store** (Char)
+- **pine_labs_client** (Char)
+- **pine_labs_security_token** (Char)
+- **pine_labs_allowed_payment_mode** (Selection)
+- **pine_labs_test_mode** (Boolean)
 
 
 
@@ -72,9 +62,8 @@ Features include:
 
 
 
-- Campos:
-
-  - **pine_labs_plutus_transaction_ref** (Char)
+#### Campos
+- **pine_labs_plutus_transaction_ref** (Char)
 
 
 

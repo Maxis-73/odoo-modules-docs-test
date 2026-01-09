@@ -34,9 +34,8 @@ Then it can be made specific at the product level.
 
 
 
-- Campos:
-
-  - **warehouse_id** (Many2one) → stock.warehouse
+#### Campos
+- **warehouse_id** (Many2one) → stock.warehouse
 
 
 
@@ -56,6 +55,7 @@ Then it can be made specific at the product level.
 
 
 
+
 ### sale.order
 
 
@@ -70,6 +70,7 @@ Then it can be made specific at the product level.
 
 
 
+
 ### product.product
 
 
@@ -80,9 +81,8 @@ Then it can be made specific at the product level.
 
 
 
-- Campos:
-
-  - **stock_notification_partner_ids** (Many2many) → res.partner
+#### Campos
+- **stock_notification_partner_ids** (Many2many) → res.partner
 
 
 
@@ -102,6 +102,7 @@ Then it can be made specific at the product level.
 
 
 
+
 ### product.template
 
 
@@ -112,18 +113,11 @@ Then it can be made specific at the product level.
 
 
 
-- Campos:
-
-  - **allow_out_of_stock_order** (Boolean)
-
-
-  - **available_threshold** (Float)
-
-
-  - **show_availability** (Boolean)
-
-
-  - **out_of_stock_message** (Html)
+#### Campos
+- **allow_out_of_stock_order** (Boolean)
+- **available_threshold** (Float)
+- **show_availability** (Boolean)
+- **out_of_stock_message** (Html)
 
 
 
@@ -139,9 +133,8 @@ Then it can be made specific at the product level.
 
 
 
-- Campos:
-
-  - **website_id** (Many2one) → website
+#### Campos
+- **website_id** (Many2one) → website
 
 
 
@@ -157,18 +150,11 @@ Then it can be made specific at the product level.
 
 
 
-- Campos:
-
-  - **allow_out_of_stock_order** (Boolean)
-
-
-  - **available_threshold** (Float)
-
-
-  - **show_availability** (Boolean)
-
-
-  - **website_warehouse_id** (Many2one) → stock.warehouse
+#### Campos
+- **allow_out_of_stock_order** (Boolean)
+- **available_threshold** (Float)
+- **show_availability** (Boolean)
+- **website_warehouse_id** (Many2one) → stock.warehouse
 
 
 

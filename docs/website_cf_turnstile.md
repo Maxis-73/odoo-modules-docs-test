@@ -28,12 +28,9 @@ This module implements Cloudflare Turnstile so that you can prevent bot spam on 
 
 
 
-- Campos:
-
-  - **turnstile_site_key** (Char) → CF Site Key
-
-
-  - **turnstile_secret_key** (Char) → CF Secret Key
+#### Campos
+- **turnstile_site_key** (Char) → CF Site Key
+- **turnstile_secret_key** (Char) → CF Secret Key
 
 
 
@@ -50,6 +47,7 @@ This module implements Cloudflare Turnstile so that you can prevent bot spam on 
 
 
 - No agrega campos
+
 
 
 

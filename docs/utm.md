@@ -25,13 +25,19 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-- Campos:
+#### Campos
+- **name** (Char)
+- **color** (Integer)
 
-  - **name** (Char)
 
 
-  - **color** (Integer)
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | utm.tag.view.list | `utm.utm_tag_view_tree` | - |
 
 
 
@@ -43,32 +49,42 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-- Campos:
-
-  - **active** (Boolean) → Active
-
-
-  - **name** (Char)
-
-
-  - **title** (Char)
-
-
-  - **user_id** (Many2one) → res.users
+#### Campos
+- **active** (Boolean) → Active
+- **name** (Char)
+- **title** (Char)
+- **user_id** (Many2one) → res.users
+- **stage_id** (Many2one) → utm.stage
+- **tag_ids** (Many2many) → utm.tag
+- **is_auto_campaign** (Boolean)
+- **color** (Integer)
 
 
-  - **stage_id** (Many2one) → utm.stage
 
 
-  - **tag_ids** (Many2many) → utm.tag
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | utm.campaign.view.search | `utm.view_utm_campaign_view_search` | - |
+| form | utm.campaign.view.form | `utm.utm_campaign_view_form` | - |
+| list | utm.campaign.view.list | `utm.utm_campaign_view_tree` | - |
+| form | utm.campaign.view.form.quick.create | `utm.utm_campaign_view_form_quick_create` | - |
+| kanban | utm.campaign.view.kanban | `utm.utm_campaign_view_kanban` | - |
 
 
-  - **is_auto_campaign** (Boolean)
+
+**Filtros de búsqueda (utm.view_utm_campaign_view_search):**
+
+- **My Campaigns** (`[('user_id', '=', uid)]`)
+- **Archived** (`[('active', '=', False)]`)
 
 
-  - **color** (Integer)
-
-
+*Agrupar por:*
+- Stage
+- Responsible
+- Tags
 
 
 
@@ -79,14 +95,27 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **active** (Boolean)
+#### Campos
+- **name** (Char)
+- **active** (Boolean)
 
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | utm.medium.view.list | `utm.utm_medium_view_tree` | - |
+| form | utm.medium.view.form | `utm.utm_medium_view_form` | - |
+| search | utm.medium.view.search | `utm.utm_medium_view_search` | - |
+
+
+
+**Filtros de búsqueda (utm.utm_medium_view_search):**
+
+- **Archived** (`[('active', '=', False)]`)
 
 
 
@@ -97,10 +126,19 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-- Campos:
+#### Campos
+- **name** (Char)
 
-  - **name** (Char)
 
+
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | utm.source.view.list | `utm.utm_source_view_tree` | - |
+| form | utm.source.view.form | `utm.utm_source_view_form` | - |
 
 
 
@@ -112,12 +150,9 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **source_id** (Many2one) → utm.source
+#### Campos
+- **name** (Char) → Name
+- **source_id** (Many2one) → utm.source
 
 
 
@@ -130,15 +165,10 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-- Campos:
-
-  - **campaign_id** (Many2one) → utm.campaign
-
-
-  - **source_id** (Many2one) → utm.source
-
-
-  - **medium_id** (Many2one) → utm.medium
+#### Campos
+- **campaign_id** (Many2one) → utm.campaign
+- **source_id** (Many2one) → utm.source
+- **medium_id** (Many2one) → utm.medium
 
 
 
@@ -151,13 +181,21 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-- Campos:
+#### Campos
+- **name** (Char)
+- **sequence** (Integer)
 
-  - **name** (Char)
 
 
-  - **sequence** (Integer)
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| search | utm.stage.view.search | `utm.utm_stage_view_search` | - |
+| list | utm.stage.view.list | `utm.utm_stage_view_tree` | - |
+| form | utm.stage.view.form | `utm.utm_stage_view_form` | - |
 
 
 
@@ -179,73 +217,6 @@ Enable management of UTM trackers: campaign, medium, source.
 
 
 
-## Vistas
 
-
-### utm.medium
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | utm.medium.view.list | `utm.utm_medium_view_tree` | - |
-| form | utm.medium.view.form | `utm.utm_medium_view_form` | - |
-| search | utm.medium.view.search | `utm.utm_medium_view_search` | - |
-
-
-
-#### Filtros de búsqueda (utm.utm_medium_view_search)
-
-**Filtros:**
-- **Archived** (`[('active', '=', False)]`)
-
-
-### utm.tag
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | utm.tag.view.list | `utm.utm_tag_view_tree` | - |
-
-
-
-### utm.campaign
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | utm.campaign.view.search | `utm.view_utm_campaign_view_search` | - |
-| form | utm.campaign.view.form | `utm.utm_campaign_view_form` | - |
-| list | utm.campaign.view.list | `utm.utm_campaign_view_tree` | - |
-| form | utm.campaign.view.form.quick.create | `utm.utm_campaign_view_form_quick_create` | - |
-| kanban | utm.campaign.view.kanban | `utm.utm_campaign_view_kanban` | - |
-
-
-
-#### Filtros de búsqueda (utm.view_utm_campaign_view_search)
-
-**Filtros:**
-- **My Campaigns** (`[('user_id', '=', uid)]`)
-- **Archived** (`[('active', '=', False)]`)
-
-
-**Agrupar por:**
-- Stage
-- Responsible
-- Tags
-
-
-### utm.source
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | utm.source.view.list | `utm.utm_source_view_tree` | - |
-| form | utm.source.view.form | `utm.utm_source_view_form` | - |
-
-
-
-### utm.stage
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| search | utm.stage.view.search | `utm.utm_stage_view_search` | - |
-| list | utm.stage.view.list | `utm.utm_stage_view_tree` | - |
-| form | utm.stage.view.form | `utm.utm_stage_view_form` | - |
 
 

@@ -27,6 +27,7 @@
 
 
 
+
 ### microsoft.calendar.sync
 
 
@@ -34,18 +35,11 @@
 
 
 
-- Campos:
-
-  - **microsoft_id** (Char) → Organizer event Id
-
-
-  - **ms_universal_event_id** (Char) → Universal event Id
-
-
-  - **need_sync_m** (Boolean)
-
-
-  - **active** (Boolean)
+#### Campos
+- **microsoft_id** (Char) → Organizer event Id
+- **ms_universal_event_id** (Char) → Universal event Id
+- **need_sync_m** (Boolean)
+- **active** (Boolean)
 
 
 
@@ -65,6 +59,7 @@
 
 
 
+
 ### res.users
 
 
@@ -75,15 +70,10 @@
 
 
 
-- Campos:
-
-  - **microsoft_calendar_sync_token** (Char)
-
-
-  - **microsoft_synchronization_stopped** (Boolean)
-
-
-  - **microsoft_last_sync_date** (Datetime)
+#### Campos
+- **microsoft_calendar_sync_token** (Char)
+- **microsoft_synchronization_stopped** (Boolean)
+- **microsoft_last_sync_date** (Datetime)
 
 
 
@@ -103,9 +93,8 @@
 
 
 
-- Campos:
-
-  - **microsoft_recurrence_master_id** (Char) → Microsoft Recurrence Master Id
+#### Campos
+- **microsoft_recurrence_master_id** (Char) → Microsoft Recurrence Master Id
 
 
 
@@ -121,15 +110,10 @@
 
 
 
-- Campos:
-
-  - **cal_microsoft_client_id** (Char) → Microsoft Client_id
-
-
-  - **cal_microsoft_client_secret** (Char) → Microsoft Client_key
-
-
-  - **cal_microsoft_sync_paused** (Boolean) → Microsoft Synchronization Paused
+#### Campos
+- **cal_microsoft_client_id** (Char) → Microsoft Client_id
+- **cal_microsoft_client_secret** (Char) → Microsoft Client_key
+- **cal_microsoft_sync_paused** (Boolean) → Microsoft Synchronization Paused
 
 
 
@@ -149,9 +133,8 @@
 
 
 
-- Campos:
-
-  - **need_sync_m** (Boolean)
+#### Campos
+- **need_sync_m** (Boolean)
 
 
 
@@ -167,15 +150,10 @@
 
 
 
-- Campos:
-
-  - **microsoft_calendar_sync_token** (Char) → Microsoft Next Sync Token
-
-
-  - **microsoft_synchronization_stopped** (Boolean) → Outlook Synchronization stopped
-
-
-  - **microsoft_last_sync_date** (Datetime) → Last Sync Date
+#### Campos
+- **microsoft_calendar_sync_token** (Char) → Microsoft Next Sync Token
+- **microsoft_synchronization_stopped** (Boolean) → Outlook Synchronization stopped
+- **microsoft_last_sync_date** (Datetime) → Last Sync Date
 
 
 
@@ -184,7 +162,9 @@
 
 
 
-## Vistas
+
+
+## Vistas Adicionales
 
 
 ### microsoft.calendar.account.reset
@@ -195,6 +175,8 @@
 
 
 
-#### Botones (microsoft_calendar.microsoft_calendar_reset_account_view_form)
+**Botones (microsoft_calendar.microsoft_calendar_reset_account_view_form):**
 - **Confirm** (object)
+
+
 

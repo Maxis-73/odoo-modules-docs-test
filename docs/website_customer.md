@@ -35,6 +35,7 @@ Publish your customers as business references on your website to attract new pot
 
 
 
+
 ### res.partner
 
 
@@ -45,9 +46,8 @@ Publish your customers as business references on your website to attract new pot
 
 
 
-- Campos:
-
-  - **website_tag_ids** (Many2many) → res.partner.tag
+#### Campos
+- **website_tag_ids** (Many2many) → res.partner.tag
 
 
 
@@ -63,30 +63,17 @@ Publish your customers as business references on your website to attract new pot
 
 
 
-- Campos:
-
-  - **name** (Char) → Category Name
-
-
-  - **partner_ids** (Many2many) → res.partner
-
-
-  - **classname** (Selection) → get_selection_class
-
-
-  - **active** (Boolean) → Active
+#### Campos
+- **name** (Char) → Category Name
+- **partner_ids** (Many2many) → res.partner
+- **classname** (Selection) → get_selection_class
+- **active** (Boolean) → Active
 
 
 
 
 
-
-
-
-## Vistas
-
-
-### res.partner.tag
+#### Vistas
 
 | Tipo | Nombre | ID XML | Hereda de |
 |------|--------|--------|-----------|
@@ -96,8 +83,14 @@ Publish your customers as business references on your website to attract new pot
 
 
 
-#### Filtros de búsqueda (website_customer.res_partner_tag_view_search)
+**Filtros de búsqueda (website_customer.res_partner_tag_view_search):**
 
-**Filtros:**
 - **Archived** (`[('active', '=', False)]`)
+
+
+
+
+
+
+
 

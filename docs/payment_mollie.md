@@ -33,6 +33,7 @@ A Dutch payment provider covering several European countries.
 
 
 
+
 ### payment.provider
 
 
@@ -43,12 +44,9 @@ A Dutch payment provider covering several European countries.
 
 
 
-- Campos:
-
-  - **code** (Selection)
-
-
-  - **mollie_api_key** (Char)
+#### Campos
+- **code** (Selection)
+- **mollie_api_key** (Char)
 
 
 

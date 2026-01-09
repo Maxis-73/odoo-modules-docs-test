@@ -30,6 +30,7 @@ Integrate your POS with a Six payment terminal
 
 
 
+
 ### pos.payment.method
 
 
@@ -40,9 +41,8 @@ Integrate your POS with a Six payment terminal
 
 
 
-- Campos:
-
-  - **six_terminal_ip** (Char) → Six Terminal IP
+#### Campos
+- **six_terminal_ip** (Char) → Six Terminal IP
 
 
 

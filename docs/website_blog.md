@@ -30,6 +30,7 @@ Publish blog posts, announces, news
 
 
 
+
 ### blog.blog
 
 
@@ -50,26 +51,31 @@ Publish blog posts, announces, news
 
 
 
-- Campos:
-
-  - **name** (Char) → Blog Name
-
-
-  - **subtitle** (Char) → Blog Subtitle
-
-
-  - **active** (Boolean) → Active
+#### Campos
+- **name** (Char) → Blog Name
+- **subtitle** (Char) → Blog Subtitle
+- **active** (Boolean) → Active
+- **content** (Html) → Content
+- **blog_post_ids** (One2many) → blog.post
+- **blog_post_count** (Integer) → Posts
 
 
-  - **content** (Html) → Content
 
 
-  - **blog_post_ids** (One2many) → blog.post
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | blog.blog.list | `website_blog.view_blog_blog_list` | - |
+| form | blog.blog.form | `website_blog.view_blog_blog_form` | - |
+| search | blog.blog.search | `website_blog.blog_blog_view_search` | - |
 
 
-  - **blog_post_count** (Integer) → Posts
 
+**Filtros de búsqueda (website_blog.blog_blog_view_search):**
 
+- **Archived** (`[('active','=',False)]`)
 
 
 
@@ -80,13 +86,20 @@ Publish blog posts, announces, news
 
 
 
-- Campos:
+#### Campos
+- **name** (Char) → Name
+- **tag_ids** (One2many) → blog.tag
 
-  - **name** (Char) → Name
 
 
-  - **tag_ids** (One2many) → blog.tag
 
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | blog_tag_category_form | `website_blog.blog_tag_category_form` | - |
+| list | blog_tag_category.list | `website_blog.blog_tag_category_tree` | - |
 
 
 
@@ -103,19 +116,22 @@ Publish blog posts, announces, news
 
 
 
-- Campos:
-
-  - **name** (Char) → Name
-
-
-  - **category_id** (Many2one) → blog.tag.category
-
-
-  - **color** (Integer) → Color
+#### Campos
+- **name** (Char) → Name
+- **category_id** (Many2one) → blog.tag.category
+- **color** (Integer) → Color
+- **post_ids** (Many2many) → blog.post
 
 
-  - **post_ids** (Many2many) → blog.post
 
+
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| list | blog_tag.list | `website_blog.blog_tag_tree` | - |
+| form | blog_tag_form | `website_blog.blog_tag_form` | - |
 
 
 
@@ -140,68 +156,53 @@ Publish blog posts, announces, news
 
 
 
-- Campos:
-
-  - **name** (Char) → Title
-
-
-  - **subtitle** (Char) → Sub Title
-
-
-  - **author_id** (Many2one) → res.partner
-
-
-  - **author_avatar** (Binary)
-
-
-  - **author_name** (Char)
-
-
-  - **active** (Boolean) → Active
-
-
-  - **blog_id** (Many2one) → blog.blog
-
-
-  - **tag_ids** (Many2many) → blog.tag
+#### Campos
+- **name** (Char) → Title
+- **subtitle** (Char) → Sub Title
+- **author_id** (Many2one) → res.partner
+- **author_avatar** (Binary)
+- **author_name** (Char)
+- **active** (Boolean) → Active
+- **blog_id** (Many2one) → blog.blog
+- **tag_ids** (Many2many) → blog.tag
+- **content** (Html) → Content
+- **teaser** (Text) → Teaser
+- **teaser_manual** (Text)
+- **website_message_ids** (One2many)
+- **create_date** (Datetime) → Created on
+- **published_date** (Datetime) → Published Date
+- **post_date** (Datetime) → Publishing date
+- **create_uid** (Many2one) → res.users
+- **write_date** (Datetime) → Last Updated on
+- **write_uid** (Many2one) → res.users
+- **visits** (Integer) → No of Views
+- **website_id** (Many2one)
 
 
-  - **content** (Html) → Content
 
 
-  - **teaser** (Text) → Teaser
+
+#### Vistas
+
+| Tipo | Nombre | ID XML | Hereda de |
+|------|--------|--------|-----------|
+| form | blog.post.view.form.add | `website_blog.blog_post_view_form_add` | - |
+| form | blog.post.form | `website_blog.view_blog_post_form` | - |
+| kanban | blog.post.kanban | `website_blog.blog_post_view_kanban` | - |
+| search | blog.post.search | `website_blog.view_blog_post_search` | - |
+| list | Blog Post Pages List | `website_blog.view_blog_post_list` | - |
 
 
-  - **teaser_manual** (Text)
+
+**Filtros de búsqueda (website_blog.view_blog_post_search):**
+
+- **Archived** (`[('active','=',False)]`)
 
 
-  - **website_message_ids** (One2many)
-
-
-  - **create_date** (Datetime) → Created on
-
-
-  - **published_date** (Datetime) → Published Date
-
-
-  - **post_date** (Datetime) → Publishing date
-
-
-  - **create_uid** (Many2one) → res.users
-
-
-  - **write_date** (Datetime) → Last Updated on
-
-
-  - **write_uid** (Many2one) → res.users
-
-
-  - **visits** (Integer) → No of Views
-
-
-  - **website_id** (Many2one)
-
-
+*Agrupar por:*
+- Blog
+- Author
+- Last Contributor
 
 
 
@@ -222,63 +223,6 @@ Publish blog posts, announces, news
 
 
 
-## Vistas
 
-
-### blog.post
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | blog.post.view.form.add | `website_blog.blog_post_view_form_add` | - |
-| form | blog.post.form | `website_blog.view_blog_post_form` | - |
-| kanban | blog.post.kanban | `website_blog.blog_post_view_kanban` | - |
-| search | blog.post.search | `website_blog.view_blog_post_search` | - |
-| list | Blog Post Pages List | `website_blog.view_blog_post_list` | - |
-
-
-
-#### Filtros de búsqueda (website_blog.view_blog_post_search)
-
-**Filtros:**
-- **Archived** (`[('active','=',False)]`)
-
-
-**Agrupar por:**
-- Blog
-- Author
-- Last Contributor
-
-
-### blog.blog
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | blog.blog.list | `website_blog.view_blog_blog_list` | - |
-| form | blog.blog.form | `website_blog.view_blog_blog_form` | - |
-| search | blog.blog.search | `website_blog.blog_blog_view_search` | - |
-
-
-
-#### Filtros de búsqueda (website_blog.blog_blog_view_search)
-
-**Filtros:**
-- **Archived** (`[('active','=',False)]`)
-
-
-### blog.tag
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| list | blog_tag.list | `website_blog.blog_tag_tree` | - |
-| form | blog_tag_form | `website_blog.blog_tag_form` | - |
-
-
-
-### blog.tag.category
-
-| Tipo | Nombre | ID XML | Hereda de |
-|------|--------|--------|-----------|
-| form | blog_tag_category_form | `website_blog.blog_tag_category_form` | - |
-| list | blog_tag_category.list | `website_blog.blog_tag_category_tree` | - |
 
 

@@ -27,6 +27,7 @@ Add OdooBot in discussions
 
 
 
+
 ### discuss.channel
 
 
@@ -41,6 +42,7 @@ Add OdooBot in discussions
 
 
 
+
 ### res.users
 
 
@@ -51,12 +53,9 @@ Add OdooBot in discussions
 
 
 
-- Campos:
-
-  - **odoobot_state** (Selection)
-
-
-  - **odoobot_failed** (Boolean)
+#### Campos
+- **odoobot_state** (Selection)
+- **odoobot_failed** (Boolean)
 
 
 

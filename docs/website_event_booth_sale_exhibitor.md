@@ -26,27 +26,14 @@ Bridge module between website_event_booth_exhibitor and website_event_booth_sale
 
 
 
-- Campos:
-
-  - **sponsor_name** (Char)
-
-
-  - **sponsor_email** (Char)
-
-
-  - **sponsor_mobile** (Char)
-
-
-  - **sponsor_phone** (Char)
-
-
-  - **sponsor_subtitle** (Char)
-
-
-  - **sponsor_website_description** (Html)
-
-
-  - **sponsor_image_512** (Image)
+#### Campos
+- **sponsor_name** (Char)
+- **sponsor_email** (Char)
+- **sponsor_mobile** (Char)
+- **sponsor_phone** (Char)
+- **sponsor_subtitle** (Char)
+- **sponsor_website_description** (Html)
+- **sponsor_image_512** (Image)
 
 
 

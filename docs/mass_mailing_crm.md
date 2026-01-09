@@ -29,9 +29,8 @@ UTM and mass mailing on lead / opportunities
 
 
 
-- Campos:
-
-  - **ab_testing_winner_selection** (Selection)
+#### Campos
+- **ab_testing_winner_selection** (Selection)
 
 
 
@@ -51,6 +50,7 @@ UTM and mass mailing on lead / opportunities
 
 
 
+
 ### mailing.mailing
 
 
@@ -61,12 +61,9 @@ UTM and mass mailing on lead / opportunities
 
 
 
-- Campos:
-
-  - **use_leads** (Boolean) → Use Leads
-
-
-  - **crm_lead_count** (Integer) → Leads/Opportunities Count
+#### Campos
+- **use_leads** (Boolean) → Use Leads
+- **crm_lead_count** (Integer) → Leads/Opportunities Count
 
 
 

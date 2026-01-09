@@ -29,12 +29,9 @@ This module lets you use the full power of certifications within your courses.
 
 
 
-- Campos:
-
-  - **slide_id** (Many2one) → slide.slide
-
-
-  - **slide_partner_id** (Many2one) → slide.slide.partner
+#### Campos
+- **slide_id** (Many2one) → slide.slide
+- **slide_partner_id** (Many2one) → slide.slide.partner
 
 
 
@@ -50,15 +47,10 @@ This module lets you use the full power of certifications within your courses.
 
 
 
-- Campos:
-
-  - **slide_ids** (One2many) → slide.slide
-
-
-  - **slide_channel_ids** (One2many) → slide.channel
-
-
-  - **slide_channel_count** (Integer) → Courses Count
+#### Campos
+- **slide_ids** (One2many) → slide.slide
+- **slide_channel_ids** (One2many) → slide.channel
+- **slide_channel_count** (Integer) → Courses Count
 
 
 
@@ -74,12 +66,9 @@ This module lets you use the full power of certifications within your courses.
 
 
 
-- Campos:
-
-  - **user_input_ids** (One2many) → survey.user_input
-
-
-  - **survey_scoring_success** (Boolean) → Certification Succeeded
+#### Campos
+- **user_input_ids** (One2many) → survey.user_input
+- **survey_scoring_success** (Boolean) → Certification Succeeded
 
 
 
@@ -95,24 +84,13 @@ This module lets you use the full power of certifications within your courses.
 
 
 
-- Campos:
-
-  - **name** (Char)
-
-
-  - **slide_category** (Selection)
-
-
-  - **slide_type** (Selection)
-
-
-  - **survey_id** (Many2one) → survey.survey
-
-
-  - **nbr_certification** (Integer) → Number of Certifications
-
-
-  - **is_preview** (Boolean)
+#### Campos
+- **name** (Char)
+- **slide_category** (Selection)
+- **slide_type** (Selection)
+- **survey_id** (Many2one) → survey.survey
+- **nbr_certification** (Integer) → Number of Certifications
+- **is_preview** (Boolean)
 
 
 
@@ -128,12 +106,9 @@ This module lets you use the full power of certifications within your courses.
 
 
 
-- Campos:
-
-  - **nbr_certification** (Integer)
-
-
-  - **survey_certification_success** (Boolean) → Certified
+#### Campos
+- **nbr_certification** (Integer)
+- **survey_certification_success** (Boolean) → Certified
 
 
 
@@ -149,12 +124,9 @@ This module lets you use the full power of certifications within your courses.
 
 
 
-- Campos:
-
-  - **members_certified_count** (Integer) → # Certified Attendees
-
-
-  - **nbr_certification** (Integer) → Number of Certifications
+#### Campos
+- **members_certified_count** (Integer) → # Certified Attendees
+- **nbr_certification** (Integer) → Number of Certifications
 
 
 

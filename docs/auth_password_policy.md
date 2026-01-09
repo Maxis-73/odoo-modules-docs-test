@@ -30,6 +30,7 @@ Implement basic password policy configuration & check
 
 
 
+
 ### res.config.settings
 
 
@@ -40,9 +41,8 @@ Implement basic password policy configuration & check
 
 
 
-- Campos:
-
-  - **minlength** (Integer) → Minimum Password Length
+#### Campos
+- **minlength** (Integer) → Minimum Password Length
 
 
 
